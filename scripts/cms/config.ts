@@ -53,6 +53,7 @@ export interface CmsConfig {
     name: string;
     repo: string;
     branch: string;
+    base_url?: string;
     squash_merges?: unknown;
   };
   publish_mode?: unknown;

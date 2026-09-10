@@ -27,6 +27,7 @@ describe("Sveltia CMS configuration", () => {
     expect(config.backend.name).toBe("github");
     expect(config.backend.branch).toBe("main");
     expect(config.backend.repo).toBe(CMS_REPO_PLACEHOLDER);
+    expect(config.backend.base_url).toBe("https://akscusa.org");
   });
 
   // Standalone media saves do not use the entry workflow and also require

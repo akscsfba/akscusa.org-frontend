@@ -516,10 +516,59 @@ go to the ignored `test-results/` directory.
 Served at `/admin/` from `cms/public/admin/`. Collections cover the records in
 `cms/content/`, each validated against a schema in `app/schemas/`.
 
-The GitHub backend supports token sign-in immediately. Before giving
-nontechnical editors access, deploy
-[Sveltia CMS Authenticator](https://github.com/sveltia/sveltia-cms-auth) and set
-its URL as `backend.base_url`.
+The GitHub backend supports token sign-in immediately. **Sign in with GitHub**
+uses the `/auth` and `/callback` Cloudflare Pages Functions in `functions/`; no
+separate Worker project is required. The site stays statically rendered; only
+OAuth runs server-side to keep the client secret out of the browser.
+
+### GitHub sign-in setup on Pages
+
+1. Open GitHub's [new OAuth app form](https://github.com/settings/applications/new).
+   Create an **OAuth App**, not a GitHub App, under an account or organization
+   that will maintain the site.
+2. Set the application name to `AKSC CMS`, the homepage URL to
+   `https://akscusa.org`, and the authorization callback URL to
+   `https://akscusa.org/callback`. Leave Device Flow disabled. If an
+   **Expire user access tokens** option is shown, disable it for this
+   integration, which does not implement refresh tokens. Register the app.
+3. Copy its **Client ID**, then select **Generate a new client secret** and
+   keep the secret securely for the next step. Do not put either value in Git
+   or paste the secret into chat.
+4. In Cloudflare, open **Workers & Pages**, select the existing **Pages**
+   project for `akscusa.org`, and choose **Production** under
+   **Settings > Variables and Secrets**.
+5. Add `GITHUB_CLIENT_ID` with the app's Client ID and `GITHUB_CLIENT_SECRET`
+   with its client secret. Select **Secret / Encrypt** for **both** values,
+   then save. If the client ID was previously saved as plaintext, replace that
+   binding with a secret of the same name.
+6. Keep the Pages build command
+   `CMS_REPO=akscsfba/akscusa.org-frontend npm run build` and output directory
+   `dist`. No `CMS_AUTH_BASE_URL` setting is needed: `backend.base_url` already
+   points to `https://akscusa.org`.
+7. Merge these changes into `main` of the repository connected to Pages and
+   let the production deployment finish. If the code was deployed before the
+   secrets were saved, create a new deployment afterward so it receives them.
+8. Open `https://akscusa.org/admin/` and select **Sign in with GitHub**.
+   Allow the popup and approve the OAuth app. Each editor needs write access
+   to `akscsfba/akscusa.org-frontend`; an organization owner may also need to
+   approve the OAuth app if the organization restricts third-party access.
+
+Both values use Pages secrets because `wrangler.jsonc` is the source of truth
+for plaintext runtime variables. A plaintext client ID entered only in the
+dashboard is not sufficient for this deployment. Do not add OAuth credentials
+to `wrangler.jsonc`, CMS configuration, or client-side code.
+
+`ALLOWED_DOMAINS=akscusa.org` is committed in `wrangler.jsonc`; the function
+validates the initiating site and popup message origin before releasing a token.
+Use the canonical domain for OAuth, not a Pages preview URL or local dev server.
+`_routes.json` limits function invocations to the two OAuth endpoints so static
+page requests retain Pages' static-serving behavior.
+
+If sign-in still opens `api.netlify.com`, the browser is loading the old CMS
+configuration: confirm the latest code is deployed and hard-refresh `/admin/`.
+An OAuth client configuration error means one of the Pages secrets is missing;
+save both in Production and deploy again. A GitHub redirect URI error means the
+OAuth app's callback URL does not match `https://akscusa.org/callback`.
 
 ### Review workflow
 
@@ -591,7 +640,8 @@ server, and is read from the shell and `.env`.
 
 Locally, prefer **Work with Local Repository** on the sign-in screen: it writes
 to your working copy only and needs no repository setting, but requires a
-Chromium-based browser. To test GitHub sign-in, point `CMS_REPO` at your fork:
+Chromium-based browser. To test GitHub token sign-in, point `CMS_REPO` at your
+fork:
 
 ```sh
 cp .env.example .env
@@ -656,6 +706,9 @@ Production uses Pages' native Git integration:
 3. Leave the deploy command empty. If your build flow requires one, use
    `npm run deploy:pages`; never `wrangler deploy`, which targets Workers.
 4. Set `NODE_VERSION` to `24.20.0`.
+5. Complete [GitHub sign-in setup](#github-sign-in-setup-on-pages), adding both
+   `GITHUB_CLIENT_ID` and `GITHUB_CLIENT_SECRET` as encrypted Production secrets
+   before deployment.
 
 If a newly added variable seems missing, the deployment may have reused a cached
 build; clear the build cache under Settings > Build and retry.
