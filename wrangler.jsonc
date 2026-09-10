@@ -4,6 +4,10 @@
   "compatibility_flags": ["global_fetch_strictly_public"],
   "name": "akscusa-org-frontend",
   "pages_build_output_dir": "./dist",
+  // Keep both GitHub OAuth credentials in Pages secrets, outside plaintext vars.
+  "vars": {
+    "ALLOWED_DOMAINS": "akscusa.org",
+  },
   // Add the D1 binding after `wrangler d1 create akscusa-customer-orders`.
   // "d1_databases": [
   //   {

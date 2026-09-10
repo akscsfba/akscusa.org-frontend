@@ -8,6 +8,8 @@ backend:
   # server at your own fork. See "Backend repository" in README.md.
   repo: OWNER/REPOSITORY
   branch: main
+  # GitHub OAuth is served by this project's Cloudflare Pages Functions.
+  base_url: https://akscusa.org
   # Sveltia uses the commit message as the pull request title. The defaults are
   # `Create/Update/Delete {{collection}} “{{slug}}”`; these name the CMS as the
   # source so the change is recognisable in the pull request list.
