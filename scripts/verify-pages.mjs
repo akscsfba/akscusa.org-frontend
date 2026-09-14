@@ -17,7 +17,7 @@ const routes = new Map([
     "/testimonies-of-practice-of-caste-in-the-usa/",
     "Testimonies of Caste in the USA",
   ],
-  ["/blog/", "Blog"],
+  ["/articles/", "Articles"],
   ["/press-releases/", "Press Releases and Statements"],
   ["/interventions/", "Interventions"],
   ["/actions/", "What we do"],
@@ -133,6 +133,28 @@ wrangler.stderr.on("data", captureOutput);
 try {
   await waitForWrangler(origin, wrangler);
 
+  const articleRoutes = inventory.pages
+    .map((page) => page.route)
+    .filter((route) => route.startsWith("/articles/"));
+  for (const target of [
+    ...articleRoutes,
+    "/articles/?category=books-and-media",
+  ]) {
+    const legacy = target.replace("/articles/", "/blog/");
+    const response = await fetch(`${origin}${legacy}`, {
+      redirect: "manual",
+      signal: AbortSignal.timeout(5_000),
+    });
+    const location = response.headers.get("location");
+    if (
+      response.status !== 301 ||
+      !location ||
+      new URL(location, origin).href !== `${origin}${target}`
+    ) {
+      throw new Error(`${legacy} did not permanently redirect to ${target}.`);
+    }
+  }
+
   for (const [route, marker] of routes) {
     const response = await fetch(`${origin}${route}`, {
       signal: AbortSignal.timeout(5_000),
@@ -185,6 +207,9 @@ try {
   }
 
   const listed = new Set(urls.map((url) => new URL(url).pathname));
+  if ([...listed].some((path) => /^\/blog(?:\/|$)/.test(path))) {
+    throw new Error("The sitemap still lists the retired blog routes.");
+  }
   for (const page of inventory.pages) {
     if (page.file === "404.html" || page.file.startsWith("admin/")) continue;
     if (!listed.has(page.route)) {

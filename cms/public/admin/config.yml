@@ -90,7 +90,7 @@ media_libraries: &repository_media
 # `scripts/cms/config.test.ts` fails if those two drift apart.
 collections:
   - name: articles
-    label: Blog
+    label: Articles
     label_singular: Article
     icon: article
     description: Essays and analysis, newest first.
@@ -100,7 +100,7 @@ collections:
     public_folder: /media/articles/{{slug}}
     create: true
     slug: "{{slug}}"
-    preview_path: /blog/{{slug}}/
+    preview_path: /articles/{{slug}}/
     thumbnail: heroImage.src
     sortable_fields: [date, title, category]
     view_filters:
@@ -121,11 +121,11 @@ collections:
         value_field: "{{slug}}"
         search_fields: [label, description]
         display_fields: [label]
-        hint: "The shelf this article is filed under on the blog. Add a new category in the Categories collection if none of these fit."
+        hint: "The shelf this article is filed under in Articles. Add a new category in the Categories collection if none of these fit."
       - name: summary
         label: Summary
         widget: text
-        hint: One or two sentences shown on the blog index and in search results.
+        hint: One or two sentences shown on the articles index and in search results.
       - name: authors
         label: Authors
         widget: list
@@ -1075,7 +1075,7 @@ collections:
     identifier_field: label
     slug: "{{slug}}"
     # Terms have no standalone routes. Inspect their labels on linked entries.
-    preview_path: /blog/
+    preview_path: /articles/
     sortable_fields: [label]
     summary: "{{label}}"
     fields:
@@ -1094,22 +1094,22 @@ collections:
     label_singular: Category
     icon: shelves
     description: >-
-      The shelves the blog is sorted into. Every article is filed under exactly
-      one, and readers narrow the blog index by them. Add a category when
+      The shelves articles are sorted into. Every article is filed under exactly
+      one, and readers narrow the articles index by them. Add a category when
       several articles genuinely belong together; one category per article is
       no use to a reader.
     folder: cms/content/categories
     create: true
     identifier_field: label
     slug: "{{slug}}"
-    preview_path: /blog/
+    preview_path: /articles/
     sortable_fields: [label]
     summary: "{{label}}"
     fields:
       - name: label
         label: Name
         widget: string
-        hint: "The name as it is printed on the blog — “Books and Media”."
+        hint: "The name as it is printed in Articles — “Books and Media”."
       - name: description
         label: What belongs here
         widget: text

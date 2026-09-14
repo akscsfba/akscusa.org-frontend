@@ -30,10 +30,10 @@ interface SectionDefinition {
 
 export const editorialSections = {
   articles: {
-    path: "/blog",
-    label: "Blog",
+    path: "/articles",
+    label: "Articles",
     eyebrow: "Writing",
-    title: "Blog",
+    title: "Articles",
     description:
       "Essays, speeches, and analysis from the Ambedkar King Study Circle and the people organising with it.",
     empty: "The first articles are being prepared. Please check back soon.",

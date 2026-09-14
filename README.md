@@ -212,7 +212,7 @@ the fields its own kind of entry needs.
 
 | Collection      | Folder                       | Route             | Adds                                                      |
 | --------------- | ---------------------------- | ----------------- | --------------------------------------------------------- |
-| `articles`      | `cms/content/articles`       | `/blog`           | `category`, `authors`                                     |
+| `articles`      | `cms/content/articles`       | `/articles`       | `category`, `authors`                                     |
 | `pressReleases` | `cms/content/press-releases` | `/press-releases` | `dateline`, `issuedBy`, `contactEmail`, `attachments`     |
 | `interventions` | `cms/content/interventions`  | `/interventions`  | `kind`, `status`, `concludedDate`, `outcome`, `resources` |
 | `conferences`   | `cms/content/conferences`    | `/conferences`    | `edition`, `location`, `format`, speaker references       |
@@ -232,7 +232,7 @@ TypeScript, so `cms/public/admin/config.yml` repeats them as `select` options
 and `scripts/cms/config.test.ts` fails if the two drift apart.
 
 The **editorial** ones are content, in `cms/content/topics/` and
-`cms/content/categories/`. Naming a new subject or a new blog shelf is
+`cms/content/categories/`. Naming a new subject or a new article shelf is
 editorial judgement, not a code change, so an editor adds a term in the CMS and
 every form that files an entry under one offers it immediately. Entries store a
 term's filename and pick it through a relation widget, so a term can be renamed
@@ -248,12 +248,15 @@ relatable without duplicating an entry.
 Each section has an index at its route and an entry page at
 `<route>/<slug>/`. Book readings are listed as a record rather than as cards:
 one entry per book, carrying the run of sittings it took and the flyers those
-sittings were announced with. The blog and the interventions index narrow
+sittings were announced with. The articles and interventions indexes narrow
 themselves in place: the chips under the masthead filter the entries already on
 the page and remember the choice in the query string, such as
-`/blog/?category=books-and-media`, so a vocabulary an editor keeps adding to
+`/articles/?category=books-and-media`, so a vocabulary an editor keeps adding to
 never turns into a page per term. Only terms that entries actually use are
 offered.
+Articles remain in the existing CMS collection and are rendered statically.
+Cloudflare Pages permanently redirects old `/blog/` links, including entry
+links, to `/articles/` through `cms/public/_redirects`.
 `app/features/editorial/` holds the shared list, card, and entry components, so
 a change to one section's chrome lands on all six.
 

@@ -24,7 +24,7 @@ posters:
     caption: "Original birthday celebration flyer"
 resources:
   - label: "What Periyar means to Silicon Valley"
-    url: "/blog/what-periyar-means-to-silicon-valley/"
+    url: "/articles/what-periyar-means-to-silicon-valley/"
 featured: false
 draft: false
 ---
