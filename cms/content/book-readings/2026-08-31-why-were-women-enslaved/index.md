@@ -13,7 +13,7 @@ topics:
 resources: []
 heroImage: null
 posters:
-  - src: /media/book-readings/2026-08-31-why-were-women-enslaved/why-were-women-enslaved-chap-1-4-flyer.jpeg
+  - src: /media/book-readings/2026-08-31-why-were-women-enslaved/why-were-women-enslaved-flyer.jpeg
     alt: why-were-women-enslaved-flyer
     caption: ''
 sourceUrl: ''
