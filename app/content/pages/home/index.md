@@ -40,7 +40,7 @@ quotes:
 closing:
   eyebrow: Forging an egalitarian society
   title: A movement is the people who join it.
-  description: AKSC is a membership organization. Members set its direction and carry its work, and dues start at $20 a year. If you are not eligible to join, you can still help sustain it.
+  description: AKSC is a membership organization. Members set its direction and carry its work, and dues with different slots range between $20 a year for the students and $120 for general membership. If you are not eligible to join, you can still help sustain it.
   primaryAction:
     label: Join AKSC
     href: /join

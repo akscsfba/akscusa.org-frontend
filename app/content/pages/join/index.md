@@ -3,7 +3,7 @@ pageType: join
 title: Join AKSC
 description: Membership eligibility, annual dues, and the application to join the Ambedkar King Study Circle.
 eyebrow: Build the movement
-intro: AKSC is a membership organization. Its strength is the number of people who commit to it, not the size of its budget.
+intro: AKSC is a membership organization. Members set its direction and carry its work, and dues with different slots range between $20 a year for the students and $120 for general membership. If you are not eligible to join, you can still help sustain it.
 joinUrl: "https://docs.google.com/forms/d/e/1FAIpQLSeYnrwpNNGdzrhzZqzBFf9a1_vyoASfCz6sbY3w-6t95WtfBg/viewform"
 ---
 

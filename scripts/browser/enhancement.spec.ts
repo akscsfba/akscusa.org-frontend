@@ -62,7 +62,7 @@ test.describe("without JavaScript", () => {
   });
 
   test("editorial filters never appear as dead buttons", async ({ page }) => {
-    for (const path of ["/blog/", "/interventions/"]) {
+    for (const path of ["/articles/", "/interventions/"]) {
       await page.goto(path, { waitUntil: "load" });
       await expect(page.locator("[data-filter-value]:visible")).toHaveCount(0);
     }

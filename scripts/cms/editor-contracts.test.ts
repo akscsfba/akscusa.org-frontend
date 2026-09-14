@@ -529,7 +529,7 @@ describe("real CMS YAML output", () => {
 
 describe("rendered site preview destinations", () => {
   const routes = {
-    articles: "/blog/{{slug}}/",
+    articles: "/articles/{{slug}}/",
     "press-releases": "/press-releases/{{slug}}/",
     interventions: "/interventions/{{slug}}/",
     conferences: "/conferences/{{slug}}/",
@@ -542,8 +542,8 @@ describe("rendered site preview destinations", () => {
       "/organization/general-body/#general-body-meetings",
     comics: "/comics/{{slug}}/",
     "toolkit-scenarios": "/anti-caste-toolkit/#{{slug}}",
-    topics: "/blog/",
-    categories: "/blog/",
+    topics: "/articles/",
+    categories: "/articles/",
   };
 
   it("explains build-based draft visibility beside every draft switch", () => {

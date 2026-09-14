@@ -1,5 +1,42 @@
 import { expect, publishedPaths, test, visit } from "./fixtures";
 
+test("Articles uses its new name and routes at every screen size", async ({
+  page,
+}) => {
+  for (const width of [320, 375, 768, 1440]) {
+    await page.setViewportSize({ width, height: 900 });
+    await visit(page, "/articles/");
+    await expect(page.locator("main h1")).toHaveText("Articles");
+    await expect(page).toHaveTitle(/^Articles\b/);
+    await expect(page.locator('link[rel="canonical"]')).toHaveAttribute(
+      "href",
+      "https://akscusa.org/articles/",
+    );
+    await expect(
+      page.getByRole("link", { name: "Blog", exact: true }),
+    ).toHaveCount(0);
+    await expect(page.locator('a[href^="/blog"]')).toHaveCount(0);
+    expect(
+      await page.evaluate(
+        () =>
+          document.documentElement.scrollWidth <=
+          document.documentElement.clientWidth + 1,
+      ),
+    ).toBe(true);
+    const entry = page.locator('main a[href^="/articles/"]').first();
+    await entry.click();
+    await expect(page).toHaveURL(/\/articles\/[^/]+\/$/);
+    await expect(
+      page.getByRole("link", { name: "Articles", exact: true }).first(),
+    ).toHaveAttribute("href", /^\/articles\/?$/);
+    const layout = await page.evaluate(() => ({
+      width: document.documentElement.clientWidth,
+      scrollWidth: document.documentElement.scrollWidth,
+    }));
+    expect(layout.scrollWidth).toBeLessThanOrEqual(layout.width + 1);
+  }
+});
+
 test("reading filters announce an empty state and clear back to the complete log", async ({
   page,
 }) => {
@@ -28,11 +65,11 @@ test("reading filters announce an empty state and clear back to the complete log
 test("editorial filter choices survive a shared URL and reload", async ({
   page,
 }) => {
-  await visit(page, "/blog/");
+  await visit(page, "/articles/");
   const chip = page
     .locator('[data-filter-value]:not([data-filter-value="all"])')
     .first();
-  test.skip((await chip.count()) === 0, "The blog has no category filters.");
+  test.skip((await chip.count()) === 0, "Articles has no category filters.");
   const value = await chip.getAttribute("data-filter-value");
   if (!value) throw new Error("The category chip has no value.");
   await chip.click();
