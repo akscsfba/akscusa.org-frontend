@@ -1,5 +1,5 @@
 ---
-title: Why were Women enslaved? Chapters 1-
+title: Why were Women enslaved?
 date: 2026-10-10T22:00:00Z
 location: Human Agenda, San Jose
 book: why-were-women-enslaved
@@ -14,7 +14,7 @@ resources: []
 heroImage: null
 posters:
   - src: /media/book-readings/2026-08-31-why-were-women-enslaved/why-were-women-enslaved-chap-1-4-flyer.jpeg
-    alt: why-were-women-enslaved-chap-1-4-flyer
+    alt: why-were-women-enslaved-flyer
     caption: ''
 sourceUrl: ''
 featured: true
