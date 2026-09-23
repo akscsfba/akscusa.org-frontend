@@ -174,6 +174,14 @@ rule that draws itself in on scroll, carried by `section-head` or on its own as
 `rule-draw`. Use named Tailwind tokens rather than one-off colors or font
 families.
 
+The homepage and page mastheads share `BannerBackground.astro`: a supplied photo,
+or the full AKSC logo when no photo is supplied, uses the same proportional sizing,
+placement, and fade. Desktop images scale to the banner's height, meeting its top,
+bottom, and right edges without inset margins; their left edge fades into the ink.
+This keeps wide screens from scaling the logo taller than the banner.
+Photography receives the brand-blue tint; the logo retains its own
+colors. This is static presentation, not a CMS field or a separate emblem design.
+
 ## Images
 
 - Section images: `app/features/<feature>/assets/`.
