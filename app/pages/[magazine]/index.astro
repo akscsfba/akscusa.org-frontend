@@ -1,0 +1,50 @@
+---
+import type { GetStaticPaths } from "astro";
+
+import Container from "~/components/ui/Container.astro";
+import EntryHeader from "~/components/ui/EntryHeader.astro";
+import {
+  documentPath,
+  downloadName,
+  magazineSlug,
+} from "~/features/magazine/routes";
+import { loadPage } from "~/features/page-copy/queries/entries";
+import SiteLayout from "~/layouts/SiteLayout.astro";
+
+export const getStaticPaths = (() => [
+  { params: { magazine: magazineSlug } },
+]) satisfies GetStaticPaths;
+
+const page = await loadPage("magazine");
+
+if (page.data.pageType !== "magazine") {
+  throw new Error("Magazine content is missing or invalid.");
+}
+
+const copy = page.data;
+---
+
+<SiteLayout title={copy.title} description={copy.description}>
+  <Container class="pt-10 pb-20 sm:pt-12 sm:pb-28">
+    <EntryHeader
+      eyebrow={copy.eyebrow}
+      title={copy.title}
+      backHref="/"
+      backLabel="Home"
+    />
+    <div class="mt-8 flex flex-wrap items-center gap-3">
+      <a class="btn btn-primary" href={documentPath} download={downloadName}>
+        {copy.downloadLabel}
+      </a>
+      <a class="btn btn-outline" href={documentPath}>
+        {copy.openLabel}
+      </a>
+    </div>
+    <iframe
+      class="mt-8 h-[80dvh] w-full border border-rule bg-paper"
+      src={documentPath}
+      title={copy.viewerTitle}
+      sandbox="allow-same-origin"
+      referrerpolicy="no-referrer"></iframe>
+  </Container>
+</SiteLayout>

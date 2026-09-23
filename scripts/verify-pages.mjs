@@ -4,6 +4,7 @@ import { readFile } from "node:fs/promises";
 import { createServer } from "node:net";
 import { fileURLToPath } from "node:url";
 
+import { documentPath, magazinePath } from "../app/features/magazine/routes.ts";
 import { readBuildInventory } from "./links/check.ts";
 
 const host = "127.0.0.1";
@@ -33,6 +34,7 @@ const routes = new Map([
   ["/anti-caste-toolkit/", "A Playbook to kickstart our Toolkit"],
   ["/contact/", "Best way to reach us"],
   ["/donate/", "Donate"],
+  [magazinePath, "AKSC 10th Year Magazine"],
   ["/admin/", "AKSC USA Content Manager"],
   [
     "/admin/config.yml",
@@ -211,7 +213,12 @@ try {
     throw new Error("The sitemap still lists the retired blog routes.");
   }
   for (const page of inventory.pages) {
-    if (page.file === "404.html" || page.file.startsWith("admin/")) continue;
+    if (
+      page.file === "404.html" ||
+      page.file.startsWith("admin/") ||
+      page.route === documentPath
+    )
+      continue;
     if (!listed.has(page.route)) {
       throw new Error(
         `${page.route} was built but is missing from the sitemap.`,
@@ -254,6 +261,28 @@ try {
   for (const line of [`Sitemap: ${sitemapUrl}`, "Disallow: /admin/"]) {
     if (!robots.includes(line)) {
       throw new Error(`/robots.txt does not say "${line}".`);
+    }
+  }
+
+  const originalMagazine = await readFile(
+    new URL(
+      "../app/features/magazine/assets/aksc-10th-year-magazine.html",
+      import.meta.url,
+    ),
+  );
+  for (const path of [magazinePath.slice(0, -1), magazinePath, documentPath]) {
+    const response = await fetch(`${origin}${path}`, {
+      signal: AbortSignal.timeout(5_000),
+    });
+    if (
+      !response.ok ||
+      !response.headers.get("content-type")?.includes("text/html")
+    ) {
+      throw new Error(`${path} is not served as HTML.`);
+    }
+    const body = Buffer.from(await response.arrayBuffer());
+    if (path === documentPath && !body.equals(originalMagazine)) {
+      throw new Error("The magazine download differs from the supplied HTML.");
     }
   }
 

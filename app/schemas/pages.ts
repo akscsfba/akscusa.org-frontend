@@ -312,6 +312,16 @@ export const whoSaidWhatPageSchema = z.object({
 
 export type WhoSaidWhatPageCopy = z.infer<typeof whoSaidWhatPageSchema>;
 
+const magazinePageSchema = z.object({
+  pageType: z.literal("magazine"),
+  title: z.string(),
+  description: z.string(),
+  eyebrow: z.string(),
+  downloadLabel: z.string(),
+  openLabel: z.string(),
+  viewerTitle: z.string(),
+});
+
 export const pages = defineCollection({
   loader: glob({
     base: "./app/content/pages",
@@ -331,5 +341,6 @@ export const pages = defineCollection({
     comicsPageSchema,
     antiCasteToolkitPageSchema,
     whoSaidWhatPageSchema,
+    magazinePageSchema,
   ]),
 });

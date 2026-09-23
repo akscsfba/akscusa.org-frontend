@@ -3,6 +3,9 @@
 # make every entry the CMS opens a pull request for fail `format:check`.
 cms/content
 
+# Preserve the supplied magazine byte for byte.
+app/features/magazine/assets/aksc-10th-year-magazine.html
+
 .astro
 dist
 node_modules

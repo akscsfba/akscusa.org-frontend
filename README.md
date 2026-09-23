@@ -22,6 +22,20 @@ npm run dev
 
 Site at `http://localhost:4321`, CMS at `http://localhost:4321/admin/`.
 
+## Magazine
+
+The magazine page embeds the supplied HTML and offers **Download HTML** and
+**Open full-page** links. The download is unchanged, including embedded images.
+It is a regular site page, currently at `/0xdeadbeef/`. To move it to
+`/magazine/`, change only `magazineSlug` in `app/features/magazine/routes.ts`
+from `"0xdeadbeef"` to `"magazine"`; the page and document routes, links,
+canonical URL, and sitemap follow that setting.
+
+This is statically rendered, not a CMS collection: it is a single document,
+not an ongoing set of editor-published entries. Replace
+`app/features/magazine/assets/aksc-10th-year-magazine.html` to update it.
+The page copy lives in `app/content/pages/magazine/index.md`.
+
 ## Project structure
 
 ```text
