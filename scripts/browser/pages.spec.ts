@@ -7,6 +7,26 @@ import {
   visit,
 } from "./fixtures";
 
+test("helpline uses its new route at every screen size", async ({ page }) => {
+  for (const width of [320, 375, 768, 1440]) {
+    await page.setViewportSize({ width, height: 900 });
+    await visit(page, "/helpline");
+    await expect(page.locator("main h1")).toContainText("Anti-Caste Helpline");
+    await expect(page.locator('link[rel="canonical"]')).toHaveAttribute(
+      "href",
+      "https://akscusa.org/helpline/",
+    );
+    await expect(page.locator('a[href^="/anti-caste-helpline"]')).toHaveCount(
+      0,
+    );
+    const layout = await page.evaluate(() => ({
+      width: document.documentElement.clientWidth,
+      scrollWidth: document.documentElement.scrollWidth,
+    }));
+    expect(layout.scrollWidth).toBeLessThanOrEqual(layout.width + 1);
+  }
+});
+
 for (const width of [320, 375, 768, 1440]) {
   test(`published layouts fit at ${width}px`, async ({ page, browserName }) => {
     test.setTimeout(120_000);
@@ -63,7 +83,7 @@ test("representative pages reflow with 200 percent text", async ({ page }) => {
     await page.setViewportSize({ width, height: 900 });
     for (const path of [
       "/",
-      "/anti-caste-helpline/",
+      "/helpline/",
       "/book-readings/",
       "/who-said-what/",
     ]) {
@@ -90,9 +110,7 @@ test("unknown routes return a branded 404 with recovery links", async ({
   });
   expect(response?.status()).toBe(404);
   await expect(page.locator("main h1")).toContainText("This page is not here");
-  await expect(
-    page.locator('main a[href="/anti-caste-helpline/"]'),
-  ).toHaveCount(1);
+  await expect(page.locator('main a[href="/helpline/"]')).toHaveCount(1);
 });
 
 test("the testimony action reaches the existing submission form", async ({

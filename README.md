@@ -277,8 +277,8 @@ the page and remember the choice in the query string, such as
 never turns into a page per term. Only terms that entries actually use are
 offered.
 Articles remain in the existing CMS collection and are rendered statically.
-Cloudflare Pages permanently redirects old `/blog/` links, including entry
-links, to `/articles/` through `cms/public/_redirects`.
+The static Anti-Caste Helpline page lives at `/helpline/`. Retired `/blog/`
+and `/anti-caste-helpline/` URLs return 404 rather than redirecting.
 `app/features/editorial/` holds the shared list, card, and entry components, so
 a change to one section's chrome lands on all six.
 

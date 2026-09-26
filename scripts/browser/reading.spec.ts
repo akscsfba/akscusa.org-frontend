@@ -91,7 +91,7 @@ test("posters enlarge in place and return focus on dismissal", async ({
   page,
 }) => {
   await page.setViewportSize({ width: 375, height: 800 });
-  await visit(page, "/anti-caste-helpline/");
+  await visit(page, "/helpline/");
   const opener = page.locator("[data-poster-open]").first();
   await opener.click();
   const dialog = page.locator(".poster-viewer");
@@ -103,7 +103,7 @@ test("posters enlarge in place and return focus on dismissal", async ({
   await opener.click();
   await page.mouse.click(2, 300);
   await expect(dialog).toBeHidden();
-  expect(new URL(page.url()).pathname).toBe("/anti-caste-helpline/");
+  expect(new URL(page.url()).pathname).toBe("/helpline/");
 });
 
 test("comic paging keeps keyboard focus at both ends and restores the last panel", async ({

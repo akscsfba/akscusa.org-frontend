@@ -13,7 +13,7 @@ const inventory = readBuildInventory(
 );
 const routes = new Map([
   ["/", "Educate, Organize &amp; Agitate"],
-  ["/anti-caste-helpline/", "Anti-Caste Helpline"],
+  ["/helpline/", "Anti-Caste Helpline"],
   [
     "/testimonies-of-practice-of-caste-in-the-usa/",
     "Testimonies of Caste in the USA",
@@ -138,22 +138,24 @@ try {
   const articleRoutes = inventory.pages
     .map((page) => page.route)
     .filter((route) => route.startsWith("/articles/"));
-  for (const target of [
-    ...articleRoutes,
-    "/articles/?category=books-and-media",
-  ]) {
-    const legacy = target.replace("/articles/", "/blog/");
-    const response = await fetch(`${origin}${legacy}`, {
+  const retiredRoutes = [
+    "/blog",
+    "/blog/",
+    "/blog/?category=books-and-media",
+    ...articleRoutes.map((route) => route.replace("/articles/", "/blog/")),
+    "/anti-caste-helpline",
+    "/anti-caste-helpline/",
+    "/anti-caste-helpline/?ref=support",
+  ];
+  for (const route of retiredRoutes) {
+    const response = await fetch(`${origin}${route}`, {
       redirect: "manual",
       signal: AbortSignal.timeout(5_000),
     });
-    const location = response.headers.get("location");
-    if (
-      response.status !== 301 ||
-      !location ||
-      new URL(location, origin).href !== `${origin}${target}`
-    ) {
-      throw new Error(`${legacy} did not permanently redirect to ${target}.`);
+    if (response.status !== 404) {
+      throw new Error(
+        `${route} returned HTTP ${response.status} instead of 404.`,
+      );
     }
   }
 
@@ -211,6 +213,9 @@ try {
   const listed = new Set(urls.map((url) => new URL(url).pathname));
   if ([...listed].some((path) => /^\/blog(?:\/|$)/.test(path))) {
     throw new Error("The sitemap still lists the retired blog routes.");
+  }
+  if (listed.has("/anti-caste-helpline/")) {
+    throw new Error("The sitemap still lists the retired helpline route.");
   }
   for (const page of inventory.pages) {
     if (

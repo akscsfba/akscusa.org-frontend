@@ -113,7 +113,7 @@ export const joinNavigation = {
  */
 export const helplineNavigation = {
   label: "Anti-Caste Helpline",
-  href: "/anti-caste-helpline",
+  href: "/helpline",
 } as const satisfies NavigationItem;
 
 /**
