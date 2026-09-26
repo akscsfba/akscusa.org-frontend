@@ -8,7 +8,7 @@ hero:
   description: Caste has no place—in India, in America, or anywhere. Together, we can end caste discrimination and build a just world.
   primaryAction:
     label: Get helpline support
-    href: /anti-caste-helpline
+    href: /helpline
   secondaryAction:
     label: Annual Conference 2026
     href: "/conferences/aksc-7th-annual-conference-2026/"

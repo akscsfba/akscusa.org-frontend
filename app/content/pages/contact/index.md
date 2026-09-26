@@ -12,7 +12,7 @@ channels:
   - title: If you need confidential support
     description: The anti-caste helpline offers support, dialogue, and referrals for anyone facing caste-based discrimination or isolation in employment, housing, domestic, social, or community spaces. You may email rather than call if you prefer to remain anonymous.
     actionLabel: Go to the Anti-Caste Helpline
-    actionHref: /anti-caste-helpline/
+    actionHref: /helpline/
     note: If you are in immediate danger, call 911. For an immediate mental health crisis, call or text 988.
 socialHeading: Follow AKSC
 socialIntro: Like and subscribe to AKSC social media platforms for regular updates.

@@ -38,7 +38,7 @@ test("the helpline stays stable while cold mobile fonts load", async ({
     connectionType: "cellular4g",
   });
   await client.send("Emulation.setCPUThrottlingRate", { rate: 4 });
-  await page.goto("/anti-caste-helpline/", { waitUntil: "load" });
+  await page.goto("/helpline/", { waitUntil: "load" });
   await page.evaluate(() => document.fonts.ready);
   await page.waitForTimeout(300);
   const shifts = await page.evaluate(() => {
