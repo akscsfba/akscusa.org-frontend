@@ -3,7 +3,7 @@
 # make every entry the CMS opens a pull request for fail `format:check`.
 cms/content
 
-# Preserve the supplied magazine byte for byte.
+# Avoid reformatting the magazine document and its embedded images.
 app/features/magazine/assets/aksc-10th-year-magazine.html
 
 .astro

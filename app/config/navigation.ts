@@ -1,5 +1,6 @@
 import { actionCollections } from "~/features/actions/sections";
 import { editorialSections } from "~/features/editorial/sections";
+import { magazinePath } from "~/features/magazine/routes";
 import type {
   NavigationGroup,
   NavigationItem,
@@ -128,6 +129,10 @@ export const helplineNavigation = {
  * footer's own column disagree with itself about where they live.
  */
 export const secondaryNavigation = [
+  {
+    label: "Magazine",
+    href: magazinePath,
+  },
   {
     label: "Anti-caste Toolkit",
     href: "/anti-caste-toolkit",
