@@ -24,12 +24,13 @@ Site at `http://localhost:4321`, CMS at `http://localhost:4321/admin/`.
 
 ## Magazine
 
-The magazine page embeds the supplied HTML and offers **Download HTML** and
-**Open full-page** links. The download is unchanged, including embedded images.
-It is a regular site page, currently at `/0xdeadbeef/`. To move it to
-`/magazine/`, change only `magazineSlug` in `app/features/magazine/routes.ts`
-from `"0xdeadbeef"` to `"magazine"`; the page and document routes, links,
-canonical URL, and sitemap follow that setting.
+The magazine page embeds the HTML document and offers **Download magazine** and
+**Open full-page** links. The download serves the same document, including
+embedded images.
+It is a regular site page at `/magazine/`, linked from the footer, with the document at
+`/magazine/document.html`. The shared route setting in
+`app/features/magazine/routes.ts` controls the page and document routes, links,
+canonical URL, and sitemap.
 
 This is statically rendered, not a CMS collection: it is a single document,
 not an ongoing set of editor-published entries. Replace

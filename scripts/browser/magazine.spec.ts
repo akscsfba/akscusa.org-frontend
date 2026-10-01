@@ -7,7 +7,42 @@ import {
 } from "../../app/features/magazine/routes";
 import { accessibilityFailures, expect, test, visit } from "./fixtures";
 
+test("the magazine is published at its permanent URL", async ({
+  page,
+  request,
+}) => {
+  await visit(page, "/magazine/");
+  await expect(page.locator('link[rel="canonical"]')).toHaveAttribute(
+    "href",
+    "https://akscusa.org/magazine/",
+  );
+  await expect(page.locator("iframe")).toHaveAttribute(
+    "src",
+    "/magazine/document.html",
+  );
+  for (const path of ["/0xdeadbeef/", "/0xdeadbeef/document.html"]) {
+    expect((await request.get(path)).status()).toBe(404);
+  }
+});
+
 for (const width of [320, 375, 768, 1440]) {
+  test(`the footer links to the magazine at ${width}px`, async ({ page }) => {
+    await page.setViewportSize({ width, height: 900 });
+    await visit(page, "/");
+    const link = page
+      .getByRole("navigation", { name: "Footer navigation" })
+      .getByRole("link", { name: "Magazine", exact: true });
+    await expect(link).toHaveAttribute("href", "/magazine/");
+    await link.scrollIntoViewIfNeeded();
+    await expect(link).toBeInViewport();
+    await link.focus();
+    await page.keyboard.press("Enter");
+    await expect(page).toHaveURL(/\/magazine\/$/);
+    await expect(
+      page.getByRole("heading", { name: "AKSC 10th Year Magazine" }),
+    ).toBeVisible();
+  });
+
   test(`magazine fits and displays its document at ${width}px`, async ({
     page,
   }) => {
@@ -21,6 +56,9 @@ for (const width of [320, 375, 768, 1440]) {
     await viewer.scrollIntoViewIfNeeded();
     const document = page.frameLocator("iframe");
     await expect(document.locator("main")).toBeVisible();
+    await expect(document.locator(".masthead")).not.toContainText(
+      /draft|placeholder/i,
+    );
     await expect(document.locator("img")).toHaveCount(9);
     await expect
       .poll(() =>
@@ -65,7 +103,7 @@ test("keyboard users can download the unchanged magazine and open it full-page",
   await expect(
     page.getByRole("link", { name: "Skip to content" }),
   ).toBeFocused();
-  const downloadLink = page.getByRole("link", { name: "Download HTML" });
+  const downloadLink = page.getByRole("link", { name: "Download magazine" });
   await downloadLink.focus();
   await expect(downloadLink).toBeFocused();
   const downloading = page.waitForEvent("download");
@@ -108,10 +146,10 @@ test("the magazine page is accessible and reflows with enlarged text", async ({
     }));
     expect(layout.scrollWidth).toBeLessThanOrEqual(layout.width + 1);
     await page
-      .getByRole("link", { name: "Download HTML" })
+      .getByRole("link", { name: "Download magazine" })
       .scrollIntoViewIfNeeded();
     await expect(
-      page.getByRole("link", { name: "Download HTML" }),
+      page.getByRole("link", { name: "Download magazine" }),
     ).toBeVisible();
     await expect(
       page.getByRole("link", { name: "Open full-page" }),
