@@ -26,6 +26,9 @@ test("Articles uses its new name and routes at every screen size", async ({
     const entry = page.locator('main a[href^="/articles/"]').first();
     await entry.click();
     await expect(page).toHaveURL(/\/articles\/[^/]+\/$/);
+    // Click navigation can finish before the entry's stylesheets arrive.
+    await page.waitForLoadState("load");
+    await page.evaluate(() => document.fonts.ready);
     await expect(
       page.getByRole("link", { name: "Articles", exact: true }).first(),
     ).toHaveAttribute("href", /^\/articles\/?$/);
