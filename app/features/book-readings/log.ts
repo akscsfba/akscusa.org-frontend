@@ -16,6 +16,7 @@ import {
   matchesSearch,
   searchTerms,
 } from "~/features/book-readings/search";
+import { readReadingFilters, writeReadingFilters } from "./url-state";
 
 export function mountReadingLog(): void {
   const controls = document.querySelector<HTMLElement>("[data-log-controls]");
@@ -27,8 +28,8 @@ export function mountReadingLog(): void {
   if (!controls || !input || !status || !empty || !clear) return;
 
   /*
-   * Each dropdown names the entry attribute it reads, so a fourth one can be
-   * added in the component without this file learning about it.
+   * Each dropdown names the entry attribute it reads. The URL keys below are
+   * explicitly bounded so unrelated query parameters survive filtering.
    *
    * Collected by narrowing rather than by a `querySelectorAll` type argument:
    * the Cloudflare runtime types in scope declare their own `Element`, whose
@@ -46,6 +47,16 @@ export function mountReadingLog(): void {
   );
 
   if (entries.length === 0) return;
+
+  const facetKeys = ["book", "author", "year"];
+  const facetOptions = facetKeys.map((key) => ({
+    key,
+    values: Array.from(
+      facets.find((select) => select.dataset.logFacet === key)?.options ?? [],
+      (option) => option.value,
+    ),
+  }));
+  let unavailable: string[] = [];
 
   controls.hidden = false;
 
@@ -73,23 +84,62 @@ export function mountReadingLog(): void {
     }
 
     empty.hidden = visible > 0;
-    status.textContent = logStatusLabel(visible, entries.length);
+    status.textContent =
+      logStatusLabel(visible, entries.length) +
+      (unavailable.length > 0
+        ? " Some saved filters are no longer available and were cleared."
+        : "");
     // Offered only once there is something to clear, so the control appears
     // as the answer to a filter rather than sitting there unexplained.
     clear.hidden = !isFiltered();
   };
 
-  input.addEventListener("input", apply);
-  for (const select of facets) select.addEventListener("change", apply);
+  const save = () => {
+    const selected = Object.fromEntries(
+      facetKeys.map((key) => [
+        key,
+        facets.find((select) => select.dataset.logFacet === key)?.value ?? "",
+      ]),
+    );
+    const url = writeReadingFilters(
+      new URL(window.location.href),
+      input.value,
+      selected,
+    );
+    window.history.replaceState(window.history.state, "", url);
+  };
+
+  const update = () => {
+    unavailable = [];
+    apply();
+    save();
+  };
+
+  const restore = () => {
+    const state = readReadingFilters(
+      new URLSearchParams(window.location.search),
+      facetOptions,
+    );
+    input.value = state.query;
+    unavailable = state.unavailable;
+    for (const select of facets)
+      select.value = state.selected[select.dataset.logFacet ?? ""] ?? "";
+    apply();
+    save();
+  };
+
+  input.addEventListener("input", update);
+  for (const select of facets) select.addEventListener("change", update);
+  window.addEventListener("popstate", restore);
 
   clear.addEventListener("click", () => {
     input.value = "";
     for (const select of facets) select.value = "";
-    apply();
+    update();
     // Back to the field a reader would type in next, rather than to a button
     // that has just removed itself from the page.
     input.focus();
   });
 
-  apply();
+  restore();
 }

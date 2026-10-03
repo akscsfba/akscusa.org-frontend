@@ -48,6 +48,11 @@ const { entries, opener } = await loadReadingCircle();
     backgroundImage={readingGathering}
   >
     {opener && <NextSession session={opener} />}
+    <p class="mt-6">
+      <a class="btn btn-outline-light btn-sm" href="#reading-log">
+        Browse past readings
+      </a>
+    </p>
   </PageMasthead>
 
   <MeetingTerms

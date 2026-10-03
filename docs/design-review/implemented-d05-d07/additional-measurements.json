@@ -1,0 +1,38 @@
+{
+  "method": "Chromium screenshots, rendered background pixels across the full matching-gift paragraph and the donation action's outline perimeter; guidance 85% white, focus accent-300. Conservative minimum contrast across each sampled area.",
+  "donationContrast": [
+    {
+      "width": 320,
+      "minimumTextContrast": 5.781448627650477,
+      "minimumFocusContrast": 3.6606780496002544,
+      "focusColor": "rgb(127, 224, 210)"
+    },
+    {
+      "width": 375,
+      "minimumTextContrast": 5.886134785557602,
+      "minimumFocusContrast": 3.741440112173906,
+      "focusColor": "rgb(127, 224, 210)"
+    },
+    {
+      "width": 768,
+      "minimumTextContrast": 6.602571637982456,
+      "minimumFocusContrast": 4.237250667631084,
+      "focusColor": "rgb(127, 224, 210)"
+    },
+    {
+      "width": 1280,
+      "minimumTextContrast": 11.492337095307837,
+      "minimumFocusContrast": 11.26199341430359,
+      "focusColor": "rgb(127, 224, 210)"
+    },
+    {
+      "width": 1920,
+      "minimumTextContrast": 11.728690800019713,
+      "minimumFocusContrast": 11.26199341430359,
+      "focusColor": "rgb(127, 224, 210)"
+    }
+  ],
+  "filterStatusContrast": 5.649587428262573,
+  "leadNoteContrast": 6.05597742396095,
+  "emptyArchive": "Browser-only fixture: change the matching archive card's category, leaving the lead as the selected category's sole entry. No editorial data was modified."
+}

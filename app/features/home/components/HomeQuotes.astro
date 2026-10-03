@@ -41,9 +41,18 @@ const { quotes } = Astro.props;
           remain a touch-scrollable, scroll-snapping list rather than leaving a
           row of controls that does nothing.
         -->
-        <div class="flex items-center" data-carousel-controls hidden>
+        <div
+          class="flex flex-wrap items-center gap-2"
+          data-carousel-controls
+          hidden
+        >
+          <p
+            class="mr-2 text-sm text-white/75 tabular-nums"
+            data-carousel-position
+          >
+          </p>
           <button
-            class="inline-flex size-10 items-center justify-center border border-white/25 text-white transition-colors hover:border-white/70 hover:bg-white/10"
+            class="inline-flex size-11 items-center justify-center border border-white/25 text-white transition-colors hover:border-white/70 hover:bg-white/10"
             type="button"
             aria-label="Previous quotation"
             data-carousel-previous
@@ -63,7 +72,7 @@ const { quotes } = Astro.props;
           </button>
 
           <button
-            class="-ml-px inline-flex size-10 items-center justify-center border border-white/25 text-white transition-colors hover:border-white/70 hover:bg-white/10"
+            class="inline-flex size-11 items-center justify-center border border-white/25 text-white transition-colors hover:border-white/70 hover:bg-white/10"
             type="button"
             aria-label="Pause quotations"
             data-carousel-toggle
@@ -89,7 +98,7 @@ const { quotes } = Astro.props;
           </button>
 
           <button
-            class="-ml-px inline-flex size-10 items-center justify-center border border-white/25 text-white transition-colors hover:border-white/70 hover:bg-white/10"
+            class="inline-flex size-11 items-center justify-center border border-white/25 text-white transition-colors hover:border-white/70 hover:bg-white/10"
             type="button"
             aria-label="Next quotation"
             data-carousel-next
@@ -145,7 +154,7 @@ const { quotes } = Astro.props;
                   {quote.text}
                 </blockquote>
 
-                <figcaption class="mt-8 border-t border-white/20 pt-4 sm:mt-10">
+                <figcaption class="mt-8 sm:mt-10">
                   <p
                     class="font-display text-xs font-semibold tracking-[0.16em] text-accent-300 uppercase"
                     data-carousel-label

@@ -1,0 +1,670 @@
+{
+  "method": "Conservative minimum over the entire metadata paragraph rectangle plus 6px, with text and decorations hidden and the loaded image/gradient preserved. Text alpha composited onto each pixel; accent-300 focus tested across the same background.",
+  "results": [
+    {
+      "path": "/programs/",
+      "width": 320,
+      "text": "17 programs",
+      "textRatio": 10.85937762596436,
+      "focusRatio": null
+    },
+    {
+      "path": "/programs/",
+      "width": 320,
+      "text": "Pictured: Jyotirao and Savitribai Phule, sculpted at Phulewada in Pune",
+      "textRatio": 10.14387061889948,
+      "focusRatio": null
+    },
+    {
+      "path": "/programs/",
+      "width": 320,
+      "text": "Image: Wander-earth / Wikimedia Commons · CC BY-SA 4.0 · cropped and recolored",
+      "textRatio": 8.684870066970728,
+      "focusRatio": 5.5811852035796035
+    },
+    {
+      "path": "/join/",
+      "width": 320,
+      "text": "Pictured: Bust of Savitribai Phule, Maharashtra Sadan, New Delhi",
+      "textRatio": 9.232605141759961,
+      "focusRatio": null
+    },
+    {
+      "path": "/join/",
+      "width": 320,
+      "text": "Image: Ashish Bhatnagar / Wikimedia Commons · CC BY-SA 3.0 · cropped and recolored",
+      "textRatio": 8.27654053495224,
+      "focusRatio": 5.318779119814084
+    },
+    {
+      "path": "/organization/constitution/",
+      "width": 320,
+      "text": "Pictured: Statue of B. R. Ambedkar holding the Constitution of India, Amritsar",
+      "textRatio": 10.72030157696744,
+      "focusRatio": null
+    },
+    {
+      "path": "/organization/constitution/",
+      "width": 320,
+      "text": "Image: Kritzolina / Wikimedia Commons · CC BY-SA 4.0 · cropped and recolored",
+      "textRatio": 8.903606964037346,
+      "focusRatio": 5.721752779602181
+    },
+    {
+      "path": "/articles/",
+      "width": 320,
+      "text": "8 articles",
+      "textRatio": 8.089131140242205,
+      "focusRatio": null
+    },
+    {
+      "path": "/articles/",
+      "width": 320,
+      "text": "Pictured: B. R. Ambedkar",
+      "textRatio": 8.954666806704962,
+      "focusRatio": null
+    },
+    {
+      "path": "/press-releases/",
+      "width": 320,
+      "text": "17 statements",
+      "textRatio": 8.15984450969336,
+      "focusRatio": null
+    },
+    {
+      "path": "/press-releases/",
+      "width": 320,
+      "text": "Pictured: Martin Luther King Jr. at a press conference, 1964",
+      "textRatio": 9.325882412721338,
+      "focusRatio": null
+    },
+    {
+      "path": "/actions/",
+      "width": 320,
+      "text": "Pictured: Martin Luther King Jr. speaking at the March on Washington for Jobs and Freedom, 1963",
+      "textRatio": 8.702968403241332,
+      "focusRatio": null
+    },
+    {
+      "path": "/testimonies-of-practice-of-caste-in-the-usa/",
+      "width": 320,
+      "text": "Pictured: Marchers at the March on Washington for Jobs and Freedom, 1963",
+      "textRatio": 8.58172979736486,
+      "focusRatio": null
+    },
+    {
+      "path": "/anti-caste-toolkit/",
+      "width": 320,
+      "text": "Pictured: Malcolm X, 1964",
+      "textRatio": 8.817209704091399,
+      "focusRatio": null
+    },
+    {
+      "path": "/organization/",
+      "width": 320,
+      "text": "Pictured: Martin Luther King Jr.",
+      "textRatio": 9.917429376929942,
+      "focusRatio": null
+    },
+    {
+      "path": "/organization/general-body/",
+      "width": 320,
+      "text": "6 meetings",
+      "textRatio": 8.08959504443194,
+      "focusRatio": null
+    },
+    {
+      "path": "/organization/general-body/",
+      "width": 320,
+      "text": "Pictured: B. R. Ambedkar, 1950",
+      "textRatio": 8.919621035249088,
+      "focusRatio": null
+    },
+    {
+      "path": "/interventions/",
+      "width": 320,
+      "text": "14 interventions",
+      "textRatio": 9.111296674621777,
+      "focusRatio": null
+    },
+    {
+      "path": "/interventions/",
+      "width": 320,
+      "text": "Pictured: C. N. Annadurai and Periyar E. V. Ramasamy",
+      "textRatio": 8.954666806704962,
+      "focusRatio": null
+    },
+    {
+      "path": "/programs/",
+      "width": 375,
+      "text": "17 programs",
+      "textRatio": 9.852446659447606,
+      "focusRatio": null
+    },
+    {
+      "path": "/programs/",
+      "width": 375,
+      "text": "Pictured: Jyotirao and Savitribai Phule, sculpted at Phulewada in Pune",
+      "textRatio": 9.819903978668627,
+      "focusRatio": null
+    },
+    {
+      "path": "/programs/",
+      "width": 375,
+      "text": "Image: Wander-earth / Wikimedia Commons · CC BY-SA 4.0 · cropped and recolored",
+      "textRatio": 8.766937053536937,
+      "focusRatio": 5.6339241677314815
+    },
+    {
+      "path": "/join/",
+      "width": 375,
+      "text": "Pictured: Bust of Savitribai Phule, Maharashtra Sadan, New Delhi",
+      "textRatio": 9.129345161390013,
+      "focusRatio": null
+    },
+    {
+      "path": "/join/",
+      "width": 375,
+      "text": "Image: Ashish Bhatnagar / Wikimedia Commons · CC BY-SA 3.0 · cropped and recolored",
+      "textRatio": 8.30877764194931,
+      "focusRatio": 5.339495752669943
+    },
+    {
+      "path": "/organization/constitution/",
+      "width": 375,
+      "text": "Pictured: Statue of B. R. Ambedkar holding the Constitution of India, Amritsar",
+      "textRatio": 10.399603798368027,
+      "focusRatio": null
+    },
+    {
+      "path": "/organization/constitution/",
+      "width": 375,
+      "text": "Image: Kritzolina / Wikimedia Commons · CC BY-SA 4.0 · cropped and recolored",
+      "textRatio": 8.919621035249088,
+      "focusRatio": 5.732043952251495
+    },
+    {
+      "path": "/articles/",
+      "width": 375,
+      "text": "8 articles",
+      "textRatio": 8.315498842770534,
+      "focusRatio": null
+    },
+    {
+      "path": "/articles/",
+      "width": 375,
+      "text": "Pictured: B. R. Ambedkar",
+      "textRatio": 9.202427944083267,
+      "focusRatio": null
+    },
+    {
+      "path": "/press-releases/",
+      "width": 375,
+      "text": "17 statements",
+      "textRatio": 8.40111730530976,
+      "focusRatio": null
+    },
+    {
+      "path": "/press-releases/",
+      "width": 375,
+      "text": "Pictured: Martin Luther King Jr. at a press conference, 1964",
+      "textRatio": 9.632368884000696,
+      "focusRatio": null
+    },
+    {
+      "path": "/actions/",
+      "width": 375,
+      "text": "Pictured: Martin Luther King Jr. speaking at the March on Washington for Jobs and Freedom, 1963",
+      "textRatio": 8.83273328051952,
+      "focusRatio": null
+    },
+    {
+      "path": "/testimonies-of-practice-of-caste-in-the-usa/",
+      "width": 375,
+      "text": "Pictured: Marchers at the March on Washington for Jobs and Freedom, 1963",
+      "textRatio": 8.798223825681688,
+      "focusRatio": null
+    },
+    {
+      "path": "/anti-caste-toolkit/",
+      "width": 375,
+      "text": "Pictured: Malcolm X, 1964",
+      "textRatio": 8.801560932857278,
+      "focusRatio": null
+    },
+    {
+      "path": "/organization/",
+      "width": 375,
+      "text": "Pictured: Martin Luther King Jr.",
+      "textRatio": 10.047236588289913,
+      "focusRatio": null
+    },
+    {
+      "path": "/organization/general-body/",
+      "width": 375,
+      "text": "6 meetings",
+      "textRatio": 8.145891542072343,
+      "focusRatio": null
+    },
+    {
+      "path": "/organization/general-body/",
+      "width": 375,
+      "text": "Pictured: B. R. Ambedkar, 1950",
+      "textRatio": 8.817209704091399,
+      "focusRatio": null
+    },
+    {
+      "path": "/interventions/",
+      "width": 375,
+      "text": "14 interventions",
+      "textRatio": 8.256675095656414,
+      "focusRatio": null
+    },
+    {
+      "path": "/interventions/",
+      "width": 375,
+      "text": "Pictured: C. N. Annadurai and Periyar E. V. Ramasamy",
+      "textRatio": 8.935507641491823,
+      "focusRatio": null
+    },
+    {
+      "path": "/programs/",
+      "width": 768,
+      "text": "17 programs",
+      "textRatio": 9.126703959269568,
+      "focusRatio": null
+    },
+    {
+      "path": "/programs/",
+      "width": 768,
+      "text": "Pictured: Jyotirao and Savitribai Phule, sculpted at Phulewada in Pune",
+      "textRatio": 10.39700988269801,
+      "focusRatio": null
+    },
+    {
+      "path": "/programs/",
+      "width": 768,
+      "text": "Image: Wander-earth / Wikimedia Commons · CC BY-SA 4.0 · cropped and recolored",
+      "textRatio": 10.068317468344658,
+      "focusRatio": 6.470234332344751
+    },
+    {
+      "path": "/join/",
+      "width": 768,
+      "text": "Pictured: Bust of Savitribai Phule, Maharashtra Sadan, New Delhi",
+      "textRatio": 9.632368884000696,
+      "focusRatio": null
+    },
+    {
+      "path": "/join/",
+      "width": 768,
+      "text": "Image: Ashish Bhatnagar / Wikimedia Commons · CC BY-SA 3.0 · cropped and recolored",
+      "textRatio": 9.074843488435338,
+      "focusRatio": 5.831795042631203
+    },
+    {
+      "path": "/organization/constitution/",
+      "width": 768,
+      "text": "Pictured: Statue of B. R. Ambedkar holding the Constitution of India, Amritsar",
+      "textRatio": 11.046948814636226,
+      "focusRatio": null
+    },
+    {
+      "path": "/organization/constitution/",
+      "width": 768,
+      "text": "Image: Kritzolina / Wikimedia Commons · CC BY-SA 4.0 · cropped and recolored",
+      "textRatio": 10.122990384805123,
+      "focusRatio": 6.505368959579551
+    },
+    {
+      "path": "/articles/",
+      "width": 768,
+      "text": "8 articles",
+      "textRatio": 8.737446256428983,
+      "focusRatio": null
+    },
+    {
+      "path": "/articles/",
+      "width": 768,
+      "text": "Pictured: B. R. Ambedkar",
+      "textRatio": 9.55895448935098,
+      "focusRatio": null
+    },
+    {
+      "path": "/press-releases/",
+      "width": 768,
+      "text": "17 statements",
+      "textRatio": 8.272428355911558,
+      "focusRatio": null
+    },
+    {
+      "path": "/press-releases/",
+      "width": 768,
+      "text": "Pictured: Martin Luther King Jr. at a press conference, 1964",
+      "textRatio": 9.76406531715212,
+      "focusRatio": null
+    },
+    {
+      "path": "/actions/",
+      "width": 768,
+      "text": "Pictured: Martin Luther King Jr. speaking at the March on Washington for Jobs and Freedom, 1963",
+      "textRatio": 9.816777728534046,
+      "focusRatio": null
+    },
+    {
+      "path": "/testimonies-of-practice-of-caste-in-the-usa/",
+      "width": 768,
+      "text": "Pictured: Marchers at the March on Washington for Jobs and Freedom, 1963",
+      "textRatio": 9.505163109188214,
+      "focusRatio": null
+    },
+    {
+      "path": "/anti-caste-toolkit/",
+      "width": 768,
+      "text": "Pictured: Malcolm X, 1964",
+      "textRatio": 9.342847678926425,
+      "focusRatio": null
+    },
+    {
+      "path": "/organization/",
+      "width": 768,
+      "text": "Pictured: Martin Luther King Jr.",
+      "textRatio": 10.698694126591356,
+      "focusRatio": null
+    },
+    {
+      "path": "/organization/general-body/",
+      "width": 768,
+      "text": "6 meetings",
+      "textRatio": 8.57464481114607,
+      "focusRatio": null
+    },
+    {
+      "path": "/organization/general-body/",
+      "width": 768,
+      "text": "Pictured: B. R. Ambedkar, 1950",
+      "textRatio": 9.52495500512956,
+      "focusRatio": null
+    },
+    {
+      "path": "/interventions/",
+      "width": 768,
+      "text": "14 interventions",
+      "textRatio": 8.795998930902245,
+      "focusRatio": null
+    },
+    {
+      "path": "/interventions/",
+      "width": 768,
+      "text": "Pictured: C. N. Annadurai and Periyar E. V. Ramasamy",
+      "textRatio": 9.505163109188214,
+      "focusRatio": null
+    },
+    {
+      "path": "/programs/",
+      "width": 1280,
+      "text": "17 programs",
+      "textRatio": 6.190084636319173,
+      "focusRatio": null
+    },
+    {
+      "path": "/programs/",
+      "width": 1280,
+      "text": "Pictured: Jyotirao and Savitribai Phule, sculpted at Phulewada in Pune",
+      "textRatio": 12.995043995466597,
+      "focusRatio": null
+    },
+    {
+      "path": "/programs/",
+      "width": 1280,
+      "text": "Image: Wander-earth / Wikimedia Commons · CC BY-SA 4.0 · cropped and recolored",
+      "textRatio": 12.925602973573016,
+      "focusRatio": 8.30642064960825
+    },
+    {
+      "path": "/join/",
+      "width": 1280,
+      "text": "Pictured: Bust of Savitribai Phule, Maharashtra Sadan, New Delhi",
+      "textRatio": 11.554381059940756,
+      "focusRatio": null
+    },
+    {
+      "path": "/join/",
+      "width": 1280,
+      "text": "Image: Ashish Bhatnagar / Wikimedia Commons · CC BY-SA 3.0 · cropped and recolored",
+      "textRatio": 12.053256821972589,
+      "focusRatio": 7.745822114895788
+    },
+    {
+      "path": "/organization/constitution/",
+      "width": 1280,
+      "text": "Pictured: Statue of B. R. Ambedkar holding the Constitution of India, Amritsar",
+      "textRatio": 13.54198849406977,
+      "focusRatio": null
+    },
+    {
+      "path": "/organization/constitution/",
+      "width": 1280,
+      "text": "Image: Kritzolina / Wikimedia Commons · CC BY-SA 4.0 · cropped and recolored",
+      "textRatio": 13.54198849406977,
+      "focusRatio": 8.702530403717343
+    },
+    {
+      "path": "/articles/",
+      "width": 1280,
+      "text": "8 articles",
+      "textRatio": 6.9502543388304225,
+      "focusRatio": null
+    },
+    {
+      "path": "/articles/",
+      "width": 1280,
+      "text": "Pictured: B. R. Ambedkar",
+      "textRatio": 13.546620513104845,
+      "focusRatio": null
+    },
+    {
+      "path": "/press-releases/",
+      "width": 1280,
+      "text": "17 statements",
+      "textRatio": 7.024407586190515,
+      "focusRatio": null
+    },
+    {
+      "path": "/press-releases/",
+      "width": 1280,
+      "text": "Pictured: Martin Luther King Jr. at a press conference, 1964",
+      "textRatio": 13.54198849406977,
+      "focusRatio": null
+    },
+    {
+      "path": "/actions/",
+      "width": 1280,
+      "text": "Pictured: Martin Luther King Jr. speaking at the March on Washington for Jobs and Freedom, 1963",
+      "textRatio": 10.283417869898422,
+      "focusRatio": null
+    },
+    {
+      "path": "/testimonies-of-practice-of-caste-in-the-usa/",
+      "width": 1280,
+      "text": "Pictured: Marchers at the March on Washington for Jobs and Freedom, 1963",
+      "textRatio": 11.76938606713254,
+      "focusRatio": null
+    },
+    {
+      "path": "/anti-caste-toolkit/",
+      "width": 1280,
+      "text": "Pictured: Malcolm X, 1964",
+      "textRatio": 13.54198849406977,
+      "focusRatio": null
+    },
+    {
+      "path": "/organization/",
+      "width": 1280,
+      "text": "Pictured: Martin Luther King Jr.",
+      "textRatio": 13.54198849406977,
+      "focusRatio": null
+    },
+    {
+      "path": "/organization/general-body/",
+      "width": 1280,
+      "text": "6 meetings",
+      "textRatio": 6.639620318046288,
+      "focusRatio": null
+    },
+    {
+      "path": "/organization/general-body/",
+      "width": 1280,
+      "text": "Pictured: B. R. Ambedkar, 1950",
+      "textRatio": 10.761067649626888,
+      "focusRatio": null
+    },
+    {
+      "path": "/interventions/",
+      "width": 1280,
+      "text": "14 interventions",
+      "textRatio": 6.998373581732448,
+      "focusRatio": null
+    },
+    {
+      "path": "/interventions/",
+      "width": 1280,
+      "text": "Pictured: C. N. Annadurai and Periyar E. V. Ramasamy",
+      "textRatio": 9.690020411825657,
+      "focusRatio": null
+    },
+    {
+      "path": "/programs/",
+      "width": 1920,
+      "text": "17 programs",
+      "textRatio": 9.560977012708387,
+      "focusRatio": null
+    },
+    {
+      "path": "/programs/",
+      "width": 1920,
+      "text": "Pictured: Jyotirao and Savitribai Phule, sculpted at Phulewada in Pune",
+      "textRatio": 13.706882491034198,
+      "focusRatio": null
+    },
+    {
+      "path": "/programs/",
+      "width": 1920,
+      "text": "Image: Wander-earth / Wikimedia Commons · CC BY-SA 4.0 · cropped and recolored",
+      "textRatio": 13.726851119216304,
+      "focusRatio": 8.821329250471143
+    },
+    {
+      "path": "/join/",
+      "width": 1920,
+      "text": "Pictured: Bust of Savitribai Phule, Maharashtra Sadan, New Delhi",
+      "textRatio": 13.586461216641773,
+      "focusRatio": null
+    },
+    {
+      "path": "/join/",
+      "width": 1920,
+      "text": "Image: Ashish Bhatnagar / Wikimedia Commons · CC BY-SA 3.0 · cropped and recolored",
+      "textRatio": 13.706882491034198,
+      "focusRatio": 8.80849674851241
+    },
+    {
+      "path": "/organization/constitution/",
+      "width": 1920,
+      "text": "Pictured: Statue of B. R. Ambedkar holding the Constitution of India, Amritsar",
+      "textRatio": 13.586461216641773,
+      "focusRatio": null
+    },
+    {
+      "path": "/organization/constitution/",
+      "width": 1920,
+      "text": "Image: Kritzolina / Wikimedia Commons · CC BY-SA 4.0 · cropped and recolored",
+      "textRatio": 13.586461216641773,
+      "focusRatio": 8.73111004846364
+    },
+    {
+      "path": "/articles/",
+      "width": 1920,
+      "text": "8 articles",
+      "textRatio": 9.960946861066699,
+      "focusRatio": null
+    },
+    {
+      "path": "/articles/",
+      "width": 1920,
+      "text": "Pictured: B. R. Ambedkar",
+      "textRatio": 13.706882491034198,
+      "focusRatio": null
+    },
+    {
+      "path": "/press-releases/",
+      "width": 1920,
+      "text": "17 statements",
+      "textRatio": 9.978543512204064,
+      "focusRatio": null
+    },
+    {
+      "path": "/press-releases/",
+      "width": 1920,
+      "text": "Pictured: Martin Luther King Jr. at a press conference, 1964",
+      "textRatio": 13.586461216641773,
+      "focusRatio": null
+    },
+    {
+      "path": "/actions/",
+      "width": 1920,
+      "text": "Pictured: Martin Luther King Jr. speaking at the March on Washington for Jobs and Freedom, 1963",
+      "textRatio": 13.586461216641773,
+      "focusRatio": null
+    },
+    {
+      "path": "/testimonies-of-practice-of-caste-in-the-usa/",
+      "width": 1920,
+      "text": "Pictured: Marchers at the March on Washington for Jobs and Freedom, 1963",
+      "textRatio": 13.726851119216304,
+      "focusRatio": null
+    },
+    {
+      "path": "/anti-caste-toolkit/",
+      "width": 1920,
+      "text": "Pictured: Malcolm X, 1964",
+      "textRatio": 13.586461216641773,
+      "focusRatio": null
+    },
+    {
+      "path": "/organization/",
+      "width": 1920,
+      "text": "Pictured: Martin Luther King Jr.",
+      "textRatio": 13.586461216641773,
+      "focusRatio": null
+    },
+    {
+      "path": "/organization/general-body/",
+      "width": 1920,
+      "text": "6 meetings",
+      "textRatio": 9.016577870122102,
+      "focusRatio": null
+    },
+    {
+      "path": "/organization/general-body/",
+      "width": 1920,
+      "text": "Pictured: B. R. Ambedkar, 1950",
+      "textRatio": 13.706882491034198,
+      "focusRatio": null
+    },
+    {
+      "path": "/interventions/",
+      "width": 1920,
+      "text": "14 interventions",
+      "textRatio": 8.15888884334069,
+      "focusRatio": null
+    },
+    {
+      "path": "/interventions/",
+      "width": 1920,
+      "text": "Pictured: C. N. Annadurai and Periyar E. V. Ramasamy",
+      "textRatio": 13.706882491034198,
+      "focusRatio": null
+    }
+  ]
+}

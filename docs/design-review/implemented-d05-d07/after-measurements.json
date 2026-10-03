@@ -1,0 +1,683 @@
+{
+  "phase": "after",
+  "browser": "Chromium",
+  "viewportHeight": 800,
+  "errors": [],
+  "measurements": [
+    {
+      "path": "/donate/",
+      "width": 320,
+      "layout": {
+        "viewport": 320,
+        "scrollWidth": 320
+      },
+      "donation": [
+        {
+          "x": 20,
+          "y": 626.484375,
+          "width": 154.953125,
+          "height": 44,
+          "text": "Donate to AKSC"
+        }
+      ],
+      "proseDigest": "77bbac9e2d3e2b731772e5ac174a8fa7d0f1b6f15f3bbda4bf502f8cd141a1bc",
+      "destinations": ["https://bit.ly/donate-aksc", "/join/"]
+    },
+    {
+      "path": "/articles/",
+      "width": 320,
+      "category": "ambedkarite-thought",
+      "url": "http://127.0.0.1:4323/articles/?category=ambedkarite-thought",
+      "layout": {
+        "viewport": 320,
+        "scrollWidth": 320
+      },
+      "allCardsDigest": "6015d6e29c30a2a782628e4bc0181b647aa14571adf4503fef25e6f1a565740c",
+      "leadHref": "/articles/hindus-in-america-practice-caste/",
+      "leadTitle": "Hindus in America Practice Caste",
+      "leadSummary": "Federal law protects people from discrimination on race, colour, religion, sex and national origin, but not caste. A high school student sets out why the caste practised by Hindus in America needs naming and outlawing.",
+      "masthead": [
+        {
+          "x": 20,
+          "y": -894.515625,
+          "width": 280,
+          "height": 16,
+          "text": "8 articles"
+        }
+      ],
+      "controls": [
+        {
+          "x": 20,
+          "y": 119.5625,
+          "width": 280,
+          "height": 285.5625,
+          "text": "Filters apply to earlier articles only. The latest article above is not counted here.All articlesAmbedkarite ThoughtBooks and MediaCaste in the USACulture and SocietyHistory and Movements2 earlier articles in Ambedkarite Thought."
+        }
+      ],
+      "status": [
+        {
+          "x": 20,
+          "y": 381.125,
+          "width": 280,
+          "height": 24,
+          "text": "2 earlier articles in Ambedkarite Thought."
+        }
+      ],
+      "firstResult": [
+        {
+          "x": 45,
+          "y": 526.421875,
+          "width": 230,
+          "height": 75.234375,
+          "text": "Dr. Ambedkar's vision of equality through Hindu Code Bill"
+        },
+        {
+          "x": 45,
+          "y": 1072.484375,
+          "width": 230,
+          "height": 50.15625,
+          "text": "Legacy of Dr. Ambedkar"
+        }
+      ],
+      "visibleCards": 2
+    },
+    {
+      "path": "/interventions/",
+      "width": 320,
+      "category": "legal",
+      "url": "http://127.0.0.1:4323/interventions/?kind=legal",
+      "layout": {
+        "viewport": 320,
+        "scrollWidth": 320
+      },
+      "allCardsDigest": "f190a23a8b4140980364f021282128b40ccffd75842081a7dd69b38c2d44a320",
+      "leadHref": "/interventions/deep-dive-caste-litigation-in-the-usa/",
+      "leadTitle": "Deep Dive: Caste Litigation in the USA",
+      "leadSummary": "A reading list of long-form reporting and analysis on the caste discrimination cases moving through United States courts.",
+      "masthead": [
+        {
+          "x": 20,
+          "y": -752.515625,
+          "width": 280,
+          "height": 16,
+          "text": "14 interventions"
+        }
+      ],
+      "controls": [
+        {
+          "x": 20,
+          "y": 120.390625,
+          "width": 280,
+          "height": 212.78125,
+          "text": "Filters apply to earlier interventions only. The latest intervention above is not counted here.All interventionsLegislativeLegalCampaignEducationTestimony2 earlier interventions in Legal."
+        }
+      ],
+      "status": [
+        {
+          "x": 20,
+          "y": 309.171875,
+          "width": 280,
+          "height": 24,
+          "text": "2 earlier interventions in Legal."
+        }
+      ],
+      "firstResult": [
+        {
+          "x": 45,
+          "y": 432.171875,
+          "width": 230,
+          "height": 50.15625,
+          "text": "FAQ about the BAPS Case"
+        },
+        {
+          "x": 45,
+          "y": 926,
+          "width": 230,
+          "height": 75.234375,
+          "text": "Cisco Caste Discrimination — News coverage list"
+        }
+      ],
+      "visibleCards": 2
+    },
+    {
+      "path": "/donate/",
+      "width": 375,
+      "layout": {
+        "viewport": 375,
+        "scrollWidth": 375
+      },
+      "donation": [
+        {
+          "x": 20,
+          "y": 593.828125,
+          "width": 154.953125,
+          "height": 44,
+          "text": "Donate to AKSC"
+        }
+      ],
+      "proseDigest": "77bbac9e2d3e2b731772e5ac174a8fa7d0f1b6f15f3bbda4bf502f8cd141a1bc",
+      "destinations": ["https://bit.ly/donate-aksc", "/join/"]
+    },
+    {
+      "path": "/articles/",
+      "width": 375,
+      "category": "ambedkarite-thought",
+      "url": "http://127.0.0.1:4323/articles/?category=ambedkarite-thought",
+      "layout": {
+        "viewport": 375,
+        "scrollWidth": 375
+      },
+      "allCardsDigest": "6015d6e29c30a2a782628e4bc0181b647aa14571adf4503fef25e6f1a565740c",
+      "leadHref": "/articles/hindus-in-america-practice-caste/",
+      "leadTitle": "Hindus in America Practice Caste",
+      "leadSummary": "Federal law protects people from discrimination on race, colour, religion, sex and national origin, but not caste. A high school student sets out why the caste practised by Hindus in America needs naming and outlawing.",
+      "masthead": [
+        {
+          "x": 20,
+          "y": -863.171875,
+          "width": 335,
+          "height": 16,
+          "text": "8 articles"
+        }
+      ],
+      "controls": [
+        {
+          "x": 20,
+          "y": 120.296875,
+          "width": 335,
+          "height": 237.171875,
+          "text": "Filters apply to earlier articles only. The latest article above is not counted here.All articlesAmbedkarite ThoughtBooks and MediaCaste in the USACulture and SocietyHistory and Movements2 earlier articles in Ambedkarite Thought."
+        }
+      ],
+      "status": [
+        {
+          "x": 20,
+          "y": 333.46875,
+          "width": 335,
+          "height": 24,
+          "text": "2 earlier articles in Ambedkarite Thought."
+        }
+      ],
+      "firstResult": [
+        {
+          "x": 45,
+          "y": 456.46875,
+          "width": 285,
+          "height": 75.234375,
+          "text": "Dr. Ambedkar's vision of equality through Hindu Code Bill"
+        },
+        {
+          "x": 45,
+          "y": 973.6875,
+          "width": 285,
+          "height": 25.078125,
+          "text": "Legacy of Dr. Ambedkar"
+        }
+      ],
+      "visibleCards": 2
+    },
+    {
+      "path": "/interventions/",
+      "width": 375,
+      "category": "legal",
+      "url": "http://127.0.0.1:4323/interventions/?kind=legal",
+      "layout": {
+        "viewport": 375,
+        "scrollWidth": 375
+      },
+      "allCardsDigest": "f190a23a8b4140980364f021282128b40ccffd75842081a7dd69b38c2d44a320",
+      "leadHref": "/interventions/deep-dive-caste-litigation-in-the-usa/",
+      "leadTitle": "Deep Dive: Caste Litigation in the USA",
+      "leadSummary": "A reading list of long-form reporting and analysis on the caste discrimination cases moving through United States courts.",
+      "masthead": [
+        {
+          "x": 20,
+          "y": -722.171875,
+          "width": 335,
+          "height": 16,
+          "text": "14 interventions"
+        }
+      ],
+      "controls": [
+        {
+          "x": 20,
+          "y": 120.125,
+          "width": 335,
+          "height": 188.78125,
+          "text": "Filters apply to earlier interventions only. The latest intervention above is not counted here.All interventionsLegislativeLegalCampaignEducationTestimony2 earlier interventions in Legal."
+        }
+      ],
+      "status": [
+        {
+          "x": 20,
+          "y": 284.90625,
+          "width": 335,
+          "height": 24,
+          "text": "2 earlier interventions in Legal."
+        }
+      ],
+      "firstResult": [
+        {
+          "x": 45,
+          "y": 407.90625,
+          "width": 285,
+          "height": 25.078125,
+          "text": "FAQ about the BAPS Case"
+        },
+        {
+          "x": 45,
+          "y": 768.671875,
+          "width": 285,
+          "height": 50.15625,
+          "text": "Cisco Caste Discrimination — News coverage list"
+        }
+      ],
+      "visibleCards": 2
+    },
+    {
+      "path": "/donate/",
+      "width": 768,
+      "layout": {
+        "viewport": 768,
+        "scrollWidth": 768
+      },
+      "donation": [
+        {
+          "x": 24,
+          "y": 524.28125,
+          "width": 154.953125,
+          "height": 44,
+          "text": "Donate to AKSC"
+        }
+      ],
+      "proseDigest": "77bbac9e2d3e2b731772e5ac174a8fa7d0f1b6f15f3bbda4bf502f8cd141a1bc",
+      "destinations": ["https://bit.ly/donate-aksc", "/join/"]
+    },
+    {
+      "path": "/articles/",
+      "width": 768,
+      "category": "ambedkarite-thought",
+      "url": "http://127.0.0.1:4323/articles/?category=ambedkarite-thought",
+      "layout": {
+        "viewport": 768,
+        "scrollWidth": 768
+      },
+      "allCardsDigest": "6015d6e29c30a2a782628e4bc0181b647aa14571adf4503fef25e6f1a565740c",
+      "leadHref": "/articles/hindus-in-america-practice-caste/",
+      "leadTitle": "Hindus in America Practice Caste",
+      "leadSummary": "Federal law protects people from discrimination on race, colour, religion, sex and national origin, but not caste. A high school student sets out why the caste practised by Hindus in America needs naming and outlawing.",
+      "masthead": [
+        {
+          "x": 24,
+          "y": -680.015625,
+          "width": 720,
+          "height": 16,
+          "text": "8 articles"
+        }
+      ],
+      "controls": [
+        {
+          "x": 24,
+          "y": 120.453125,
+          "width": 720,
+          "height": 164.78125,
+          "text": "Filters apply to earlier articles only. The latest article above is not counted here.All articlesAmbedkarite ThoughtBooks and MediaCaste in the USACulture and SocietyHistory and Movements2 earlier articles in Ambedkarite Thought."
+        }
+      ],
+      "status": [
+        {
+          "x": 24,
+          "y": 261.234375,
+          "width": 672,
+          "height": 24,
+          "text": "2 earlier articles in Ambedkarite Thought."
+        }
+      ],
+      "firstResult": [
+        {
+          "x": 53,
+          "y": 388.234375,
+          "width": 292,
+          "height": 82.078125,
+          "text": "Dr. Ambedkar's vision of equality through Hindu Code Bill"
+        },
+        {
+          "x": 423,
+          "y": 410.53125,
+          "width": 292,
+          "height": 27.359375,
+          "text": "Legacy of Dr. Ambedkar"
+        }
+      ],
+      "visibleCards": 2
+    },
+    {
+      "path": "/interventions/",
+      "width": 768,
+      "category": "legal",
+      "url": "http://127.0.0.1:4323/interventions/?kind=legal",
+      "layout": {
+        "viewport": 768,
+        "scrollWidth": 768
+      },
+      "allCardsDigest": "f190a23a8b4140980364f021282128b40ccffd75842081a7dd69b38c2d44a320",
+      "leadHref": "/interventions/deep-dive-caste-litigation-in-the-usa/",
+      "leadTitle": "Deep Dive: Caste Litigation in the USA",
+      "leadSummary": "A reading list of long-form reporting and analysis on the caste discrimination cases moving through United States courts.",
+      "masthead": [
+        {
+          "x": 24,
+          "y": -608.015625,
+          "width": 720,
+          "height": 16,
+          "text": "14 interventions"
+        }
+      ],
+      "controls": [
+        {
+          "x": 24,
+          "y": 120.0625,
+          "width": 720,
+          "height": 116.390625,
+          "text": "Filters apply to earlier interventions only. The latest intervention above is not counted here.All interventionsLegislativeLegalCampaignEducationTestimony2 earlier interventions in Legal."
+        }
+      ],
+      "status": [
+        {
+          "x": 24,
+          "y": 212.453125,
+          "width": 672,
+          "height": 24,
+          "text": "2 earlier interventions in Legal."
+        }
+      ],
+      "firstResult": [
+        {
+          "x": 53,
+          "y": 339.453125,
+          "width": 292,
+          "height": 54.71875,
+          "text": "FAQ about the BAPS Case"
+        },
+        {
+          "x": 423,
+          "y": 339.453125,
+          "width": 292,
+          "height": 82.078125,
+          "text": "Cisco Caste Discrimination — News coverage list"
+        }
+      ],
+      "visibleCards": 2
+    },
+    {
+      "path": "/donate/",
+      "width": 1280,
+      "layout": {
+        "viewport": 1280,
+        "scrollWidth": 1280
+      },
+      "donation": [
+        {
+          "x": 96,
+          "y": 536.03125,
+          "width": 154.953125,
+          "height": 44,
+          "text": "Donate to AKSC"
+        }
+      ],
+      "proseDigest": "77bbac9e2d3e2b731772e5ac174a8fa7d0f1b6f15f3bbda4bf502f8cd141a1bc",
+      "destinations": ["https://bit.ly/donate-aksc", "/join/"]
+    },
+    {
+      "path": "/articles/",
+      "width": 1280,
+      "category": "ambedkarite-thought",
+      "url": "http://127.0.0.1:4323/articles/?category=ambedkarite-thought",
+      "layout": {
+        "viewport": 1280,
+        "scrollWidth": 1280
+      },
+      "allCardsDigest": "6015d6e29c30a2a782628e4bc0181b647aa14571adf4503fef25e6f1a565740c",
+      "leadHref": "/articles/hindus-in-america-practice-caste/",
+      "leadTitle": "Hindus in America Practice Caste",
+      "leadSummary": "Federal law protects people from discrimination on race, colour, religion, sex and national origin, but not caste. A high school student sets out why the caste practised by Hindus in America needs naming and outlawing.",
+      "masthead": [
+        {
+          "x": 96,
+          "y": -558.265625,
+          "width": 896,
+          "height": 16,
+          "text": "8 articles"
+        }
+      ],
+      "controls": [
+        {
+          "x": 96,
+          "y": 120.484375,
+          "width": 1088,
+          "height": 116.390625,
+          "text": "Filters apply to earlier articles only. The latest article above is not counted here.All articlesAmbedkarite ThoughtBooks and MediaCaste in the USACulture and SocietyHistory and Movements2 earlier articles in Ambedkarite Thought."
+        }
+      ],
+      "status": [
+        {
+          "x": 96,
+          "y": 212.875,
+          "width": 672,
+          "height": 24,
+          "text": "2 earlier articles in Ambedkarite Thought."
+        }
+      ],
+      "firstResult": [
+        {
+          "x": 125,
+          "y": 339.875,
+          "width": 291.328125,
+          "height": 82.078125,
+          "text": "Dr. Ambedkar's vision of equality through Hindu Code Bill"
+        },
+        {
+          "x": 494.328125,
+          "y": 362.171875,
+          "width": 291.328125,
+          "height": 27.359375,
+          "text": "Legacy of Dr. Ambedkar"
+        }
+      ],
+      "visibleCards": 2
+    },
+    {
+      "path": "/interventions/",
+      "width": 1280,
+      "category": "legal",
+      "url": "http://127.0.0.1:4323/interventions/?kind=legal",
+      "layout": {
+        "viewport": 1280,
+        "scrollWidth": 1280
+      },
+      "allCardsDigest": "f190a23a8b4140980364f021282128b40ccffd75842081a7dd69b38c2d44a320",
+      "leadHref": "/interventions/deep-dive-caste-litigation-in-the-usa/",
+      "leadTitle": "Deep Dive: Caste Litigation in the USA",
+      "leadSummary": "A reading list of long-form reporting and analysis on the caste discrimination cases moving through United States courts.",
+      "masthead": [
+        {
+          "x": 96,
+          "y": -486.265625,
+          "width": 896,
+          "height": 16,
+          "text": "14 interventions"
+        }
+      ],
+      "controls": [
+        {
+          "x": 96,
+          "y": 120.09375,
+          "width": 1088,
+          "height": 116.390625,
+          "text": "Filters apply to earlier interventions only. The latest intervention above is not counted here.All interventionsLegislativeLegalCampaignEducationTestimony2 earlier interventions in Legal."
+        }
+      ],
+      "status": [
+        {
+          "x": 96,
+          "y": 212.484375,
+          "width": 672,
+          "height": 24,
+          "text": "2 earlier interventions in Legal."
+        }
+      ],
+      "firstResult": [
+        {
+          "x": 125,
+          "y": 339.484375,
+          "width": 291.328125,
+          "height": 54.71875,
+          "text": "FAQ about the BAPS Case"
+        },
+        {
+          "x": 494.328125,
+          "y": 339.484375,
+          "width": 291.328125,
+          "height": 82.078125,
+          "text": "Cisco Caste Discrimination — News coverage list"
+        }
+      ],
+      "visibleCards": 2
+    },
+    {
+      "path": "/donate/",
+      "width": 1920,
+      "layout": {
+        "viewport": 1920,
+        "scrollWidth": 1920
+      },
+      "donation": [
+        {
+          "x": 416,
+          "y": 536.03125,
+          "width": 154.953125,
+          "height": 44,
+          "text": "Donate to AKSC"
+        }
+      ],
+      "proseDigest": "77bbac9e2d3e2b731772e5ac174a8fa7d0f1b6f15f3bbda4bf502f8cd141a1bc",
+      "destinations": ["https://bit.ly/donate-aksc", "/join/"]
+    },
+    {
+      "path": "/articles/",
+      "width": 1920,
+      "category": "ambedkarite-thought",
+      "url": "http://127.0.0.1:4323/articles/?category=ambedkarite-thought",
+      "layout": {
+        "viewport": 1920,
+        "scrollWidth": 1920
+      },
+      "allCardsDigest": "6015d6e29c30a2a782628e4bc0181b647aa14571adf4503fef25e6f1a565740c",
+      "leadHref": "/articles/hindus-in-america-practice-caste/",
+      "leadTitle": "Hindus in America Practice Caste",
+      "leadSummary": "Federal law protects people from discrimination on race, colour, religion, sex and national origin, but not caste. A high school student sets out why the caste practised by Hindus in America needs naming and outlawing.",
+      "masthead": [
+        {
+          "x": 416,
+          "y": -558.265625,
+          "width": 896,
+          "height": 16,
+          "text": "8 articles"
+        }
+      ],
+      "controls": [
+        {
+          "x": 416,
+          "y": 120.484375,
+          "width": 1088,
+          "height": 116.390625,
+          "text": "Filters apply to earlier articles only. The latest article above is not counted here.All articlesAmbedkarite ThoughtBooks and MediaCaste in the USACulture and SocietyHistory and Movements2 earlier articles in Ambedkarite Thought."
+        }
+      ],
+      "status": [
+        {
+          "x": 416,
+          "y": 212.875,
+          "width": 672,
+          "height": 24,
+          "text": "2 earlier articles in Ambedkarite Thought."
+        }
+      ],
+      "firstResult": [
+        {
+          "x": 445,
+          "y": 339.875,
+          "width": 291.328125,
+          "height": 82.078125,
+          "text": "Dr. Ambedkar's vision of equality through Hindu Code Bill"
+        },
+        {
+          "x": 814.328125,
+          "y": 362.171875,
+          "width": 291.328125,
+          "height": 27.359375,
+          "text": "Legacy of Dr. Ambedkar"
+        }
+      ],
+      "visibleCards": 2
+    },
+    {
+      "path": "/interventions/",
+      "width": 1920,
+      "category": "legal",
+      "url": "http://127.0.0.1:4323/interventions/?kind=legal",
+      "layout": {
+        "viewport": 1920,
+        "scrollWidth": 1920
+      },
+      "allCardsDigest": "f190a23a8b4140980364f021282128b40ccffd75842081a7dd69b38c2d44a320",
+      "leadHref": "/interventions/deep-dive-caste-litigation-in-the-usa/",
+      "leadTitle": "Deep Dive: Caste Litigation in the USA",
+      "leadSummary": "A reading list of long-form reporting and analysis on the caste discrimination cases moving through United States courts.",
+      "masthead": [
+        {
+          "x": 416,
+          "y": -486.265625,
+          "width": 896,
+          "height": 16,
+          "text": "14 interventions"
+        }
+      ],
+      "controls": [
+        {
+          "x": 416,
+          "y": 120.09375,
+          "width": 1088,
+          "height": 116.390625,
+          "text": "Filters apply to earlier interventions only. The latest intervention above is not counted here.All interventionsLegislativeLegalCampaignEducationTestimony2 earlier interventions in Legal."
+        }
+      ],
+      "status": [
+        {
+          "x": 416,
+          "y": 212.484375,
+          "width": 672,
+          "height": 24,
+          "text": "2 earlier interventions in Legal."
+        }
+      ],
+      "firstResult": [
+        {
+          "x": 445,
+          "y": 339.484375,
+          "width": 291.328125,
+          "height": 54.71875,
+          "text": "FAQ about the BAPS Case"
+        },
+        {
+          "x": 814.328125,
+          "y": 339.484375,
+          "width": 291.328125,
+          "height": 82.078125,
+          "text": "Cisco Caste Discrimination — News coverage list"
+        }
+      ],
+      "visibleCards": 2
+    }
+  ]
+}

@@ -56,6 +56,22 @@ for (const width of [320, 375, 768, 1440]) {
     await viewer.scrollIntoViewIfNeeded();
     const document = page.frameLocator("iframe");
     await expect(document.locator("main")).toBeVisible();
+    const typography = await document
+      .locator(".article-body p")
+      .evaluateAll((paragraphs) =>
+        paragraphs.map((paragraph) => {
+          const style = getComputedStyle(paragraph);
+          return {
+            size: parseFloat(style.fontSize),
+            leading: parseFloat(style.lineHeight) / parseFloat(style.fontSize),
+          };
+        }),
+      );
+    expect(typography.length).toBeGreaterThan(0);
+    for (const paragraph of typography) {
+      expect(paragraph.size).toBeGreaterThanOrEqual(16);
+      expect(paragraph.leading).toBeGreaterThanOrEqual(1.5);
+    }
     await expect(document.locator(".masthead")).not.toContainText(
       /draft|placeholder/i,
     );
@@ -95,6 +111,38 @@ for (const width of [320, 375, 768, 1440]) {
   });
 }
 
+test("the full-page magazine reflows at enlarged text and keeps its print scale", async ({
+  page,
+}) => {
+  for (const width of [320, 375, 768, 1280, 1920]) {
+    await page.setViewportSize({ width, height: 900 });
+    await page.goto(documentPath, { waitUntil: "load" });
+    await page.addStyleTag({ content: "html { font-size: 200%; }" });
+    const layout = await page.locator("html").evaluate((element) => ({
+      width: element.clientWidth,
+      scrollWidth: element.scrollWidth,
+    }));
+    expect(layout.scrollWidth).toBeLessThanOrEqual(layout.width + 1);
+    await expect(page.locator(".article-body p").first()).toHaveCSS(
+      "font-size",
+      "36px",
+    );
+  }
+  await page.goto(documentPath, { waitUntil: "load" });
+  await page.emulateMedia({ media: "print" });
+  await expect(page.locator("body")).toHaveCSS("font-size", "12px");
+  expect(
+    await page
+      .locator(".article-body p")
+      .first()
+      .evaluate((element) => parseFloat(getComputedStyle(element).lineHeight)),
+  ).toBeCloseTo(17.04, 1);
+  await expect(page.locator(".article-body").first()).toHaveCSS(
+    "column-count",
+    "2",
+  );
+  await expect(page.locator("table").first()).toHaveCSS("font-size", "10px");
+});
 test("keyboard users can download the unchanged magazine and open it full-page", async ({
   page,
 }) => {

@@ -79,7 +79,7 @@ const paperLabel = (paper: GeneralBodyMeeting["data"]["papers"][number]) =>
     <p class="mt-2 text-ambedkar-900/75">{meetingsIntro}</p>
     {
       meetingsNote && (
-        <p class="mt-4 max-w-2xl rounded-2xl border border-rule bg-white px-5 py-4 text-sm leading-6 text-ambedkar-900/80 shadow-card">
+        <p class="mt-4 max-w-2xl rounded-lg border border-rule bg-white px-5 py-4 text-sm leading-6 text-ambedkar-900/80">
           {meetingsNote}
         </p>
       )
@@ -105,7 +105,7 @@ const paperLabel = (paper: GeneralBodyMeeting["data"]["papers"][number]) =>
               {meeting.data.papers.map((paper) => (
                 <li>
                   <a
-                    class="inline-flex flex-wrap items-baseline gap-x-2 rounded-2xl border border-rule-strong bg-mist px-4 py-3 font-semibold text-ambedkar-800 transition-colors hover:border-ambedkar-950 hover:bg-ambedkar-50 hover:text-ambedkar-950"
+                    class="inline-flex flex-wrap items-baseline gap-x-2 rounded-md border border-rule-strong bg-mist px-4 py-3 font-semibold text-ambedkar-800 transition-colors hover:border-ambedkar-950 hover:bg-ambedkar-50 hover:text-ambedkar-950"
                     href={paper.file}
                   >
                     {generalBodyPaperKindLabel(paper.kind)}

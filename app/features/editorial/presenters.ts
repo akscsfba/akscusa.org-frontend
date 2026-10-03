@@ -89,7 +89,8 @@ export function articleDetails(article: Article): Detail[] {
  *
  * The terms are passed in rather than imported, because they are content now:
  * only the page that loaded the vocabulary knows what it holds. Only categories
- * that have published articles are offered, so no chip ever empties the list.
+ * with published articles are offered; a category held only by the lead may
+ * still have no matching archive cards.
  */
 export function articleFilters(
   articles: Article[],
@@ -200,6 +201,14 @@ export const conferenceBadge = (conference: Conference): Badge | undefined =>
   conference.data.edition
     ? { label: `${ordinal(conference.data.edition)} annual`, tone: "muted" }
     : undefined;
+
+export function conferenceArchiveNotice(
+  conference: Conference,
+): string | undefined {
+  if (isUpcomingConference(conference)) return undefined;
+  const date = formatDateRange(conference.data.date, conference.data.endDate);
+  return `This is a past conference record (${date}). Any registration or fundraising appeals below are historical, not current offers.`;
+}
 
 export function conferenceMeta(conference: Conference): string[] {
   const meta: string[] = [];

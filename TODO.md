@@ -5,6 +5,10 @@ Work that is agreed but not yet done. Delete a row once it ships.
 Pre-launch remediation is tracked in [QUALITY-GATE.md](QUALITY-GATE.md), with
 priorities, ordered subprojects, and release acceptance criteria.
 
+All 24 incremental UI/UX improvements are completed and recorded in
+[DESIGN-REVIEW.md](DESIGN-REVIEW.md), with measured outcomes and regression
+coverage. Design completion is not release sign-off.
+
 ## System pages
 
 The site falls through to Astro's and Cloudflare's own error pages for

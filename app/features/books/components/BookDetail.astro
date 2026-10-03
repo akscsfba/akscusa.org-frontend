@@ -39,12 +39,16 @@ const topicLabel = await loadTermLabels("topics");
 
 <article>
   <Container class="pt-10 pb-20 sm:pt-12 sm:pb-28">
-    <div class="gap-10 lg:flex lg:items-start">
-      <div class="min-w-0 lg:flex-1">
+    <div
+      class:list={[
+        "grid grid-cols-1 items-start gap-x-10 gap-y-6",
+        cover && "lg:grid-cols-[minmax(0,1fr)_14rem]",
+      ]}
+    >
+      <div class="min-w-0 lg:col-start-1">
         <EntryHeader
           eyebrow="Book"
           title={data.title}
-          lede={data.summary}
           backHref="/books/"
           backLabel="Books"
         >
@@ -63,53 +67,13 @@ const topicLabel = await loadTermLabels("topics");
             )
           }
         </EntryHeader>
-
-        {
-          /*
-          No "Author" row: the byline is three lines above it in the header
-          now that the masthead is gone, and the two sat a screen apart only
-          because the blue band separated them. That leaves the card able to
-          come out empty, for a book with no edition details and no ISBN, so
-          it is only printed when it has something to say.
-        */
-        }
-        {
-          hasFacts && (
-            <dl class="card mt-10 max-w-3xl gap-x-8 gap-y-5 p-6 sm:grid sm:grid-cols-2 sm:p-8">
-              {facts.map((fact) => (
-                <div>
-                  <dt class="label text-ambedkar-700">{fact.term}</dt>
-                  <dd class="mt-1 leading-7 text-ambedkar-900/80">
-                    {fact.description}
-                  </dd>
-                </div>
-              ))}
-              {data.isbn && (
-                <div>
-                  <dt class="label text-ambedkar-700">ISBN</dt>
-                  <dd class="mt-1 leading-7 wrap-break-word text-ambedkar-900/80">
-                    <a
-                      class="font-semibold text-ambedkar-700 underline underline-offset-4 hover:text-ambedkar-900"
-                      href={openLibraryUrl(data.isbn)}
-                    >
-                      {data.isbn}
-                    </a>
-                    <span class="mt-1 block text-sm text-ambedkar-900/70">
-                      Look this edition up on Open Library.
-                    </span>
-                  </dd>
-                </div>
-              )}
-            </dl>
-          )
-        }
       </div>
 
       {
         cover && (
-          <figure class="mt-10 lg:order-last lg:mt-0 lg:shrink-0">
+          <figure class="lg:col-start-2 lg:row-span-3 lg:row-start-1">
             <ResponsiveImage
-              class="w-40 rounded-2xl shadow-lift sm:w-48 lg:w-56"
+              class="w-40 rounded-md sm:w-48 lg:w-56"
               src={cover}
               alt={COVER_ALT}
               sizes="(min-width: 1024px) 14rem, (min-width: 640px) 12rem, 10rem"
@@ -133,6 +97,45 @@ const topicLabel = await loadTermLabels("topics");
               )}
             </figcaption>
           </figure>
+        )
+      }
+
+      {
+        data.summary && (
+          <p class="max-w-2xl font-serif text-xl leading-[1.6] text-ambedkar-900/80 lg:col-start-1">
+            {data.summary}
+          </p>
+        )
+      }
+
+      {
+        hasFacts && (
+          <dl class="card mt-4 grid max-w-3xl grid-cols-1 gap-x-8 gap-y-5 p-6 sm:grid-cols-2 sm:p-8 lg:col-start-1">
+            {facts.map((fact) => (
+              <div>
+                <dt class="label text-ambedkar-700">{fact.term}</dt>
+                <dd class="mt-1 leading-7 text-ambedkar-900/80">
+                  {fact.description}
+                </dd>
+              </div>
+            ))}
+            {data.isbn && (
+              <div>
+                <dt class="label text-ambedkar-700">ISBN</dt>
+                <dd class="mt-1 leading-7 wrap-break-word text-ambedkar-900/80">
+                  <a
+                    class="font-semibold text-ambedkar-700 underline underline-offset-4 hover:text-ambedkar-900"
+                    href={openLibraryUrl(data.isbn)}
+                  >
+                    {data.isbn}
+                  </a>
+                  <span class="mt-1 block text-sm text-ambedkar-900/70">
+                    Look this edition up on Open Library.
+                  </span>
+                </dd>
+              </div>
+            )}
+          </dl>
         )
       }
     </div>

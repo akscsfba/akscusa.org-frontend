@@ -1,0 +1,5522 @@
+{
+  "reviewedCommit": "86a54b68c7f57f10b671e40dbcc669047c1a5f7c",
+  "reviewDate": "2026-10-03",
+  "target": "http://127.0.0.1:4322",
+  "method": "Production build. Chromium visual/DOM review. External network requests blocked; remote availability not assessed. Intentional empty images in closed dialogs excluded from loaded-media findings.",
+  "viewportWidths": [320, 375, 768, 1280, 1920],
+  "auditHeight": 900,
+  "journeyViewport": {
+    "width": 375,
+    "height": 800
+  },
+  "routeCount": 130,
+  "representativeCount": 31,
+  "counts": {
+    "home": 1,
+    "actions": 1,
+    "anti-caste-toolkit": 1,
+    "articles": 9,
+    "authors": 8,
+    "book-readings": 26,
+    "books": 11,
+    "comics": 3,
+    "conferences": 8,
+    "contact": 1,
+    "donate": 1,
+    "helpline": 1,
+    "interventions": 15,
+    "join": 1,
+    "magazine": 1,
+    "organization": 3,
+    "press-releases": 18,
+    "programs": 18,
+    "testimonies-of-practice-of-caste-in-the-usa": 1,
+    "who-said-what": 1,
+    "404.html": 1
+  },
+  "representatives": [
+    "/",
+    "/actions/",
+    "/anti-caste-toolkit/",
+    "/articles/",
+    "/articles/bhima-koregaon-lessons-from-the-untouchables-and-pax-britannica/",
+    "/authors/ashoka-mody/",
+    "/book-readings/",
+    "/book-readings/2020-02-23-riddles-in-hinduism-riddles-1-8/",
+    "/books/",
+    "/books/ambedkar/",
+    "/comics/",
+    "/comics/caste-has-a-cost/",
+    "/conferences/",
+    "/conferences/aksc-1st-annual-conference-2018/",
+    "/contact/",
+    "/donate/",
+    "/helpline/",
+    "/interventions/",
+    "/interventions/agrarian-crisis-discussion-series/",
+    "/join/",
+    "/magazine/",
+    "/organization/",
+    "/organization/constitution/",
+    "/organization/general-body/",
+    "/press-releases/",
+    "/press-releases/a-right-to-oppress-santa-clara-county-hrc-on-caste-discrimination/",
+    "/programs/",
+    "/programs/aathi-thamizhar-peravai-struggles/",
+    "/testimonies-of-practice-of-caste-in-the-usa/",
+    "/who-said-what/",
+    "/404.html"
+  ],
+  "renders": [
+    {
+      "path": "/",
+      "width": 320,
+      "status": 200,
+      "scrollWidth": 320,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/actions/",
+      "width": 320,
+      "status": 200,
+      "scrollWidth": 320,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/anti-caste-toolkit/",
+      "width": 320,
+      "status": 200,
+      "scrollWidth": 320,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/articles/",
+      "width": 320,
+      "status": 200,
+      "scrollWidth": 320,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/articles/bhima-koregaon-lessons-from-the-untouchables-and-pax-britannica/",
+      "width": 320,
+      "status": 200,
+      "scrollWidth": 320,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/articles/caste-discrimination-where-is-it/",
+      "width": 320,
+      "status": 200,
+      "scrollWidth": 320,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/articles/dr-ambedkars-vision-of-equality-through-hindu-code-bill/",
+      "width": 320,
+      "status": 200,
+      "scrollWidth": 320,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/articles/hindus-in-america-practice-caste/",
+      "width": 320,
+      "status": 200,
+      "scrollWidth": 320,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/articles/legacy-of-dr-ambedkar/",
+      "width": 320,
+      "status": 200,
+      "scrollWidth": 320,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/articles/origin-by-dan-brown/",
+      "width": 320,
+      "status": 200,
+      "scrollWidth": 320,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/articles/purattasi-a-month-of-dietary-devotion/",
+      "width": 320,
+      "status": 200,
+      "scrollWidth": 320,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/articles/what-periyar-means-to-silicon-valley/",
+      "width": 320,
+      "status": 200,
+      "scrollWidth": 320,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/authors/ashoka-mody/",
+      "width": 320,
+      "status": 200,
+      "scrollWidth": 320,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/authors/bell-hooks/",
+      "width": 320,
+      "status": 200,
+      "scrollWidth": 320,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/authors/dr-b-r-ambedkar/",
+      "width": 320,
+      "status": 200,
+      "scrollWidth": 320,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/authors/gail-omvedt/",
+      "width": 320,
+      "status": 200,
+      "scrollWidth": 320,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/authors/kancha-ilaiah/",
+      "width": 320,
+      "status": 200,
+      "scrollWidth": 320,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/authors/malcolm-x/",
+      "width": 320,
+      "status": 200,
+      "scrollWidth": 320,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/authors/manoj-mitta/",
+      "width": 320,
+      "status": 200,
+      "scrollWidth": 320,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/authors/periyar-e-v-ramasamy/",
+      "width": 320,
+      "status": 200,
+      "scrollWidth": 320,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/book-readings/",
+      "width": 320,
+      "status": 200,
+      "scrollWidth": 320,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/book-readings/2020-02-23-riddles-in-hinduism-riddles-1-8/",
+      "width": 320,
+      "status": 200,
+      "scrollWidth": 320,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/book-readings/2020-03-15-riddles-in-hinduism-riddles-16-20/",
+      "width": 320,
+      "status": 200,
+      "scrollWidth": 320,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/book-readings/2020-04-26-riddles-in-hinduism-riddles-21-24/",
+      "width": 320,
+      "status": 200,
+      "scrollWidth": 320,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/book-readings/2020-05-17-annihilation-of-caste/",
+      "width": 320,
+      "status": 200,
+      "scrollWidth": 320,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/book-readings/2020-06-07-annihilation-of-caste/",
+      "width": 320,
+      "status": 200,
+      "scrollWidth": 320,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/book-readings/2024-01-27-palestine-a-reading-list/",
+      "width": 320,
+      "status": 200,
+      "scrollWidth": 320,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/book-readings/2024-10-05-caste-pride-chapters-15-18/",
+      "width": 320,
+      "status": 200,
+      "scrollWidth": 320,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/book-readings/2025-03-15-waiting-for-a-visa/",
+      "width": 320,
+      "status": 200,
+      "scrollWidth": 320,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/book-readings/2025-04-05-annihilation-of-caste/",
+      "width": 320,
+      "status": 200,
+      "scrollWidth": 320,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/book-readings/2025-04-26-by-any-means-necessary-chapters-1-2/",
+      "width": 320,
+      "status": 200,
+      "scrollWidth": 320,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/book-readings/2025-05-10-by-any-means-necessary-chapters-3-5/",
+      "width": 320,
+      "status": 200,
+      "scrollWidth": 320,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/book-readings/2025-05-31-by-any-means-necessary-chapters-6-9/",
+      "width": 320,
+      "status": 200,
+      "scrollWidth": 320,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/book-readings/2025-06-14-by-any-means-necessary-chapters-10-12/",
+      "width": 320,
+      "status": 200,
+      "scrollWidth": 320,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/book-readings/2025-06-28-the-will-to-change-chapters-1-4/",
+      "width": 320,
+      "status": 200,
+      "scrollWidth": 320,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/book-readings/2025-07-19-the-will-to-change-chapters-5-8/",
+      "width": 320,
+      "status": 200,
+      "scrollWidth": 320,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/book-readings/2025-10-25-the-will-to-change-chapters-9-11/",
+      "width": 320,
+      "status": 200,
+      "scrollWidth": 320,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/book-readings/2026-01-10-india-is-broken-chapters-7-9/",
+      "width": 320,
+      "status": 200,
+      "scrollWidth": 320,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/book-readings/2026-01-31-india-is-broken-chapters-10-14/",
+      "width": 320,
+      "status": 200,
+      "scrollWidth": 320,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/book-readings/2026-02-21-india-is-broken-chapters-15-19/",
+      "width": 320,
+      "status": 200,
+      "scrollWidth": 320,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/book-readings/2026-06-06-ambedkar-towards-an-enlightened-india/",
+      "width": 320,
+      "status": 200,
+      "scrollWidth": 320,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/book-readings/2026-06-27-buffalo-nationalism-chapters-1-8/",
+      "width": 320,
+      "status": 200,
+      "scrollWidth": 320,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/book-readings/2026-07-18-buffalo-nationalism-chapters-9-21/",
+      "width": 320,
+      "status": 200,
+      "scrollWidth": 320,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/book-readings/2026-08-08-buffalo-nationalism-chapters-22-33/",
+      "width": 320,
+      "status": 200,
+      "scrollWidth": 320,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/book-readings/2026-08-31-buffalo-nationalism-chapters-34-42/",
+      "width": 320,
+      "status": 200,
+      "scrollWidth": 320,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/book-readings/2026-08-31-why-were-women-enslaved/",
+      "width": 320,
+      "status": 200,
+      "scrollWidth": 320,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/books/",
+      "width": 320,
+      "status": 200,
+      "scrollWidth": 320,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/books/ambedkar/",
+      "width": 320,
+      "status": 200,
+      "scrollWidth": 320,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/books/annihilation-of-caste/",
+      "width": 320,
+      "status": 200,
+      "scrollWidth": 320,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/books/buffalo-nationalism/",
+      "width": 320,
+      "status": 200,
+      "scrollWidth": 320,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/books/by-any-means-necessary/",
+      "width": 320,
+      "status": 200,
+      "scrollWidth": 320,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/books/caste-pride/",
+      "width": 320,
+      "status": 200,
+      "scrollWidth": 320,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/books/india-is-broken/",
+      "width": 320,
+      "status": 200,
+      "scrollWidth": 320,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/books/riddles-in-hinduism/",
+      "width": 320,
+      "status": 200,
+      "scrollWidth": 320,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/books/the-will-to-change/",
+      "width": 320,
+      "status": 200,
+      "scrollWidth": 320,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/books/waiting-for-a-visa/",
+      "width": 320,
+      "status": 200,
+      "scrollWidth": 320,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/books/why-were-women-enslaved/",
+      "width": 320,
+      "status": 200,
+      "scrollWidth": 320,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/comics/",
+      "width": 320,
+      "status": 200,
+      "scrollWidth": 320,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/comics/caste-has-a-cost/",
+      "width": 320,
+      "status": 200,
+      "scrollWidth": 320,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/comics/does-caste-exist-in-the-us-today/",
+      "width": 320,
+      "status": 200,
+      "scrollWidth": 320,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/conferences/",
+      "width": 320,
+      "status": 200,
+      "scrollWidth": 320,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/conferences/aksc-1st-annual-conference-2018/",
+      "width": 320,
+      "status": 200,
+      "scrollWidth": 320,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/conferences/aksc-2nd-annual-conference-2019/",
+      "width": 320,
+      "status": 200,
+      "scrollWidth": 320,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/conferences/aksc-3rd-annual-conference-2022/",
+      "width": 320,
+      "status": 200,
+      "scrollWidth": 320,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/conferences/aksc-4th-annual-conference-2023/",
+      "width": 320,
+      "status": 200,
+      "scrollWidth": 320,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/conferences/aksc-5th-annual-conference-2024/",
+      "width": 320,
+      "status": 200,
+      "scrollWidth": 320,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/conferences/aksc-6th-annual-conference-2025/",
+      "width": 320,
+      "status": 200,
+      "scrollWidth": 320,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/conferences/aksc-7th-annual-conference-2026/",
+      "width": 320,
+      "status": 200,
+      "scrollWidth": 320,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/contact/",
+      "width": 320,
+      "status": 200,
+      "scrollWidth": 320,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/donate/",
+      "width": 320,
+      "status": 200,
+      "scrollWidth": 320,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/helpline/",
+      "width": 320,
+      "status": 200,
+      "scrollWidth": 320,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/interventions/",
+      "width": 320,
+      "status": 200,
+      "scrollWidth": 320,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/interventions/agrarian-crisis-discussion-series/",
+      "width": 320,
+      "status": 200,
+      "scrollWidth": 320,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/interventions/cisco-caste-discrimination-news-coverage/",
+      "width": 320,
+      "status": 200,
+      "scrollWidth": 320,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/interventions/deep-dive-caste-litigation-in-the-usa/",
+      "width": 320,
+      "status": 200,
+      "scrollWidth": 320,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/interventions/faq-about-the-baps-case/",
+      "width": 320,
+      "status": 200,
+      "scrollWidth": 320,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/interventions/lets-read-ambedkar-10-lectures-series/",
+      "width": 320,
+      "status": 200,
+      "scrollWidth": 320,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/interventions/memorandum-on-institutional-murders/",
+      "width": 320,
+      "status": 200,
+      "scrollWidth": 320,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/interventions/misrepresentation-of-sb-403-explained/",
+      "width": 320,
+      "status": 200,
+      "scrollWidth": 320,
+      "errors": [],
+      "blockedOrFailedImages": [
+        "https://dotcompatterns.files.wordpress.com/2022/08/wiggle_pattern.png?w=676"
+      ]
+    },
+    {
+      "path": "/interventions/practice-of-caste-in-the-usa-share-your-testimony/",
+      "width": 320,
+      "status": 200,
+      "scrollWidth": 320,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/interventions/practice-of-caste-in-usa-discussion-series/",
+      "width": 320,
+      "status": 200,
+      "scrollWidth": 320,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/interventions/share-your-testimonies-about-everyday-casteism/",
+      "width": 320,
+      "status": 200,
+      "scrollWidth": 320,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/interventions/solidarity-statement-to-end-caste-practices-in-silicon-valley-and-the-usa/",
+      "width": 320,
+      "status": 200,
+      "scrollWidth": 320,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/interventions/stop-saffronisation-of-indian-history-in-california-textbooks/",
+      "width": 320,
+      "status": 200,
+      "scrollWidth": 320,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/interventions/worldwide-protest-on-violence-on-dalits-at-bhima-koregaon/",
+      "width": 320,
+      "status": 200,
+      "scrollWidth": 320,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/interventions/yes-on-sb-403/",
+      "width": 320,
+      "status": 200,
+      "scrollWidth": 320,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/join/",
+      "width": 320,
+      "status": 200,
+      "scrollWidth": 320,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/magazine/",
+      "width": 320,
+      "status": 200,
+      "scrollWidth": 320,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/organization/",
+      "width": 320,
+      "status": 200,
+      "scrollWidth": 320,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/organization/constitution/",
+      "width": 320,
+      "status": 200,
+      "scrollWidth": 320,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/organization/general-body/",
+      "width": 320,
+      "status": 200,
+      "scrollWidth": 320,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/press-releases/",
+      "width": 320,
+      "status": 200,
+      "scrollWidth": 320,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/press-releases/a-right-to-oppress-santa-clara-county-hrc-on-caste-discrimination/",
+      "width": 320,
+      "status": 200,
+      "scrollWidth": 320,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/press-releases/aacd-urging-governor-newsom-to-sign-sb-403/",
+      "width": 320,
+      "status": 200,
+      "scrollWidth": 320,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/press-releases/aksc-appreciates-alphabet-workers-union-statement-on-caste-discrimination/",
+      "width": 320,
+      "status": 200,
+      "scrollWidth": 320,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/press-releases/aksc-condemns-raja-and-gats-on-the-caste-scrutiny-issue/",
+      "width": 320,
+      "status": 200,
+      "scrollWidth": 320,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/press-releases/aksc-condemns-the-killing-of-george-floyd/",
+      "width": 320,
+      "status": 200,
+      "scrollWidth": 320,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/press-releases/aksc-urging-governor-newsom-to-sign-sb-403/",
+      "width": 320,
+      "status": 200,
+      "scrollWidth": 320,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/press-releases/aksc-welcomes-assembly-judiciary-committee-vote-on-sb-403/",
+      "width": 320,
+      "status": 200,
+      "scrollWidth": 320,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/press-releases/california-assembly-votes-in-favor-of-sb-403/",
+      "width": 320,
+      "status": 200,
+      "scrollWidth": 320,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/press-releases/federal-court-landmark-judgment-affirming-civil-rights-for-the-caste-oppressed/",
+      "width": 320,
+      "status": 200,
+      "scrollWidth": 320,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/press-releases/federal-court-order-deals-major-blow-to-hindu-supremacists/",
+      "width": 320,
+      "status": 200,
+      "scrollWidth": 320,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/press-releases/federal-court-upholds-csu-policy-protecting-against-caste-discrimination/",
+      "width": 320,
+      "status": 200,
+      "scrollWidth": 320,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/press-releases/indian-american-alliance-against-caste-tells-ceos-to-combat-caste-discrimination/",
+      "width": 320,
+      "status": 200,
+      "scrollWidth": 320,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/press-releases/major-victory-caste-discrimination-case-against-cisco-in-discovery/",
+      "width": 320,
+      "status": 200,
+      "scrollWidth": 320,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/press-releases/rutgers-university-step-toward-unleashing-caste-oppressed-potential/",
+      "width": 320,
+      "status": 200,
+      "scrollWidth": 320,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/press-releases/statement-on-harassment-of-com-divya-bharathi/",
+      "width": 320,
+      "status": 200,
+      "scrollWidth": 320,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/press-releases/statement-on-support-of-california-aca-5/",
+      "width": 320,
+      "status": 200,
+      "scrollWidth": 320,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/press-releases/yes-on-california-prop-16-joint-solidarity-statement/",
+      "width": 320,
+      "status": 200,
+      "scrollWidth": 320,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/programs/",
+      "width": 320,
+      "status": 200,
+      "scrollWidth": 320,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/programs/aathi-thamizhar-peravai-struggles/",
+      "width": 320,
+      "status": 200,
+      "scrollWidth": 320,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/programs/aksc-young-ambassador-program/",
+      "width": 320,
+      "status": 200,
+      "scrollWidth": 320,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/programs/ambedkar-127th-birth-anniversary-celebration/",
+      "width": 320,
+      "status": 200,
+      "scrollWidth": 320,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/programs/ambedkar-on-brahmanism-and-capitalism/",
+      "width": 320,
+      "status": 200,
+      "scrollWidth": 320,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/programs/caste-and-gender-violence-with-kavita-krishnan/",
+      "width": 320,
+      "status": 200,
+      "scrollWidth": 320,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/programs/democracy-and-dissent-in-india-today/",
+      "width": 320,
+      "status": 200,
+      "scrollWidth": 320,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/programs/dr-ambedkar-129th-birth-anniversary-celebration/",
+      "width": 320,
+      "status": 200,
+      "scrollWidth": 320,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/programs/honor-killings-love-and-caste/",
+      "width": 320,
+      "status": 200,
+      "scrollWidth": 320,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/programs/inclusive-campuses-in-an-exclusive-society/",
+      "width": 320,
+      "status": 200,
+      "scrollWidth": 320,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/programs/kakkoos-documentary-screening/",
+      "width": 320,
+      "status": 200,
+      "scrollWidth": 320,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/programs/keezhadi-and-states-rights-talks/",
+      "width": 320,
+      "status": 200,
+      "scrollWidth": 320,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/programs/keezhadi-to-harvard/",
+      "width": 320,
+      "status": 200,
+      "scrollWidth": 320,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/programs/kilvenmani-massacre-50th-anniversary/",
+      "width": 320,
+      "status": 200,
+      "scrollWidth": 320,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/programs/neet-and-social-justice/",
+      "width": 320,
+      "status": 200,
+      "scrollWidth": 320,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/programs/periyar-139th-birth-anniversary/",
+      "width": 320,
+      "status": 200,
+      "scrollWidth": 320,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/programs/periyar-140th-birth-anniversary-celebration/",
+      "width": 320,
+      "status": 200,
+      "scrollWidth": 320,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/programs/periyar-147th-birth-anniversary-celebration/",
+      "width": 320,
+      "status": 200,
+      "scrollWidth": 320,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/testimonies-of-practice-of-caste-in-the-usa/",
+      "width": 320,
+      "status": 200,
+      "scrollWidth": 320,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/who-said-what/",
+      "width": 320,
+      "status": 200,
+      "scrollWidth": 320,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/404.html",
+      "width": 320,
+      "status": 200,
+      "scrollWidth": 320,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/",
+      "width": 375,
+      "status": 200,
+      "scrollWidth": 375,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/actions/",
+      "width": 375,
+      "status": 200,
+      "scrollWidth": 375,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/anti-caste-toolkit/",
+      "width": 375,
+      "status": 200,
+      "scrollWidth": 375,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/articles/",
+      "width": 375,
+      "status": 200,
+      "scrollWidth": 375,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/articles/bhima-koregaon-lessons-from-the-untouchables-and-pax-britannica/",
+      "width": 375,
+      "status": 200,
+      "scrollWidth": 375,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/articles/caste-discrimination-where-is-it/",
+      "width": 375,
+      "status": 200,
+      "scrollWidth": 375,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/articles/dr-ambedkars-vision-of-equality-through-hindu-code-bill/",
+      "width": 375,
+      "status": 200,
+      "scrollWidth": 375,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/articles/hindus-in-america-practice-caste/",
+      "width": 375,
+      "status": 200,
+      "scrollWidth": 375,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/articles/legacy-of-dr-ambedkar/",
+      "width": 375,
+      "status": 200,
+      "scrollWidth": 375,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/articles/origin-by-dan-brown/",
+      "width": 375,
+      "status": 200,
+      "scrollWidth": 375,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/articles/purattasi-a-month-of-dietary-devotion/",
+      "width": 375,
+      "status": 200,
+      "scrollWidth": 375,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/articles/what-periyar-means-to-silicon-valley/",
+      "width": 375,
+      "status": 200,
+      "scrollWidth": 375,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/authors/ashoka-mody/",
+      "width": 375,
+      "status": 200,
+      "scrollWidth": 375,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/authors/bell-hooks/",
+      "width": 375,
+      "status": 200,
+      "scrollWidth": 375,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/authors/dr-b-r-ambedkar/",
+      "width": 375,
+      "status": 200,
+      "scrollWidth": 375,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/authors/gail-omvedt/",
+      "width": 375,
+      "status": 200,
+      "scrollWidth": 375,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/authors/kancha-ilaiah/",
+      "width": 375,
+      "status": 200,
+      "scrollWidth": 375,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/authors/malcolm-x/",
+      "width": 375,
+      "status": 200,
+      "scrollWidth": 375,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/authors/manoj-mitta/",
+      "width": 375,
+      "status": 200,
+      "scrollWidth": 375,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/authors/periyar-e-v-ramasamy/",
+      "width": 375,
+      "status": 200,
+      "scrollWidth": 375,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/book-readings/",
+      "width": 375,
+      "status": 200,
+      "scrollWidth": 375,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/book-readings/2020-02-23-riddles-in-hinduism-riddles-1-8/",
+      "width": 375,
+      "status": 200,
+      "scrollWidth": 375,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/book-readings/2020-03-15-riddles-in-hinduism-riddles-16-20/",
+      "width": 375,
+      "status": 200,
+      "scrollWidth": 375,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/book-readings/2020-04-26-riddles-in-hinduism-riddles-21-24/",
+      "width": 375,
+      "status": 200,
+      "scrollWidth": 375,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/book-readings/2020-05-17-annihilation-of-caste/",
+      "width": 375,
+      "status": 200,
+      "scrollWidth": 375,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/book-readings/2020-06-07-annihilation-of-caste/",
+      "width": 375,
+      "status": 200,
+      "scrollWidth": 375,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/book-readings/2024-01-27-palestine-a-reading-list/",
+      "width": 375,
+      "status": 200,
+      "scrollWidth": 375,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/book-readings/2024-10-05-caste-pride-chapters-15-18/",
+      "width": 375,
+      "status": 200,
+      "scrollWidth": 375,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/book-readings/2025-03-15-waiting-for-a-visa/",
+      "width": 375,
+      "status": 200,
+      "scrollWidth": 375,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/book-readings/2025-04-05-annihilation-of-caste/",
+      "width": 375,
+      "status": 200,
+      "scrollWidth": 375,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/book-readings/2025-04-26-by-any-means-necessary-chapters-1-2/",
+      "width": 375,
+      "status": 200,
+      "scrollWidth": 375,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/book-readings/2025-05-10-by-any-means-necessary-chapters-3-5/",
+      "width": 375,
+      "status": 200,
+      "scrollWidth": 375,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/book-readings/2025-05-31-by-any-means-necessary-chapters-6-9/",
+      "width": 375,
+      "status": 200,
+      "scrollWidth": 375,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/book-readings/2025-06-14-by-any-means-necessary-chapters-10-12/",
+      "width": 375,
+      "status": 200,
+      "scrollWidth": 375,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/book-readings/2025-06-28-the-will-to-change-chapters-1-4/",
+      "width": 375,
+      "status": 200,
+      "scrollWidth": 375,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/book-readings/2025-07-19-the-will-to-change-chapters-5-8/",
+      "width": 375,
+      "status": 200,
+      "scrollWidth": 375,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/book-readings/2025-10-25-the-will-to-change-chapters-9-11/",
+      "width": 375,
+      "status": 200,
+      "scrollWidth": 375,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/book-readings/2026-01-10-india-is-broken-chapters-7-9/",
+      "width": 375,
+      "status": 200,
+      "scrollWidth": 375,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/book-readings/2026-01-31-india-is-broken-chapters-10-14/",
+      "width": 375,
+      "status": 200,
+      "scrollWidth": 375,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/book-readings/2026-02-21-india-is-broken-chapters-15-19/",
+      "width": 375,
+      "status": 200,
+      "scrollWidth": 375,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/book-readings/2026-06-06-ambedkar-towards-an-enlightened-india/",
+      "width": 375,
+      "status": 200,
+      "scrollWidth": 375,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/book-readings/2026-06-27-buffalo-nationalism-chapters-1-8/",
+      "width": 375,
+      "status": 200,
+      "scrollWidth": 375,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/book-readings/2026-07-18-buffalo-nationalism-chapters-9-21/",
+      "width": 375,
+      "status": 200,
+      "scrollWidth": 375,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/book-readings/2026-08-08-buffalo-nationalism-chapters-22-33/",
+      "width": 375,
+      "status": 200,
+      "scrollWidth": 375,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/book-readings/2026-08-31-buffalo-nationalism-chapters-34-42/",
+      "width": 375,
+      "status": 200,
+      "scrollWidth": 375,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/book-readings/2026-08-31-why-were-women-enslaved/",
+      "width": 375,
+      "status": 200,
+      "scrollWidth": 375,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/books/",
+      "width": 375,
+      "status": 200,
+      "scrollWidth": 375,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/books/ambedkar/",
+      "width": 375,
+      "status": 200,
+      "scrollWidth": 375,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/books/annihilation-of-caste/",
+      "width": 375,
+      "status": 200,
+      "scrollWidth": 375,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/books/buffalo-nationalism/",
+      "width": 375,
+      "status": 200,
+      "scrollWidth": 375,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/books/by-any-means-necessary/",
+      "width": 375,
+      "status": 200,
+      "scrollWidth": 375,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/books/caste-pride/",
+      "width": 375,
+      "status": 200,
+      "scrollWidth": 375,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/books/india-is-broken/",
+      "width": 375,
+      "status": 200,
+      "scrollWidth": 375,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/books/riddles-in-hinduism/",
+      "width": 375,
+      "status": 200,
+      "scrollWidth": 375,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/books/the-will-to-change/",
+      "width": 375,
+      "status": 200,
+      "scrollWidth": 375,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/books/waiting-for-a-visa/",
+      "width": 375,
+      "status": 200,
+      "scrollWidth": 375,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/books/why-were-women-enslaved/",
+      "width": 375,
+      "status": 200,
+      "scrollWidth": 375,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/comics/",
+      "width": 375,
+      "status": 200,
+      "scrollWidth": 375,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/comics/caste-has-a-cost/",
+      "width": 375,
+      "status": 200,
+      "scrollWidth": 375,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/comics/does-caste-exist-in-the-us-today/",
+      "width": 375,
+      "status": 200,
+      "scrollWidth": 375,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/conferences/",
+      "width": 375,
+      "status": 200,
+      "scrollWidth": 375,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/conferences/aksc-1st-annual-conference-2018/",
+      "width": 375,
+      "status": 200,
+      "scrollWidth": 375,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/conferences/aksc-2nd-annual-conference-2019/",
+      "width": 375,
+      "status": 200,
+      "scrollWidth": 375,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/conferences/aksc-3rd-annual-conference-2022/",
+      "width": 375,
+      "status": 200,
+      "scrollWidth": 375,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/conferences/aksc-4th-annual-conference-2023/",
+      "width": 375,
+      "status": 200,
+      "scrollWidth": 375,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/conferences/aksc-5th-annual-conference-2024/",
+      "width": 375,
+      "status": 200,
+      "scrollWidth": 375,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/conferences/aksc-6th-annual-conference-2025/",
+      "width": 375,
+      "status": 200,
+      "scrollWidth": 375,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/conferences/aksc-7th-annual-conference-2026/",
+      "width": 375,
+      "status": 200,
+      "scrollWidth": 375,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/contact/",
+      "width": 375,
+      "status": 200,
+      "scrollWidth": 375,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/donate/",
+      "width": 375,
+      "status": 200,
+      "scrollWidth": 375,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/helpline/",
+      "width": 375,
+      "status": 200,
+      "scrollWidth": 375,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/interventions/",
+      "width": 375,
+      "status": 200,
+      "scrollWidth": 375,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/interventions/agrarian-crisis-discussion-series/",
+      "width": 375,
+      "status": 200,
+      "scrollWidth": 375,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/interventions/cisco-caste-discrimination-news-coverage/",
+      "width": 375,
+      "status": 200,
+      "scrollWidth": 375,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/interventions/deep-dive-caste-litigation-in-the-usa/",
+      "width": 375,
+      "status": 200,
+      "scrollWidth": 375,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/interventions/faq-about-the-baps-case/",
+      "width": 375,
+      "status": 200,
+      "scrollWidth": 375,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/interventions/lets-read-ambedkar-10-lectures-series/",
+      "width": 375,
+      "status": 200,
+      "scrollWidth": 375,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/interventions/memorandum-on-institutional-murders/",
+      "width": 375,
+      "status": 200,
+      "scrollWidth": 375,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/interventions/misrepresentation-of-sb-403-explained/",
+      "width": 375,
+      "status": 200,
+      "scrollWidth": 375,
+      "errors": [],
+      "blockedOrFailedImages": [
+        "https://dotcompatterns.files.wordpress.com/2022/08/wiggle_pattern.png?w=676"
+      ]
+    },
+    {
+      "path": "/interventions/practice-of-caste-in-the-usa-share-your-testimony/",
+      "width": 375,
+      "status": 200,
+      "scrollWidth": 375,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/interventions/practice-of-caste-in-usa-discussion-series/",
+      "width": 375,
+      "status": 200,
+      "scrollWidth": 375,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/interventions/share-your-testimonies-about-everyday-casteism/",
+      "width": 375,
+      "status": 200,
+      "scrollWidth": 375,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/interventions/solidarity-statement-to-end-caste-practices-in-silicon-valley-and-the-usa/",
+      "width": 375,
+      "status": 200,
+      "scrollWidth": 375,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/interventions/stop-saffronisation-of-indian-history-in-california-textbooks/",
+      "width": 375,
+      "status": 200,
+      "scrollWidth": 375,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/interventions/worldwide-protest-on-violence-on-dalits-at-bhima-koregaon/",
+      "width": 375,
+      "status": 200,
+      "scrollWidth": 375,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/interventions/yes-on-sb-403/",
+      "width": 375,
+      "status": 200,
+      "scrollWidth": 375,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/join/",
+      "width": 375,
+      "status": 200,
+      "scrollWidth": 375,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/magazine/",
+      "width": 375,
+      "status": 200,
+      "scrollWidth": 375,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/organization/",
+      "width": 375,
+      "status": 200,
+      "scrollWidth": 375,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/organization/constitution/",
+      "width": 375,
+      "status": 200,
+      "scrollWidth": 375,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/organization/general-body/",
+      "width": 375,
+      "status": 200,
+      "scrollWidth": 375,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/press-releases/",
+      "width": 375,
+      "status": 200,
+      "scrollWidth": 375,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/press-releases/a-right-to-oppress-santa-clara-county-hrc-on-caste-discrimination/",
+      "width": 375,
+      "status": 200,
+      "scrollWidth": 375,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/press-releases/aacd-urging-governor-newsom-to-sign-sb-403/",
+      "width": 375,
+      "status": 200,
+      "scrollWidth": 375,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/press-releases/aksc-appreciates-alphabet-workers-union-statement-on-caste-discrimination/",
+      "width": 375,
+      "status": 200,
+      "scrollWidth": 375,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/press-releases/aksc-condemns-raja-and-gats-on-the-caste-scrutiny-issue/",
+      "width": 375,
+      "status": 200,
+      "scrollWidth": 375,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/press-releases/aksc-condemns-the-killing-of-george-floyd/",
+      "width": 375,
+      "status": 200,
+      "scrollWidth": 375,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/press-releases/aksc-urging-governor-newsom-to-sign-sb-403/",
+      "width": 375,
+      "status": 200,
+      "scrollWidth": 375,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/press-releases/aksc-welcomes-assembly-judiciary-committee-vote-on-sb-403/",
+      "width": 375,
+      "status": 200,
+      "scrollWidth": 375,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/press-releases/california-assembly-votes-in-favor-of-sb-403/",
+      "width": 375,
+      "status": 200,
+      "scrollWidth": 375,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/press-releases/federal-court-landmark-judgment-affirming-civil-rights-for-the-caste-oppressed/",
+      "width": 375,
+      "status": 200,
+      "scrollWidth": 375,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/press-releases/federal-court-order-deals-major-blow-to-hindu-supremacists/",
+      "width": 375,
+      "status": 200,
+      "scrollWidth": 375,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/press-releases/federal-court-upholds-csu-policy-protecting-against-caste-discrimination/",
+      "width": 375,
+      "status": 200,
+      "scrollWidth": 375,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/press-releases/indian-american-alliance-against-caste-tells-ceos-to-combat-caste-discrimination/",
+      "width": 375,
+      "status": 200,
+      "scrollWidth": 375,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/press-releases/major-victory-caste-discrimination-case-against-cisco-in-discovery/",
+      "width": 375,
+      "status": 200,
+      "scrollWidth": 375,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/press-releases/rutgers-university-step-toward-unleashing-caste-oppressed-potential/",
+      "width": 375,
+      "status": 200,
+      "scrollWidth": 375,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/press-releases/statement-on-harassment-of-com-divya-bharathi/",
+      "width": 375,
+      "status": 200,
+      "scrollWidth": 375,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/press-releases/statement-on-support-of-california-aca-5/",
+      "width": 375,
+      "status": 200,
+      "scrollWidth": 375,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/press-releases/yes-on-california-prop-16-joint-solidarity-statement/",
+      "width": 375,
+      "status": 200,
+      "scrollWidth": 375,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/programs/",
+      "width": 375,
+      "status": 200,
+      "scrollWidth": 375,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/programs/aathi-thamizhar-peravai-struggles/",
+      "width": 375,
+      "status": 200,
+      "scrollWidth": 375,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/programs/aksc-young-ambassador-program/",
+      "width": 375,
+      "status": 200,
+      "scrollWidth": 375,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/programs/ambedkar-127th-birth-anniversary-celebration/",
+      "width": 375,
+      "status": 200,
+      "scrollWidth": 375,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/programs/ambedkar-on-brahmanism-and-capitalism/",
+      "width": 375,
+      "status": 200,
+      "scrollWidth": 375,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/programs/caste-and-gender-violence-with-kavita-krishnan/",
+      "width": 375,
+      "status": 200,
+      "scrollWidth": 375,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/programs/democracy-and-dissent-in-india-today/",
+      "width": 375,
+      "status": 200,
+      "scrollWidth": 375,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/programs/dr-ambedkar-129th-birth-anniversary-celebration/",
+      "width": 375,
+      "status": 200,
+      "scrollWidth": 375,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/programs/honor-killings-love-and-caste/",
+      "width": 375,
+      "status": 200,
+      "scrollWidth": 375,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/programs/inclusive-campuses-in-an-exclusive-society/",
+      "width": 375,
+      "status": 200,
+      "scrollWidth": 375,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/programs/kakkoos-documentary-screening/",
+      "width": 375,
+      "status": 200,
+      "scrollWidth": 375,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/programs/keezhadi-and-states-rights-talks/",
+      "width": 375,
+      "status": 200,
+      "scrollWidth": 375,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/programs/keezhadi-to-harvard/",
+      "width": 375,
+      "status": 200,
+      "scrollWidth": 375,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/programs/kilvenmani-massacre-50th-anniversary/",
+      "width": 375,
+      "status": 200,
+      "scrollWidth": 375,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/programs/neet-and-social-justice/",
+      "width": 375,
+      "status": 200,
+      "scrollWidth": 375,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/programs/periyar-139th-birth-anniversary/",
+      "width": 375,
+      "status": 200,
+      "scrollWidth": 375,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/programs/periyar-140th-birth-anniversary-celebration/",
+      "width": 375,
+      "status": 200,
+      "scrollWidth": 375,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/programs/periyar-147th-birth-anniversary-celebration/",
+      "width": 375,
+      "status": 200,
+      "scrollWidth": 375,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/testimonies-of-practice-of-caste-in-the-usa/",
+      "width": 375,
+      "status": 200,
+      "scrollWidth": 375,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/who-said-what/",
+      "width": 375,
+      "status": 200,
+      "scrollWidth": 375,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/404.html",
+      "width": 375,
+      "status": 200,
+      "scrollWidth": 375,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/",
+      "width": 768,
+      "status": 200,
+      "scrollWidth": 768,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/actions/",
+      "width": 768,
+      "status": 200,
+      "scrollWidth": 768,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/anti-caste-toolkit/",
+      "width": 768,
+      "status": 200,
+      "scrollWidth": 768,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/articles/",
+      "width": 768,
+      "status": 200,
+      "scrollWidth": 768,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/articles/bhima-koregaon-lessons-from-the-untouchables-and-pax-britannica/",
+      "width": 768,
+      "status": 200,
+      "scrollWidth": 768,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/articles/caste-discrimination-where-is-it/",
+      "width": 768,
+      "status": 200,
+      "scrollWidth": 768,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/articles/dr-ambedkars-vision-of-equality-through-hindu-code-bill/",
+      "width": 768,
+      "status": 200,
+      "scrollWidth": 768,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/articles/hindus-in-america-practice-caste/",
+      "width": 768,
+      "status": 200,
+      "scrollWidth": 768,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/articles/legacy-of-dr-ambedkar/",
+      "width": 768,
+      "status": 200,
+      "scrollWidth": 768,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/articles/origin-by-dan-brown/",
+      "width": 768,
+      "status": 200,
+      "scrollWidth": 768,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/articles/purattasi-a-month-of-dietary-devotion/",
+      "width": 768,
+      "status": 200,
+      "scrollWidth": 768,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/articles/what-periyar-means-to-silicon-valley/",
+      "width": 768,
+      "status": 200,
+      "scrollWidth": 768,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/authors/ashoka-mody/",
+      "width": 768,
+      "status": 200,
+      "scrollWidth": 768,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/authors/bell-hooks/",
+      "width": 768,
+      "status": 200,
+      "scrollWidth": 768,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/authors/dr-b-r-ambedkar/",
+      "width": 768,
+      "status": 200,
+      "scrollWidth": 768,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/authors/gail-omvedt/",
+      "width": 768,
+      "status": 200,
+      "scrollWidth": 768,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/authors/kancha-ilaiah/",
+      "width": 768,
+      "status": 200,
+      "scrollWidth": 768,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/authors/malcolm-x/",
+      "width": 768,
+      "status": 200,
+      "scrollWidth": 768,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/authors/manoj-mitta/",
+      "width": 768,
+      "status": 200,
+      "scrollWidth": 768,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/authors/periyar-e-v-ramasamy/",
+      "width": 768,
+      "status": 200,
+      "scrollWidth": 768,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/book-readings/",
+      "width": 768,
+      "status": 200,
+      "scrollWidth": 768,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/book-readings/2020-02-23-riddles-in-hinduism-riddles-1-8/",
+      "width": 768,
+      "status": 200,
+      "scrollWidth": 768,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/book-readings/2020-03-15-riddles-in-hinduism-riddles-16-20/",
+      "width": 768,
+      "status": 200,
+      "scrollWidth": 768,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/book-readings/2020-04-26-riddles-in-hinduism-riddles-21-24/",
+      "width": 768,
+      "status": 200,
+      "scrollWidth": 768,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/book-readings/2020-05-17-annihilation-of-caste/",
+      "width": 768,
+      "status": 200,
+      "scrollWidth": 768,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/book-readings/2020-06-07-annihilation-of-caste/",
+      "width": 768,
+      "status": 200,
+      "scrollWidth": 768,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/book-readings/2024-01-27-palestine-a-reading-list/",
+      "width": 768,
+      "status": 200,
+      "scrollWidth": 768,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/book-readings/2024-10-05-caste-pride-chapters-15-18/",
+      "width": 768,
+      "status": 200,
+      "scrollWidth": 768,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/book-readings/2025-03-15-waiting-for-a-visa/",
+      "width": 768,
+      "status": 200,
+      "scrollWidth": 768,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/book-readings/2025-04-05-annihilation-of-caste/",
+      "width": 768,
+      "status": 200,
+      "scrollWidth": 768,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/book-readings/2025-04-26-by-any-means-necessary-chapters-1-2/",
+      "width": 768,
+      "status": 200,
+      "scrollWidth": 768,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/book-readings/2025-05-10-by-any-means-necessary-chapters-3-5/",
+      "width": 768,
+      "status": 200,
+      "scrollWidth": 768,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/book-readings/2025-05-31-by-any-means-necessary-chapters-6-9/",
+      "width": 768,
+      "status": 200,
+      "scrollWidth": 768,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/book-readings/2025-06-14-by-any-means-necessary-chapters-10-12/",
+      "width": 768,
+      "status": 200,
+      "scrollWidth": 768,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/book-readings/2025-06-28-the-will-to-change-chapters-1-4/",
+      "width": 768,
+      "status": 200,
+      "scrollWidth": 768,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/book-readings/2025-07-19-the-will-to-change-chapters-5-8/",
+      "width": 768,
+      "status": 200,
+      "scrollWidth": 768,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/book-readings/2025-10-25-the-will-to-change-chapters-9-11/",
+      "width": 768,
+      "status": 200,
+      "scrollWidth": 768,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/book-readings/2026-01-10-india-is-broken-chapters-7-9/",
+      "width": 768,
+      "status": 200,
+      "scrollWidth": 768,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/book-readings/2026-01-31-india-is-broken-chapters-10-14/",
+      "width": 768,
+      "status": 200,
+      "scrollWidth": 768,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/book-readings/2026-02-21-india-is-broken-chapters-15-19/",
+      "width": 768,
+      "status": 200,
+      "scrollWidth": 768,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/book-readings/2026-06-06-ambedkar-towards-an-enlightened-india/",
+      "width": 768,
+      "status": 200,
+      "scrollWidth": 768,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/book-readings/2026-06-27-buffalo-nationalism-chapters-1-8/",
+      "width": 768,
+      "status": 200,
+      "scrollWidth": 768,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/book-readings/2026-07-18-buffalo-nationalism-chapters-9-21/",
+      "width": 768,
+      "status": 200,
+      "scrollWidth": 768,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/book-readings/2026-08-08-buffalo-nationalism-chapters-22-33/",
+      "width": 768,
+      "status": 200,
+      "scrollWidth": 768,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/book-readings/2026-08-31-buffalo-nationalism-chapters-34-42/",
+      "width": 768,
+      "status": 200,
+      "scrollWidth": 768,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/book-readings/2026-08-31-why-were-women-enslaved/",
+      "width": 768,
+      "status": 200,
+      "scrollWidth": 768,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/books/",
+      "width": 768,
+      "status": 200,
+      "scrollWidth": 768,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/books/ambedkar/",
+      "width": 768,
+      "status": 200,
+      "scrollWidth": 768,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/books/annihilation-of-caste/",
+      "width": 768,
+      "status": 200,
+      "scrollWidth": 768,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/books/buffalo-nationalism/",
+      "width": 768,
+      "status": 200,
+      "scrollWidth": 768,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/books/by-any-means-necessary/",
+      "width": 768,
+      "status": 200,
+      "scrollWidth": 768,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/books/caste-pride/",
+      "width": 768,
+      "status": 200,
+      "scrollWidth": 768,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/books/india-is-broken/",
+      "width": 768,
+      "status": 200,
+      "scrollWidth": 768,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/books/riddles-in-hinduism/",
+      "width": 768,
+      "status": 200,
+      "scrollWidth": 768,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/books/the-will-to-change/",
+      "width": 768,
+      "status": 200,
+      "scrollWidth": 768,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/books/waiting-for-a-visa/",
+      "width": 768,
+      "status": 200,
+      "scrollWidth": 768,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/books/why-were-women-enslaved/",
+      "width": 768,
+      "status": 200,
+      "scrollWidth": 768,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/comics/",
+      "width": 768,
+      "status": 200,
+      "scrollWidth": 768,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/comics/caste-has-a-cost/",
+      "width": 768,
+      "status": 200,
+      "scrollWidth": 768,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/comics/does-caste-exist-in-the-us-today/",
+      "width": 768,
+      "status": 200,
+      "scrollWidth": 768,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/conferences/",
+      "width": 768,
+      "status": 200,
+      "scrollWidth": 768,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/conferences/aksc-1st-annual-conference-2018/",
+      "width": 768,
+      "status": 200,
+      "scrollWidth": 768,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/conferences/aksc-2nd-annual-conference-2019/",
+      "width": 768,
+      "status": 200,
+      "scrollWidth": 768,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/conferences/aksc-3rd-annual-conference-2022/",
+      "width": 768,
+      "status": 200,
+      "scrollWidth": 768,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/conferences/aksc-4th-annual-conference-2023/",
+      "width": 768,
+      "status": 200,
+      "scrollWidth": 768,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/conferences/aksc-5th-annual-conference-2024/",
+      "width": 768,
+      "status": 200,
+      "scrollWidth": 768,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/conferences/aksc-6th-annual-conference-2025/",
+      "width": 768,
+      "status": 200,
+      "scrollWidth": 768,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/conferences/aksc-7th-annual-conference-2026/",
+      "width": 768,
+      "status": 200,
+      "scrollWidth": 768,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/contact/",
+      "width": 768,
+      "status": 200,
+      "scrollWidth": 768,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/donate/",
+      "width": 768,
+      "status": 200,
+      "scrollWidth": 768,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/helpline/",
+      "width": 768,
+      "status": 200,
+      "scrollWidth": 768,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/interventions/",
+      "width": 768,
+      "status": 200,
+      "scrollWidth": 768,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/interventions/agrarian-crisis-discussion-series/",
+      "width": 768,
+      "status": 200,
+      "scrollWidth": 768,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/interventions/cisco-caste-discrimination-news-coverage/",
+      "width": 768,
+      "status": 200,
+      "scrollWidth": 768,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/interventions/deep-dive-caste-litigation-in-the-usa/",
+      "width": 768,
+      "status": 200,
+      "scrollWidth": 768,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/interventions/faq-about-the-baps-case/",
+      "width": 768,
+      "status": 200,
+      "scrollWidth": 768,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/interventions/lets-read-ambedkar-10-lectures-series/",
+      "width": 768,
+      "status": 200,
+      "scrollWidth": 768,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/interventions/memorandum-on-institutional-murders/",
+      "width": 768,
+      "status": 200,
+      "scrollWidth": 768,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/interventions/misrepresentation-of-sb-403-explained/",
+      "width": 768,
+      "status": 200,
+      "scrollWidth": 768,
+      "errors": [],
+      "blockedOrFailedImages": [
+        "https://dotcompatterns.files.wordpress.com/2022/08/wiggle_pattern.png?w=676"
+      ]
+    },
+    {
+      "path": "/interventions/practice-of-caste-in-the-usa-share-your-testimony/",
+      "width": 768,
+      "status": 200,
+      "scrollWidth": 768,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/interventions/practice-of-caste-in-usa-discussion-series/",
+      "width": 768,
+      "status": 200,
+      "scrollWidth": 768,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/interventions/share-your-testimonies-about-everyday-casteism/",
+      "width": 768,
+      "status": 200,
+      "scrollWidth": 768,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/interventions/solidarity-statement-to-end-caste-practices-in-silicon-valley-and-the-usa/",
+      "width": 768,
+      "status": 200,
+      "scrollWidth": 768,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/interventions/stop-saffronisation-of-indian-history-in-california-textbooks/",
+      "width": 768,
+      "status": 200,
+      "scrollWidth": 768,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/interventions/worldwide-protest-on-violence-on-dalits-at-bhima-koregaon/",
+      "width": 768,
+      "status": 200,
+      "scrollWidth": 768,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/interventions/yes-on-sb-403/",
+      "width": 768,
+      "status": 200,
+      "scrollWidth": 768,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/join/",
+      "width": 768,
+      "status": 200,
+      "scrollWidth": 768,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/magazine/",
+      "width": 768,
+      "status": 200,
+      "scrollWidth": 768,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/organization/",
+      "width": 768,
+      "status": 200,
+      "scrollWidth": 768,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/organization/constitution/",
+      "width": 768,
+      "status": 200,
+      "scrollWidth": 768,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/organization/general-body/",
+      "width": 768,
+      "status": 200,
+      "scrollWidth": 768,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/press-releases/",
+      "width": 768,
+      "status": 200,
+      "scrollWidth": 768,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/press-releases/a-right-to-oppress-santa-clara-county-hrc-on-caste-discrimination/",
+      "width": 768,
+      "status": 200,
+      "scrollWidth": 768,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/press-releases/aacd-urging-governor-newsom-to-sign-sb-403/",
+      "width": 768,
+      "status": 200,
+      "scrollWidth": 768,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/press-releases/aksc-appreciates-alphabet-workers-union-statement-on-caste-discrimination/",
+      "width": 768,
+      "status": 200,
+      "scrollWidth": 768,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/press-releases/aksc-condemns-raja-and-gats-on-the-caste-scrutiny-issue/",
+      "width": 768,
+      "status": 200,
+      "scrollWidth": 768,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/press-releases/aksc-condemns-the-killing-of-george-floyd/",
+      "width": 768,
+      "status": 200,
+      "scrollWidth": 768,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/press-releases/aksc-urging-governor-newsom-to-sign-sb-403/",
+      "width": 768,
+      "status": 200,
+      "scrollWidth": 768,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/press-releases/aksc-welcomes-assembly-judiciary-committee-vote-on-sb-403/",
+      "width": 768,
+      "status": 200,
+      "scrollWidth": 768,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/press-releases/california-assembly-votes-in-favor-of-sb-403/",
+      "width": 768,
+      "status": 200,
+      "scrollWidth": 768,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/press-releases/federal-court-landmark-judgment-affirming-civil-rights-for-the-caste-oppressed/",
+      "width": 768,
+      "status": 200,
+      "scrollWidth": 768,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/press-releases/federal-court-order-deals-major-blow-to-hindu-supremacists/",
+      "width": 768,
+      "status": 200,
+      "scrollWidth": 768,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/press-releases/federal-court-upholds-csu-policy-protecting-against-caste-discrimination/",
+      "width": 768,
+      "status": 200,
+      "scrollWidth": 768,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/press-releases/indian-american-alliance-against-caste-tells-ceos-to-combat-caste-discrimination/",
+      "width": 768,
+      "status": 200,
+      "scrollWidth": 768,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/press-releases/major-victory-caste-discrimination-case-against-cisco-in-discovery/",
+      "width": 768,
+      "status": 200,
+      "scrollWidth": 768,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/press-releases/rutgers-university-step-toward-unleashing-caste-oppressed-potential/",
+      "width": 768,
+      "status": 200,
+      "scrollWidth": 768,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/press-releases/statement-on-harassment-of-com-divya-bharathi/",
+      "width": 768,
+      "status": 200,
+      "scrollWidth": 768,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/press-releases/statement-on-support-of-california-aca-5/",
+      "width": 768,
+      "status": 200,
+      "scrollWidth": 768,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/press-releases/yes-on-california-prop-16-joint-solidarity-statement/",
+      "width": 768,
+      "status": 200,
+      "scrollWidth": 768,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/programs/",
+      "width": 768,
+      "status": 200,
+      "scrollWidth": 768,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/programs/aathi-thamizhar-peravai-struggles/",
+      "width": 768,
+      "status": 200,
+      "scrollWidth": 768,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/programs/aksc-young-ambassador-program/",
+      "width": 768,
+      "status": 200,
+      "scrollWidth": 768,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/programs/ambedkar-127th-birth-anniversary-celebration/",
+      "width": 768,
+      "status": 200,
+      "scrollWidth": 768,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/programs/ambedkar-on-brahmanism-and-capitalism/",
+      "width": 768,
+      "status": 200,
+      "scrollWidth": 768,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/programs/caste-and-gender-violence-with-kavita-krishnan/",
+      "width": 768,
+      "status": 200,
+      "scrollWidth": 768,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/programs/democracy-and-dissent-in-india-today/",
+      "width": 768,
+      "status": 200,
+      "scrollWidth": 768,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/programs/dr-ambedkar-129th-birth-anniversary-celebration/",
+      "width": 768,
+      "status": 200,
+      "scrollWidth": 768,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/programs/honor-killings-love-and-caste/",
+      "width": 768,
+      "status": 200,
+      "scrollWidth": 768,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/programs/inclusive-campuses-in-an-exclusive-society/",
+      "width": 768,
+      "status": 200,
+      "scrollWidth": 768,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/programs/kakkoos-documentary-screening/",
+      "width": 768,
+      "status": 200,
+      "scrollWidth": 768,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/programs/keezhadi-and-states-rights-talks/",
+      "width": 768,
+      "status": 200,
+      "scrollWidth": 768,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/programs/keezhadi-to-harvard/",
+      "width": 768,
+      "status": 200,
+      "scrollWidth": 768,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/programs/kilvenmani-massacre-50th-anniversary/",
+      "width": 768,
+      "status": 200,
+      "scrollWidth": 768,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/programs/neet-and-social-justice/",
+      "width": 768,
+      "status": 200,
+      "scrollWidth": 768,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/programs/periyar-139th-birth-anniversary/",
+      "width": 768,
+      "status": 200,
+      "scrollWidth": 768,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/programs/periyar-140th-birth-anniversary-celebration/",
+      "width": 768,
+      "status": 200,
+      "scrollWidth": 768,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/programs/periyar-147th-birth-anniversary-celebration/",
+      "width": 768,
+      "status": 200,
+      "scrollWidth": 768,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/testimonies-of-practice-of-caste-in-the-usa/",
+      "width": 768,
+      "status": 200,
+      "scrollWidth": 768,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/who-said-what/",
+      "width": 768,
+      "status": 200,
+      "scrollWidth": 768,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/404.html",
+      "width": 768,
+      "status": 200,
+      "scrollWidth": 768,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/",
+      "width": 1280,
+      "status": 200,
+      "scrollWidth": 1280,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/actions/",
+      "width": 1280,
+      "status": 200,
+      "scrollWidth": 1280,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/anti-caste-toolkit/",
+      "width": 1280,
+      "status": 200,
+      "scrollWidth": 1280,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/articles/",
+      "width": 1280,
+      "status": 200,
+      "scrollWidth": 1280,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/articles/bhima-koregaon-lessons-from-the-untouchables-and-pax-britannica/",
+      "width": 1280,
+      "status": 200,
+      "scrollWidth": 1280,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/articles/caste-discrimination-where-is-it/",
+      "width": 1280,
+      "status": 200,
+      "scrollWidth": 1280,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/articles/dr-ambedkars-vision-of-equality-through-hindu-code-bill/",
+      "width": 1280,
+      "status": 200,
+      "scrollWidth": 1280,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/articles/hindus-in-america-practice-caste/",
+      "width": 1280,
+      "status": 200,
+      "scrollWidth": 1280,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/articles/legacy-of-dr-ambedkar/",
+      "width": 1280,
+      "status": 200,
+      "scrollWidth": 1280,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/articles/origin-by-dan-brown/",
+      "width": 1280,
+      "status": 200,
+      "scrollWidth": 1280,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/articles/purattasi-a-month-of-dietary-devotion/",
+      "width": 1280,
+      "status": 200,
+      "scrollWidth": 1280,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/articles/what-periyar-means-to-silicon-valley/",
+      "width": 1280,
+      "status": 200,
+      "scrollWidth": 1280,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/authors/ashoka-mody/",
+      "width": 1280,
+      "status": 200,
+      "scrollWidth": 1280,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/authors/bell-hooks/",
+      "width": 1280,
+      "status": 200,
+      "scrollWidth": 1280,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/authors/dr-b-r-ambedkar/",
+      "width": 1280,
+      "status": 200,
+      "scrollWidth": 1280,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/authors/gail-omvedt/",
+      "width": 1280,
+      "status": 200,
+      "scrollWidth": 1280,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/authors/kancha-ilaiah/",
+      "width": 1280,
+      "status": 200,
+      "scrollWidth": 1280,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/authors/malcolm-x/",
+      "width": 1280,
+      "status": 200,
+      "scrollWidth": 1280,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/authors/manoj-mitta/",
+      "width": 1280,
+      "status": 200,
+      "scrollWidth": 1280,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/authors/periyar-e-v-ramasamy/",
+      "width": 1280,
+      "status": 200,
+      "scrollWidth": 1280,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/book-readings/",
+      "width": 1280,
+      "status": 200,
+      "scrollWidth": 1280,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/book-readings/2020-02-23-riddles-in-hinduism-riddles-1-8/",
+      "width": 1280,
+      "status": 200,
+      "scrollWidth": 1280,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/book-readings/2020-03-15-riddles-in-hinduism-riddles-16-20/",
+      "width": 1280,
+      "status": 200,
+      "scrollWidth": 1280,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/book-readings/2020-04-26-riddles-in-hinduism-riddles-21-24/",
+      "width": 1280,
+      "status": 200,
+      "scrollWidth": 1280,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/book-readings/2020-05-17-annihilation-of-caste/",
+      "width": 1280,
+      "status": 200,
+      "scrollWidth": 1280,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/book-readings/2020-06-07-annihilation-of-caste/",
+      "width": 1280,
+      "status": 200,
+      "scrollWidth": 1280,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/book-readings/2024-01-27-palestine-a-reading-list/",
+      "width": 1280,
+      "status": 200,
+      "scrollWidth": 1280,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/book-readings/2024-10-05-caste-pride-chapters-15-18/",
+      "width": 1280,
+      "status": 200,
+      "scrollWidth": 1280,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/book-readings/2025-03-15-waiting-for-a-visa/",
+      "width": 1280,
+      "status": 200,
+      "scrollWidth": 1280,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/book-readings/2025-04-05-annihilation-of-caste/",
+      "width": 1280,
+      "status": 200,
+      "scrollWidth": 1280,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/book-readings/2025-04-26-by-any-means-necessary-chapters-1-2/",
+      "width": 1280,
+      "status": 200,
+      "scrollWidth": 1280,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/book-readings/2025-05-10-by-any-means-necessary-chapters-3-5/",
+      "width": 1280,
+      "status": 200,
+      "scrollWidth": 1280,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/book-readings/2025-05-31-by-any-means-necessary-chapters-6-9/",
+      "width": 1280,
+      "status": 200,
+      "scrollWidth": 1280,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/book-readings/2025-06-14-by-any-means-necessary-chapters-10-12/",
+      "width": 1280,
+      "status": 200,
+      "scrollWidth": 1280,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/book-readings/2025-06-28-the-will-to-change-chapters-1-4/",
+      "width": 1280,
+      "status": 200,
+      "scrollWidth": 1280,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/book-readings/2025-07-19-the-will-to-change-chapters-5-8/",
+      "width": 1280,
+      "status": 200,
+      "scrollWidth": 1280,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/book-readings/2025-10-25-the-will-to-change-chapters-9-11/",
+      "width": 1280,
+      "status": 200,
+      "scrollWidth": 1280,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/book-readings/2026-01-10-india-is-broken-chapters-7-9/",
+      "width": 1280,
+      "status": 200,
+      "scrollWidth": 1280,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/book-readings/2026-01-31-india-is-broken-chapters-10-14/",
+      "width": 1280,
+      "status": 200,
+      "scrollWidth": 1280,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/book-readings/2026-02-21-india-is-broken-chapters-15-19/",
+      "width": 1280,
+      "status": 200,
+      "scrollWidth": 1280,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/book-readings/2026-06-06-ambedkar-towards-an-enlightened-india/",
+      "width": 1280,
+      "status": 200,
+      "scrollWidth": 1280,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/book-readings/2026-06-27-buffalo-nationalism-chapters-1-8/",
+      "width": 1280,
+      "status": 200,
+      "scrollWidth": 1280,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/book-readings/2026-07-18-buffalo-nationalism-chapters-9-21/",
+      "width": 1280,
+      "status": 200,
+      "scrollWidth": 1280,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/book-readings/2026-08-08-buffalo-nationalism-chapters-22-33/",
+      "width": 1280,
+      "status": 200,
+      "scrollWidth": 1280,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/book-readings/2026-08-31-buffalo-nationalism-chapters-34-42/",
+      "width": 1280,
+      "status": 200,
+      "scrollWidth": 1280,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/book-readings/2026-08-31-why-were-women-enslaved/",
+      "width": 1280,
+      "status": 200,
+      "scrollWidth": 1280,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/books/",
+      "width": 1280,
+      "status": 200,
+      "scrollWidth": 1280,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/books/ambedkar/",
+      "width": 1280,
+      "status": 200,
+      "scrollWidth": 1280,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/books/annihilation-of-caste/",
+      "width": 1280,
+      "status": 200,
+      "scrollWidth": 1280,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/books/buffalo-nationalism/",
+      "width": 1280,
+      "status": 200,
+      "scrollWidth": 1280,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/books/by-any-means-necessary/",
+      "width": 1280,
+      "status": 200,
+      "scrollWidth": 1280,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/books/caste-pride/",
+      "width": 1280,
+      "status": 200,
+      "scrollWidth": 1280,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/books/india-is-broken/",
+      "width": 1280,
+      "status": 200,
+      "scrollWidth": 1280,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/books/riddles-in-hinduism/",
+      "width": 1280,
+      "status": 200,
+      "scrollWidth": 1280,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/books/the-will-to-change/",
+      "width": 1280,
+      "status": 200,
+      "scrollWidth": 1280,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/books/waiting-for-a-visa/",
+      "width": 1280,
+      "status": 200,
+      "scrollWidth": 1280,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/books/why-were-women-enslaved/",
+      "width": 1280,
+      "status": 200,
+      "scrollWidth": 1280,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/comics/",
+      "width": 1280,
+      "status": 200,
+      "scrollWidth": 1280,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/comics/caste-has-a-cost/",
+      "width": 1280,
+      "status": 200,
+      "scrollWidth": 1280,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/comics/does-caste-exist-in-the-us-today/",
+      "width": 1280,
+      "status": 200,
+      "scrollWidth": 1280,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/conferences/",
+      "width": 1280,
+      "status": 200,
+      "scrollWidth": 1280,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/conferences/aksc-1st-annual-conference-2018/",
+      "width": 1280,
+      "status": 200,
+      "scrollWidth": 1280,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/conferences/aksc-2nd-annual-conference-2019/",
+      "width": 1280,
+      "status": 200,
+      "scrollWidth": 1280,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/conferences/aksc-3rd-annual-conference-2022/",
+      "width": 1280,
+      "status": 200,
+      "scrollWidth": 1280,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/conferences/aksc-4th-annual-conference-2023/",
+      "width": 1280,
+      "status": 200,
+      "scrollWidth": 1280,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/conferences/aksc-5th-annual-conference-2024/",
+      "width": 1280,
+      "status": 200,
+      "scrollWidth": 1280,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/conferences/aksc-6th-annual-conference-2025/",
+      "width": 1280,
+      "status": 200,
+      "scrollWidth": 1280,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/conferences/aksc-7th-annual-conference-2026/",
+      "width": 1280,
+      "status": 200,
+      "scrollWidth": 1280,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/contact/",
+      "width": 1280,
+      "status": 200,
+      "scrollWidth": 1280,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/donate/",
+      "width": 1280,
+      "status": 200,
+      "scrollWidth": 1280,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/helpline/",
+      "width": 1280,
+      "status": 200,
+      "scrollWidth": 1280,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/interventions/",
+      "width": 1280,
+      "status": 200,
+      "scrollWidth": 1280,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/interventions/agrarian-crisis-discussion-series/",
+      "width": 1280,
+      "status": 200,
+      "scrollWidth": 1280,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/interventions/cisco-caste-discrimination-news-coverage/",
+      "width": 1280,
+      "status": 200,
+      "scrollWidth": 1280,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/interventions/deep-dive-caste-litigation-in-the-usa/",
+      "width": 1280,
+      "status": 200,
+      "scrollWidth": 1280,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/interventions/faq-about-the-baps-case/",
+      "width": 1280,
+      "status": 200,
+      "scrollWidth": 1280,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/interventions/lets-read-ambedkar-10-lectures-series/",
+      "width": 1280,
+      "status": 200,
+      "scrollWidth": 1280,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/interventions/memorandum-on-institutional-murders/",
+      "width": 1280,
+      "status": 200,
+      "scrollWidth": 1280,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/interventions/misrepresentation-of-sb-403-explained/",
+      "width": 1280,
+      "status": 200,
+      "scrollWidth": 1280,
+      "errors": [],
+      "blockedOrFailedImages": [
+        "https://dotcompatterns.files.wordpress.com/2022/08/wiggle_pattern.png?w=676"
+      ]
+    },
+    {
+      "path": "/interventions/practice-of-caste-in-the-usa-share-your-testimony/",
+      "width": 1280,
+      "status": 200,
+      "scrollWidth": 1280,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/interventions/practice-of-caste-in-usa-discussion-series/",
+      "width": 1280,
+      "status": 200,
+      "scrollWidth": 1280,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/interventions/share-your-testimonies-about-everyday-casteism/",
+      "width": 1280,
+      "status": 200,
+      "scrollWidth": 1280,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/interventions/solidarity-statement-to-end-caste-practices-in-silicon-valley-and-the-usa/",
+      "width": 1280,
+      "status": 200,
+      "scrollWidth": 1280,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/interventions/stop-saffronisation-of-indian-history-in-california-textbooks/",
+      "width": 1280,
+      "status": 200,
+      "scrollWidth": 1280,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/interventions/worldwide-protest-on-violence-on-dalits-at-bhima-koregaon/",
+      "width": 1280,
+      "status": 200,
+      "scrollWidth": 1280,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/interventions/yes-on-sb-403/",
+      "width": 1280,
+      "status": 200,
+      "scrollWidth": 1280,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/join/",
+      "width": 1280,
+      "status": 200,
+      "scrollWidth": 1280,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/magazine/",
+      "width": 1280,
+      "status": 200,
+      "scrollWidth": 1280,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/organization/",
+      "width": 1280,
+      "status": 200,
+      "scrollWidth": 1280,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/organization/constitution/",
+      "width": 1280,
+      "status": 200,
+      "scrollWidth": 1280,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/organization/general-body/",
+      "width": 1280,
+      "status": 200,
+      "scrollWidth": 1280,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/press-releases/",
+      "width": 1280,
+      "status": 200,
+      "scrollWidth": 1280,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/press-releases/a-right-to-oppress-santa-clara-county-hrc-on-caste-discrimination/",
+      "width": 1280,
+      "status": 200,
+      "scrollWidth": 1280,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/press-releases/aacd-urging-governor-newsom-to-sign-sb-403/",
+      "width": 1280,
+      "status": 200,
+      "scrollWidth": 1280,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/press-releases/aksc-appreciates-alphabet-workers-union-statement-on-caste-discrimination/",
+      "width": 1280,
+      "status": 200,
+      "scrollWidth": 1280,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/press-releases/aksc-condemns-raja-and-gats-on-the-caste-scrutiny-issue/",
+      "width": 1280,
+      "status": 200,
+      "scrollWidth": 1280,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/press-releases/aksc-condemns-the-killing-of-george-floyd/",
+      "width": 1280,
+      "status": 200,
+      "scrollWidth": 1280,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/press-releases/aksc-urging-governor-newsom-to-sign-sb-403/",
+      "width": 1280,
+      "status": 200,
+      "scrollWidth": 1280,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/press-releases/aksc-welcomes-assembly-judiciary-committee-vote-on-sb-403/",
+      "width": 1280,
+      "status": 200,
+      "scrollWidth": 1280,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/press-releases/california-assembly-votes-in-favor-of-sb-403/",
+      "width": 1280,
+      "status": 200,
+      "scrollWidth": 1280,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/press-releases/federal-court-landmark-judgment-affirming-civil-rights-for-the-caste-oppressed/",
+      "width": 1280,
+      "status": 200,
+      "scrollWidth": 1280,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/press-releases/federal-court-order-deals-major-blow-to-hindu-supremacists/",
+      "width": 1280,
+      "status": 200,
+      "scrollWidth": 1280,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/press-releases/federal-court-upholds-csu-policy-protecting-against-caste-discrimination/",
+      "width": 1280,
+      "status": 200,
+      "scrollWidth": 1280,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/press-releases/indian-american-alliance-against-caste-tells-ceos-to-combat-caste-discrimination/",
+      "width": 1280,
+      "status": 200,
+      "scrollWidth": 1280,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/press-releases/major-victory-caste-discrimination-case-against-cisco-in-discovery/",
+      "width": 1280,
+      "status": 200,
+      "scrollWidth": 1280,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/press-releases/rutgers-university-step-toward-unleashing-caste-oppressed-potential/",
+      "width": 1280,
+      "status": 200,
+      "scrollWidth": 1280,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/press-releases/statement-on-harassment-of-com-divya-bharathi/",
+      "width": 1280,
+      "status": 200,
+      "scrollWidth": 1280,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/press-releases/statement-on-support-of-california-aca-5/",
+      "width": 1280,
+      "status": 200,
+      "scrollWidth": 1280,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/press-releases/yes-on-california-prop-16-joint-solidarity-statement/",
+      "width": 1280,
+      "status": 200,
+      "scrollWidth": 1280,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/programs/",
+      "width": 1280,
+      "status": 200,
+      "scrollWidth": 1280,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/programs/aathi-thamizhar-peravai-struggles/",
+      "width": 1280,
+      "status": 200,
+      "scrollWidth": 1280,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/programs/aksc-young-ambassador-program/",
+      "width": 1280,
+      "status": 200,
+      "scrollWidth": 1280,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/programs/ambedkar-127th-birth-anniversary-celebration/",
+      "width": 1280,
+      "status": 200,
+      "scrollWidth": 1280,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/programs/ambedkar-on-brahmanism-and-capitalism/",
+      "width": 1280,
+      "status": 200,
+      "scrollWidth": 1280,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/programs/caste-and-gender-violence-with-kavita-krishnan/",
+      "width": 1280,
+      "status": 200,
+      "scrollWidth": 1280,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/programs/democracy-and-dissent-in-india-today/",
+      "width": 1280,
+      "status": 200,
+      "scrollWidth": 1280,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/programs/dr-ambedkar-129th-birth-anniversary-celebration/",
+      "width": 1280,
+      "status": 200,
+      "scrollWidth": 1280,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/programs/honor-killings-love-and-caste/",
+      "width": 1280,
+      "status": 200,
+      "scrollWidth": 1280,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/programs/inclusive-campuses-in-an-exclusive-society/",
+      "width": 1280,
+      "status": 200,
+      "scrollWidth": 1280,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/programs/kakkoos-documentary-screening/",
+      "width": 1280,
+      "status": 200,
+      "scrollWidth": 1280,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/programs/keezhadi-and-states-rights-talks/",
+      "width": 1280,
+      "status": 200,
+      "scrollWidth": 1280,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/programs/keezhadi-to-harvard/",
+      "width": 1280,
+      "status": 200,
+      "scrollWidth": 1280,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/programs/kilvenmani-massacre-50th-anniversary/",
+      "width": 1280,
+      "status": 200,
+      "scrollWidth": 1280,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/programs/neet-and-social-justice/",
+      "width": 1280,
+      "status": 200,
+      "scrollWidth": 1280,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/programs/periyar-139th-birth-anniversary/",
+      "width": 1280,
+      "status": 200,
+      "scrollWidth": 1280,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/programs/periyar-140th-birth-anniversary-celebration/",
+      "width": 1280,
+      "status": 200,
+      "scrollWidth": 1280,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/programs/periyar-147th-birth-anniversary-celebration/",
+      "width": 1280,
+      "status": 200,
+      "scrollWidth": 1280,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/testimonies-of-practice-of-caste-in-the-usa/",
+      "width": 1280,
+      "status": 200,
+      "scrollWidth": 1280,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/who-said-what/",
+      "width": 1280,
+      "status": 200,
+      "scrollWidth": 1280,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/404.html",
+      "width": 1280,
+      "status": 200,
+      "scrollWidth": 1280,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/",
+      "width": 1920,
+      "status": 200,
+      "scrollWidth": 1920,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/actions/",
+      "width": 1920,
+      "status": 200,
+      "scrollWidth": 1920,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/anti-caste-toolkit/",
+      "width": 1920,
+      "status": 200,
+      "scrollWidth": 1920,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/articles/",
+      "width": 1920,
+      "status": 200,
+      "scrollWidth": 1920,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/articles/bhima-koregaon-lessons-from-the-untouchables-and-pax-britannica/",
+      "width": 1920,
+      "status": 200,
+      "scrollWidth": 1920,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/articles/caste-discrimination-where-is-it/",
+      "width": 1920,
+      "status": 200,
+      "scrollWidth": 1920,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/articles/dr-ambedkars-vision-of-equality-through-hindu-code-bill/",
+      "width": 1920,
+      "status": 200,
+      "scrollWidth": 1920,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/articles/hindus-in-america-practice-caste/",
+      "width": 1920,
+      "status": 200,
+      "scrollWidth": 1920,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/articles/legacy-of-dr-ambedkar/",
+      "width": 1920,
+      "status": 200,
+      "scrollWidth": 1920,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/articles/origin-by-dan-brown/",
+      "width": 1920,
+      "status": 200,
+      "scrollWidth": 1920,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/articles/purattasi-a-month-of-dietary-devotion/",
+      "width": 1920,
+      "status": 200,
+      "scrollWidth": 1920,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/articles/what-periyar-means-to-silicon-valley/",
+      "width": 1920,
+      "status": 200,
+      "scrollWidth": 1920,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/authors/ashoka-mody/",
+      "width": 1920,
+      "status": 200,
+      "scrollWidth": 1920,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/authors/bell-hooks/",
+      "width": 1920,
+      "status": 200,
+      "scrollWidth": 1920,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/authors/dr-b-r-ambedkar/",
+      "width": 1920,
+      "status": 200,
+      "scrollWidth": 1920,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/authors/gail-omvedt/",
+      "width": 1920,
+      "status": 200,
+      "scrollWidth": 1920,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/authors/kancha-ilaiah/",
+      "width": 1920,
+      "status": 200,
+      "scrollWidth": 1920,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/authors/malcolm-x/",
+      "width": 1920,
+      "status": 200,
+      "scrollWidth": 1920,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/authors/manoj-mitta/",
+      "width": 1920,
+      "status": 200,
+      "scrollWidth": 1920,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/authors/periyar-e-v-ramasamy/",
+      "width": 1920,
+      "status": 200,
+      "scrollWidth": 1920,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/book-readings/",
+      "width": 1920,
+      "status": 200,
+      "scrollWidth": 1920,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/book-readings/2020-02-23-riddles-in-hinduism-riddles-1-8/",
+      "width": 1920,
+      "status": 200,
+      "scrollWidth": 1920,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/book-readings/2020-03-15-riddles-in-hinduism-riddles-16-20/",
+      "width": 1920,
+      "status": 200,
+      "scrollWidth": 1920,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/book-readings/2020-04-26-riddles-in-hinduism-riddles-21-24/",
+      "width": 1920,
+      "status": 200,
+      "scrollWidth": 1920,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/book-readings/2020-05-17-annihilation-of-caste/",
+      "width": 1920,
+      "status": 200,
+      "scrollWidth": 1920,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/book-readings/2020-06-07-annihilation-of-caste/",
+      "width": 1920,
+      "status": 200,
+      "scrollWidth": 1920,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/book-readings/2024-01-27-palestine-a-reading-list/",
+      "width": 1920,
+      "status": 200,
+      "scrollWidth": 1920,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/book-readings/2024-10-05-caste-pride-chapters-15-18/",
+      "width": 1920,
+      "status": 200,
+      "scrollWidth": 1920,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/book-readings/2025-03-15-waiting-for-a-visa/",
+      "width": 1920,
+      "status": 200,
+      "scrollWidth": 1920,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/book-readings/2025-04-05-annihilation-of-caste/",
+      "width": 1920,
+      "status": 200,
+      "scrollWidth": 1920,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/book-readings/2025-04-26-by-any-means-necessary-chapters-1-2/",
+      "width": 1920,
+      "status": 200,
+      "scrollWidth": 1920,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/book-readings/2025-05-10-by-any-means-necessary-chapters-3-5/",
+      "width": 1920,
+      "status": 200,
+      "scrollWidth": 1920,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/book-readings/2025-05-31-by-any-means-necessary-chapters-6-9/",
+      "width": 1920,
+      "status": 200,
+      "scrollWidth": 1920,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/book-readings/2025-06-14-by-any-means-necessary-chapters-10-12/",
+      "width": 1920,
+      "status": 200,
+      "scrollWidth": 1920,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/book-readings/2025-06-28-the-will-to-change-chapters-1-4/",
+      "width": 1920,
+      "status": 200,
+      "scrollWidth": 1920,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/book-readings/2025-07-19-the-will-to-change-chapters-5-8/",
+      "width": 1920,
+      "status": 200,
+      "scrollWidth": 1920,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/book-readings/2025-10-25-the-will-to-change-chapters-9-11/",
+      "width": 1920,
+      "status": 200,
+      "scrollWidth": 1920,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/book-readings/2026-01-10-india-is-broken-chapters-7-9/",
+      "width": 1920,
+      "status": 200,
+      "scrollWidth": 1920,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/book-readings/2026-01-31-india-is-broken-chapters-10-14/",
+      "width": 1920,
+      "status": 200,
+      "scrollWidth": 1920,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/book-readings/2026-02-21-india-is-broken-chapters-15-19/",
+      "width": 1920,
+      "status": 200,
+      "scrollWidth": 1920,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/book-readings/2026-06-06-ambedkar-towards-an-enlightened-india/",
+      "width": 1920,
+      "status": 200,
+      "scrollWidth": 1920,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/book-readings/2026-06-27-buffalo-nationalism-chapters-1-8/",
+      "width": 1920,
+      "status": 200,
+      "scrollWidth": 1920,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/book-readings/2026-07-18-buffalo-nationalism-chapters-9-21/",
+      "width": 1920,
+      "status": 200,
+      "scrollWidth": 1920,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/book-readings/2026-08-08-buffalo-nationalism-chapters-22-33/",
+      "width": 1920,
+      "status": 200,
+      "scrollWidth": 1920,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/book-readings/2026-08-31-buffalo-nationalism-chapters-34-42/",
+      "width": 1920,
+      "status": 200,
+      "scrollWidth": 1920,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/book-readings/2026-08-31-why-were-women-enslaved/",
+      "width": 1920,
+      "status": 200,
+      "scrollWidth": 1920,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/books/",
+      "width": 1920,
+      "status": 200,
+      "scrollWidth": 1920,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/books/ambedkar/",
+      "width": 1920,
+      "status": 200,
+      "scrollWidth": 1920,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/books/annihilation-of-caste/",
+      "width": 1920,
+      "status": 200,
+      "scrollWidth": 1920,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/books/buffalo-nationalism/",
+      "width": 1920,
+      "status": 200,
+      "scrollWidth": 1920,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/books/by-any-means-necessary/",
+      "width": 1920,
+      "status": 200,
+      "scrollWidth": 1920,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/books/caste-pride/",
+      "width": 1920,
+      "status": 200,
+      "scrollWidth": 1920,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/books/india-is-broken/",
+      "width": 1920,
+      "status": 200,
+      "scrollWidth": 1920,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/books/riddles-in-hinduism/",
+      "width": 1920,
+      "status": 200,
+      "scrollWidth": 1920,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/books/the-will-to-change/",
+      "width": 1920,
+      "status": 200,
+      "scrollWidth": 1920,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/books/waiting-for-a-visa/",
+      "width": 1920,
+      "status": 200,
+      "scrollWidth": 1920,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/books/why-were-women-enslaved/",
+      "width": 1920,
+      "status": 200,
+      "scrollWidth": 1920,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/comics/",
+      "width": 1920,
+      "status": 200,
+      "scrollWidth": 1920,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/comics/caste-has-a-cost/",
+      "width": 1920,
+      "status": 200,
+      "scrollWidth": 1920,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/comics/does-caste-exist-in-the-us-today/",
+      "width": 1920,
+      "status": 200,
+      "scrollWidth": 1920,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/conferences/",
+      "width": 1920,
+      "status": 200,
+      "scrollWidth": 1920,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/conferences/aksc-1st-annual-conference-2018/",
+      "width": 1920,
+      "status": 200,
+      "scrollWidth": 1920,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/conferences/aksc-2nd-annual-conference-2019/",
+      "width": 1920,
+      "status": 200,
+      "scrollWidth": 1920,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/conferences/aksc-3rd-annual-conference-2022/",
+      "width": 1920,
+      "status": 200,
+      "scrollWidth": 1920,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/conferences/aksc-4th-annual-conference-2023/",
+      "width": 1920,
+      "status": 200,
+      "scrollWidth": 1920,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/conferences/aksc-5th-annual-conference-2024/",
+      "width": 1920,
+      "status": 200,
+      "scrollWidth": 1920,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/conferences/aksc-6th-annual-conference-2025/",
+      "width": 1920,
+      "status": 200,
+      "scrollWidth": 1920,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/conferences/aksc-7th-annual-conference-2026/",
+      "width": 1920,
+      "status": 200,
+      "scrollWidth": 1920,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/contact/",
+      "width": 1920,
+      "status": 200,
+      "scrollWidth": 1920,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/donate/",
+      "width": 1920,
+      "status": 200,
+      "scrollWidth": 1920,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/helpline/",
+      "width": 1920,
+      "status": 200,
+      "scrollWidth": 1920,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/interventions/",
+      "width": 1920,
+      "status": 200,
+      "scrollWidth": 1920,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/interventions/agrarian-crisis-discussion-series/",
+      "width": 1920,
+      "status": 200,
+      "scrollWidth": 1920,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/interventions/cisco-caste-discrimination-news-coverage/",
+      "width": 1920,
+      "status": 200,
+      "scrollWidth": 1920,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/interventions/deep-dive-caste-litigation-in-the-usa/",
+      "width": 1920,
+      "status": 200,
+      "scrollWidth": 1920,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/interventions/faq-about-the-baps-case/",
+      "width": 1920,
+      "status": 200,
+      "scrollWidth": 1920,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/interventions/lets-read-ambedkar-10-lectures-series/",
+      "width": 1920,
+      "status": 200,
+      "scrollWidth": 1920,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/interventions/memorandum-on-institutional-murders/",
+      "width": 1920,
+      "status": 200,
+      "scrollWidth": 1920,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/interventions/misrepresentation-of-sb-403-explained/",
+      "width": 1920,
+      "status": 200,
+      "scrollWidth": 1920,
+      "errors": [],
+      "blockedOrFailedImages": [
+        "https://dotcompatterns.files.wordpress.com/2022/08/wiggle_pattern.png?w=676"
+      ]
+    },
+    {
+      "path": "/interventions/practice-of-caste-in-the-usa-share-your-testimony/",
+      "width": 1920,
+      "status": 200,
+      "scrollWidth": 1920,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/interventions/practice-of-caste-in-usa-discussion-series/",
+      "width": 1920,
+      "status": 200,
+      "scrollWidth": 1920,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/interventions/share-your-testimonies-about-everyday-casteism/",
+      "width": 1920,
+      "status": 200,
+      "scrollWidth": 1920,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/interventions/solidarity-statement-to-end-caste-practices-in-silicon-valley-and-the-usa/",
+      "width": 1920,
+      "status": 200,
+      "scrollWidth": 1920,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/interventions/stop-saffronisation-of-indian-history-in-california-textbooks/",
+      "width": 1920,
+      "status": 200,
+      "scrollWidth": 1920,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/interventions/worldwide-protest-on-violence-on-dalits-at-bhima-koregaon/",
+      "width": 1920,
+      "status": 200,
+      "scrollWidth": 1920,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/interventions/yes-on-sb-403/",
+      "width": 1920,
+      "status": 200,
+      "scrollWidth": 1920,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/join/",
+      "width": 1920,
+      "status": 200,
+      "scrollWidth": 1920,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/magazine/",
+      "width": 1920,
+      "status": 200,
+      "scrollWidth": 1920,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/organization/",
+      "width": 1920,
+      "status": 200,
+      "scrollWidth": 1920,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/organization/constitution/",
+      "width": 1920,
+      "status": 200,
+      "scrollWidth": 1920,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/organization/general-body/",
+      "width": 1920,
+      "status": 200,
+      "scrollWidth": 1920,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/press-releases/",
+      "width": 1920,
+      "status": 200,
+      "scrollWidth": 1920,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/press-releases/a-right-to-oppress-santa-clara-county-hrc-on-caste-discrimination/",
+      "width": 1920,
+      "status": 200,
+      "scrollWidth": 1920,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/press-releases/aacd-urging-governor-newsom-to-sign-sb-403/",
+      "width": 1920,
+      "status": 200,
+      "scrollWidth": 1920,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/press-releases/aksc-appreciates-alphabet-workers-union-statement-on-caste-discrimination/",
+      "width": 1920,
+      "status": 200,
+      "scrollWidth": 1920,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/press-releases/aksc-condemns-raja-and-gats-on-the-caste-scrutiny-issue/",
+      "width": 1920,
+      "status": 200,
+      "scrollWidth": 1920,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/press-releases/aksc-condemns-the-killing-of-george-floyd/",
+      "width": 1920,
+      "status": 200,
+      "scrollWidth": 1920,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/press-releases/aksc-urging-governor-newsom-to-sign-sb-403/",
+      "width": 1920,
+      "status": 200,
+      "scrollWidth": 1920,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/press-releases/aksc-welcomes-assembly-judiciary-committee-vote-on-sb-403/",
+      "width": 1920,
+      "status": 200,
+      "scrollWidth": 1920,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/press-releases/california-assembly-votes-in-favor-of-sb-403/",
+      "width": 1920,
+      "status": 200,
+      "scrollWidth": 1920,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/press-releases/federal-court-landmark-judgment-affirming-civil-rights-for-the-caste-oppressed/",
+      "width": 1920,
+      "status": 200,
+      "scrollWidth": 1920,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/press-releases/federal-court-order-deals-major-blow-to-hindu-supremacists/",
+      "width": 1920,
+      "status": 200,
+      "scrollWidth": 1920,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/press-releases/federal-court-upholds-csu-policy-protecting-against-caste-discrimination/",
+      "width": 1920,
+      "status": 200,
+      "scrollWidth": 1920,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/press-releases/indian-american-alliance-against-caste-tells-ceos-to-combat-caste-discrimination/",
+      "width": 1920,
+      "status": 200,
+      "scrollWidth": 1920,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/press-releases/major-victory-caste-discrimination-case-against-cisco-in-discovery/",
+      "width": 1920,
+      "status": 200,
+      "scrollWidth": 1920,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/press-releases/rutgers-university-step-toward-unleashing-caste-oppressed-potential/",
+      "width": 1920,
+      "status": 200,
+      "scrollWidth": 1920,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/press-releases/statement-on-harassment-of-com-divya-bharathi/",
+      "width": 1920,
+      "status": 200,
+      "scrollWidth": 1920,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/press-releases/statement-on-support-of-california-aca-5/",
+      "width": 1920,
+      "status": 200,
+      "scrollWidth": 1920,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/press-releases/yes-on-california-prop-16-joint-solidarity-statement/",
+      "width": 1920,
+      "status": 200,
+      "scrollWidth": 1920,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/programs/",
+      "width": 1920,
+      "status": 200,
+      "scrollWidth": 1920,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/programs/aathi-thamizhar-peravai-struggles/",
+      "width": 1920,
+      "status": 200,
+      "scrollWidth": 1920,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/programs/aksc-young-ambassador-program/",
+      "width": 1920,
+      "status": 200,
+      "scrollWidth": 1920,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/programs/ambedkar-127th-birth-anniversary-celebration/",
+      "width": 1920,
+      "status": 200,
+      "scrollWidth": 1920,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/programs/ambedkar-on-brahmanism-and-capitalism/",
+      "width": 1920,
+      "status": 200,
+      "scrollWidth": 1920,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/programs/caste-and-gender-violence-with-kavita-krishnan/",
+      "width": 1920,
+      "status": 200,
+      "scrollWidth": 1920,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/programs/democracy-and-dissent-in-india-today/",
+      "width": 1920,
+      "status": 200,
+      "scrollWidth": 1920,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/programs/dr-ambedkar-129th-birth-anniversary-celebration/",
+      "width": 1920,
+      "status": 200,
+      "scrollWidth": 1920,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/programs/honor-killings-love-and-caste/",
+      "width": 1920,
+      "status": 200,
+      "scrollWidth": 1920,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/programs/inclusive-campuses-in-an-exclusive-society/",
+      "width": 1920,
+      "status": 200,
+      "scrollWidth": 1920,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/programs/kakkoos-documentary-screening/",
+      "width": 1920,
+      "status": 200,
+      "scrollWidth": 1920,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/programs/keezhadi-and-states-rights-talks/",
+      "width": 1920,
+      "status": 200,
+      "scrollWidth": 1920,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/programs/keezhadi-to-harvard/",
+      "width": 1920,
+      "status": 200,
+      "scrollWidth": 1920,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/programs/kilvenmani-massacre-50th-anniversary/",
+      "width": 1920,
+      "status": 200,
+      "scrollWidth": 1920,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/programs/neet-and-social-justice/",
+      "width": 1920,
+      "status": 200,
+      "scrollWidth": 1920,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/programs/periyar-139th-birth-anniversary/",
+      "width": 1920,
+      "status": 200,
+      "scrollWidth": 1920,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/programs/periyar-140th-birth-anniversary-celebration/",
+      "width": 1920,
+      "status": 200,
+      "scrollWidth": 1920,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/programs/periyar-147th-birth-anniversary-celebration/",
+      "width": 1920,
+      "status": 200,
+      "scrollWidth": 1920,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/testimonies-of-practice-of-caste-in-the-usa/",
+      "width": 1920,
+      "status": 200,
+      "scrollWidth": 1920,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/who-said-what/",
+      "width": 1920,
+      "status": 200,
+      "scrollWidth": 1920,
+      "errors": [],
+      "blockedOrFailedImages": []
+    },
+    {
+      "path": "/404.html",
+      "width": 1920,
+      "status": 200,
+      "scrollWidth": 1920,
+      "errors": [],
+      "blockedOrFailedImages": []
+    }
+  ],
+  "journeys": [
+    {
+      "path": "/",
+      "width": 375,
+      "elements": {
+        "main h1": {
+          "text": "Educate, Organize & Agitate",
+          "top": 261.296875,
+          "width": 335,
+          "height": 125.4375
+        },
+        "[data-carousel-noun='book']": {
+          "text": "The reading circleEvery argument here was read together first.Current bookWhy Were Women Enslaved?Periyar E. V. Ramasamy1 session · October 10, 2026All readingsRead before thisBuffalo NationalismKancha Ilaiah4 sessions · August 2026The shelfBooks the circle has worked through.All books1 session · June 2026AmbedkarGail OmvedtGail Omvedt's biography of Dr. Ambedkar for Penguin's Lives series, tracing his path from an untouchable childhood in colonial India to the framing of its Constitution, and his lifelong argument that political freedom without social democracy is worthless.3 sessions · February 2026India Is BrokenAshoka ModyAshoka Mody's economic history of India since 1947, arguing that every government since independence — across party and ideology — has favoured elite interests over the broad-based growth, education, and public health that would have lifted the country's poorest.3 sessions · October 2025The Will to Changebell hooksbell hooks's case that patriarchy wounds men as well as women, and that a man's capacity to love is not weakness but the discipline patriarchal culture trains out of him.4 sessions · June 2025By Any Means NecessaryMalcolm XSpeeches, interviews, and letters from the last year of Malcolm X's life, gathered after his death, tracing his break from the Nation of Islam and his turn toward a Pan-Africanist, internationalist politics of Black liberation.3 sessions · April 2025Annihilation of CasteDr. B. R. AmbedkarThe address Dr. Ambedkar wrote for the Jat-Pat Todak Mandal in 1936 and never delivered, arguing that caste is not a division of labour but a division of labourers, and that it cannot be reformed, only annihilated.1 session · March 2025Waiting for a VisaDr. B. R. AmbedkarDr. Ambedkar's own short autobiographical account, written in the mid-1930s and published only after his death, of the everyday humiliations of untouchability he faced on trains, in schools, and as a working professional, despite his education and titles.1 session · October 2024Caste PrideManoj MittaJournalist Manoj Mitta's two-century legal history of caste in India, tracing how legislation and the courts have by turns entrenched and challenged caste privilege, from colonial-era reform to the present.3 sessions · April 2020Riddles in HinduismDr. B. R. AmbedkarDr. Ambedkar's unfinished examination of Hindu scripture, written in his final years and published posthumously, which sets a series of riddles against the texts and traditions that hold caste in place.",
+          "top": 714.734375,
+          "width": 375,
+          "height": 1552.375
+        },
+        "[data-carousel-noun='book'] [data-carousel-controls]": {
+          "text": "",
+          "top": 1778.0625,
+          "width": 118,
+          "height": 40
+        }
+      }
+    },
+    {
+      "path": "/donate/",
+      "width": 375,
+      "elements": {
+        "main h1": {
+          "text": "Donate",
+          "top": 249.296875,
+          "width": 335,
+          "height": 39.53125
+        },
+        "main a[href='https://bit.ly/donate-aksc']": {
+          "text": "Donate to AKSC",
+          "top": 1389.875,
+          "width": 285,
+          "height": 46
+        }
+      }
+    },
+    {
+      "path": "/helpline/",
+      "width": 375,
+      "elements": {
+        "main h1": {
+          "text": "Anti-Caste Helpline",
+          "top": 490.78125,
+          "width": 335,
+          "height": 79.0625
+        },
+        "[aria-labelledby='contact-title']": {
+          "text": "Contact the helpline1-844-66-UNITE (1-844-668-6483)helpline@akscusa.orgIf the line is busy, leave a voice message and we will contact you as soon as possible. You may email us if you prefer to remain anonymous.",
+          "top": 993.84375,
+          "width": 335,
+          "height": 322.875
+        }
+      }
+    },
+    {
+      "path": "/books/the-will-to-change/",
+      "width": 375,
+      "elements": {
+        "main h1": {
+          "text": "The Will to Change",
+          "top": 331.296875,
+          "width": 335,
+          "height": 35.09375
+        },
+        "main figure": {
+          "text": "Cover art via Open Library.",
+          "top": 1041.578125,
+          "width": 335,
+          "height": 276.703125
+        },
+        "main h2": {
+          "text": "3 sessions",
+          "top": 1366.28125,
+          "width": 335,
+          "height": 27.921875
+        }
+      }
+    },
+    {
+      "path": "/programs/",
+      "width": 375,
+      "elements": {
+        "main h1": {
+          "text": "Programs",
+          "top": 249.296875,
+          "width": 335,
+          "height": 39.53125
+        },
+        "main article img": {
+          "text": "",
+          "top": 750.828125,
+          "width": 335,
+          "height": 445.921875
+        },
+        "main article h2": {
+          "text": "Periyar's 147th Birth Anniversary Celebration",
+          "top": 1353.046875,
+          "width": 335,
+          "height": 55.84375
+        }
+      }
+    },
+    {
+      "path": "/testimonies-of-practice-of-caste-in-the-usa/",
+      "width": 375,
+      "elements": {
+        "main h1": {
+          "text": "Testimonies of Caste in the USA",
+          "top": 249.296875,
+          "width": 335,
+          "height": 79.0625
+        },
+        "main a[href='https://bit.ly/CasteInUsa']": {
+          "text": "Share your testimony",
+          "top": 46848.796875,
+          "width": 287,
+          "height": 46
+        }
+      }
+    },
+    {
+      "path": "/",
+      "state": "mobile menu at top",
+      "join": {
+        "text": "Join AKSC",
+        "top": 1050,
+        "width": 335,
+        "height": 34
+      },
+      "sheet": {
+        "text": "Actions→Interventions→Press Releases→Conferences→Programs→Testimonies→Articles→Book Readings→Comics→Organization→Contact→Constitution→General Body→Donate→Magazine→Anti-caste Toolkit→Join AKSCFollowInstagramFacebookFacebook GroupXYouTubeMeetup",
+        "top": 154,
+        "width": 375,
+        "height": 646
+      }
+    },
+    {
+      "path": "/articles/",
+      "state": "filter selected",
+      "chip": "Ambedkarite Thought",
+      "leadTerm": "caste-in-the-usa",
+      "leadVisible": true,
+      "count": {
+        "text": "3 articles",
+        "top": 447.828125,
+        "width": 335,
+        "height": 16
+      },
+      "controls": {
+        "text": "All articlesAmbedkarite ThoughtBooks and MediaCaste in the USACulture and SocietyHistory and Movements",
+        "top": 1317,
+        "width": 335,
+        "height": 137.171875
+      },
+      "visible": 2
+    },
+    {
+      "path": "/testimonies-of-practice-of-caste-in-the-usa/",
+      "state": "third topic jump",
+      "anchor": "#enforcing-reinforcing-caste-through-food-choices",
+      "target": {
+        "text": "Enforcing/ Reinforcing caste through Food choices",
+        "top": 8749.140625,
+        "width": 335,
+        "height": 113.5625
+      },
+      "menu": {
+        "text": "Browse by topic↓Misrepresentation of Indian cultureSegregation and exclusionCaste and food choicesPolitical ideologyHostility to affirmative actionSchool and workCaste-based favoritismCaste-sleuthingChildren and casteismCaste prideCommunity organizationsCulture and SanskritWorkplace nepotismSavarnas on casteism",
+        "top": 8661,
+        "width": 335,
+        "height": 67.59375
+      },
+      "header": {
+        "text": "ActionsInterventionsPress ReleasesConferencesProgramsAll actions→TestimoniesArticlesBook ReadingsComicsOrganizationContactConstitutionGeneral BodyDonateAbout AKSC→Join AKSCActions→Interventions→Press Releases→Conferences→Programs→Testimonies→Articles→Book Readings→Comics→Organization→Contact→Constitution→General Body→Donate→Magazine→Anti-caste Toolkit→Join AKSCFollowInstagramFacebookFacebook GroupXYouTubeMeetup",
+        "top": 8573,
+        "width": 375,
+        "height": 65
+      },
+      "scrollY": 8573
+    },
+    {
+      "path": "/book-readings/",
+      "state": "search then reload",
+      "searchUrl": "http://127.0.0.1:4322/book-readings/",
+      "before": 4,
+      "after": 11,
+      "value": ""
+    },
+    {
+      "path": "/magazine/",
+      "width": 375,
+      "frame": {
+        "size": "12px",
+        "width": 333,
+        "scrollWidth": 333
+      },
+      "linkCount": 22
+    },
+    {
+      "path": "/magazine/",
+      "width": 1280,
+      "frame": {
+        "size": "12px",
+        "width": 1086,
+        "scrollWidth": 1086
+      },
+      "linkCount": 22
+    }
+  ],
+  "extra": [
+    {
+      "state": "testimony h3 fragment",
+      "text": "Overrepresentation of Upper Caste Hindus in the Tech sector",
+      "top": 112.359375,
+      "bottom": 169.546875,
+      "menuTop": 88,
+      "menuBottom": 155.59375
+    },
+    {
+      "state": "magazine article",
+      "fontSize": "12px",
+      "lineHeight": "17.04px"
+    }
+  ],
+  "browserBaseline": {
+    "command": "npm run test:browser",
+    "chromiumAndFirefox": {
+      "passed": 103,
+      "skipped": 1,
+      "failed": 0
+    },
+    "skipped": "Chromium CDP cold-font probe is intentionally skipped in Firefox."
+  }
+}

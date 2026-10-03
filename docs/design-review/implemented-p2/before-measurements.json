@@ -1,0 +1,5307 @@
+[
+  {
+    "name": "book",
+    "path": "/books/the-will-to-change/",
+    "width": 320,
+    "scrollWidth": 320,
+    "title": {
+      "top": 331.296875,
+      "bottom": 400.640625,
+      "left": 20,
+      "width": 280,
+      "height": 69.34375,
+      "fontSize": "34px",
+      "lineHeight": "34.68px"
+    },
+    "cover": {
+      "top": 1107.828125,
+      "bottom": 1356.53125,
+      "left": 20,
+      "width": 160,
+      "height": 248.703125,
+      "fontSize": "16px",
+      "lineHeight": "25.6px"
+    },
+    "facts": {
+      "top": 748.640625,
+      "bottom": 1067.828125,
+      "left": 20,
+      "width": 280,
+      "height": 319.1875,
+      "fontSize": "16px",
+      "lineHeight": "25.6px"
+    },
+    "leadTitle": {
+      "top": 1432.53125,
+      "bottom": 1459.5625,
+      "left": 20,
+      "width": 280,
+      "height": 27.03125,
+      "fontSize": "26px",
+      "lineHeight": "27.04px"
+    },
+    "leadPoster": {
+      "top": 1107.828125,
+      "bottom": 1356.53125,
+      "left": 20,
+      "width": 160,
+      "height": 248.703125,
+      "fontSize": "16px",
+      "lineHeight": "25.6px"
+    },
+    "controls": [
+      {
+        "selector": ".btn-sm",
+        "bounds": {
+          "top": 4,
+          "bottom": 38,
+          "left": 134,
+          "width": 138.765625,
+          "height": 34,
+          "fontSize": "13px",
+          "lineHeight": "16.25px"
+        }
+      },
+      {
+        "selector": ".session-chip",
+        "bounds": null
+      },
+      {
+        "selector": "[data-filter-value]",
+        "bounds": null
+      },
+      {
+        "selector": "[data-carousel-next]",
+        "bounds": null
+      },
+      {
+        "selector": ".panel__transcript summary",
+        "bounds": null
+      }
+    ],
+    "links": [
+      "/authors/bell-hooks/",
+      "/book-readings/2025-06-28-the-will-to-change-chapters-1-4/",
+      "/book-readings/2025-07-19-the-will-to-change-chapters-5-8/",
+      "/book-readings/2025-10-25-the-will-to-change-chapters-9-11/",
+      "/books/",
+      "/media/book-readings/2025-06-28-the-will-to-change-chapters-1-4/the-will-to-change-chapters-1-4.jpg",
+      "/media/book-readings/2025-07-19-the-will-to-change-chapters-5-8/the-will-to-change-chapters-5-8.jpg",
+      "/media/book-readings/2025-10-25-the-will-to-change-chapters-9-11/the-will-to-change-chapters-9-11.jpg",
+      "https://openlibrary.org/isbn/9780743456074",
+      "https://openlibrary.org/isbn/9780743456074"
+    ],
+    "paragraphDigest": "fbdad22300741a5aefe5480b98fd4590a0230e12aee941fff50ff1f69638ef7d",
+    "imageDigest": "5ffefa1f1f632d704fdfb022bb70e1187b7aba6a2883b0a06aa147a2300fdf3f"
+  },
+  {
+    "name": "long-book",
+    "path": "/books/buffalo-nationalism/",
+    "width": 320,
+    "scrollWidth": 320,
+    "title": {
+      "top": 331.296875,
+      "bottom": 400.640625,
+      "left": 20,
+      "width": 280,
+      "height": 69.34375,
+      "fontSize": "34px",
+      "lineHeight": "34.68px"
+    },
+    "cover": {
+      "top": 1897.53125,
+      "bottom": 2149.546875,
+      "left": 20,
+      "width": 160,
+      "height": 252.015625,
+      "fontSize": "16px",
+      "lineHeight": "25.6px"
+    },
+    "facts": {
+      "top": 1576.640625,
+      "bottom": 1857.53125,
+      "left": 20,
+      "width": 280,
+      "height": 280.890625,
+      "fontSize": "16px",
+      "lineHeight": "25.6px"
+    },
+    "leadTitle": {
+      "top": 2225.546875,
+      "bottom": 2252.578125,
+      "left": 20,
+      "width": 280,
+      "height": 27.03125,
+      "fontSize": "26px",
+      "lineHeight": "27.04px"
+    },
+    "leadPoster": {
+      "top": 1897.53125,
+      "bottom": 2149.546875,
+      "left": 20,
+      "width": 160,
+      "height": 252.015625,
+      "fontSize": "16px",
+      "lineHeight": "25.6px"
+    },
+    "controls": [
+      {
+        "selector": ".btn-sm",
+        "bounds": {
+          "top": 4,
+          "bottom": 38,
+          "left": 134,
+          "width": 138.765625,
+          "height": 34,
+          "fontSize": "13px",
+          "lineHeight": "16.25px"
+        }
+      },
+      {
+        "selector": ".session-chip",
+        "bounds": null
+      },
+      {
+        "selector": "[data-filter-value]",
+        "bounds": null
+      },
+      {
+        "selector": "[data-carousel-next]",
+        "bounds": null
+      },
+      {
+        "selector": ".panel__transcript summary",
+        "bounds": null
+      }
+    ],
+    "links": [
+      "/authors/kancha-ilaiah/",
+      "/book-readings/2026-06-27-buffalo-nationalism-chapters-1-8/",
+      "/book-readings/2026-07-18-buffalo-nationalism-chapters-9-21/",
+      "/book-readings/2026-08-08-buffalo-nationalism-chapters-22-33/",
+      "/book-readings/2026-08-31-buffalo-nationalism-chapters-34-42/",
+      "/books/",
+      "/media/book-readings/2026-06-27-buffalo-nationalism-chapters-1-8/buffalo-nationalism-chapters-1-8.jpg",
+      "/media/book-readings/2026-07-18-buffalo-nationalism-chapters-9-21/buffalo-nationalism-chapters-9-21.jpg",
+      "/media/book-readings/2026-08-08-buffalo-nationalism-chapters-22-33/buffalo-nationalism-chapters-22-33.jpg",
+      "/media/book-readings/2026-08-31-buffalo-nationalism-chapters-34-42/buffalo-nationalism-chapters-34-42.jpg",
+      "https://openlibrary.org/isbn/9789353282561",
+      "https://openlibrary.org/isbn/9789353282561"
+    ],
+    "paragraphDigest": "a5b891f58dfacf49954ff5c18ee42a425486d948415d5cc6c49d473f0c2f93f8",
+    "imageDigest": "01632140592c9d18ac5299ffcc91e549a2dd6c25d6436764088446754d61121d"
+  },
+  {
+    "name": "programs",
+    "path": "/programs/",
+    "width": 320,
+    "scrollWidth": 320,
+    "title": {
+      "top": 249.296875,
+      "bottom": 288.484375,
+      "left": 20,
+      "width": 280,
+      "height": 39.1875,
+      "fontSize": "40px",
+      "lineHeight": "39.2px"
+    },
+    "cover": null,
+    "facts": null,
+    "leadTitle": {
+      "top": 1312.375,
+      "bottom": 1393.46875,
+      "left": 20,
+      "width": 280,
+      "height": 81.09375,
+      "fontSize": "26px",
+      "lineHeight": "27.04px"
+    },
+    "leadPoster": {
+      "top": 783.484375,
+      "bottom": 1156.078125,
+      "left": 20,
+      "width": 280,
+      "height": 372.59375,
+      "fontSize": "16px",
+      "lineHeight": "25.6px"
+    },
+    "controls": [
+      {
+        "selector": ".btn-sm",
+        "bounds": {
+          "top": 4,
+          "bottom": 38,
+          "left": 134,
+          "width": 138.765625,
+          "height": 34,
+          "fontSize": "13px",
+          "lineHeight": "16.25px"
+        }
+      },
+      {
+        "selector": ".session-chip",
+        "bounds": null
+      },
+      {
+        "selector": "[data-filter-value]",
+        "bounds": null
+      },
+      {
+        "selector": "[data-carousel-next]",
+        "bounds": null
+      },
+      {
+        "selector": ".panel__transcript summary",
+        "bounds": null
+      }
+    ],
+    "links": [
+      "/programs/aathi-thamizhar-peravai-struggles/",
+      "/programs/aksc-young-ambassador-program/",
+      "/programs/ambedkar-127th-birth-anniversary-celebration/",
+      "/programs/ambedkar-on-brahmanism-and-capitalism/",
+      "/programs/caste-and-gender-violence-with-kavita-krishnan/",
+      "/programs/democracy-and-dissent-in-india-today/",
+      "/programs/dr-ambedkar-129th-birth-anniversary-celebration/",
+      "/programs/honor-killings-love-and-caste/",
+      "/programs/inclusive-campuses-in-an-exclusive-society/",
+      "/programs/kakkoos-documentary-screening/",
+      "/programs/keezhadi-and-states-rights-talks/",
+      "/programs/keezhadi-to-harvard/",
+      "/programs/kilvenmani-massacre-50th-anniversary/",
+      "/programs/neet-and-social-justice/",
+      "/programs/periyar-139th-birth-anniversary/",
+      "/programs/periyar-140th-birth-anniversary-celebration/",
+      "/programs/periyar-147th-birth-anniversary-celebration/",
+      "https://commons.wikimedia.org/wiki/File:Jotirao_Phule_Savitribai_Phule_Phulewada_Pune.jpg",
+      "https://creativecommons.org/licenses/by-sa/4.0/"
+    ],
+    "paragraphDigest": "90870c94ebd37a2f83726d3e926dac0921a5fddbe28579ab4b638dca7653d862",
+    "imageDigest": "e75b21a9370b3fe837a1ad16edf2ec03a4da452d86e8e4db15f133569cdceb87"
+  },
+  {
+    "name": "long-title",
+    "path": "/press-releases/a-right-to-oppress-santa-clara-county-hrc-on-caste-discrimination/",
+    "width": 320,
+    "scrollWidth": 320,
+    "title": {
+      "top": 331.296875,
+      "bottom": 782.03125,
+      "left": 20,
+      "width": 280,
+      "height": 450.734375,
+      "fontSize": "34px",
+      "lineHeight": "34.68px"
+    },
+    "cover": null,
+    "facts": {
+      "top": 1084.03125,
+      "bottom": 1410.21875,
+      "left": 20,
+      "width": 280,
+      "height": 326.1875,
+      "fontSize": "16px",
+      "lineHeight": "25.6px"
+    },
+    "leadTitle": {
+      "top": 6225.28125,
+      "bottom": 6239.578125,
+      "left": 20,
+      "width": 280,
+      "height": 14.296875,
+      "fontSize": "11px",
+      "lineHeight": "14.3px"
+    },
+    "leadPoster": {
+      "top": 1458.21875,
+      "bottom": 1738.21875,
+      "left": 20,
+      "width": 280,
+      "height": 280,
+      "fontSize": "21px",
+      "lineHeight": "33.6px"
+    },
+    "controls": [
+      {
+        "selector": ".btn-sm",
+        "bounds": {
+          "top": 4,
+          "bottom": 38,
+          "left": 134,
+          "width": 138.765625,
+          "height": 34,
+          "fontSize": "13px",
+          "lineHeight": "16.25px"
+        }
+      },
+      {
+        "selector": ".session-chip",
+        "bounds": null
+      },
+      {
+        "selector": "[data-filter-value]",
+        "bounds": null
+      },
+      {
+        "selector": "[data-carousel-next]",
+        "bounds": null
+      },
+      {
+        "selector": ".panel__transcript summary",
+        "bounds": null
+      }
+    ],
+    "links": [
+      "/",
+      "/",
+      "/press-releases/",
+      "/testimonies-of-practice-of-caste-in-the-usa/",
+      "https://www.youtube.com/watch?v=9b6KJptrArU",
+      "https://www.youtube.com/watch?v=9b6KJptrArU&t=3664s",
+      "mailto:akscsfba@gmail.com",
+      "mailto:akscsfba@gmail.com"
+    ],
+    "paragraphDigest": "72fe765674db98c8323008d71d4d86363d8330ca3c180efb0f1d7a2ac8b28687",
+    "imageDigest": "cfd2aa6b2c3c24b40915f8f85bbe2635d632748c9aff20833124ca30d8bcd8a7"
+  },
+  {
+    "name": "credits",
+    "path": "/articles/",
+    "width": 320,
+    "scrollWidth": 320,
+    "title": {
+      "top": 249.296875,
+      "bottom": 288.484375,
+      "left": 20,
+      "width": 280,
+      "height": 39.1875,
+      "fontSize": "40px",
+      "lineHeight": "39.2px"
+    },
+    "cover": null,
+    "facts": null,
+    "leadTitle": {
+      "top": 822.78125,
+      "bottom": 876.84375,
+      "left": 20,
+      "width": 280,
+      "height": 54.0625,
+      "fontSize": "26px",
+      "lineHeight": "27.04px"
+    },
+    "leadPoster": null,
+    "controls": [
+      {
+        "selector": ".btn-sm",
+        "bounds": {
+          "top": 4,
+          "bottom": 38,
+          "left": 134,
+          "width": 138.765625,
+          "height": 34,
+          "fontSize": "13px",
+          "lineHeight": "16.25px"
+        }
+      },
+      {
+        "selector": ".session-chip",
+        "bounds": null
+      },
+      {
+        "selector": "[data-filter-value]",
+        "bounds": {
+          "top": 1554.5625,
+          "bottom": 1594.953125,
+          "left": 20,
+          "width": 67,
+          "height": 40.390625,
+          "fontSize": "14px",
+          "lineHeight": "22.4px"
+        }
+      },
+      {
+        "selector": "[data-carousel-next]",
+        "bounds": null
+      },
+      {
+        "selector": ".panel__transcript summary",
+        "bounds": null
+      }
+    ],
+    "links": [
+      "/articles/bhima-koregaon-lessons-from-the-untouchables-and-pax-britannica/",
+      "/articles/caste-discrimination-where-is-it/",
+      "/articles/dr-ambedkars-vision-of-equality-through-hindu-code-bill/",
+      "/articles/hindus-in-america-practice-caste/",
+      "/articles/legacy-of-dr-ambedkar/",
+      "/articles/origin-by-dan-brown/",
+      "/articles/purattasi-a-month-of-dietary-devotion/",
+      "/articles/what-periyar-means-to-silicon-valley/"
+    ],
+    "paragraphDigest": "7f2136b6c20d7fc364d378abe5ded0659bc906dd7539312719ddb8f61dd25a82",
+    "imageDigest": "72a101f79295862f86b9971556e7d745c3cbfcfbb9674b44c80ea605c6a25844"
+  },
+  {
+    "name": "reading-log",
+    "path": "/book-readings/",
+    "width": 320,
+    "scrollWidth": 320,
+    "title": {
+      "top": 249.296875,
+      "bottom": 288.484375,
+      "left": 20,
+      "width": 280,
+      "height": 39.1875,
+      "fontSize": "40px",
+      "lineHeight": "39.2px"
+    },
+    "cover": null,
+    "facts": {
+      "top": 1194.796875,
+      "bottom": 1445.6875,
+      "left": 20,
+      "width": 280,
+      "height": 250.890625,
+      "fontSize": "16px",
+      "lineHeight": "25.6px"
+    },
+    "leadTitle": null,
+    "leadPoster": {
+      "top": 2815.953125,
+      "bottom": 2914.703125,
+      "left": 20,
+      "width": 64,
+      "height": 98.75,
+      "fontSize": "16px",
+      "lineHeight": "25.6px"
+    },
+    "controls": [
+      {
+        "selector": ".btn-sm",
+        "bounds": {
+          "top": 4,
+          "bottom": 38,
+          "left": 134,
+          "width": 138.765625,
+          "height": 34,
+          "fontSize": "13px",
+          "lineHeight": "16.25px"
+        }
+      },
+      {
+        "selector": ".session-chip",
+        "bounds": {
+          "top": 3060.296875,
+          "bottom": 3096.296875,
+          "left": 100,
+          "width": 64,
+          "height": 36,
+          "fontSize": "16px",
+          "lineHeight": "25.6px"
+        }
+      },
+      {
+        "selector": "[data-filter-value]",
+        "bounds": null
+      },
+      {
+        "selector": "[data-carousel-next]",
+        "bounds": null
+      },
+      {
+        "selector": ".panel__transcript summary",
+        "bounds": null
+      }
+    ],
+    "links": [
+      "/authors/ashoka-mody/",
+      "/authors/bell-hooks/",
+      "/authors/dr-b-r-ambedkar/",
+      "/authors/dr-b-r-ambedkar/",
+      "/authors/dr-b-r-ambedkar/",
+      "/authors/gail-omvedt/",
+      "/authors/kancha-ilaiah/",
+      "/authors/malcolm-x/",
+      "/authors/manoj-mitta/",
+      "/authors/periyar-e-v-ramasamy/",
+      "/book-readings/2020-02-23-riddles-in-hinduism-riddles-1-8/",
+      "/book-readings/2020-03-15-riddles-in-hinduism-riddles-16-20/",
+      "/book-readings/2020-04-26-riddles-in-hinduism-riddles-21-24/",
+      "/book-readings/2020-05-17-annihilation-of-caste/",
+      "/book-readings/2020-06-07-annihilation-of-caste/",
+      "/book-readings/2024-01-27-palestine-a-reading-list/",
+      "/book-readings/2024-01-27-palestine-a-reading-list/",
+      "/book-readings/2024-10-05-caste-pride-chapters-15-18/",
+      "/book-readings/2025-03-15-waiting-for-a-visa/",
+      "/book-readings/2025-04-05-annihilation-of-caste/",
+      "/book-readings/2025-04-26-by-any-means-necessary-chapters-1-2/",
+      "/book-readings/2025-05-10-by-any-means-necessary-chapters-3-5/",
+      "/book-readings/2025-05-31-by-any-means-necessary-chapters-6-9/",
+      "/book-readings/2025-06-14-by-any-means-necessary-chapters-10-12/",
+      "/book-readings/2025-06-28-the-will-to-change-chapters-1-4/",
+      "/book-readings/2025-07-19-the-will-to-change-chapters-5-8/",
+      "/book-readings/2025-10-25-the-will-to-change-chapters-9-11/",
+      "/book-readings/2026-01-10-india-is-broken-chapters-7-9/",
+      "/book-readings/2026-01-31-india-is-broken-chapters-10-14/",
+      "/book-readings/2026-02-21-india-is-broken-chapters-15-19/",
+      "/book-readings/2026-06-06-ambedkar-towards-an-enlightened-india/",
+      "/book-readings/2026-06-27-buffalo-nationalism-chapters-1-8/",
+      "/book-readings/2026-07-18-buffalo-nationalism-chapters-9-21/",
+      "/book-readings/2026-08-08-buffalo-nationalism-chapters-22-33/",
+      "/book-readings/2026-08-31-buffalo-nationalism-chapters-34-42/",
+      "/book-readings/2026-08-31-why-were-women-enslaved/",
+      "/book-readings/2026-08-31-why-were-women-enslaved/",
+      "/books/",
+      "/books/ambedkar/",
+      "/books/ambedkar/",
+      "/books/annihilation-of-caste/",
+      "/books/annihilation-of-caste/",
+      "/books/buffalo-nationalism/",
+      "/books/buffalo-nationalism/",
+      "/books/by-any-means-necessary/",
+      "/books/by-any-means-necessary/",
+      "/books/caste-pride/",
+      "/books/caste-pride/",
+      "/books/india-is-broken/",
+      "/books/india-is-broken/",
+      "/books/riddles-in-hinduism/",
+      "/books/riddles-in-hinduism/",
+      "/books/the-will-to-change/",
+      "/books/the-will-to-change/",
+      "/books/waiting-for-a-visa/",
+      "/books/waiting-for-a-visa/",
+      "/books/why-were-women-enslaved/",
+      "/books/why-were-women-enslaved/",
+      "/books/why-were-women-enslaved/",
+      "/books/why-were-women-enslaved/",
+      "/media/book-readings/2024-10-05-caste-pride-chapters-15-18/caste-pride-chapters-15-18.jpg",
+      "/media/book-readings/2025-03-15-waiting-for-a-visa/waiting-for-a-visa.jpg",
+      "/media/book-readings/2025-04-05-annihilation-of-caste/annihilation-of-caste-2025.jpg",
+      "/media/book-readings/2025-04-26-by-any-means-necessary-chapters-1-2/by-any-means-necessary-chapters-1-2.jpg",
+      "/media/book-readings/2025-05-31-by-any-means-necessary-chapters-6-9/by-any-means-necessary-chapters-6-9.jpg",
+      "/media/book-readings/2025-06-14-by-any-means-necessary-chapters-10-12/by-any-means-necessary-chapters-10-12.jpg",
+      "/media/book-readings/2025-06-28-the-will-to-change-chapters-1-4/the-will-to-change-chapters-1-4.jpg",
+      "/media/book-readings/2025-07-19-the-will-to-change-chapters-5-8/the-will-to-change-chapters-5-8.jpg",
+      "/media/book-readings/2025-10-25-the-will-to-change-chapters-9-11/the-will-to-change-chapters-9-11.jpg",
+      "/media/book-readings/2026-01-10-india-is-broken-chapters-7-9/india-is-broken-chapters-7-9.jpg",
+      "/media/book-readings/2026-01-31-india-is-broken-chapters-10-14/india-is-broken-chapters-10-14.jpg",
+      "/media/book-readings/2026-02-21-india-is-broken-chapters-15-19/india-is-broken-chapters-15-19.jpg",
+      "/media/book-readings/2026-06-06-ambedkar-towards-an-enlightened-india/ambedkar-towards-an-enlightened-india.jpg",
+      "/media/book-readings/2026-06-27-buffalo-nationalism-chapters-1-8/buffalo-nationalism-chapters-1-8.jpg",
+      "/media/book-readings/2026-07-18-buffalo-nationalism-chapters-9-21/buffalo-nationalism-chapters-9-21.jpg",
+      "/media/book-readings/2026-08-08-buffalo-nationalism-chapters-22-33/buffalo-nationalism-chapters-22-33.jpg",
+      "/media/book-readings/2026-08-31-buffalo-nationalism-chapters-34-42/buffalo-nationalism-chapters-34-42.jpg",
+      "/media/book-readings/2026-08-31-why-were-women-enslaved/why-were-women-enslaved-flyer.jpeg",
+      "https://bit.ly/akscrnd"
+    ],
+    "paragraphDigest": "635e12792e7b515053ec57252f8c68e91ba3f5ec35d11e70ff7f8a40e704d2b1",
+    "imageDigest": "6c78a6b4e602b21cdd8275dc12849d45a7cefe5c3a927325d3ce48d390da5e67"
+  },
+  {
+    "name": "shelf",
+    "path": "/",
+    "width": 320,
+    "scrollWidth": 320,
+    "title": {
+      "top": 261.296875,
+      "bottom": 385.46875,
+      "left": 20,
+      "width": 280,
+      "height": 124.171875,
+      "fontSize": "46px",
+      "lineHeight": "41.4px"
+    },
+    "cover": {
+      "top": 7750.78125,
+      "bottom": 7955.90625,
+      "left": 20,
+      "width": 280,
+      "height": 205.125,
+      "fontSize": "16px",
+      "lineHeight": "25.6px"
+    },
+    "facts": {
+      "top": 3050.3125,
+      "bottom": 3119.796875,
+      "left": 20,
+      "width": 280,
+      "height": 69.484375,
+      "fontSize": "16px",
+      "lineHeight": "25.6px"
+    },
+    "leadTitle": null,
+    "leadPoster": {
+      "top": 1904.015625,
+      "bottom": 2052.015625,
+      "left": 20,
+      "width": 96,
+      "height": 148,
+      "fontSize": "16px",
+      "lineHeight": "25.6px"
+    },
+    "controls": [
+      {
+        "selector": ".btn-sm",
+        "bounds": {
+          "top": 4,
+          "bottom": 38,
+          "left": 134,
+          "width": 138.765625,
+          "height": 34,
+          "fontSize": "13px",
+          "lineHeight": "16.25px"
+        }
+      },
+      {
+        "selector": ".session-chip",
+        "bounds": null
+      },
+      {
+        "selector": "[data-filter-value]",
+        "bounds": null
+      },
+      {
+        "selector": "[data-carousel-next]",
+        "bounds": {
+          "top": 1832.015625,
+          "bottom": 1872.015625,
+          "left": 197.421875,
+          "width": 40,
+          "height": 40,
+          "fontSize": "16px",
+          "lineHeight": "25.6px"
+        }
+      },
+      {
+        "selector": ".panel__transcript summary",
+        "bounds": null
+      }
+    ],
+    "links": [
+      "/articles/",
+      "/articles/dr-ambedkars-vision-of-equality-through-hindu-code-bill/",
+      "/articles/hindus-in-america-practice-caste/",
+      "/articles/legacy-of-dr-ambedkar/",
+      "/articles/what-periyar-means-to-silicon-valley/",
+      "/book-readings/",
+      "/books/",
+      "/books/ambedkar/",
+      "/books/ambedkar/",
+      "/books/annihilation-of-caste/",
+      "/books/annihilation-of-caste/",
+      "/books/buffalo-nationalism/",
+      "/books/buffalo-nationalism/",
+      "/books/by-any-means-necessary/",
+      "/books/by-any-means-necessary/",
+      "/books/caste-pride/",
+      "/books/caste-pride/",
+      "/books/india-is-broken/",
+      "/books/india-is-broken/",
+      "/books/riddles-in-hinduism/",
+      "/books/riddles-in-hinduism/",
+      "/books/the-will-to-change/",
+      "/books/the-will-to-change/",
+      "/books/waiting-for-a-visa/",
+      "/books/waiting-for-a-visa/",
+      "/books/why-were-women-enslaved/",
+      "/books/why-were-women-enslaved/",
+      "/comics/",
+      "/comics/caste-has-a-cost/",
+      "/comics/does-caste-exist-in-the-us-today/",
+      "/conferences/aksc-6th-annual-conference-2025/",
+      "/conferences/aksc-7th-annual-conference-2026/",
+      "/conferences/aksc-7th-annual-conference-2026/",
+      "/conferences/aksc-7th-annual-conference-2026/",
+      "/donate",
+      "/helpline",
+      "/interventions/deep-dive-caste-litigation-in-the-usa/",
+      "/join",
+      "/press-releases/aksc-condemns-raja-and-gats-on-the-caste-scrutiny-issue/",
+      "/programs/periyar-147th-birth-anniversary-celebration/",
+      "https://commons.wikimedia.org/wiki/File:Savitribai_Phule_Jotiba_Jotirao_Phule_Phulewada_Pune.tif",
+      "https://creativecommons.org/licenses/by-sa/4.0/"
+    ],
+    "paragraphDigest": "74e6db9053dc7e3ae2635a7b35335e5eb446eab9bfc402195df45ccbefaa1277",
+    "imageDigest": "34fe6c496b0b730852100817a8f21d34c2ae17d8ad519e9d3fe38b483f5afbb3"
+  },
+  {
+    "name": "home-writing",
+    "path": "/",
+    "width": 320,
+    "scrollWidth": 320,
+    "title": {
+      "top": 261.296875,
+      "bottom": 385.46875,
+      "left": 20,
+      "width": 280,
+      "height": 124.171875,
+      "fontSize": "46px",
+      "lineHeight": "41.4px"
+    },
+    "cover": {
+      "top": 7750.78125,
+      "bottom": 7955.90625,
+      "left": 20,
+      "width": 280,
+      "height": 205.125,
+      "fontSize": "16px",
+      "lineHeight": "25.6px"
+    },
+    "facts": {
+      "top": 3050.3125,
+      "bottom": 3119.796875,
+      "left": 20,
+      "width": 280,
+      "height": 69.484375,
+      "fontSize": "16px",
+      "lineHeight": "25.6px"
+    },
+    "leadTitle": null,
+    "leadPoster": {
+      "top": 1904.015625,
+      "bottom": 2052.015625,
+      "left": 20,
+      "width": 96,
+      "height": 148,
+      "fontSize": "16px",
+      "lineHeight": "25.6px"
+    },
+    "controls": [
+      {
+        "selector": ".btn-sm",
+        "bounds": {
+          "top": 4,
+          "bottom": 38,
+          "left": 134,
+          "width": 138.765625,
+          "height": 34,
+          "fontSize": "13px",
+          "lineHeight": "16.25px"
+        }
+      },
+      {
+        "selector": ".session-chip",
+        "bounds": null
+      },
+      {
+        "selector": "[data-filter-value]",
+        "bounds": null
+      },
+      {
+        "selector": "[data-carousel-next]",
+        "bounds": {
+          "top": 1832.015625,
+          "bottom": 1872.015625,
+          "left": 197.421875,
+          "width": 40,
+          "height": 40,
+          "fontSize": "16px",
+          "lineHeight": "25.6px"
+        }
+      },
+      {
+        "selector": ".panel__transcript summary",
+        "bounds": null
+      }
+    ],
+    "links": [
+      "/articles/",
+      "/articles/dr-ambedkars-vision-of-equality-through-hindu-code-bill/",
+      "/articles/hindus-in-america-practice-caste/",
+      "/articles/legacy-of-dr-ambedkar/",
+      "/articles/what-periyar-means-to-silicon-valley/",
+      "/book-readings/",
+      "/books/",
+      "/books/ambedkar/",
+      "/books/ambedkar/",
+      "/books/annihilation-of-caste/",
+      "/books/annihilation-of-caste/",
+      "/books/buffalo-nationalism/",
+      "/books/buffalo-nationalism/",
+      "/books/by-any-means-necessary/",
+      "/books/by-any-means-necessary/",
+      "/books/caste-pride/",
+      "/books/caste-pride/",
+      "/books/india-is-broken/",
+      "/books/india-is-broken/",
+      "/books/riddles-in-hinduism/",
+      "/books/riddles-in-hinduism/",
+      "/books/the-will-to-change/",
+      "/books/the-will-to-change/",
+      "/books/waiting-for-a-visa/",
+      "/books/waiting-for-a-visa/",
+      "/books/why-were-women-enslaved/",
+      "/books/why-were-women-enslaved/",
+      "/comics/",
+      "/comics/caste-has-a-cost/",
+      "/comics/does-caste-exist-in-the-us-today/",
+      "/conferences/aksc-6th-annual-conference-2025/",
+      "/conferences/aksc-7th-annual-conference-2026/",
+      "/conferences/aksc-7th-annual-conference-2026/",
+      "/conferences/aksc-7th-annual-conference-2026/",
+      "/donate",
+      "/helpline",
+      "/interventions/deep-dive-caste-litigation-in-the-usa/",
+      "/join",
+      "/press-releases/aksc-condemns-raja-and-gats-on-the-caste-scrutiny-issue/",
+      "/programs/periyar-147th-birth-anniversary-celebration/",
+      "https://commons.wikimedia.org/wiki/File:Savitribai_Phule_Jotiba_Jotirao_Phule_Phulewada_Pune.tif",
+      "https://creativecommons.org/licenses/by-sa/4.0/"
+    ],
+    "paragraphDigest": "74e6db9053dc7e3ae2635a7b35335e5eb446eab9bfc402195df45ccbefaa1277",
+    "imageDigest": "34fe6c496b0b730852100817a8f21d34c2ae17d8ad519e9d3fe38b483f5afbb3"
+  },
+  {
+    "name": "conference",
+    "path": "/conferences/aksc-1st-annual-conference-2018/",
+    "width": 320,
+    "scrollWidth": 320,
+    "title": {
+      "top": 331.296875,
+      "bottom": 400.640625,
+      "left": 20,
+      "width": 280,
+      "height": 69.34375,
+      "fontSize": "34px",
+      "lineHeight": "34.68px"
+    },
+    "cover": null,
+    "facts": {
+      "top": 734.640625,
+      "bottom": 1035.53125,
+      "left": 20,
+      "width": 280,
+      "height": 300.890625,
+      "fontSize": "16px",
+      "lineHeight": "25.6px"
+    },
+    "leadTitle": {
+      "top": 1487.59375,
+      "bottom": 1539.40625,
+      "left": 20,
+      "width": 280,
+      "height": 51.8125,
+      "fontSize": "24px",
+      "lineHeight": "25.92px"
+    },
+    "leadPoster": {
+      "top": 1579.40625,
+      "bottom": 1655.46875,
+      "left": 20,
+      "width": 280,
+      "height": 76.0625,
+      "fontSize": "19px",
+      "lineHeight": "32.68px"
+    },
+    "controls": [
+      {
+        "selector": ".btn-sm",
+        "bounds": {
+          "top": 4,
+          "bottom": 38,
+          "left": 134,
+          "width": 138.765625,
+          "height": 34,
+          "fontSize": "13px",
+          "lineHeight": "16.25px"
+        }
+      },
+      {
+        "selector": ".session-chip",
+        "bounds": null
+      },
+      {
+        "selector": "[data-filter-value]",
+        "bounds": null
+      },
+      {
+        "selector": "[data-carousel-next]",
+        "bounds": null
+      },
+      {
+        "selector": ".panel__transcript summary",
+        "bounds": null
+      }
+    ],
+    "links": [
+      "/conferences/",
+      "/conferences/aksc-1st-annual-conference-2018/",
+      "/conferences/aksc-1st-annual-conference-2018/",
+      "/conferences/aksc-1st-annual-conference-2018/",
+      "/conferences/aksc-1st-annual-conference-2018/",
+      "/conferences/aksc-1st-annual-conference-2018/",
+      "/conferences/aksc-1st-annual-conference-2018/",
+      "/conferences/aksc-1st-annual-conference-2018/",
+      "/conferences/aksc-1st-annual-conference-2018/",
+      "/conferences/aksc-1st-annual-conference-2018/#resolution-1-bay-area-annual-conference-with-fraternal-and-likeminded-organizations",
+      "/conferences/aksc-1st-annual-conference-2018/#resolution-2-introducing-ambedkar-to-the-universities-and-the-colleges-in-the-usa-by-instituting-dr-ambedkar-chairs",
+      "/media/conferences/aksc-1st-annual-conference-2018/aksc-1st-general-body-report.pdf",
+      "/programs/",
+      "http://eci.nic.in/eci_main1/ByeElec2018/Results/02-Kairana(PC)-UttarPradesh.pdf",
+      "http://eci.nic.in/eci_main1/ByeElec2018/Results/02-Kairana(PC)-UttarPradesh.pdf",
+      "http://eci.nic.in/eci_main1/ByeElec2018/Results/24-Noorpur(AC)-UP.pdf",
+      "http://eci.nic.in/eci_main1/ByeElec2018/Results/24-Noorpur(AC)-UP.pdf",
+      "http://eci.nic.in/eci_main1/ByeElec2018/Results/51-Phulpur(PC)-UP.pdf",
+      "http://eci.nic.in/eci_main1/ByeElec2018/Results/51-Phulpur(PC)-UP.pdf",
+      "http://eci.nic.in/eci_main1/ByeElec2018/Results/64-Gorakhpur-UP.pdf",
+      "http://eci.nic.in/eci_main1/ByeElec2018/Results/64-Gorakhpur-UP.pdf",
+      "https://akscsfba.wixsite.com/aksc-conf-2018-reg",
+      "https://akscsfba.wixsite.com/aksc-conf-2018-reg/events/aksc-annual-conference-2018-event-registration",
+      "https://thewire.in/politics/in-27-by-elections-across-15-states-since-2014-story-of-bjp-decline-writ-large",
+      "https://thewire.in/politics/in-27-by-elections-across-15-states-since-2014-story-of-bjp-decline-writ-large",
+      "https://tinyurl.com/ClickAKSC2018",
+      "https://tinyurl.com/ClickAKSC2018",
+      "https://www.dsausa.org",
+      "https://www.dsausa.org/",
+      "https://www.justicedemocrats.com/home",
+      "https://www.justicedemocrats.com/home",
+      "https://www.nytimes.com/2018/06/30/opinion/democratic-socialists-progressive-democratic-party-trump.html",
+      "https://www.nytimes.com/2018/06/30/opinion/democratic-socialists-progressive-democratic-party-trump.html",
+      "https://www.paypal.me/aksc2018",
+      "https://www.paypal.me/aksc2018",
+      "https://www.siasat.com/news/india-new-lynchdom-1390067",
+      "https://www.siasat.com/news/india-new-lynchdom-1390067/",
+      "mailto:akscsfba@gmail.com",
+      "mailto:akscsfba@gmail.com",
+      "mailto:akscsfba@gmail.com",
+      "mailto:cdiwadkar@hotmail.com"
+    ],
+    "paragraphDigest": "d812649ed7958d361b1d7f5b36e49304d32fc1f18f89297db6a2755a1f5782fe",
+    "imageDigest": "f8543a5058d847a1b694e5aef252f35cd17557af9831204e83b811886b71e137"
+  },
+  {
+    "name": "toolkit",
+    "path": "/anti-caste-toolkit/",
+    "width": 320,
+    "scrollWidth": 320,
+    "title": {
+      "top": 249.296875,
+      "bottom": 366.859375,
+      "left": 20,
+      "width": 280,
+      "height": 117.5625,
+      "fontSize": "40px",
+      "lineHeight": "39.2px"
+    },
+    "cover": {
+      "top": 2538.1875,
+      "bottom": 2816.1875,
+      "left": 21,
+      "width": 278,
+      "height": 278,
+      "fontSize": "16px",
+      "lineHeight": "25.6px"
+    },
+    "facts": null,
+    "leadTitle": null,
+    "leadPoster": null,
+    "controls": [
+      {
+        "selector": ".btn-sm",
+        "bounds": {
+          "top": 4,
+          "bottom": 38,
+          "left": 134,
+          "width": 138.765625,
+          "height": 34,
+          "fontSize": "13px",
+          "lineHeight": "16.25px"
+        }
+      },
+      {
+        "selector": ".session-chip",
+        "bounds": null
+      },
+      {
+        "selector": "[data-filter-value]",
+        "bounds": null
+      },
+      {
+        "selector": "[data-carousel-next]",
+        "bounds": null
+      },
+      {
+        "selector": ".panel__transcript summary",
+        "bounds": {
+          "top": 2884.1875,
+          "bottom": 2912.1875,
+          "left": 37,
+          "width": 246,
+          "height": 28,
+          "fontSize": "14px",
+          "lineHeight": "22.4px"
+        }
+      }
+    ],
+    "links": [
+      "#cafeteria-non-veg-remark",
+      "#cafeteria-non-veg-remark-panels-1",
+      "#cafeteria-non-veg-remark-panels-2",
+      "#cafeteria-non-veg-remark-panels-3",
+      "#cafeteria-non-veg-remark-panels-4",
+      "#interview-quota-remark",
+      "#interview-quota-remark-panels-1",
+      "#interview-quota-remark-panels-2",
+      "#interview-quota-remark-panels-3",
+      "#interview-quota-remark-panels-4",
+      "#party-casteist-joke",
+      "#party-casteist-joke-panels-1",
+      "#party-casteist-joke-panels-2",
+      "#party-casteist-joke-panels-3",
+      "#party-casteist-joke-panels-4",
+      "/comics/",
+      "https://forms.gle/KseyjgpuD9Q8NaCn8",
+      "https://forms.gle/KseyjgpuD9Q8NaCn8",
+      "https://forms.gle/KseyjgpuD9Q8NaCn8",
+      "https://forms.gle/KseyjgpuD9Q8NaCn8",
+      "https://forms.gle/KseyjgpuD9Q8NaCn8",
+      "https://forms.gle/KseyjgpuD9Q8NaCn8"
+    ],
+    "paragraphDigest": "60e99aaa591639b59bd54afc85013bd3ddac78286e605d61bd19fe887f72e3c8",
+    "imageDigest": "b7c505dcb468fcc9aed5bdb88a8af5894d0ac544888dcae621b3070c2e032008"
+  },
+  {
+    "name": "book",
+    "path": "/books/the-will-to-change/",
+    "width": 375,
+    "scrollWidth": 375,
+    "title": {
+      "top": 331.296875,
+      "bottom": 366.390625,
+      "left": 20,
+      "width": 335,
+      "height": 35.09375,
+      "fontSize": "34.4px",
+      "lineHeight": "35.088px"
+    },
+    "cover": {
+      "top": 1041.578125,
+      "bottom": 1290.28125,
+      "left": 20,
+      "width": 160,
+      "height": 248.703125,
+      "fontSize": "16px",
+      "lineHeight": "25.6px"
+    },
+    "facts": {
+      "top": 682.390625,
+      "bottom": 1001.578125,
+      "left": 20,
+      "width": 335,
+      "height": 319.1875,
+      "fontSize": "16px",
+      "lineHeight": "25.6px"
+    },
+    "leadTitle": {
+      "top": 1366.28125,
+      "bottom": 1394.203125,
+      "left": 20,
+      "width": 335,
+      "height": 27.921875,
+      "fontSize": "26.855px",
+      "lineHeight": "27.9292px"
+    },
+    "leadPoster": {
+      "top": 1041.578125,
+      "bottom": 1290.28125,
+      "left": 20,
+      "width": 160,
+      "height": 248.703125,
+      "fontSize": "16px",
+      "lineHeight": "25.6px"
+    },
+    "controls": [
+      {
+        "selector": ".btn-sm",
+        "bounds": {
+          "top": 4,
+          "bottom": 38,
+          "left": 134,
+          "width": 138.765625,
+          "height": 34,
+          "fontSize": "13px",
+          "lineHeight": "16.25px"
+        }
+      },
+      {
+        "selector": ".session-chip",
+        "bounds": null
+      },
+      {
+        "selector": "[data-filter-value]",
+        "bounds": null
+      },
+      {
+        "selector": "[data-carousel-next]",
+        "bounds": null
+      },
+      {
+        "selector": ".panel__transcript summary",
+        "bounds": null
+      }
+    ],
+    "links": [
+      "/authors/bell-hooks/",
+      "/book-readings/2025-06-28-the-will-to-change-chapters-1-4/",
+      "/book-readings/2025-07-19-the-will-to-change-chapters-5-8/",
+      "/book-readings/2025-10-25-the-will-to-change-chapters-9-11/",
+      "/books/",
+      "/media/book-readings/2025-06-28-the-will-to-change-chapters-1-4/the-will-to-change-chapters-1-4.jpg",
+      "/media/book-readings/2025-07-19-the-will-to-change-chapters-5-8/the-will-to-change-chapters-5-8.jpg",
+      "/media/book-readings/2025-10-25-the-will-to-change-chapters-9-11/the-will-to-change-chapters-9-11.jpg",
+      "https://openlibrary.org/isbn/9780743456074",
+      "https://openlibrary.org/isbn/9780743456074"
+    ],
+    "paragraphDigest": "fbdad22300741a5aefe5480b98fd4590a0230e12aee941fff50ff1f69638ef7d",
+    "imageDigest": "5ffefa1f1f632d704fdfb022bb70e1187b7aba6a2883b0a06aa147a2300fdf3f"
+  },
+  {
+    "name": "long-book",
+    "path": "/books/buffalo-nationalism/",
+    "width": 375,
+    "scrollWidth": 375,
+    "title": {
+      "top": 331.296875,
+      "bottom": 366.390625,
+      "left": 20,
+      "width": 335,
+      "height": 35.09375,
+      "fontSize": "34.4px",
+      "lineHeight": "35.088px"
+    },
+    "cover": {
+      "top": 1679.28125,
+      "bottom": 1931.296875,
+      "left": 20,
+      "width": 160,
+      "height": 252.015625,
+      "fontSize": "16px",
+      "lineHeight": "25.6px"
+    },
+    "facts": {
+      "top": 1386.390625,
+      "bottom": 1639.28125,
+      "left": 20,
+      "width": 335,
+      "height": 252.890625,
+      "fontSize": "16px",
+      "lineHeight": "25.6px"
+    },
+    "leadTitle": {
+      "top": 2007.296875,
+      "bottom": 2035.21875,
+      "left": 20,
+      "width": 335,
+      "height": 27.921875,
+      "fontSize": "26.855px",
+      "lineHeight": "27.9292px"
+    },
+    "leadPoster": {
+      "top": 1679.28125,
+      "bottom": 1931.296875,
+      "left": 20,
+      "width": 160,
+      "height": 252.015625,
+      "fontSize": "16px",
+      "lineHeight": "25.6px"
+    },
+    "controls": [
+      {
+        "selector": ".btn-sm",
+        "bounds": {
+          "top": 4,
+          "bottom": 38,
+          "left": 134,
+          "width": 138.765625,
+          "height": 34,
+          "fontSize": "13px",
+          "lineHeight": "16.25px"
+        }
+      },
+      {
+        "selector": ".session-chip",
+        "bounds": null
+      },
+      {
+        "selector": "[data-filter-value]",
+        "bounds": null
+      },
+      {
+        "selector": "[data-carousel-next]",
+        "bounds": null
+      },
+      {
+        "selector": ".panel__transcript summary",
+        "bounds": null
+      }
+    ],
+    "links": [
+      "/authors/kancha-ilaiah/",
+      "/book-readings/2026-06-27-buffalo-nationalism-chapters-1-8/",
+      "/book-readings/2026-07-18-buffalo-nationalism-chapters-9-21/",
+      "/book-readings/2026-08-08-buffalo-nationalism-chapters-22-33/",
+      "/book-readings/2026-08-31-buffalo-nationalism-chapters-34-42/",
+      "/books/",
+      "/media/book-readings/2026-06-27-buffalo-nationalism-chapters-1-8/buffalo-nationalism-chapters-1-8.jpg",
+      "/media/book-readings/2026-07-18-buffalo-nationalism-chapters-9-21/buffalo-nationalism-chapters-9-21.jpg",
+      "/media/book-readings/2026-08-08-buffalo-nationalism-chapters-22-33/buffalo-nationalism-chapters-22-33.jpg",
+      "/media/book-readings/2026-08-31-buffalo-nationalism-chapters-34-42/buffalo-nationalism-chapters-34-42.jpg",
+      "https://openlibrary.org/isbn/9789353282561",
+      "https://openlibrary.org/isbn/9789353282561"
+    ],
+    "paragraphDigest": "a5b891f58dfacf49954ff5c18ee42a425486d948415d5cc6c49d473f0c2f93f8",
+    "imageDigest": "01632140592c9d18ac5299ffcc91e549a2dd6c25d6436764088446754d61121d"
+  },
+  {
+    "name": "programs",
+    "path": "/programs/",
+    "width": 375,
+    "scrollWidth": 375,
+    "title": {
+      "top": 249.296875,
+      "bottom": 288.828125,
+      "left": 20,
+      "width": 335,
+      "height": 39.53125,
+      "fontSize": "40.35px",
+      "lineHeight": "39.543px"
+    },
+    "cover": null,
+    "facts": null,
+    "leadTitle": {
+      "top": 1353.046875,
+      "bottom": 1408.890625,
+      "left": 20,
+      "width": 335,
+      "height": 55.84375,
+      "fontSize": "26.855px",
+      "lineHeight": "27.9292px"
+    },
+    "leadPoster": {
+      "top": 750.828125,
+      "bottom": 1196.75,
+      "left": 20,
+      "width": 335,
+      "height": 445.921875,
+      "fontSize": "16px",
+      "lineHeight": "25.6px"
+    },
+    "controls": [
+      {
+        "selector": ".btn-sm",
+        "bounds": {
+          "top": 4,
+          "bottom": 38,
+          "left": 134,
+          "width": 138.765625,
+          "height": 34,
+          "fontSize": "13px",
+          "lineHeight": "16.25px"
+        }
+      },
+      {
+        "selector": ".session-chip",
+        "bounds": null
+      },
+      {
+        "selector": "[data-filter-value]",
+        "bounds": null
+      },
+      {
+        "selector": "[data-carousel-next]",
+        "bounds": null
+      },
+      {
+        "selector": ".panel__transcript summary",
+        "bounds": null
+      }
+    ],
+    "links": [
+      "/programs/aathi-thamizhar-peravai-struggles/",
+      "/programs/aksc-young-ambassador-program/",
+      "/programs/ambedkar-127th-birth-anniversary-celebration/",
+      "/programs/ambedkar-on-brahmanism-and-capitalism/",
+      "/programs/caste-and-gender-violence-with-kavita-krishnan/",
+      "/programs/democracy-and-dissent-in-india-today/",
+      "/programs/dr-ambedkar-129th-birth-anniversary-celebration/",
+      "/programs/honor-killings-love-and-caste/",
+      "/programs/inclusive-campuses-in-an-exclusive-society/",
+      "/programs/kakkoos-documentary-screening/",
+      "/programs/keezhadi-and-states-rights-talks/",
+      "/programs/keezhadi-to-harvard/",
+      "/programs/kilvenmani-massacre-50th-anniversary/",
+      "/programs/neet-and-social-justice/",
+      "/programs/periyar-139th-birth-anniversary/",
+      "/programs/periyar-140th-birth-anniversary-celebration/",
+      "/programs/periyar-147th-birth-anniversary-celebration/",
+      "https://commons.wikimedia.org/wiki/File:Jotirao_Phule_Savitribai_Phule_Phulewada_Pune.jpg",
+      "https://creativecommons.org/licenses/by-sa/4.0/"
+    ],
+    "paragraphDigest": "90870c94ebd37a2f83726d3e926dac0921a5fddbe28579ab4b638dca7653d862",
+    "imageDigest": "e75b21a9370b3fe837a1ad16edf2ec03a4da452d86e8e4db15f133569cdceb87"
+  },
+  {
+    "name": "long-title",
+    "path": "/press-releases/a-right-to-oppress-santa-clara-county-hrc-on-caste-discrimination/",
+    "width": 375,
+    "scrollWidth": 375,
+    "title": {
+      "top": 331.296875,
+      "bottom": 717.328125,
+      "left": 20,
+      "width": 335,
+      "height": 386.03125,
+      "fontSize": "34.4px",
+      "lineHeight": "35.088px"
+    },
+    "cover": null,
+    "facts": {
+      "top": 987.328125,
+      "bottom": 1313.515625,
+      "left": 20,
+      "width": 335,
+      "height": 326.1875,
+      "fontSize": "16px",
+      "lineHeight": "25.6px"
+    },
+    "leadTitle": {
+      "top": 5432.125,
+      "bottom": 5446.421875,
+      "left": 20,
+      "width": 335,
+      "height": 14.296875,
+      "fontSize": "11px",
+      "lineHeight": "14.3px"
+    },
+    "leadPoster": {
+      "top": 1361.515625,
+      "bottom": 1696.515625,
+      "left": 20,
+      "width": 335,
+      "height": 335,
+      "fontSize": "21px",
+      "lineHeight": "33.6px"
+    },
+    "controls": [
+      {
+        "selector": ".btn-sm",
+        "bounds": {
+          "top": 4,
+          "bottom": 38,
+          "left": 134,
+          "width": 138.765625,
+          "height": 34,
+          "fontSize": "13px",
+          "lineHeight": "16.25px"
+        }
+      },
+      {
+        "selector": ".session-chip",
+        "bounds": null
+      },
+      {
+        "selector": "[data-filter-value]",
+        "bounds": null
+      },
+      {
+        "selector": "[data-carousel-next]",
+        "bounds": null
+      },
+      {
+        "selector": ".panel__transcript summary",
+        "bounds": null
+      }
+    ],
+    "links": [
+      "/",
+      "/",
+      "/press-releases/",
+      "/testimonies-of-practice-of-caste-in-the-usa/",
+      "https://www.youtube.com/watch?v=9b6KJptrArU",
+      "https://www.youtube.com/watch?v=9b6KJptrArU&t=3664s",
+      "mailto:akscsfba@gmail.com",
+      "mailto:akscsfba@gmail.com"
+    ],
+    "paragraphDigest": "72fe765674db98c8323008d71d4d86363d8330ca3c180efb0f1d7a2ac8b28687",
+    "imageDigest": "cfd2aa6b2c3c24b40915f8f85bbe2635d632748c9aff20833124ca30d8bcd8a7"
+  },
+  {
+    "name": "credits",
+    "path": "/articles/",
+    "width": 375,
+    "scrollWidth": 375,
+    "title": {
+      "top": 249.296875,
+      "bottom": 288.828125,
+      "left": 20,
+      "width": 335,
+      "height": 39.53125,
+      "fontSize": "40.35px",
+      "lineHeight": "39.543px"
+    },
+    "cover": null,
+    "facts": null,
+    "leadTitle": {
+      "top": 790.125,
+      "bottom": 845.96875,
+      "left": 20,
+      "width": 335,
+      "height": 55.84375,
+      "fontSize": "26.855px",
+      "lineHeight": "27.9292px"
+    },
+    "leadPoster": null,
+    "controls": [
+      {
+        "selector": ".btn-sm",
+        "bounds": {
+          "top": 4,
+          "bottom": 38,
+          "left": 134,
+          "width": 138.765625,
+          "height": 34,
+          "fontSize": "13px",
+          "lineHeight": "16.25px"
+        }
+      },
+      {
+        "selector": ".session-chip",
+        "bounds": null
+      },
+      {
+        "selector": "[data-filter-value]",
+        "bounds": {
+          "top": 1491.296875,
+          "bottom": 1531.6875,
+          "left": 20,
+          "width": 67,
+          "height": 40.390625,
+          "fontSize": "14px",
+          "lineHeight": "22.4px"
+        }
+      },
+      {
+        "selector": "[data-carousel-next]",
+        "bounds": null
+      },
+      {
+        "selector": ".panel__transcript summary",
+        "bounds": null
+      }
+    ],
+    "links": [
+      "/articles/bhima-koregaon-lessons-from-the-untouchables-and-pax-britannica/",
+      "/articles/caste-discrimination-where-is-it/",
+      "/articles/dr-ambedkars-vision-of-equality-through-hindu-code-bill/",
+      "/articles/hindus-in-america-practice-caste/",
+      "/articles/legacy-of-dr-ambedkar/",
+      "/articles/origin-by-dan-brown/",
+      "/articles/purattasi-a-month-of-dietary-devotion/",
+      "/articles/what-periyar-means-to-silicon-valley/"
+    ],
+    "paragraphDigest": "7f2136b6c20d7fc364d378abe5ded0659bc906dd7539312719ddb8f61dd25a82",
+    "imageDigest": "72a101f79295862f86b9971556e7d745c3cbfcfbb9674b44c80ea605c6a25844"
+  },
+  {
+    "name": "reading-log",
+    "path": "/book-readings/",
+    "width": 375,
+    "scrollWidth": 375,
+    "title": {
+      "top": 249.296875,
+      "bottom": 288.828125,
+      "left": 20,
+      "width": 335,
+      "height": 39.53125,
+      "fontSize": "40.35px",
+      "lineHeight": "39.543px"
+    },
+    "cover": null,
+    "facts": {
+      "top": 1113.109375,
+      "bottom": 1364,
+      "left": 20,
+      "width": 335,
+      "height": 250.890625,
+      "fontSize": "16px",
+      "lineHeight": "25.6px"
+    },
+    "leadTitle": null,
+    "leadPoster": {
+      "top": 2659.640625,
+      "bottom": 2758.390625,
+      "left": 20,
+      "width": 64,
+      "height": 98.75,
+      "fontSize": "16px",
+      "lineHeight": "25.6px"
+    },
+    "controls": [
+      {
+        "selector": ".btn-sm",
+        "bounds": {
+          "top": 4,
+          "bottom": 38,
+          "left": 134,
+          "width": 138.765625,
+          "height": 34,
+          "fontSize": "13px",
+          "lineHeight": "16.25px"
+        }
+      },
+      {
+        "selector": ".session-chip",
+        "bounds": {
+          "top": 2883.109375,
+          "bottom": 2919.109375,
+          "left": 100,
+          "width": 64,
+          "height": 36,
+          "fontSize": "16px",
+          "lineHeight": "25.6px"
+        }
+      },
+      {
+        "selector": "[data-filter-value]",
+        "bounds": null
+      },
+      {
+        "selector": "[data-carousel-next]",
+        "bounds": null
+      },
+      {
+        "selector": ".panel__transcript summary",
+        "bounds": null
+      }
+    ],
+    "links": [
+      "/authors/ashoka-mody/",
+      "/authors/bell-hooks/",
+      "/authors/dr-b-r-ambedkar/",
+      "/authors/dr-b-r-ambedkar/",
+      "/authors/dr-b-r-ambedkar/",
+      "/authors/gail-omvedt/",
+      "/authors/kancha-ilaiah/",
+      "/authors/malcolm-x/",
+      "/authors/manoj-mitta/",
+      "/authors/periyar-e-v-ramasamy/",
+      "/book-readings/2020-02-23-riddles-in-hinduism-riddles-1-8/",
+      "/book-readings/2020-03-15-riddles-in-hinduism-riddles-16-20/",
+      "/book-readings/2020-04-26-riddles-in-hinduism-riddles-21-24/",
+      "/book-readings/2020-05-17-annihilation-of-caste/",
+      "/book-readings/2020-06-07-annihilation-of-caste/",
+      "/book-readings/2024-01-27-palestine-a-reading-list/",
+      "/book-readings/2024-01-27-palestine-a-reading-list/",
+      "/book-readings/2024-10-05-caste-pride-chapters-15-18/",
+      "/book-readings/2025-03-15-waiting-for-a-visa/",
+      "/book-readings/2025-04-05-annihilation-of-caste/",
+      "/book-readings/2025-04-26-by-any-means-necessary-chapters-1-2/",
+      "/book-readings/2025-05-10-by-any-means-necessary-chapters-3-5/",
+      "/book-readings/2025-05-31-by-any-means-necessary-chapters-6-9/",
+      "/book-readings/2025-06-14-by-any-means-necessary-chapters-10-12/",
+      "/book-readings/2025-06-28-the-will-to-change-chapters-1-4/",
+      "/book-readings/2025-07-19-the-will-to-change-chapters-5-8/",
+      "/book-readings/2025-10-25-the-will-to-change-chapters-9-11/",
+      "/book-readings/2026-01-10-india-is-broken-chapters-7-9/",
+      "/book-readings/2026-01-31-india-is-broken-chapters-10-14/",
+      "/book-readings/2026-02-21-india-is-broken-chapters-15-19/",
+      "/book-readings/2026-06-06-ambedkar-towards-an-enlightened-india/",
+      "/book-readings/2026-06-27-buffalo-nationalism-chapters-1-8/",
+      "/book-readings/2026-07-18-buffalo-nationalism-chapters-9-21/",
+      "/book-readings/2026-08-08-buffalo-nationalism-chapters-22-33/",
+      "/book-readings/2026-08-31-buffalo-nationalism-chapters-34-42/",
+      "/book-readings/2026-08-31-why-were-women-enslaved/",
+      "/book-readings/2026-08-31-why-were-women-enslaved/",
+      "/books/",
+      "/books/ambedkar/",
+      "/books/ambedkar/",
+      "/books/annihilation-of-caste/",
+      "/books/annihilation-of-caste/",
+      "/books/buffalo-nationalism/",
+      "/books/buffalo-nationalism/",
+      "/books/by-any-means-necessary/",
+      "/books/by-any-means-necessary/",
+      "/books/caste-pride/",
+      "/books/caste-pride/",
+      "/books/india-is-broken/",
+      "/books/india-is-broken/",
+      "/books/riddles-in-hinduism/",
+      "/books/riddles-in-hinduism/",
+      "/books/the-will-to-change/",
+      "/books/the-will-to-change/",
+      "/books/waiting-for-a-visa/",
+      "/books/waiting-for-a-visa/",
+      "/books/why-were-women-enslaved/",
+      "/books/why-were-women-enslaved/",
+      "/books/why-were-women-enslaved/",
+      "/books/why-were-women-enslaved/",
+      "/media/book-readings/2024-10-05-caste-pride-chapters-15-18/caste-pride-chapters-15-18.jpg",
+      "/media/book-readings/2025-03-15-waiting-for-a-visa/waiting-for-a-visa.jpg",
+      "/media/book-readings/2025-04-05-annihilation-of-caste/annihilation-of-caste-2025.jpg",
+      "/media/book-readings/2025-04-26-by-any-means-necessary-chapters-1-2/by-any-means-necessary-chapters-1-2.jpg",
+      "/media/book-readings/2025-05-31-by-any-means-necessary-chapters-6-9/by-any-means-necessary-chapters-6-9.jpg",
+      "/media/book-readings/2025-06-14-by-any-means-necessary-chapters-10-12/by-any-means-necessary-chapters-10-12.jpg",
+      "/media/book-readings/2025-06-28-the-will-to-change-chapters-1-4/the-will-to-change-chapters-1-4.jpg",
+      "/media/book-readings/2025-07-19-the-will-to-change-chapters-5-8/the-will-to-change-chapters-5-8.jpg",
+      "/media/book-readings/2025-10-25-the-will-to-change-chapters-9-11/the-will-to-change-chapters-9-11.jpg",
+      "/media/book-readings/2026-01-10-india-is-broken-chapters-7-9/india-is-broken-chapters-7-9.jpg",
+      "/media/book-readings/2026-01-31-india-is-broken-chapters-10-14/india-is-broken-chapters-10-14.jpg",
+      "/media/book-readings/2026-02-21-india-is-broken-chapters-15-19/india-is-broken-chapters-15-19.jpg",
+      "/media/book-readings/2026-06-06-ambedkar-towards-an-enlightened-india/ambedkar-towards-an-enlightened-india.jpg",
+      "/media/book-readings/2026-06-27-buffalo-nationalism-chapters-1-8/buffalo-nationalism-chapters-1-8.jpg",
+      "/media/book-readings/2026-07-18-buffalo-nationalism-chapters-9-21/buffalo-nationalism-chapters-9-21.jpg",
+      "/media/book-readings/2026-08-08-buffalo-nationalism-chapters-22-33/buffalo-nationalism-chapters-22-33.jpg",
+      "/media/book-readings/2026-08-31-buffalo-nationalism-chapters-34-42/buffalo-nationalism-chapters-34-42.jpg",
+      "/media/book-readings/2026-08-31-why-were-women-enslaved/why-were-women-enslaved-flyer.jpeg",
+      "https://bit.ly/akscrnd"
+    ],
+    "paragraphDigest": "635e12792e7b515053ec57252f8c68e91ba3f5ec35d11e70ff7f8a40e704d2b1",
+    "imageDigest": "6c78a6b4e602b21cdd8275dc12849d45a7cefe5c3a927325d3ce48d390da5e67"
+  },
+  {
+    "name": "shelf",
+    "path": "/",
+    "width": 375,
+    "scrollWidth": 375,
+    "title": {
+      "top": 261.296875,
+      "bottom": 386.734375,
+      "left": 20,
+      "width": 335,
+      "height": 125.4375,
+      "fontSize": "46.475px",
+      "lineHeight": "41.8275px"
+    },
+    "cover": {
+      "top": 7401.25,
+      "bottom": 7646.671875,
+      "left": 20,
+      "width": 335,
+      "height": 245.421875,
+      "fontSize": "16px",
+      "lineHeight": "25.6px"
+    },
+    "facts": {
+      "top": 2938.546875,
+      "bottom": 3008.03125,
+      "left": 20,
+      "width": 335,
+      "height": 69.484375,
+      "fontSize": "16px",
+      "lineHeight": "25.6px"
+    },
+    "leadTitle": null,
+    "leadPoster": {
+      "top": 1850.0625,
+      "bottom": 1998.0625,
+      "left": 20,
+      "width": 96,
+      "height": 148,
+      "fontSize": "16px",
+      "lineHeight": "25.6px"
+    },
+    "controls": [
+      {
+        "selector": ".btn-sm",
+        "bounds": {
+          "top": 4,
+          "bottom": 38,
+          "left": 134,
+          "width": 138.765625,
+          "height": 34,
+          "fontSize": "13px",
+          "lineHeight": "16.25px"
+        }
+      },
+      {
+        "selector": ".session-chip",
+        "bounds": null
+      },
+      {
+        "selector": "[data-filter-value]",
+        "bounds": null
+      },
+      {
+        "selector": "[data-carousel-next]",
+        "bounds": {
+          "top": 1778.0625,
+          "bottom": 1818.0625,
+          "left": 197.421875,
+          "width": 40,
+          "height": 40,
+          "fontSize": "16px",
+          "lineHeight": "25.6px"
+        }
+      },
+      {
+        "selector": ".panel__transcript summary",
+        "bounds": null
+      }
+    ],
+    "links": [
+      "/articles/",
+      "/articles/dr-ambedkars-vision-of-equality-through-hindu-code-bill/",
+      "/articles/hindus-in-america-practice-caste/",
+      "/articles/legacy-of-dr-ambedkar/",
+      "/articles/what-periyar-means-to-silicon-valley/",
+      "/book-readings/",
+      "/books/",
+      "/books/ambedkar/",
+      "/books/ambedkar/",
+      "/books/annihilation-of-caste/",
+      "/books/annihilation-of-caste/",
+      "/books/buffalo-nationalism/",
+      "/books/buffalo-nationalism/",
+      "/books/by-any-means-necessary/",
+      "/books/by-any-means-necessary/",
+      "/books/caste-pride/",
+      "/books/caste-pride/",
+      "/books/india-is-broken/",
+      "/books/india-is-broken/",
+      "/books/riddles-in-hinduism/",
+      "/books/riddles-in-hinduism/",
+      "/books/the-will-to-change/",
+      "/books/the-will-to-change/",
+      "/books/waiting-for-a-visa/",
+      "/books/waiting-for-a-visa/",
+      "/books/why-were-women-enslaved/",
+      "/books/why-were-women-enslaved/",
+      "/comics/",
+      "/comics/caste-has-a-cost/",
+      "/comics/does-caste-exist-in-the-us-today/",
+      "/conferences/aksc-6th-annual-conference-2025/",
+      "/conferences/aksc-7th-annual-conference-2026/",
+      "/conferences/aksc-7th-annual-conference-2026/",
+      "/conferences/aksc-7th-annual-conference-2026/",
+      "/donate",
+      "/helpline",
+      "/interventions/deep-dive-caste-litigation-in-the-usa/",
+      "/join",
+      "/press-releases/aksc-condemns-raja-and-gats-on-the-caste-scrutiny-issue/",
+      "/programs/periyar-147th-birth-anniversary-celebration/",
+      "https://commons.wikimedia.org/wiki/File:Savitribai_Phule_Jotiba_Jotirao_Phule_Phulewada_Pune.tif",
+      "https://creativecommons.org/licenses/by-sa/4.0/"
+    ],
+    "paragraphDigest": "74e6db9053dc7e3ae2635a7b35335e5eb446eab9bfc402195df45ccbefaa1277",
+    "imageDigest": "34fe6c496b0b730852100817a8f21d34c2ae17d8ad519e9d3fe38b483f5afbb3"
+  },
+  {
+    "name": "home-writing",
+    "path": "/",
+    "width": 375,
+    "scrollWidth": 375,
+    "title": {
+      "top": 261.296875,
+      "bottom": 386.734375,
+      "left": 20,
+      "width": 335,
+      "height": 125.4375,
+      "fontSize": "46.475px",
+      "lineHeight": "41.8275px"
+    },
+    "cover": {
+      "top": 7401.25,
+      "bottom": 7646.671875,
+      "left": 20,
+      "width": 335,
+      "height": 245.421875,
+      "fontSize": "16px",
+      "lineHeight": "25.6px"
+    },
+    "facts": {
+      "top": 2938.546875,
+      "bottom": 3008.03125,
+      "left": 20,
+      "width": 335,
+      "height": 69.484375,
+      "fontSize": "16px",
+      "lineHeight": "25.6px"
+    },
+    "leadTitle": null,
+    "leadPoster": {
+      "top": 1850.0625,
+      "bottom": 1998.0625,
+      "left": 20,
+      "width": 96,
+      "height": 148,
+      "fontSize": "16px",
+      "lineHeight": "25.6px"
+    },
+    "controls": [
+      {
+        "selector": ".btn-sm",
+        "bounds": {
+          "top": 4,
+          "bottom": 38,
+          "left": 134,
+          "width": 138.765625,
+          "height": 34,
+          "fontSize": "13px",
+          "lineHeight": "16.25px"
+        }
+      },
+      {
+        "selector": ".session-chip",
+        "bounds": null
+      },
+      {
+        "selector": "[data-filter-value]",
+        "bounds": null
+      },
+      {
+        "selector": "[data-carousel-next]",
+        "bounds": {
+          "top": 1778.0625,
+          "bottom": 1818.0625,
+          "left": 197.421875,
+          "width": 40,
+          "height": 40,
+          "fontSize": "16px",
+          "lineHeight": "25.6px"
+        }
+      },
+      {
+        "selector": ".panel__transcript summary",
+        "bounds": null
+      }
+    ],
+    "links": [
+      "/articles/",
+      "/articles/dr-ambedkars-vision-of-equality-through-hindu-code-bill/",
+      "/articles/hindus-in-america-practice-caste/",
+      "/articles/legacy-of-dr-ambedkar/",
+      "/articles/what-periyar-means-to-silicon-valley/",
+      "/book-readings/",
+      "/books/",
+      "/books/ambedkar/",
+      "/books/ambedkar/",
+      "/books/annihilation-of-caste/",
+      "/books/annihilation-of-caste/",
+      "/books/buffalo-nationalism/",
+      "/books/buffalo-nationalism/",
+      "/books/by-any-means-necessary/",
+      "/books/by-any-means-necessary/",
+      "/books/caste-pride/",
+      "/books/caste-pride/",
+      "/books/india-is-broken/",
+      "/books/india-is-broken/",
+      "/books/riddles-in-hinduism/",
+      "/books/riddles-in-hinduism/",
+      "/books/the-will-to-change/",
+      "/books/the-will-to-change/",
+      "/books/waiting-for-a-visa/",
+      "/books/waiting-for-a-visa/",
+      "/books/why-were-women-enslaved/",
+      "/books/why-were-women-enslaved/",
+      "/comics/",
+      "/comics/caste-has-a-cost/",
+      "/comics/does-caste-exist-in-the-us-today/",
+      "/conferences/aksc-6th-annual-conference-2025/",
+      "/conferences/aksc-7th-annual-conference-2026/",
+      "/conferences/aksc-7th-annual-conference-2026/",
+      "/conferences/aksc-7th-annual-conference-2026/",
+      "/donate",
+      "/helpline",
+      "/interventions/deep-dive-caste-litigation-in-the-usa/",
+      "/join",
+      "/press-releases/aksc-condemns-raja-and-gats-on-the-caste-scrutiny-issue/",
+      "/programs/periyar-147th-birth-anniversary-celebration/",
+      "https://commons.wikimedia.org/wiki/File:Savitribai_Phule_Jotiba_Jotirao_Phule_Phulewada_Pune.tif",
+      "https://creativecommons.org/licenses/by-sa/4.0/"
+    ],
+    "paragraphDigest": "74e6db9053dc7e3ae2635a7b35335e5eb446eab9bfc402195df45ccbefaa1277",
+    "imageDigest": "34fe6c496b0b730852100817a8f21d34c2ae17d8ad519e9d3fe38b483f5afbb3"
+  },
+  {
+    "name": "conference",
+    "path": "/conferences/aksc-1st-annual-conference-2018/",
+    "width": 375,
+    "scrollWidth": 375,
+    "title": {
+      "top": 331.296875,
+      "bottom": 401.484375,
+      "left": 20,
+      "width": 335,
+      "height": 70.1875,
+      "fontSize": "34.4px",
+      "lineHeight": "35.088px"
+    },
+    "cover": null,
+    "facts": {
+      "top": 703.484375,
+      "bottom": 976.375,
+      "left": 20,
+      "width": 335,
+      "height": 272.890625,
+      "fontSize": "16px",
+      "lineHeight": "25.6px"
+    },
+    "leadTitle": {
+      "top": 1407.8125,
+      "bottom": 1459.625,
+      "left": 20,
+      "width": 335,
+      "height": 51.8125,
+      "fontSize": "24px",
+      "lineHeight": "25.92px"
+    },
+    "leadPoster": {
+      "top": 1499.625,
+      "bottom": 1590.625,
+      "left": 20,
+      "width": 335,
+      "height": 91,
+      "fontSize": "19px",
+      "lineHeight": "32.68px"
+    },
+    "controls": [
+      {
+        "selector": ".btn-sm",
+        "bounds": {
+          "top": 4,
+          "bottom": 38,
+          "left": 134,
+          "width": 138.765625,
+          "height": 34,
+          "fontSize": "13px",
+          "lineHeight": "16.25px"
+        }
+      },
+      {
+        "selector": ".session-chip",
+        "bounds": null
+      },
+      {
+        "selector": "[data-filter-value]",
+        "bounds": null
+      },
+      {
+        "selector": "[data-carousel-next]",
+        "bounds": null
+      },
+      {
+        "selector": ".panel__transcript summary",
+        "bounds": null
+      }
+    ],
+    "links": [
+      "/conferences/",
+      "/conferences/aksc-1st-annual-conference-2018/",
+      "/conferences/aksc-1st-annual-conference-2018/",
+      "/conferences/aksc-1st-annual-conference-2018/",
+      "/conferences/aksc-1st-annual-conference-2018/",
+      "/conferences/aksc-1st-annual-conference-2018/",
+      "/conferences/aksc-1st-annual-conference-2018/",
+      "/conferences/aksc-1st-annual-conference-2018/",
+      "/conferences/aksc-1st-annual-conference-2018/",
+      "/conferences/aksc-1st-annual-conference-2018/#resolution-1-bay-area-annual-conference-with-fraternal-and-likeminded-organizations",
+      "/conferences/aksc-1st-annual-conference-2018/#resolution-2-introducing-ambedkar-to-the-universities-and-the-colleges-in-the-usa-by-instituting-dr-ambedkar-chairs",
+      "/media/conferences/aksc-1st-annual-conference-2018/aksc-1st-general-body-report.pdf",
+      "/programs/",
+      "http://eci.nic.in/eci_main1/ByeElec2018/Results/02-Kairana(PC)-UttarPradesh.pdf",
+      "http://eci.nic.in/eci_main1/ByeElec2018/Results/02-Kairana(PC)-UttarPradesh.pdf",
+      "http://eci.nic.in/eci_main1/ByeElec2018/Results/24-Noorpur(AC)-UP.pdf",
+      "http://eci.nic.in/eci_main1/ByeElec2018/Results/24-Noorpur(AC)-UP.pdf",
+      "http://eci.nic.in/eci_main1/ByeElec2018/Results/51-Phulpur(PC)-UP.pdf",
+      "http://eci.nic.in/eci_main1/ByeElec2018/Results/51-Phulpur(PC)-UP.pdf",
+      "http://eci.nic.in/eci_main1/ByeElec2018/Results/64-Gorakhpur-UP.pdf",
+      "http://eci.nic.in/eci_main1/ByeElec2018/Results/64-Gorakhpur-UP.pdf",
+      "https://akscsfba.wixsite.com/aksc-conf-2018-reg",
+      "https://akscsfba.wixsite.com/aksc-conf-2018-reg/events/aksc-annual-conference-2018-event-registration",
+      "https://thewire.in/politics/in-27-by-elections-across-15-states-since-2014-story-of-bjp-decline-writ-large",
+      "https://thewire.in/politics/in-27-by-elections-across-15-states-since-2014-story-of-bjp-decline-writ-large",
+      "https://tinyurl.com/ClickAKSC2018",
+      "https://tinyurl.com/ClickAKSC2018",
+      "https://www.dsausa.org",
+      "https://www.dsausa.org/",
+      "https://www.justicedemocrats.com/home",
+      "https://www.justicedemocrats.com/home",
+      "https://www.nytimes.com/2018/06/30/opinion/democratic-socialists-progressive-democratic-party-trump.html",
+      "https://www.nytimes.com/2018/06/30/opinion/democratic-socialists-progressive-democratic-party-trump.html",
+      "https://www.paypal.me/aksc2018",
+      "https://www.paypal.me/aksc2018",
+      "https://www.siasat.com/news/india-new-lynchdom-1390067",
+      "https://www.siasat.com/news/india-new-lynchdom-1390067/",
+      "mailto:akscsfba@gmail.com",
+      "mailto:akscsfba@gmail.com",
+      "mailto:akscsfba@gmail.com",
+      "mailto:cdiwadkar@hotmail.com"
+    ],
+    "paragraphDigest": "d812649ed7958d361b1d7f5b36e49304d32fc1f18f89297db6a2755a1f5782fe",
+    "imageDigest": "f8543a5058d847a1b694e5aef252f35cd17557af9831204e83b811886b71e137"
+  },
+  {
+    "name": "toolkit",
+    "path": "/anti-caste-toolkit/",
+    "width": 375,
+    "scrollWidth": 375,
+    "title": {
+      "top": 249.296875,
+      "bottom": 367.890625,
+      "left": 20,
+      "width": 335,
+      "height": 118.59375,
+      "fontSize": "40.35px",
+      "lineHeight": "39.543px"
+    },
+    "cover": {
+      "top": 2345.625,
+      "bottom": 2678.625,
+      "left": 21,
+      "width": 333,
+      "height": 333,
+      "fontSize": "16px",
+      "lineHeight": "25.6px"
+    },
+    "facts": null,
+    "leadTitle": null,
+    "leadPoster": null,
+    "controls": [
+      {
+        "selector": ".btn-sm",
+        "bounds": {
+          "top": 4,
+          "bottom": 38,
+          "left": 134,
+          "width": 138.765625,
+          "height": 34,
+          "fontSize": "13px",
+          "lineHeight": "16.25px"
+        }
+      },
+      {
+        "selector": ".session-chip",
+        "bounds": null
+      },
+      {
+        "selector": "[data-filter-value]",
+        "bounds": null
+      },
+      {
+        "selector": "[data-carousel-next]",
+        "bounds": null
+      },
+      {
+        "selector": ".panel__transcript summary",
+        "bounds": {
+          "top": 2746.625,
+          "bottom": 2774.625,
+          "left": 37,
+          "width": 301,
+          "height": 28,
+          "fontSize": "14px",
+          "lineHeight": "22.4px"
+        }
+      }
+    ],
+    "links": [
+      "#cafeteria-non-veg-remark",
+      "#cafeteria-non-veg-remark-panels-1",
+      "#cafeteria-non-veg-remark-panels-2",
+      "#cafeteria-non-veg-remark-panels-3",
+      "#cafeteria-non-veg-remark-panels-4",
+      "#interview-quota-remark",
+      "#interview-quota-remark-panels-1",
+      "#interview-quota-remark-panels-2",
+      "#interview-quota-remark-panels-3",
+      "#interview-quota-remark-panels-4",
+      "#party-casteist-joke",
+      "#party-casteist-joke-panels-1",
+      "#party-casteist-joke-panels-2",
+      "#party-casteist-joke-panels-3",
+      "#party-casteist-joke-panels-4",
+      "/comics/",
+      "https://forms.gle/KseyjgpuD9Q8NaCn8",
+      "https://forms.gle/KseyjgpuD9Q8NaCn8",
+      "https://forms.gle/KseyjgpuD9Q8NaCn8",
+      "https://forms.gle/KseyjgpuD9Q8NaCn8",
+      "https://forms.gle/KseyjgpuD9Q8NaCn8",
+      "https://forms.gle/KseyjgpuD9Q8NaCn8"
+    ],
+    "paragraphDigest": "60e99aaa591639b59bd54afc85013bd3ddac78286e605d61bd19fe887f72e3c8",
+    "imageDigest": "b7c505dcb468fcc9aed5bdb88a8af5894d0ac544888dcae621b3070c2e032008"
+  },
+  {
+    "name": "book",
+    "path": "/books/the-will-to-change/",
+    "width": 768,
+    "scrollWidth": 768,
+    "title": {
+      "top": 306.59375,
+      "bottom": 354.5,
+      "left": 24,
+      "width": 720,
+      "height": 47.90625,
+      "fontSize": "46.976px",
+      "lineHeight": "47.9155px"
+    },
+    "cover": {
+      "top": 849.09375,
+      "bottom": 1147.53125,
+      "left": 24,
+      "width": 192,
+      "height": 298.4375,
+      "fontSize": "16px",
+      "lineHeight": "25.6px"
+    },
+    "facts": {
+      "top": 606.5,
+      "bottom": 809.09375,
+      "left": 24,
+      "width": 720,
+      "height": 202.59375,
+      "fontSize": "16px",
+      "lineHeight": "25.6px"
+    },
+    "leadTitle": {
+      "top": 1223.53125,
+      "bottom": 1258.390625,
+      "left": 24,
+      "width": 720,
+      "height": 34.859375,
+      "fontSize": "33.536px",
+      "lineHeight": "34.8774px"
+    },
+    "leadPoster": {
+      "top": 849.09375,
+      "bottom": 1147.53125,
+      "left": 24,
+      "width": 192,
+      "height": 298.4375,
+      "fontSize": "16px",
+      "lineHeight": "25.6px"
+    },
+    "controls": [
+      {
+        "selector": ".btn-sm",
+        "bounds": {
+          "top": 9,
+          "bottom": 43,
+          "left": 138,
+          "width": 138.765625,
+          "height": 34,
+          "fontSize": "13px",
+          "lineHeight": "16.25px"
+        }
+      },
+      {
+        "selector": ".session-chip",
+        "bounds": null
+      },
+      {
+        "selector": "[data-filter-value]",
+        "bounds": null
+      },
+      {
+        "selector": "[data-carousel-next]",
+        "bounds": null
+      },
+      {
+        "selector": ".panel__transcript summary",
+        "bounds": null
+      }
+    ],
+    "links": [
+      "/authors/bell-hooks/",
+      "/book-readings/2025-06-28-the-will-to-change-chapters-1-4/",
+      "/book-readings/2025-07-19-the-will-to-change-chapters-5-8/",
+      "/book-readings/2025-10-25-the-will-to-change-chapters-9-11/",
+      "/books/",
+      "/media/book-readings/2025-06-28-the-will-to-change-chapters-1-4/the-will-to-change-chapters-1-4.jpg",
+      "/media/book-readings/2025-07-19-the-will-to-change-chapters-5-8/the-will-to-change-chapters-5-8.jpg",
+      "/media/book-readings/2025-10-25-the-will-to-change-chapters-9-11/the-will-to-change-chapters-9-11.jpg",
+      "https://openlibrary.org/isbn/9780743456074",
+      "https://openlibrary.org/isbn/9780743456074"
+    ],
+    "paragraphDigest": "fbdad22300741a5aefe5480b98fd4590a0230e12aee941fff50ff1f69638ef7d",
+    "imageDigest": "5ffefa1f1f632d704fdfb022bb70e1187b7aba6a2883b0a06aa147a2300fdf3f"
+  },
+  {
+    "name": "long-book",
+    "path": "/books/buffalo-nationalism/",
+    "width": 768,
+    "scrollWidth": 768,
+    "title": {
+      "top": 306.59375,
+      "bottom": 354.5,
+      "left": 24,
+      "width": 720,
+      "height": 47.90625,
+      "fontSize": "46.976px",
+      "lineHeight": "47.9155px"
+    },
+    "cover": {
+      "top": 1169.09375,
+      "bottom": 1471.515625,
+      "left": 24,
+      "width": 192,
+      "height": 302.421875,
+      "fontSize": "16px",
+      "lineHeight": "25.6px"
+    },
+    "facts": {
+      "top": 926.5,
+      "bottom": 1129.09375,
+      "left": 24,
+      "width": 720,
+      "height": 202.59375,
+      "fontSize": "16px",
+      "lineHeight": "25.6px"
+    },
+    "leadTitle": {
+      "top": 1547.515625,
+      "bottom": 1582.375,
+      "left": 24,
+      "width": 720,
+      "height": 34.859375,
+      "fontSize": "33.536px",
+      "lineHeight": "34.8774px"
+    },
+    "leadPoster": {
+      "top": 1169.09375,
+      "bottom": 1471.515625,
+      "left": 24,
+      "width": 192,
+      "height": 302.421875,
+      "fontSize": "16px",
+      "lineHeight": "25.6px"
+    },
+    "controls": [
+      {
+        "selector": ".btn-sm",
+        "bounds": {
+          "top": 9,
+          "bottom": 43,
+          "left": 138,
+          "width": 138.765625,
+          "height": 34,
+          "fontSize": "13px",
+          "lineHeight": "16.25px"
+        }
+      },
+      {
+        "selector": ".session-chip",
+        "bounds": null
+      },
+      {
+        "selector": "[data-filter-value]",
+        "bounds": null
+      },
+      {
+        "selector": "[data-carousel-next]",
+        "bounds": null
+      },
+      {
+        "selector": ".panel__transcript summary",
+        "bounds": null
+      }
+    ],
+    "links": [
+      "/authors/kancha-ilaiah/",
+      "/book-readings/2026-06-27-buffalo-nationalism-chapters-1-8/",
+      "/book-readings/2026-07-18-buffalo-nationalism-chapters-9-21/",
+      "/book-readings/2026-08-08-buffalo-nationalism-chapters-22-33/",
+      "/book-readings/2026-08-31-buffalo-nationalism-chapters-34-42/",
+      "/books/",
+      "/media/book-readings/2026-06-27-buffalo-nationalism-chapters-1-8/buffalo-nationalism-chapters-1-8.jpg",
+      "/media/book-readings/2026-07-18-buffalo-nationalism-chapters-9-21/buffalo-nationalism-chapters-9-21.jpg",
+      "/media/book-readings/2026-08-08-buffalo-nationalism-chapters-22-33/buffalo-nationalism-chapters-22-33.jpg",
+      "/media/book-readings/2026-08-31-buffalo-nationalism-chapters-34-42/buffalo-nationalism-chapters-34-42.jpg",
+      "https://openlibrary.org/isbn/9789353282561",
+      "https://openlibrary.org/isbn/9789353282561"
+    ],
+    "paragraphDigest": "a5b891f58dfacf49954ff5c18ee42a425486d948415d5cc6c49d473f0c2f93f8",
+    "imageDigest": "01632140592c9d18ac5299ffcc91e549a2dd6c25d6436764088446754d61121d"
+  },
+  {
+    "name": "programs",
+    "path": "/programs/",
+    "width": 768,
+    "scrollWidth": 768,
+    "title": {
+      "top": 240.59375,
+      "bottom": 299.390625,
+      "left": 24,
+      "width": 720,
+      "height": 58.796875,
+      "fontSize": "60px",
+      "lineHeight": "58.8px"
+    },
+    "cover": null,
+    "facts": null,
+    "leadTitle": {
+      "top": 1749.453125,
+      "bottom": 1784.3125,
+      "left": 24,
+      "width": 720,
+      "height": 34.859375,
+      "fontSize": "33.536px",
+      "lineHeight": "34.8774px"
+    },
+    "leadPoster": {
+      "top": 633.984375,
+      "bottom": 1593.15625,
+      "left": 24,
+      "width": 720,
+      "height": 959.171875,
+      "fontSize": "16px",
+      "lineHeight": "25.6px"
+    },
+    "controls": [
+      {
+        "selector": ".btn-sm",
+        "bounds": {
+          "top": 9,
+          "bottom": 43,
+          "left": 138,
+          "width": 138.765625,
+          "height": 34,
+          "fontSize": "13px",
+          "lineHeight": "16.25px"
+        }
+      },
+      {
+        "selector": ".session-chip",
+        "bounds": null
+      },
+      {
+        "selector": "[data-filter-value]",
+        "bounds": null
+      },
+      {
+        "selector": "[data-carousel-next]",
+        "bounds": null
+      },
+      {
+        "selector": ".panel__transcript summary",
+        "bounds": null
+      }
+    ],
+    "links": [
+      "/programs/aathi-thamizhar-peravai-struggles/",
+      "/programs/aksc-young-ambassador-program/",
+      "/programs/ambedkar-127th-birth-anniversary-celebration/",
+      "/programs/ambedkar-on-brahmanism-and-capitalism/",
+      "/programs/caste-and-gender-violence-with-kavita-krishnan/",
+      "/programs/democracy-and-dissent-in-india-today/",
+      "/programs/dr-ambedkar-129th-birth-anniversary-celebration/",
+      "/programs/honor-killings-love-and-caste/",
+      "/programs/inclusive-campuses-in-an-exclusive-society/",
+      "/programs/kakkoos-documentary-screening/",
+      "/programs/keezhadi-and-states-rights-talks/",
+      "/programs/keezhadi-to-harvard/",
+      "/programs/kilvenmani-massacre-50th-anniversary/",
+      "/programs/neet-and-social-justice/",
+      "/programs/periyar-139th-birth-anniversary/",
+      "/programs/periyar-140th-birth-anniversary-celebration/",
+      "/programs/periyar-147th-birth-anniversary-celebration/",
+      "https://commons.wikimedia.org/wiki/File:Jotirao_Phule_Savitribai_Phule_Phulewada_Pune.jpg",
+      "https://creativecommons.org/licenses/by-sa/4.0/"
+    ],
+    "paragraphDigest": "90870c94ebd37a2f83726d3e926dac0921a5fddbe28579ab4b638dca7653d862",
+    "imageDigest": "e75b21a9370b3fe837a1ad16edf2ec03a4da452d86e8e4db15f133569cdceb87"
+  },
+  {
+    "name": "long-title",
+    "path": "/press-releases/a-right-to-oppress-santa-clara-county-hrc-on-caste-discrimination/",
+    "width": 768,
+    "scrollWidth": 768,
+    "title": {
+      "top": 306.59375,
+      "bottom": 594.03125,
+      "left": 24,
+      "width": 720,
+      "height": 287.4375,
+      "fontSize": "46.976px",
+      "lineHeight": "47.9155px"
+    },
+    "cover": null,
+    "facts": {
+      "top": 800.03125,
+      "bottom": 963.625,
+      "left": 24,
+      "width": 720,
+      "height": 163.59375,
+      "fontSize": "16px",
+      "lineHeight": "25.6px"
+    },
+    "leadTitle": {
+      "top": 3560.296875,
+      "bottom": 3575.890625,
+      "left": 24,
+      "width": 720,
+      "height": 15.59375,
+      "fontSize": "12px",
+      "lineHeight": "15.6px"
+    },
+    "leadPoster": {
+      "top": 1011.625,
+      "bottom": 1523.625,
+      "left": 24,
+      "width": 512,
+      "height": 512,
+      "fontSize": "21px",
+      "lineHeight": "33.6px"
+    },
+    "controls": [
+      {
+        "selector": ".btn-sm",
+        "bounds": {
+          "top": 9,
+          "bottom": 43,
+          "left": 138,
+          "width": 138.765625,
+          "height": 34,
+          "fontSize": "13px",
+          "lineHeight": "16.25px"
+        }
+      },
+      {
+        "selector": ".session-chip",
+        "bounds": null
+      },
+      {
+        "selector": "[data-filter-value]",
+        "bounds": null
+      },
+      {
+        "selector": "[data-carousel-next]",
+        "bounds": null
+      },
+      {
+        "selector": ".panel__transcript summary",
+        "bounds": null
+      }
+    ],
+    "links": [
+      "/",
+      "/",
+      "/press-releases/",
+      "/testimonies-of-practice-of-caste-in-the-usa/",
+      "https://www.youtube.com/watch?v=9b6KJptrArU",
+      "https://www.youtube.com/watch?v=9b6KJptrArU&t=3664s",
+      "mailto:akscsfba@gmail.com",
+      "mailto:akscsfba@gmail.com"
+    ],
+    "paragraphDigest": "72fe765674db98c8323008d71d4d86363d8330ca3c180efb0f1d7a2ac8b28687",
+    "imageDigest": "cfd2aa6b2c3c24b40915f8f85bbe2635d632748c9aff20833124ca30d8bcd8a7"
+  },
+  {
+    "name": "credits",
+    "path": "/articles/",
+    "width": 768,
+    "scrollWidth": 768,
+    "title": {
+      "top": 240.59375,
+      "bottom": 299.390625,
+      "left": 24,
+      "width": 720,
+      "height": 58.796875,
+      "fontSize": "60px",
+      "lineHeight": "58.8px"
+    },
+    "cover": null,
+    "facts": null,
+    "leadTitle": {
+      "top": 758.28125,
+      "bottom": 793.140625,
+      "left": 24,
+      "width": 720,
+      "height": 34.859375,
+      "fontSize": "33.536px",
+      "lineHeight": "34.8774px"
+    },
+    "leadPoster": null,
+    "controls": [
+      {
+        "selector": ".btn-sm",
+        "bounds": {
+          "top": 9,
+          "bottom": 43,
+          "left": 138,
+          "width": 138.765625,
+          "height": 34,
+          "fontSize": "13px",
+          "lineHeight": "16.25px"
+        }
+      },
+      {
+        "selector": ".session-chip",
+        "bounds": null
+      },
+      {
+        "selector": "[data-filter-value]",
+        "bounds": {
+          "top": 1268.453125,
+          "bottom": 1308.84375,
+          "left": 24,
+          "width": 67,
+          "height": 40.390625,
+          "fontSize": "14px",
+          "lineHeight": "22.4px"
+        }
+      },
+      {
+        "selector": "[data-carousel-next]",
+        "bounds": null
+      },
+      {
+        "selector": ".panel__transcript summary",
+        "bounds": null
+      }
+    ],
+    "links": [
+      "/articles/bhima-koregaon-lessons-from-the-untouchables-and-pax-britannica/",
+      "/articles/caste-discrimination-where-is-it/",
+      "/articles/dr-ambedkars-vision-of-equality-through-hindu-code-bill/",
+      "/articles/hindus-in-america-practice-caste/",
+      "/articles/legacy-of-dr-ambedkar/",
+      "/articles/origin-by-dan-brown/",
+      "/articles/purattasi-a-month-of-dietary-devotion/",
+      "/articles/what-periyar-means-to-silicon-valley/"
+    ],
+    "paragraphDigest": "7f2136b6c20d7fc364d378abe5ded0659bc906dd7539312719ddb8f61dd25a82",
+    "imageDigest": "72a101f79295862f86b9971556e7d745c3cbfcfbb9674b44c80ea605c6a25844"
+  },
+  {
+    "name": "reading-log",
+    "path": "/book-readings/",
+    "width": 768,
+    "scrollWidth": 768,
+    "title": {
+      "top": 240.59375,
+      "bottom": 299.390625,
+      "left": 24,
+      "width": 720,
+      "height": 58.796875,
+      "fontSize": "60px",
+      "lineHeight": "58.8px"
+    },
+    "cover": null,
+    "facts": {
+      "top": 1040,
+      "bottom": 1215,
+      "left": 24,
+      "width": 720,
+      "height": 175,
+      "fontSize": "16px",
+      "lineHeight": "25.6px"
+    },
+    "leadTitle": null,
+    "leadPoster": {
+      "top": 2210.8125,
+      "bottom": 2383.640625,
+      "left": 24,
+      "width": 112,
+      "height": 172.828125,
+      "fontSize": "16px",
+      "lineHeight": "25.6px"
+    },
+    "controls": [
+      {
+        "selector": ".btn-sm",
+        "bounds": {
+          "top": 9,
+          "bottom": 43,
+          "left": 138,
+          "width": 138.765625,
+          "height": 34,
+          "fontSize": "13px",
+          "lineHeight": "16.25px"
+        }
+      },
+      {
+        "selector": ".session-chip",
+        "bounds": {
+          "top": 2422.46875,
+          "bottom": 2458.46875,
+          "left": 168,
+          "width": 64,
+          "height": 36,
+          "fontSize": "16px",
+          "lineHeight": "25.6px"
+        }
+      },
+      {
+        "selector": "[data-filter-value]",
+        "bounds": null
+      },
+      {
+        "selector": "[data-carousel-next]",
+        "bounds": null
+      },
+      {
+        "selector": ".panel__transcript summary",
+        "bounds": null
+      }
+    ],
+    "links": [
+      "/authors/ashoka-mody/",
+      "/authors/bell-hooks/",
+      "/authors/dr-b-r-ambedkar/",
+      "/authors/dr-b-r-ambedkar/",
+      "/authors/dr-b-r-ambedkar/",
+      "/authors/gail-omvedt/",
+      "/authors/kancha-ilaiah/",
+      "/authors/malcolm-x/",
+      "/authors/manoj-mitta/",
+      "/authors/periyar-e-v-ramasamy/",
+      "/book-readings/2020-02-23-riddles-in-hinduism-riddles-1-8/",
+      "/book-readings/2020-03-15-riddles-in-hinduism-riddles-16-20/",
+      "/book-readings/2020-04-26-riddles-in-hinduism-riddles-21-24/",
+      "/book-readings/2020-05-17-annihilation-of-caste/",
+      "/book-readings/2020-06-07-annihilation-of-caste/",
+      "/book-readings/2024-01-27-palestine-a-reading-list/",
+      "/book-readings/2024-01-27-palestine-a-reading-list/",
+      "/book-readings/2024-10-05-caste-pride-chapters-15-18/",
+      "/book-readings/2025-03-15-waiting-for-a-visa/",
+      "/book-readings/2025-04-05-annihilation-of-caste/",
+      "/book-readings/2025-04-26-by-any-means-necessary-chapters-1-2/",
+      "/book-readings/2025-05-10-by-any-means-necessary-chapters-3-5/",
+      "/book-readings/2025-05-31-by-any-means-necessary-chapters-6-9/",
+      "/book-readings/2025-06-14-by-any-means-necessary-chapters-10-12/",
+      "/book-readings/2025-06-28-the-will-to-change-chapters-1-4/",
+      "/book-readings/2025-07-19-the-will-to-change-chapters-5-8/",
+      "/book-readings/2025-10-25-the-will-to-change-chapters-9-11/",
+      "/book-readings/2026-01-10-india-is-broken-chapters-7-9/",
+      "/book-readings/2026-01-31-india-is-broken-chapters-10-14/",
+      "/book-readings/2026-02-21-india-is-broken-chapters-15-19/",
+      "/book-readings/2026-06-06-ambedkar-towards-an-enlightened-india/",
+      "/book-readings/2026-06-27-buffalo-nationalism-chapters-1-8/",
+      "/book-readings/2026-07-18-buffalo-nationalism-chapters-9-21/",
+      "/book-readings/2026-08-08-buffalo-nationalism-chapters-22-33/",
+      "/book-readings/2026-08-31-buffalo-nationalism-chapters-34-42/",
+      "/book-readings/2026-08-31-why-were-women-enslaved/",
+      "/book-readings/2026-08-31-why-were-women-enslaved/",
+      "/books/",
+      "/books/ambedkar/",
+      "/books/ambedkar/",
+      "/books/annihilation-of-caste/",
+      "/books/annihilation-of-caste/",
+      "/books/buffalo-nationalism/",
+      "/books/buffalo-nationalism/",
+      "/books/by-any-means-necessary/",
+      "/books/by-any-means-necessary/",
+      "/books/caste-pride/",
+      "/books/caste-pride/",
+      "/books/india-is-broken/",
+      "/books/india-is-broken/",
+      "/books/riddles-in-hinduism/",
+      "/books/riddles-in-hinduism/",
+      "/books/the-will-to-change/",
+      "/books/the-will-to-change/",
+      "/books/waiting-for-a-visa/",
+      "/books/waiting-for-a-visa/",
+      "/books/why-were-women-enslaved/",
+      "/books/why-were-women-enslaved/",
+      "/books/why-were-women-enslaved/",
+      "/books/why-were-women-enslaved/",
+      "/media/book-readings/2024-10-05-caste-pride-chapters-15-18/caste-pride-chapters-15-18.jpg",
+      "/media/book-readings/2025-03-15-waiting-for-a-visa/waiting-for-a-visa.jpg",
+      "/media/book-readings/2025-04-05-annihilation-of-caste/annihilation-of-caste-2025.jpg",
+      "/media/book-readings/2025-04-26-by-any-means-necessary-chapters-1-2/by-any-means-necessary-chapters-1-2.jpg",
+      "/media/book-readings/2025-05-31-by-any-means-necessary-chapters-6-9/by-any-means-necessary-chapters-6-9.jpg",
+      "/media/book-readings/2025-06-14-by-any-means-necessary-chapters-10-12/by-any-means-necessary-chapters-10-12.jpg",
+      "/media/book-readings/2025-06-28-the-will-to-change-chapters-1-4/the-will-to-change-chapters-1-4.jpg",
+      "/media/book-readings/2025-07-19-the-will-to-change-chapters-5-8/the-will-to-change-chapters-5-8.jpg",
+      "/media/book-readings/2025-10-25-the-will-to-change-chapters-9-11/the-will-to-change-chapters-9-11.jpg",
+      "/media/book-readings/2026-01-10-india-is-broken-chapters-7-9/india-is-broken-chapters-7-9.jpg",
+      "/media/book-readings/2026-01-31-india-is-broken-chapters-10-14/india-is-broken-chapters-10-14.jpg",
+      "/media/book-readings/2026-02-21-india-is-broken-chapters-15-19/india-is-broken-chapters-15-19.jpg",
+      "/media/book-readings/2026-06-06-ambedkar-towards-an-enlightened-india/ambedkar-towards-an-enlightened-india.jpg",
+      "/media/book-readings/2026-06-27-buffalo-nationalism-chapters-1-8/buffalo-nationalism-chapters-1-8.jpg",
+      "/media/book-readings/2026-07-18-buffalo-nationalism-chapters-9-21/buffalo-nationalism-chapters-9-21.jpg",
+      "/media/book-readings/2026-08-08-buffalo-nationalism-chapters-22-33/buffalo-nationalism-chapters-22-33.jpg",
+      "/media/book-readings/2026-08-31-buffalo-nationalism-chapters-34-42/buffalo-nationalism-chapters-34-42.jpg",
+      "/media/book-readings/2026-08-31-why-were-women-enslaved/why-were-women-enslaved-flyer.jpeg",
+      "https://bit.ly/akscrnd"
+    ],
+    "paragraphDigest": "635e12792e7b515053ec57252f8c68e91ba3f5ec35d11e70ff7f8a40e704d2b1",
+    "imageDigest": "6c78a6b4e602b21cdd8275dc12849d45a7cefe5c3a927325d3ce48d390da5e67"
+  },
+  {
+    "name": "shelf",
+    "path": "/",
+    "width": 768,
+    "scrollWidth": 768,
+    "title": {
+      "top": 268.125,
+      "bottom": 406.21875,
+      "left": 24,
+      "width": 720,
+      "height": 138.09375,
+      "fontSize": "76.736px",
+      "lineHeight": "69.0624px"
+    },
+    "cover": {
+      "top": 6268.640625,
+      "bottom": 6796.125,
+      "left": 24,
+      "width": 720,
+      "height": 527.484375,
+      "fontSize": "16px",
+      "lineHeight": "25.6px"
+    },
+    "facts": {
+      "top": 2477.390625,
+      "bottom": 2546.875,
+      "left": 24,
+      "width": 720,
+      "height": 69.484375,
+      "fontSize": "16px",
+      "lineHeight": "25.6px"
+    },
+    "leadTitle": null,
+    "leadPoster": {
+      "top": 1610.3125,
+      "bottom": 1782.96875,
+      "left": 24,
+      "width": 112,
+      "height": 172.65625,
+      "fontSize": "16px",
+      "lineHeight": "25.6px"
+    },
+    "controls": [
+      {
+        "selector": ".btn-sm",
+        "bounds": {
+          "top": 9,
+          "bottom": 43,
+          "left": 138,
+          "width": 138.765625,
+          "height": 34,
+          "fontSize": "13px",
+          "lineHeight": "16.25px"
+        }
+      },
+      {
+        "selector": ".session-chip",
+        "bounds": null
+      },
+      {
+        "selector": "[data-filter-value]",
+        "bounds": null
+      },
+      {
+        "selector": "[data-carousel-next]",
+        "bounds": {
+          "top": 1530.3125,
+          "bottom": 1570.3125,
+          "left": 704,
+          "width": 40,
+          "height": 40,
+          "fontSize": "16px",
+          "lineHeight": "25.6px"
+        }
+      },
+      {
+        "selector": ".panel__transcript summary",
+        "bounds": null
+      }
+    ],
+    "links": [
+      "/articles/",
+      "/articles/dr-ambedkars-vision-of-equality-through-hindu-code-bill/",
+      "/articles/hindus-in-america-practice-caste/",
+      "/articles/legacy-of-dr-ambedkar/",
+      "/articles/what-periyar-means-to-silicon-valley/",
+      "/book-readings/",
+      "/books/",
+      "/books/ambedkar/",
+      "/books/ambedkar/",
+      "/books/annihilation-of-caste/",
+      "/books/annihilation-of-caste/",
+      "/books/buffalo-nationalism/",
+      "/books/buffalo-nationalism/",
+      "/books/by-any-means-necessary/",
+      "/books/by-any-means-necessary/",
+      "/books/caste-pride/",
+      "/books/caste-pride/",
+      "/books/india-is-broken/",
+      "/books/india-is-broken/",
+      "/books/riddles-in-hinduism/",
+      "/books/riddles-in-hinduism/",
+      "/books/the-will-to-change/",
+      "/books/the-will-to-change/",
+      "/books/waiting-for-a-visa/",
+      "/books/waiting-for-a-visa/",
+      "/books/why-were-women-enslaved/",
+      "/books/why-were-women-enslaved/",
+      "/comics/",
+      "/comics/caste-has-a-cost/",
+      "/comics/does-caste-exist-in-the-us-today/",
+      "/conferences/aksc-6th-annual-conference-2025/",
+      "/conferences/aksc-7th-annual-conference-2026/",
+      "/conferences/aksc-7th-annual-conference-2026/",
+      "/conferences/aksc-7th-annual-conference-2026/",
+      "/donate",
+      "/helpline",
+      "/interventions/deep-dive-caste-litigation-in-the-usa/",
+      "/join",
+      "/press-releases/aksc-condemns-raja-and-gats-on-the-caste-scrutiny-issue/",
+      "/programs/periyar-147th-birth-anniversary-celebration/",
+      "https://commons.wikimedia.org/wiki/File:Savitribai_Phule_Jotiba_Jotirao_Phule_Phulewada_Pune.tif",
+      "https://creativecommons.org/licenses/by-sa/4.0/"
+    ],
+    "paragraphDigest": "74e6db9053dc7e3ae2635a7b35335e5eb446eab9bfc402195df45ccbefaa1277",
+    "imageDigest": "34fe6c496b0b730852100817a8f21d34c2ae17d8ad519e9d3fe38b483f5afbb3"
+  },
+  {
+    "name": "home-writing",
+    "path": "/",
+    "width": 768,
+    "scrollWidth": 768,
+    "title": {
+      "top": 268.125,
+      "bottom": 406.21875,
+      "left": 24,
+      "width": 720,
+      "height": 138.09375,
+      "fontSize": "76.736px",
+      "lineHeight": "69.0624px"
+    },
+    "cover": {
+      "top": 6268.640625,
+      "bottom": 6796.125,
+      "left": 24,
+      "width": 720,
+      "height": 527.484375,
+      "fontSize": "16px",
+      "lineHeight": "25.6px"
+    },
+    "facts": {
+      "top": 2477.390625,
+      "bottom": 2546.875,
+      "left": 24,
+      "width": 720,
+      "height": 69.484375,
+      "fontSize": "16px",
+      "lineHeight": "25.6px"
+    },
+    "leadTitle": null,
+    "leadPoster": {
+      "top": 1610.3125,
+      "bottom": 1782.96875,
+      "left": 24,
+      "width": 112,
+      "height": 172.65625,
+      "fontSize": "16px",
+      "lineHeight": "25.6px"
+    },
+    "controls": [
+      {
+        "selector": ".btn-sm",
+        "bounds": {
+          "top": 9,
+          "bottom": 43,
+          "left": 138,
+          "width": 138.765625,
+          "height": 34,
+          "fontSize": "13px",
+          "lineHeight": "16.25px"
+        }
+      },
+      {
+        "selector": ".session-chip",
+        "bounds": null
+      },
+      {
+        "selector": "[data-filter-value]",
+        "bounds": null
+      },
+      {
+        "selector": "[data-carousel-next]",
+        "bounds": {
+          "top": 1530.3125,
+          "bottom": 1570.3125,
+          "left": 704,
+          "width": 40,
+          "height": 40,
+          "fontSize": "16px",
+          "lineHeight": "25.6px"
+        }
+      },
+      {
+        "selector": ".panel__transcript summary",
+        "bounds": null
+      }
+    ],
+    "links": [
+      "/articles/",
+      "/articles/dr-ambedkars-vision-of-equality-through-hindu-code-bill/",
+      "/articles/hindus-in-america-practice-caste/",
+      "/articles/legacy-of-dr-ambedkar/",
+      "/articles/what-periyar-means-to-silicon-valley/",
+      "/book-readings/",
+      "/books/",
+      "/books/ambedkar/",
+      "/books/ambedkar/",
+      "/books/annihilation-of-caste/",
+      "/books/annihilation-of-caste/",
+      "/books/buffalo-nationalism/",
+      "/books/buffalo-nationalism/",
+      "/books/by-any-means-necessary/",
+      "/books/by-any-means-necessary/",
+      "/books/caste-pride/",
+      "/books/caste-pride/",
+      "/books/india-is-broken/",
+      "/books/india-is-broken/",
+      "/books/riddles-in-hinduism/",
+      "/books/riddles-in-hinduism/",
+      "/books/the-will-to-change/",
+      "/books/the-will-to-change/",
+      "/books/waiting-for-a-visa/",
+      "/books/waiting-for-a-visa/",
+      "/books/why-were-women-enslaved/",
+      "/books/why-were-women-enslaved/",
+      "/comics/",
+      "/comics/caste-has-a-cost/",
+      "/comics/does-caste-exist-in-the-us-today/",
+      "/conferences/aksc-6th-annual-conference-2025/",
+      "/conferences/aksc-7th-annual-conference-2026/",
+      "/conferences/aksc-7th-annual-conference-2026/",
+      "/conferences/aksc-7th-annual-conference-2026/",
+      "/donate",
+      "/helpline",
+      "/interventions/deep-dive-caste-litigation-in-the-usa/",
+      "/join",
+      "/press-releases/aksc-condemns-raja-and-gats-on-the-caste-scrutiny-issue/",
+      "/programs/periyar-147th-birth-anniversary-celebration/",
+      "https://commons.wikimedia.org/wiki/File:Savitribai_Phule_Jotiba_Jotirao_Phule_Phulewada_Pune.tif",
+      "https://creativecommons.org/licenses/by-sa/4.0/"
+    ],
+    "paragraphDigest": "74e6db9053dc7e3ae2635a7b35335e5eb446eab9bfc402195df45ccbefaa1277",
+    "imageDigest": "34fe6c496b0b730852100817a8f21d34c2ae17d8ad519e9d3fe38b483f5afbb3"
+  },
+  {
+    "name": "conference",
+    "path": "/conferences/aksc-1st-annual-conference-2018/",
+    "width": 768,
+    "scrollWidth": 768,
+    "title": {
+      "top": 306.59375,
+      "bottom": 402.40625,
+      "left": 24,
+      "width": 720,
+      "height": 95.8125,
+      "fontSize": "46.976px",
+      "lineHeight": "47.9155px"
+    },
+    "cover": null,
+    "facts": {
+      "top": 608.40625,
+      "bottom": 800,
+      "left": 24,
+      "width": 720,
+      "height": 191.59375,
+      "fontSize": "16px",
+      "lineHeight": "25.6px"
+    },
+    "leadTitle": {
+      "top": 1110.03125,
+      "bottom": 1139.875,
+      "left": 24,
+      "width": 640,
+      "height": 29.84375,
+      "fontSize": "27.648px",
+      "lineHeight": "29.8598px"
+    },
+    "leadPoster": {
+      "top": 1179.875,
+      "bottom": 1342.875,
+      "left": 24,
+      "width": 600,
+      "height": 163,
+      "fontSize": "19px",
+      "lineHeight": "32.68px"
+    },
+    "controls": [
+      {
+        "selector": ".btn-sm",
+        "bounds": {
+          "top": 9,
+          "bottom": 43,
+          "left": 138,
+          "width": 138.765625,
+          "height": 34,
+          "fontSize": "13px",
+          "lineHeight": "16.25px"
+        }
+      },
+      {
+        "selector": ".session-chip",
+        "bounds": null
+      },
+      {
+        "selector": "[data-filter-value]",
+        "bounds": null
+      },
+      {
+        "selector": "[data-carousel-next]",
+        "bounds": null
+      },
+      {
+        "selector": ".panel__transcript summary",
+        "bounds": null
+      }
+    ],
+    "links": [
+      "/conferences/",
+      "/conferences/aksc-1st-annual-conference-2018/",
+      "/conferences/aksc-1st-annual-conference-2018/",
+      "/conferences/aksc-1st-annual-conference-2018/",
+      "/conferences/aksc-1st-annual-conference-2018/",
+      "/conferences/aksc-1st-annual-conference-2018/",
+      "/conferences/aksc-1st-annual-conference-2018/",
+      "/conferences/aksc-1st-annual-conference-2018/",
+      "/conferences/aksc-1st-annual-conference-2018/",
+      "/conferences/aksc-1st-annual-conference-2018/#resolution-1-bay-area-annual-conference-with-fraternal-and-likeminded-organizations",
+      "/conferences/aksc-1st-annual-conference-2018/#resolution-2-introducing-ambedkar-to-the-universities-and-the-colleges-in-the-usa-by-instituting-dr-ambedkar-chairs",
+      "/media/conferences/aksc-1st-annual-conference-2018/aksc-1st-general-body-report.pdf",
+      "/programs/",
+      "http://eci.nic.in/eci_main1/ByeElec2018/Results/02-Kairana(PC)-UttarPradesh.pdf",
+      "http://eci.nic.in/eci_main1/ByeElec2018/Results/02-Kairana(PC)-UttarPradesh.pdf",
+      "http://eci.nic.in/eci_main1/ByeElec2018/Results/24-Noorpur(AC)-UP.pdf",
+      "http://eci.nic.in/eci_main1/ByeElec2018/Results/24-Noorpur(AC)-UP.pdf",
+      "http://eci.nic.in/eci_main1/ByeElec2018/Results/51-Phulpur(PC)-UP.pdf",
+      "http://eci.nic.in/eci_main1/ByeElec2018/Results/51-Phulpur(PC)-UP.pdf",
+      "http://eci.nic.in/eci_main1/ByeElec2018/Results/64-Gorakhpur-UP.pdf",
+      "http://eci.nic.in/eci_main1/ByeElec2018/Results/64-Gorakhpur-UP.pdf",
+      "https://akscsfba.wixsite.com/aksc-conf-2018-reg",
+      "https://akscsfba.wixsite.com/aksc-conf-2018-reg/events/aksc-annual-conference-2018-event-registration",
+      "https://thewire.in/politics/in-27-by-elections-across-15-states-since-2014-story-of-bjp-decline-writ-large",
+      "https://thewire.in/politics/in-27-by-elections-across-15-states-since-2014-story-of-bjp-decline-writ-large",
+      "https://tinyurl.com/ClickAKSC2018",
+      "https://tinyurl.com/ClickAKSC2018",
+      "https://www.dsausa.org",
+      "https://www.dsausa.org/",
+      "https://www.justicedemocrats.com/home",
+      "https://www.justicedemocrats.com/home",
+      "https://www.nytimes.com/2018/06/30/opinion/democratic-socialists-progressive-democratic-party-trump.html",
+      "https://www.nytimes.com/2018/06/30/opinion/democratic-socialists-progressive-democratic-party-trump.html",
+      "https://www.paypal.me/aksc2018",
+      "https://www.paypal.me/aksc2018",
+      "https://www.siasat.com/news/india-new-lynchdom-1390067",
+      "https://www.siasat.com/news/india-new-lynchdom-1390067/",
+      "mailto:akscsfba@gmail.com",
+      "mailto:akscsfba@gmail.com",
+      "mailto:akscsfba@gmail.com",
+      "mailto:cdiwadkar@hotmail.com"
+    ],
+    "paragraphDigest": "d812649ed7958d361b1d7f5b36e49304d32fc1f18f89297db6a2755a1f5782fe",
+    "imageDigest": "f8543a5058d847a1b694e5aef252f35cd17557af9831204e83b811886b71e137"
+  },
+  {
+    "name": "toolkit",
+    "path": "/anti-caste-toolkit/",
+    "width": 768,
+    "scrollWidth": 768,
+    "title": {
+      "top": 240.59375,
+      "bottom": 358.1875,
+      "left": 24,
+      "width": 720,
+      "height": 117.59375,
+      "fontSize": "60px",
+      "lineHeight": "58.8px"
+    },
+    "cover": {
+      "top": 1867.265625,
+      "bottom": 2209.265625,
+      "left": 25,
+      "width": 342,
+      "height": 342,
+      "fontSize": "16px",
+      "lineHeight": "25.6px"
+    },
+    "facts": null,
+    "leadTitle": null,
+    "leadPoster": null,
+    "controls": [
+      {
+        "selector": ".btn-sm",
+        "bounds": {
+          "top": 9,
+          "bottom": 43,
+          "left": 138,
+          "width": 138.765625,
+          "height": 34,
+          "fontSize": "13px",
+          "lineHeight": "16.25px"
+        }
+      },
+      {
+        "selector": ".session-chip",
+        "bounds": null
+      },
+      {
+        "selector": "[data-filter-value]",
+        "bounds": null
+      },
+      {
+        "selector": "[data-carousel-next]",
+        "bounds": null
+      },
+      {
+        "selector": ".panel__transcript summary",
+        "bounds": {
+          "top": 2277.265625,
+          "bottom": 2305.265625,
+          "left": 41,
+          "width": 310,
+          "height": 28,
+          "fontSize": "14px",
+          "lineHeight": "22.4px"
+        }
+      }
+    ],
+    "links": [
+      "#cafeteria-non-veg-remark",
+      "#cafeteria-non-veg-remark-panels-1",
+      "#cafeteria-non-veg-remark-panels-2",
+      "#cafeteria-non-veg-remark-panels-3",
+      "#cafeteria-non-veg-remark-panels-4",
+      "#interview-quota-remark",
+      "#interview-quota-remark-panels-1",
+      "#interview-quota-remark-panels-2",
+      "#interview-quota-remark-panels-3",
+      "#interview-quota-remark-panels-4",
+      "#party-casteist-joke",
+      "#party-casteist-joke-panels-1",
+      "#party-casteist-joke-panels-2",
+      "#party-casteist-joke-panels-3",
+      "#party-casteist-joke-panels-4",
+      "/comics/",
+      "https://forms.gle/KseyjgpuD9Q8NaCn8",
+      "https://forms.gle/KseyjgpuD9Q8NaCn8",
+      "https://forms.gle/KseyjgpuD9Q8NaCn8",
+      "https://forms.gle/KseyjgpuD9Q8NaCn8",
+      "https://forms.gle/KseyjgpuD9Q8NaCn8",
+      "https://forms.gle/KseyjgpuD9Q8NaCn8"
+    ],
+    "paragraphDigest": "60e99aaa591639b59bd54afc85013bd3ddac78286e605d61bd19fe887f72e3c8",
+    "imageDigest": "b7c505dcb468fcc9aed5bdb88a8af5894d0ac544888dcae621b3070c2e032008"
+  },
+  {
+    "name": "book",
+    "path": "/books/the-will-to-change/",
+    "width": 1280,
+    "scrollWidth": 1280,
+    "title": {
+      "top": 306.59375,
+      "bottom": 363.703125,
+      "left": 96,
+      "width": 768,
+      "height": 57.109375,
+      "fontSize": "56px",
+      "lineHeight": "57.12px"
+    },
+    "cover": {
+      "top": 169,
+      "bottom": 517.171875,
+      "left": 960,
+      "width": 224,
+      "height": 348.171875,
+      "fontSize": "16px",
+      "lineHeight": "25.6px"
+    },
+    "facts": {
+      "top": 615.703125,
+      "bottom": 818.296875,
+      "left": 96,
+      "width": 768,
+      "height": 202.59375,
+      "fontSize": "16px",
+      "lineHeight": "25.6px"
+    },
+    "leadTitle": {
+      "top": 866.296875,
+      "bottom": 903.734375,
+      "left": 96,
+      "width": 768,
+      "height": 37.4375,
+      "fontSize": "36px",
+      "lineHeight": "37.44px"
+    },
+    "leadPoster": {
+      "top": 169,
+      "bottom": 517.171875,
+      "left": 960,
+      "width": 224,
+      "height": 348.171875,
+      "fontSize": "16px",
+      "lineHeight": "25.6px"
+    },
+    "controls": [
+      {
+        "selector": ".btn-sm",
+        "bounds": {
+          "top": 9,
+          "bottom": 43,
+          "left": 210,
+          "width": 138.765625,
+          "height": 34,
+          "fontSize": "13px",
+          "lineHeight": "16.25px"
+        }
+      },
+      {
+        "selector": ".session-chip",
+        "bounds": null
+      },
+      {
+        "selector": "[data-filter-value]",
+        "bounds": null
+      },
+      {
+        "selector": "[data-carousel-next]",
+        "bounds": null
+      },
+      {
+        "selector": ".panel__transcript summary",
+        "bounds": null
+      }
+    ],
+    "links": [
+      "/authors/bell-hooks/",
+      "/book-readings/2025-06-28-the-will-to-change-chapters-1-4/",
+      "/book-readings/2025-07-19-the-will-to-change-chapters-5-8/",
+      "/book-readings/2025-10-25-the-will-to-change-chapters-9-11/",
+      "/books/",
+      "/media/book-readings/2025-06-28-the-will-to-change-chapters-1-4/the-will-to-change-chapters-1-4.jpg",
+      "/media/book-readings/2025-07-19-the-will-to-change-chapters-5-8/the-will-to-change-chapters-5-8.jpg",
+      "/media/book-readings/2025-10-25-the-will-to-change-chapters-9-11/the-will-to-change-chapters-9-11.jpg",
+      "https://openlibrary.org/isbn/9780743456074",
+      "https://openlibrary.org/isbn/9780743456074"
+    ],
+    "paragraphDigest": "fbdad22300741a5aefe5480b98fd4590a0230e12aee941fff50ff1f69638ef7d",
+    "imageDigest": "5ffefa1f1f632d704fdfb022bb70e1187b7aba6a2883b0a06aa147a2300fdf3f"
+  },
+  {
+    "name": "long-book",
+    "path": "/books/buffalo-nationalism/",
+    "width": 1280,
+    "scrollWidth": 1280,
+    "title": {
+      "top": 306.59375,
+      "bottom": 363.703125,
+      "left": 96,
+      "width": 768,
+      "height": 57.109375,
+      "fontSize": "56px",
+      "lineHeight": "57.12px"
+    },
+    "cover": {
+      "top": 169,
+      "bottom": 521.828125,
+      "left": 960,
+      "width": 224,
+      "height": 352.828125,
+      "fontSize": "16px",
+      "lineHeight": "25.6px"
+    },
+    "facts": {
+      "top": 935.703125,
+      "bottom": 1138.296875,
+      "left": 96,
+      "width": 768,
+      "height": 202.59375,
+      "fontSize": "16px",
+      "lineHeight": "25.6px"
+    },
+    "leadTitle": {
+      "top": 1186.296875,
+      "bottom": 1223.734375,
+      "left": 96,
+      "width": 768,
+      "height": 37.4375,
+      "fontSize": "36px",
+      "lineHeight": "37.44px"
+    },
+    "leadPoster": {
+      "top": 169,
+      "bottom": 521.828125,
+      "left": 960,
+      "width": 224,
+      "height": 352.828125,
+      "fontSize": "16px",
+      "lineHeight": "25.6px"
+    },
+    "controls": [
+      {
+        "selector": ".btn-sm",
+        "bounds": {
+          "top": 9,
+          "bottom": 43,
+          "left": 210,
+          "width": 138.765625,
+          "height": 34,
+          "fontSize": "13px",
+          "lineHeight": "16.25px"
+        }
+      },
+      {
+        "selector": ".session-chip",
+        "bounds": null
+      },
+      {
+        "selector": "[data-filter-value]",
+        "bounds": null
+      },
+      {
+        "selector": "[data-carousel-next]",
+        "bounds": null
+      },
+      {
+        "selector": ".panel__transcript summary",
+        "bounds": null
+      }
+    ],
+    "links": [
+      "/authors/kancha-ilaiah/",
+      "/book-readings/2026-06-27-buffalo-nationalism-chapters-1-8/",
+      "/book-readings/2026-07-18-buffalo-nationalism-chapters-9-21/",
+      "/book-readings/2026-08-08-buffalo-nationalism-chapters-22-33/",
+      "/book-readings/2026-08-31-buffalo-nationalism-chapters-34-42/",
+      "/books/",
+      "/media/book-readings/2026-06-27-buffalo-nationalism-chapters-1-8/buffalo-nationalism-chapters-1-8.jpg",
+      "/media/book-readings/2026-07-18-buffalo-nationalism-chapters-9-21/buffalo-nationalism-chapters-9-21.jpg",
+      "/media/book-readings/2026-08-08-buffalo-nationalism-chapters-22-33/buffalo-nationalism-chapters-22-33.jpg",
+      "/media/book-readings/2026-08-31-buffalo-nationalism-chapters-34-42/buffalo-nationalism-chapters-34-42.jpg",
+      "https://openlibrary.org/isbn/9789353282561",
+      "https://openlibrary.org/isbn/9789353282561"
+    ],
+    "paragraphDigest": "a5b891f58dfacf49954ff5c18ee42a425486d948415d5cc6c49d473f0c2f93f8",
+    "imageDigest": "01632140592c9d18ac5299ffcc91e549a2dd6c25d6436764088446754d61121d"
+  },
+  {
+    "name": "programs",
+    "path": "/programs/",
+    "width": 1280,
+    "scrollWidth": 1280,
+    "title": {
+      "top": 240.59375,
+      "bottom": 311.140625,
+      "left": 96,
+      "width": 896,
+      "height": 70.546875,
+      "fontSize": "72px",
+      "lineHeight": "70.56px"
+    },
+    "cover": null,
+    "facts": null,
+    "leadTitle": {
+      "top": 645.734375,
+      "bottom": 720.609375,
+      "left": 320,
+      "width": 576,
+      "height": 74.875,
+      "fontSize": "36px",
+      "lineHeight": "37.44px"
+    },
+    "leadPoster": {
+      "top": 645.734375,
+      "bottom": 965.015625,
+      "left": 944,
+      "width": 240,
+      "height": 319.28125,
+      "fontSize": "16px",
+      "lineHeight": "25.6px"
+    },
+    "controls": [
+      {
+        "selector": ".btn-sm",
+        "bounds": {
+          "top": 9,
+          "bottom": 43,
+          "left": 210,
+          "width": 138.765625,
+          "height": 34,
+          "fontSize": "13px",
+          "lineHeight": "16.25px"
+        }
+      },
+      {
+        "selector": ".session-chip",
+        "bounds": null
+      },
+      {
+        "selector": "[data-filter-value]",
+        "bounds": null
+      },
+      {
+        "selector": "[data-carousel-next]",
+        "bounds": null
+      },
+      {
+        "selector": ".panel__transcript summary",
+        "bounds": null
+      }
+    ],
+    "links": [
+      "/programs/aathi-thamizhar-peravai-struggles/",
+      "/programs/aksc-young-ambassador-program/",
+      "/programs/ambedkar-127th-birth-anniversary-celebration/",
+      "/programs/ambedkar-on-brahmanism-and-capitalism/",
+      "/programs/caste-and-gender-violence-with-kavita-krishnan/",
+      "/programs/democracy-and-dissent-in-india-today/",
+      "/programs/dr-ambedkar-129th-birth-anniversary-celebration/",
+      "/programs/honor-killings-love-and-caste/",
+      "/programs/inclusive-campuses-in-an-exclusive-society/",
+      "/programs/kakkoos-documentary-screening/",
+      "/programs/keezhadi-and-states-rights-talks/",
+      "/programs/keezhadi-to-harvard/",
+      "/programs/kilvenmani-massacre-50th-anniversary/",
+      "/programs/neet-and-social-justice/",
+      "/programs/periyar-139th-birth-anniversary/",
+      "/programs/periyar-140th-birth-anniversary-celebration/",
+      "/programs/periyar-147th-birth-anniversary-celebration/",
+      "https://commons.wikimedia.org/wiki/File:Jotirao_Phule_Savitribai_Phule_Phulewada_Pune.jpg",
+      "https://creativecommons.org/licenses/by-sa/4.0/"
+    ],
+    "paragraphDigest": "90870c94ebd37a2f83726d3e926dac0921a5fddbe28579ab4b638dca7653d862",
+    "imageDigest": "e75b21a9370b3fe837a1ad16edf2ec03a4da452d86e8e4db15f133569cdceb87"
+  },
+  {
+    "name": "long-title",
+    "path": "/press-releases/a-right-to-oppress-santa-clara-county-hrc-on-caste-discrimination/",
+    "width": 1280,
+    "scrollWidth": 1280,
+    "title": {
+      "top": 306.59375,
+      "bottom": 649.25,
+      "left": 96,
+      "width": 768,
+      "height": 342.65625,
+      "fontSize": "56px",
+      "lineHeight": "57.12px"
+    },
+    "cover": null,
+    "facts": {
+      "top": 855.25,
+      "bottom": 1018.84375,
+      "left": 96,
+      "width": 768,
+      "height": 163.59375,
+      "fontSize": "16px",
+      "lineHeight": "25.6px"
+    },
+    "leadTitle": {
+      "top": 3615.515625,
+      "bottom": 3631.109375,
+      "left": 96,
+      "width": 768,
+      "height": 15.59375,
+      "fontSize": "12px",
+      "lineHeight": "15.6px"
+    },
+    "leadPoster": {
+      "top": 1066.84375,
+      "bottom": 1578.84375,
+      "left": 96,
+      "width": 512,
+      "height": 512,
+      "fontSize": "21px",
+      "lineHeight": "33.6px"
+    },
+    "controls": [
+      {
+        "selector": ".btn-sm",
+        "bounds": {
+          "top": 9,
+          "bottom": 43,
+          "left": 210,
+          "width": 138.765625,
+          "height": 34,
+          "fontSize": "13px",
+          "lineHeight": "16.25px"
+        }
+      },
+      {
+        "selector": ".session-chip",
+        "bounds": null
+      },
+      {
+        "selector": "[data-filter-value]",
+        "bounds": null
+      },
+      {
+        "selector": "[data-carousel-next]",
+        "bounds": null
+      },
+      {
+        "selector": ".panel__transcript summary",
+        "bounds": null
+      }
+    ],
+    "links": [
+      "/",
+      "/",
+      "/press-releases/",
+      "/testimonies-of-practice-of-caste-in-the-usa/",
+      "https://www.youtube.com/watch?v=9b6KJptrArU",
+      "https://www.youtube.com/watch?v=9b6KJptrArU&t=3664s",
+      "mailto:akscsfba@gmail.com",
+      "mailto:akscsfba@gmail.com"
+    ],
+    "paragraphDigest": "72fe765674db98c8323008d71d4d86363d8330ca3c180efb0f1d7a2ac8b28687",
+    "imageDigest": "cfd2aa6b2c3c24b40915f8f85bbe2635d632748c9aff20833124ca30d8bcd8a7"
+  },
+  {
+    "name": "credits",
+    "path": "/articles/",
+    "width": 1280,
+    "scrollWidth": 1280,
+    "title": {
+      "top": 240.59375,
+      "bottom": 311.140625,
+      "left": 96,
+      "width": 896,
+      "height": 70.546875,
+      "fontSize": "72px",
+      "lineHeight": "70.56px"
+    },
+    "cover": null,
+    "facts": null,
+    "leadTitle": {
+      "top": 645.734375,
+      "bottom": 683.171875,
+      "left": 352,
+      "width": 832,
+      "height": 37.4375,
+      "fontSize": "36px",
+      "lineHeight": "37.44px"
+    },
+    "leadPoster": null,
+    "controls": [
+      {
+        "selector": ".btn-sm",
+        "bounds": {
+          "top": 9,
+          "bottom": 43,
+          "left": 210,
+          "width": 138.765625,
+          "height": 34,
+          "fontSize": "13px",
+          "lineHeight": "16.25px"
+        }
+      },
+      {
+        "selector": ".session-chip",
+        "bounds": null
+      },
+      {
+        "selector": "[data-filter-value]",
+        "bounds": {
+          "top": 1158.484375,
+          "bottom": 1198.875,
+          "left": 96,
+          "width": 67,
+          "height": 40.390625,
+          "fontSize": "14px",
+          "lineHeight": "22.4px"
+        }
+      },
+      {
+        "selector": "[data-carousel-next]",
+        "bounds": null
+      },
+      {
+        "selector": ".panel__transcript summary",
+        "bounds": null
+      }
+    ],
+    "links": [
+      "/articles/bhima-koregaon-lessons-from-the-untouchables-and-pax-britannica/",
+      "/articles/caste-discrimination-where-is-it/",
+      "/articles/dr-ambedkars-vision-of-equality-through-hindu-code-bill/",
+      "/articles/hindus-in-america-practice-caste/",
+      "/articles/legacy-of-dr-ambedkar/",
+      "/articles/origin-by-dan-brown/",
+      "/articles/purattasi-a-month-of-dietary-devotion/",
+      "/articles/what-periyar-means-to-silicon-valley/"
+    ],
+    "paragraphDigest": "7f2136b6c20d7fc364d378abe5ded0659bc906dd7539312719ddb8f61dd25a82",
+    "imageDigest": "72a101f79295862f86b9971556e7d745c3cbfcfbb9674b44c80ea605c6a25844"
+  },
+  {
+    "name": "reading-log",
+    "path": "/book-readings/",
+    "width": 1280,
+    "scrollWidth": 1280,
+    "title": {
+      "top": 240.59375,
+      "bottom": 311.140625,
+      "left": 96,
+      "width": 896,
+      "height": 70.546875,
+      "fontSize": "72px",
+      "lineHeight": "70.56px"
+    },
+    "cover": null,
+    "facts": {
+      "top": 1030.78125,
+      "bottom": 1230.78125,
+      "left": 96,
+      "width": 496,
+      "height": 200,
+      "fontSize": "16px",
+      "lineHeight": "25.6px"
+    },
+    "leadTitle": null,
+    "leadPoster": {
+      "top": 1955.765625,
+      "bottom": 2128.59375,
+      "left": 96,
+      "width": 112,
+      "height": 172.828125,
+      "fontSize": "16px",
+      "lineHeight": "25.6px"
+    },
+    "controls": [
+      {
+        "selector": ".btn-sm",
+        "bounds": {
+          "top": 9,
+          "bottom": 43,
+          "left": 210,
+          "width": 138.765625,
+          "height": 34,
+          "fontSize": "13px",
+          "lineHeight": "16.25px"
+        }
+      },
+      {
+        "selector": ".session-chip",
+        "bounds": {
+          "top": 2167.421875,
+          "bottom": 2203.421875,
+          "left": 240,
+          "width": 64,
+          "height": 36,
+          "fontSize": "16px",
+          "lineHeight": "25.6px"
+        }
+      },
+      {
+        "selector": "[data-filter-value]",
+        "bounds": null
+      },
+      {
+        "selector": "[data-carousel-next]",
+        "bounds": null
+      },
+      {
+        "selector": ".panel__transcript summary",
+        "bounds": null
+      }
+    ],
+    "links": [
+      "/authors/ashoka-mody/",
+      "/authors/bell-hooks/",
+      "/authors/dr-b-r-ambedkar/",
+      "/authors/dr-b-r-ambedkar/",
+      "/authors/dr-b-r-ambedkar/",
+      "/authors/gail-omvedt/",
+      "/authors/kancha-ilaiah/",
+      "/authors/malcolm-x/",
+      "/authors/manoj-mitta/",
+      "/authors/periyar-e-v-ramasamy/",
+      "/book-readings/2020-02-23-riddles-in-hinduism-riddles-1-8/",
+      "/book-readings/2020-03-15-riddles-in-hinduism-riddles-16-20/",
+      "/book-readings/2020-04-26-riddles-in-hinduism-riddles-21-24/",
+      "/book-readings/2020-05-17-annihilation-of-caste/",
+      "/book-readings/2020-06-07-annihilation-of-caste/",
+      "/book-readings/2024-01-27-palestine-a-reading-list/",
+      "/book-readings/2024-01-27-palestine-a-reading-list/",
+      "/book-readings/2024-10-05-caste-pride-chapters-15-18/",
+      "/book-readings/2025-03-15-waiting-for-a-visa/",
+      "/book-readings/2025-04-05-annihilation-of-caste/",
+      "/book-readings/2025-04-26-by-any-means-necessary-chapters-1-2/",
+      "/book-readings/2025-05-10-by-any-means-necessary-chapters-3-5/",
+      "/book-readings/2025-05-31-by-any-means-necessary-chapters-6-9/",
+      "/book-readings/2025-06-14-by-any-means-necessary-chapters-10-12/",
+      "/book-readings/2025-06-28-the-will-to-change-chapters-1-4/",
+      "/book-readings/2025-07-19-the-will-to-change-chapters-5-8/",
+      "/book-readings/2025-10-25-the-will-to-change-chapters-9-11/",
+      "/book-readings/2026-01-10-india-is-broken-chapters-7-9/",
+      "/book-readings/2026-01-31-india-is-broken-chapters-10-14/",
+      "/book-readings/2026-02-21-india-is-broken-chapters-15-19/",
+      "/book-readings/2026-06-06-ambedkar-towards-an-enlightened-india/",
+      "/book-readings/2026-06-27-buffalo-nationalism-chapters-1-8/",
+      "/book-readings/2026-07-18-buffalo-nationalism-chapters-9-21/",
+      "/book-readings/2026-08-08-buffalo-nationalism-chapters-22-33/",
+      "/book-readings/2026-08-31-buffalo-nationalism-chapters-34-42/",
+      "/book-readings/2026-08-31-why-were-women-enslaved/",
+      "/book-readings/2026-08-31-why-were-women-enslaved/",
+      "/books/",
+      "/books/ambedkar/",
+      "/books/ambedkar/",
+      "/books/annihilation-of-caste/",
+      "/books/annihilation-of-caste/",
+      "/books/buffalo-nationalism/",
+      "/books/buffalo-nationalism/",
+      "/books/by-any-means-necessary/",
+      "/books/by-any-means-necessary/",
+      "/books/caste-pride/",
+      "/books/caste-pride/",
+      "/books/india-is-broken/",
+      "/books/india-is-broken/",
+      "/books/riddles-in-hinduism/",
+      "/books/riddles-in-hinduism/",
+      "/books/the-will-to-change/",
+      "/books/the-will-to-change/",
+      "/books/waiting-for-a-visa/",
+      "/books/waiting-for-a-visa/",
+      "/books/why-were-women-enslaved/",
+      "/books/why-were-women-enslaved/",
+      "/books/why-were-women-enslaved/",
+      "/books/why-were-women-enslaved/",
+      "/media/book-readings/2024-10-05-caste-pride-chapters-15-18/caste-pride-chapters-15-18.jpg",
+      "/media/book-readings/2025-03-15-waiting-for-a-visa/waiting-for-a-visa.jpg",
+      "/media/book-readings/2025-04-05-annihilation-of-caste/annihilation-of-caste-2025.jpg",
+      "/media/book-readings/2025-04-26-by-any-means-necessary-chapters-1-2/by-any-means-necessary-chapters-1-2.jpg",
+      "/media/book-readings/2025-05-31-by-any-means-necessary-chapters-6-9/by-any-means-necessary-chapters-6-9.jpg",
+      "/media/book-readings/2025-06-14-by-any-means-necessary-chapters-10-12/by-any-means-necessary-chapters-10-12.jpg",
+      "/media/book-readings/2025-06-28-the-will-to-change-chapters-1-4/the-will-to-change-chapters-1-4.jpg",
+      "/media/book-readings/2025-07-19-the-will-to-change-chapters-5-8/the-will-to-change-chapters-5-8.jpg",
+      "/media/book-readings/2025-10-25-the-will-to-change-chapters-9-11/the-will-to-change-chapters-9-11.jpg",
+      "/media/book-readings/2026-01-10-india-is-broken-chapters-7-9/india-is-broken-chapters-7-9.jpg",
+      "/media/book-readings/2026-01-31-india-is-broken-chapters-10-14/india-is-broken-chapters-10-14.jpg",
+      "/media/book-readings/2026-02-21-india-is-broken-chapters-15-19/india-is-broken-chapters-15-19.jpg",
+      "/media/book-readings/2026-06-06-ambedkar-towards-an-enlightened-india/ambedkar-towards-an-enlightened-india.jpg",
+      "/media/book-readings/2026-06-27-buffalo-nationalism-chapters-1-8/buffalo-nationalism-chapters-1-8.jpg",
+      "/media/book-readings/2026-07-18-buffalo-nationalism-chapters-9-21/buffalo-nationalism-chapters-9-21.jpg",
+      "/media/book-readings/2026-08-08-buffalo-nationalism-chapters-22-33/buffalo-nationalism-chapters-22-33.jpg",
+      "/media/book-readings/2026-08-31-buffalo-nationalism-chapters-34-42/buffalo-nationalism-chapters-34-42.jpg",
+      "/media/book-readings/2026-08-31-why-were-women-enslaved/why-were-women-enslaved-flyer.jpeg",
+      "https://bit.ly/akscrnd"
+    ],
+    "paragraphDigest": "635e12792e7b515053ec57252f8c68e91ba3f5ec35d11e70ff7f8a40e704d2b1",
+    "imageDigest": "6c78a6b4e602b21cdd8275dc12849d45a7cefe5c3a927325d3ce48d390da5e67"
+  },
+  {
+    "name": "shelf",
+    "path": "/",
+    "width": 1280,
+    "scrollWidth": 1280,
+    "title": {
+      "top": 244.59375,
+      "bottom": 525.375,
+      "left": 96,
+      "width": 520,
+      "height": 280.78125,
+      "fontSize": "104px",
+      "lineHeight": "93.6px"
+    },
+    "cover": {
+      "top": 4978.453125,
+      "bottom": 5189.4375,
+      "left": 896,
+      "width": 288,
+      "height": 210.984375,
+      "fontSize": "16px",
+      "lineHeight": "25.6px"
+    },
+    "facts": {
+      "top": 2165.140625,
+      "bottom": 2234.625,
+      "left": 368,
+      "width": 816,
+      "height": 69.484375,
+      "fontSize": "16px",
+      "lineHeight": "25.6px"
+    },
+    "leadTitle": null,
+    "leadPoster": {
+      "top": 1515.609375,
+      "bottom": 1712.9375,
+      "left": 96,
+      "width": 128,
+      "height": 197.328125,
+      "fontSize": "16px",
+      "lineHeight": "25.6px"
+    },
+    "controls": [
+      {
+        "selector": ".btn-sm",
+        "bounds": {
+          "top": 9,
+          "bottom": 43,
+          "left": 210,
+          "width": 138.765625,
+          "height": 34,
+          "fontSize": "13px",
+          "lineHeight": "16.25px"
+        }
+      },
+      {
+        "selector": ".session-chip",
+        "bounds": null
+      },
+      {
+        "selector": "[data-filter-value]",
+        "bounds": null
+      },
+      {
+        "selector": "[data-carousel-next]",
+        "bounds": {
+          "top": 1435.609375,
+          "bottom": 1475.609375,
+          "left": 1144,
+          "width": 40,
+          "height": 40,
+          "fontSize": "16px",
+          "lineHeight": "25.6px"
+        }
+      },
+      {
+        "selector": ".panel__transcript summary",
+        "bounds": null
+      }
+    ],
+    "links": [
+      "/articles/",
+      "/articles/dr-ambedkars-vision-of-equality-through-hindu-code-bill/",
+      "/articles/hindus-in-america-practice-caste/",
+      "/articles/legacy-of-dr-ambedkar/",
+      "/articles/what-periyar-means-to-silicon-valley/",
+      "/book-readings/",
+      "/books/",
+      "/books/ambedkar/",
+      "/books/ambedkar/",
+      "/books/annihilation-of-caste/",
+      "/books/annihilation-of-caste/",
+      "/books/buffalo-nationalism/",
+      "/books/buffalo-nationalism/",
+      "/books/by-any-means-necessary/",
+      "/books/by-any-means-necessary/",
+      "/books/caste-pride/",
+      "/books/caste-pride/",
+      "/books/india-is-broken/",
+      "/books/india-is-broken/",
+      "/books/riddles-in-hinduism/",
+      "/books/riddles-in-hinduism/",
+      "/books/the-will-to-change/",
+      "/books/the-will-to-change/",
+      "/books/waiting-for-a-visa/",
+      "/books/waiting-for-a-visa/",
+      "/books/why-were-women-enslaved/",
+      "/books/why-were-women-enslaved/",
+      "/comics/",
+      "/comics/caste-has-a-cost/",
+      "/comics/does-caste-exist-in-the-us-today/",
+      "/conferences/aksc-6th-annual-conference-2025/",
+      "/conferences/aksc-7th-annual-conference-2026/",
+      "/conferences/aksc-7th-annual-conference-2026/",
+      "/conferences/aksc-7th-annual-conference-2026/",
+      "/donate",
+      "/helpline",
+      "/interventions/deep-dive-caste-litigation-in-the-usa/",
+      "/join",
+      "/press-releases/aksc-condemns-raja-and-gats-on-the-caste-scrutiny-issue/",
+      "/programs/periyar-147th-birth-anniversary-celebration/",
+      "https://commons.wikimedia.org/wiki/File:Savitribai_Phule_Jotiba_Jotirao_Phule_Phulewada_Pune.tif",
+      "https://creativecommons.org/licenses/by-sa/4.0/"
+    ],
+    "paragraphDigest": "74e6db9053dc7e3ae2635a7b35335e5eb446eab9bfc402195df45ccbefaa1277",
+    "imageDigest": "34fe6c496b0b730852100817a8f21d34c2ae17d8ad519e9d3fe38b483f5afbb3"
+  },
+  {
+    "name": "home-writing",
+    "path": "/",
+    "width": 1280,
+    "scrollWidth": 1280,
+    "title": {
+      "top": 244.59375,
+      "bottom": 525.375,
+      "left": 96,
+      "width": 520,
+      "height": 280.78125,
+      "fontSize": "104px",
+      "lineHeight": "93.6px"
+    },
+    "cover": {
+      "top": 4978.453125,
+      "bottom": 5189.4375,
+      "left": 896,
+      "width": 288,
+      "height": 210.984375,
+      "fontSize": "16px",
+      "lineHeight": "25.6px"
+    },
+    "facts": {
+      "top": 2165.140625,
+      "bottom": 2234.625,
+      "left": 368,
+      "width": 816,
+      "height": 69.484375,
+      "fontSize": "16px",
+      "lineHeight": "25.6px"
+    },
+    "leadTitle": null,
+    "leadPoster": {
+      "top": 1515.609375,
+      "bottom": 1712.9375,
+      "left": 96,
+      "width": 128,
+      "height": 197.328125,
+      "fontSize": "16px",
+      "lineHeight": "25.6px"
+    },
+    "controls": [
+      {
+        "selector": ".btn-sm",
+        "bounds": {
+          "top": 9,
+          "bottom": 43,
+          "left": 210,
+          "width": 138.765625,
+          "height": 34,
+          "fontSize": "13px",
+          "lineHeight": "16.25px"
+        }
+      },
+      {
+        "selector": ".session-chip",
+        "bounds": null
+      },
+      {
+        "selector": "[data-filter-value]",
+        "bounds": null
+      },
+      {
+        "selector": "[data-carousel-next]",
+        "bounds": {
+          "top": 1435.609375,
+          "bottom": 1475.609375,
+          "left": 1144,
+          "width": 40,
+          "height": 40,
+          "fontSize": "16px",
+          "lineHeight": "25.6px"
+        }
+      },
+      {
+        "selector": ".panel__transcript summary",
+        "bounds": null
+      }
+    ],
+    "links": [
+      "/articles/",
+      "/articles/dr-ambedkars-vision-of-equality-through-hindu-code-bill/",
+      "/articles/hindus-in-america-practice-caste/",
+      "/articles/legacy-of-dr-ambedkar/",
+      "/articles/what-periyar-means-to-silicon-valley/",
+      "/book-readings/",
+      "/books/",
+      "/books/ambedkar/",
+      "/books/ambedkar/",
+      "/books/annihilation-of-caste/",
+      "/books/annihilation-of-caste/",
+      "/books/buffalo-nationalism/",
+      "/books/buffalo-nationalism/",
+      "/books/by-any-means-necessary/",
+      "/books/by-any-means-necessary/",
+      "/books/caste-pride/",
+      "/books/caste-pride/",
+      "/books/india-is-broken/",
+      "/books/india-is-broken/",
+      "/books/riddles-in-hinduism/",
+      "/books/riddles-in-hinduism/",
+      "/books/the-will-to-change/",
+      "/books/the-will-to-change/",
+      "/books/waiting-for-a-visa/",
+      "/books/waiting-for-a-visa/",
+      "/books/why-were-women-enslaved/",
+      "/books/why-were-women-enslaved/",
+      "/comics/",
+      "/comics/caste-has-a-cost/",
+      "/comics/does-caste-exist-in-the-us-today/",
+      "/conferences/aksc-6th-annual-conference-2025/",
+      "/conferences/aksc-7th-annual-conference-2026/",
+      "/conferences/aksc-7th-annual-conference-2026/",
+      "/conferences/aksc-7th-annual-conference-2026/",
+      "/donate",
+      "/helpline",
+      "/interventions/deep-dive-caste-litigation-in-the-usa/",
+      "/join",
+      "/press-releases/aksc-condemns-raja-and-gats-on-the-caste-scrutiny-issue/",
+      "/programs/periyar-147th-birth-anniversary-celebration/",
+      "https://commons.wikimedia.org/wiki/File:Savitribai_Phule_Jotiba_Jotirao_Phule_Phulewada_Pune.tif",
+      "https://creativecommons.org/licenses/by-sa/4.0/"
+    ],
+    "paragraphDigest": "74e6db9053dc7e3ae2635a7b35335e5eb446eab9bfc402195df45ccbefaa1277",
+    "imageDigest": "34fe6c496b0b730852100817a8f21d34c2ae17d8ad519e9d3fe38b483f5afbb3"
+  },
+  {
+    "name": "conference",
+    "path": "/conferences/aksc-1st-annual-conference-2018/",
+    "width": 1280,
+    "scrollWidth": 1280,
+    "title": {
+      "top": 306.59375,
+      "bottom": 420.8125,
+      "left": 96,
+      "width": 768,
+      "height": 114.21875,
+      "fontSize": "56px",
+      "lineHeight": "57.12px"
+    },
+    "cover": null,
+    "facts": {
+      "top": 626.8125,
+      "bottom": 818.40625,
+      "left": 96,
+      "width": 768,
+      "height": 191.59375,
+      "fontSize": "16px",
+      "lineHeight": "25.6px"
+    },
+    "leadTitle": {
+      "top": 1128.4375,
+      "bottom": 1161.90625,
+      "left": 96,
+      "width": 640,
+      "height": 33.46875,
+      "fontSize": "31px",
+      "lineHeight": "33.48px"
+    },
+    "leadPoster": {
+      "top": 1201.90625,
+      "bottom": 1364.90625,
+      "left": 96,
+      "width": 600,
+      "height": 163,
+      "fontSize": "19px",
+      "lineHeight": "32.68px"
+    },
+    "controls": [
+      {
+        "selector": ".btn-sm",
+        "bounds": {
+          "top": 9,
+          "bottom": 43,
+          "left": 210,
+          "width": 138.765625,
+          "height": 34,
+          "fontSize": "13px",
+          "lineHeight": "16.25px"
+        }
+      },
+      {
+        "selector": ".session-chip",
+        "bounds": null
+      },
+      {
+        "selector": "[data-filter-value]",
+        "bounds": null
+      },
+      {
+        "selector": "[data-carousel-next]",
+        "bounds": null
+      },
+      {
+        "selector": ".panel__transcript summary",
+        "bounds": null
+      }
+    ],
+    "links": [
+      "/conferences/",
+      "/conferences/aksc-1st-annual-conference-2018/",
+      "/conferences/aksc-1st-annual-conference-2018/",
+      "/conferences/aksc-1st-annual-conference-2018/",
+      "/conferences/aksc-1st-annual-conference-2018/",
+      "/conferences/aksc-1st-annual-conference-2018/",
+      "/conferences/aksc-1st-annual-conference-2018/",
+      "/conferences/aksc-1st-annual-conference-2018/",
+      "/conferences/aksc-1st-annual-conference-2018/",
+      "/conferences/aksc-1st-annual-conference-2018/#resolution-1-bay-area-annual-conference-with-fraternal-and-likeminded-organizations",
+      "/conferences/aksc-1st-annual-conference-2018/#resolution-2-introducing-ambedkar-to-the-universities-and-the-colleges-in-the-usa-by-instituting-dr-ambedkar-chairs",
+      "/media/conferences/aksc-1st-annual-conference-2018/aksc-1st-general-body-report.pdf",
+      "/programs/",
+      "http://eci.nic.in/eci_main1/ByeElec2018/Results/02-Kairana(PC)-UttarPradesh.pdf",
+      "http://eci.nic.in/eci_main1/ByeElec2018/Results/02-Kairana(PC)-UttarPradesh.pdf",
+      "http://eci.nic.in/eci_main1/ByeElec2018/Results/24-Noorpur(AC)-UP.pdf",
+      "http://eci.nic.in/eci_main1/ByeElec2018/Results/24-Noorpur(AC)-UP.pdf",
+      "http://eci.nic.in/eci_main1/ByeElec2018/Results/51-Phulpur(PC)-UP.pdf",
+      "http://eci.nic.in/eci_main1/ByeElec2018/Results/51-Phulpur(PC)-UP.pdf",
+      "http://eci.nic.in/eci_main1/ByeElec2018/Results/64-Gorakhpur-UP.pdf",
+      "http://eci.nic.in/eci_main1/ByeElec2018/Results/64-Gorakhpur-UP.pdf",
+      "https://akscsfba.wixsite.com/aksc-conf-2018-reg",
+      "https://akscsfba.wixsite.com/aksc-conf-2018-reg/events/aksc-annual-conference-2018-event-registration",
+      "https://thewire.in/politics/in-27-by-elections-across-15-states-since-2014-story-of-bjp-decline-writ-large",
+      "https://thewire.in/politics/in-27-by-elections-across-15-states-since-2014-story-of-bjp-decline-writ-large",
+      "https://tinyurl.com/ClickAKSC2018",
+      "https://tinyurl.com/ClickAKSC2018",
+      "https://www.dsausa.org",
+      "https://www.dsausa.org/",
+      "https://www.justicedemocrats.com/home",
+      "https://www.justicedemocrats.com/home",
+      "https://www.nytimes.com/2018/06/30/opinion/democratic-socialists-progressive-democratic-party-trump.html",
+      "https://www.nytimes.com/2018/06/30/opinion/democratic-socialists-progressive-democratic-party-trump.html",
+      "https://www.paypal.me/aksc2018",
+      "https://www.paypal.me/aksc2018",
+      "https://www.siasat.com/news/india-new-lynchdom-1390067",
+      "https://www.siasat.com/news/india-new-lynchdom-1390067/",
+      "mailto:akscsfba@gmail.com",
+      "mailto:akscsfba@gmail.com",
+      "mailto:akscsfba@gmail.com",
+      "mailto:cdiwadkar@hotmail.com"
+    ],
+    "paragraphDigest": "d812649ed7958d361b1d7f5b36e49304d32fc1f18f89297db6a2755a1f5782fe",
+    "imageDigest": "f8543a5058d847a1b694e5aef252f35cd17557af9831204e83b811886b71e137"
+  },
+  {
+    "name": "toolkit",
+    "path": "/anti-caste-toolkit/",
+    "width": 1280,
+    "scrollWidth": 1280,
+    "title": {
+      "top": 240.59375,
+      "bottom": 381.6875,
+      "left": 96,
+      "width": 1024,
+      "height": 141.09375,
+      "fontSize": "72px",
+      "lineHeight": "70.56px"
+    },
+    "cover": {
+      "top": 1838.984375,
+      "bottom": 2364.984375,
+      "left": 97,
+      "width": 526,
+      "height": 526,
+      "fontSize": "16px",
+      "lineHeight": "25.6px"
+    },
+    "facts": null,
+    "leadTitle": null,
+    "leadPoster": null,
+    "controls": [
+      {
+        "selector": ".btn-sm",
+        "bounds": {
+          "top": 9,
+          "bottom": 43,
+          "left": 210,
+          "width": 138.765625,
+          "height": 34,
+          "fontSize": "13px",
+          "lineHeight": "16.25px"
+        }
+      },
+      {
+        "selector": ".session-chip",
+        "bounds": null
+      },
+      {
+        "selector": "[data-filter-value]",
+        "bounds": null
+      },
+      {
+        "selector": "[data-carousel-next]",
+        "bounds": null
+      },
+      {
+        "selector": ".panel__transcript summary",
+        "bounds": {
+          "top": 2432.984375,
+          "bottom": 2460.984375,
+          "left": 113,
+          "width": 494,
+          "height": 28,
+          "fontSize": "14px",
+          "lineHeight": "22.4px"
+        }
+      }
+    ],
+    "links": [
+      "#cafeteria-non-veg-remark",
+      "#cafeteria-non-veg-remark-panels-1",
+      "#cafeteria-non-veg-remark-panels-2",
+      "#cafeteria-non-veg-remark-panels-3",
+      "#cafeteria-non-veg-remark-panels-4",
+      "#interview-quota-remark",
+      "#interview-quota-remark-panels-1",
+      "#interview-quota-remark-panels-2",
+      "#interview-quota-remark-panels-3",
+      "#interview-quota-remark-panels-4",
+      "#party-casteist-joke",
+      "#party-casteist-joke-panels-1",
+      "#party-casteist-joke-panels-2",
+      "#party-casteist-joke-panels-3",
+      "#party-casteist-joke-panels-4",
+      "/comics/",
+      "https://forms.gle/KseyjgpuD9Q8NaCn8",
+      "https://forms.gle/KseyjgpuD9Q8NaCn8",
+      "https://forms.gle/KseyjgpuD9Q8NaCn8",
+      "https://forms.gle/KseyjgpuD9Q8NaCn8",
+      "https://forms.gle/KseyjgpuD9Q8NaCn8",
+      "https://forms.gle/KseyjgpuD9Q8NaCn8"
+    ],
+    "paragraphDigest": "60e99aaa591639b59bd54afc85013bd3ddac78286e605d61bd19fe887f72e3c8",
+    "imageDigest": "b7c505dcb468fcc9aed5bdb88a8af5894d0ac544888dcae621b3070c2e032008"
+  },
+  {
+    "name": "book",
+    "path": "/books/the-will-to-change/",
+    "width": 1920,
+    "scrollWidth": 1920,
+    "title": {
+      "top": 306.59375,
+      "bottom": 363.703125,
+      "left": 416,
+      "width": 768,
+      "height": 57.109375,
+      "fontSize": "56px",
+      "lineHeight": "57.12px"
+    },
+    "cover": {
+      "top": 169,
+      "bottom": 517.171875,
+      "left": 1280,
+      "width": 224,
+      "height": 348.171875,
+      "fontSize": "16px",
+      "lineHeight": "25.6px"
+    },
+    "facts": {
+      "top": 615.703125,
+      "bottom": 818.296875,
+      "left": 416,
+      "width": 768,
+      "height": 202.59375,
+      "fontSize": "16px",
+      "lineHeight": "25.6px"
+    },
+    "leadTitle": {
+      "top": 866.296875,
+      "bottom": 903.734375,
+      "left": 416,
+      "width": 768,
+      "height": 37.4375,
+      "fontSize": "36px",
+      "lineHeight": "37.44px"
+    },
+    "leadPoster": {
+      "top": 169,
+      "bottom": 517.171875,
+      "left": 1280,
+      "width": 224,
+      "height": 348.171875,
+      "fontSize": "16px",
+      "lineHeight": "25.6px"
+    },
+    "controls": [
+      {
+        "selector": ".btn-sm",
+        "bounds": {
+          "top": 9,
+          "bottom": 43,
+          "left": 530,
+          "width": 138.765625,
+          "height": 34,
+          "fontSize": "13px",
+          "lineHeight": "16.25px"
+        }
+      },
+      {
+        "selector": ".session-chip",
+        "bounds": null
+      },
+      {
+        "selector": "[data-filter-value]",
+        "bounds": null
+      },
+      {
+        "selector": "[data-carousel-next]",
+        "bounds": null
+      },
+      {
+        "selector": ".panel__transcript summary",
+        "bounds": null
+      }
+    ],
+    "links": [
+      "/authors/bell-hooks/",
+      "/book-readings/2025-06-28-the-will-to-change-chapters-1-4/",
+      "/book-readings/2025-07-19-the-will-to-change-chapters-5-8/",
+      "/book-readings/2025-10-25-the-will-to-change-chapters-9-11/",
+      "/books/",
+      "/media/book-readings/2025-06-28-the-will-to-change-chapters-1-4/the-will-to-change-chapters-1-4.jpg",
+      "/media/book-readings/2025-07-19-the-will-to-change-chapters-5-8/the-will-to-change-chapters-5-8.jpg",
+      "/media/book-readings/2025-10-25-the-will-to-change-chapters-9-11/the-will-to-change-chapters-9-11.jpg",
+      "https://openlibrary.org/isbn/9780743456074",
+      "https://openlibrary.org/isbn/9780743456074"
+    ],
+    "paragraphDigest": "fbdad22300741a5aefe5480b98fd4590a0230e12aee941fff50ff1f69638ef7d",
+    "imageDigest": "5ffefa1f1f632d704fdfb022bb70e1187b7aba6a2883b0a06aa147a2300fdf3f"
+  },
+  {
+    "name": "long-book",
+    "path": "/books/buffalo-nationalism/",
+    "width": 1920,
+    "scrollWidth": 1920,
+    "title": {
+      "top": 306.59375,
+      "bottom": 363.703125,
+      "left": 416,
+      "width": 768,
+      "height": 57.109375,
+      "fontSize": "56px",
+      "lineHeight": "57.12px"
+    },
+    "cover": {
+      "top": 169,
+      "bottom": 521.828125,
+      "left": 1280,
+      "width": 224,
+      "height": 352.828125,
+      "fontSize": "16px",
+      "lineHeight": "25.6px"
+    },
+    "facts": {
+      "top": 935.703125,
+      "bottom": 1138.296875,
+      "left": 416,
+      "width": 768,
+      "height": 202.59375,
+      "fontSize": "16px",
+      "lineHeight": "25.6px"
+    },
+    "leadTitle": {
+      "top": 1186.296875,
+      "bottom": 1223.734375,
+      "left": 416,
+      "width": 768,
+      "height": 37.4375,
+      "fontSize": "36px",
+      "lineHeight": "37.44px"
+    },
+    "leadPoster": {
+      "top": 169,
+      "bottom": 521.828125,
+      "left": 1280,
+      "width": 224,
+      "height": 352.828125,
+      "fontSize": "16px",
+      "lineHeight": "25.6px"
+    },
+    "controls": [
+      {
+        "selector": ".btn-sm",
+        "bounds": {
+          "top": 9,
+          "bottom": 43,
+          "left": 530,
+          "width": 138.765625,
+          "height": 34,
+          "fontSize": "13px",
+          "lineHeight": "16.25px"
+        }
+      },
+      {
+        "selector": ".session-chip",
+        "bounds": null
+      },
+      {
+        "selector": "[data-filter-value]",
+        "bounds": null
+      },
+      {
+        "selector": "[data-carousel-next]",
+        "bounds": null
+      },
+      {
+        "selector": ".panel__transcript summary",
+        "bounds": null
+      }
+    ],
+    "links": [
+      "/authors/kancha-ilaiah/",
+      "/book-readings/2026-06-27-buffalo-nationalism-chapters-1-8/",
+      "/book-readings/2026-07-18-buffalo-nationalism-chapters-9-21/",
+      "/book-readings/2026-08-08-buffalo-nationalism-chapters-22-33/",
+      "/book-readings/2026-08-31-buffalo-nationalism-chapters-34-42/",
+      "/books/",
+      "/media/book-readings/2026-06-27-buffalo-nationalism-chapters-1-8/buffalo-nationalism-chapters-1-8.jpg",
+      "/media/book-readings/2026-07-18-buffalo-nationalism-chapters-9-21/buffalo-nationalism-chapters-9-21.jpg",
+      "/media/book-readings/2026-08-08-buffalo-nationalism-chapters-22-33/buffalo-nationalism-chapters-22-33.jpg",
+      "/media/book-readings/2026-08-31-buffalo-nationalism-chapters-34-42/buffalo-nationalism-chapters-34-42.jpg",
+      "https://openlibrary.org/isbn/9789353282561",
+      "https://openlibrary.org/isbn/9789353282561"
+    ],
+    "paragraphDigest": "a5b891f58dfacf49954ff5c18ee42a425486d948415d5cc6c49d473f0c2f93f8",
+    "imageDigest": "01632140592c9d18ac5299ffcc91e549a2dd6c25d6436764088446754d61121d"
+  },
+  {
+    "name": "programs",
+    "path": "/programs/",
+    "width": 1920,
+    "scrollWidth": 1920,
+    "title": {
+      "top": 240.59375,
+      "bottom": 311.140625,
+      "left": 416,
+      "width": 896,
+      "height": 70.546875,
+      "fontSize": "72px",
+      "lineHeight": "70.56px"
+    },
+    "cover": null,
+    "facts": null,
+    "leadTitle": {
+      "top": 645.734375,
+      "bottom": 720.609375,
+      "left": 640,
+      "width": 576,
+      "height": 74.875,
+      "fontSize": "36px",
+      "lineHeight": "37.44px"
+    },
+    "leadPoster": {
+      "top": 645.734375,
+      "bottom": 965.015625,
+      "left": 1264,
+      "width": 240,
+      "height": 319.28125,
+      "fontSize": "16px",
+      "lineHeight": "25.6px"
+    },
+    "controls": [
+      {
+        "selector": ".btn-sm",
+        "bounds": {
+          "top": 9,
+          "bottom": 43,
+          "left": 530,
+          "width": 138.765625,
+          "height": 34,
+          "fontSize": "13px",
+          "lineHeight": "16.25px"
+        }
+      },
+      {
+        "selector": ".session-chip",
+        "bounds": null
+      },
+      {
+        "selector": "[data-filter-value]",
+        "bounds": null
+      },
+      {
+        "selector": "[data-carousel-next]",
+        "bounds": null
+      },
+      {
+        "selector": ".panel__transcript summary",
+        "bounds": null
+      }
+    ],
+    "links": [
+      "/programs/aathi-thamizhar-peravai-struggles/",
+      "/programs/aksc-young-ambassador-program/",
+      "/programs/ambedkar-127th-birth-anniversary-celebration/",
+      "/programs/ambedkar-on-brahmanism-and-capitalism/",
+      "/programs/caste-and-gender-violence-with-kavita-krishnan/",
+      "/programs/democracy-and-dissent-in-india-today/",
+      "/programs/dr-ambedkar-129th-birth-anniversary-celebration/",
+      "/programs/honor-killings-love-and-caste/",
+      "/programs/inclusive-campuses-in-an-exclusive-society/",
+      "/programs/kakkoos-documentary-screening/",
+      "/programs/keezhadi-and-states-rights-talks/",
+      "/programs/keezhadi-to-harvard/",
+      "/programs/kilvenmani-massacre-50th-anniversary/",
+      "/programs/neet-and-social-justice/",
+      "/programs/periyar-139th-birth-anniversary/",
+      "/programs/periyar-140th-birth-anniversary-celebration/",
+      "/programs/periyar-147th-birth-anniversary-celebration/",
+      "https://commons.wikimedia.org/wiki/File:Jotirao_Phule_Savitribai_Phule_Phulewada_Pune.jpg",
+      "https://creativecommons.org/licenses/by-sa/4.0/"
+    ],
+    "paragraphDigest": "90870c94ebd37a2f83726d3e926dac0921a5fddbe28579ab4b638dca7653d862",
+    "imageDigest": "e75b21a9370b3fe837a1ad16edf2ec03a4da452d86e8e4db15f133569cdceb87"
+  },
+  {
+    "name": "long-title",
+    "path": "/press-releases/a-right-to-oppress-santa-clara-county-hrc-on-caste-discrimination/",
+    "width": 1920,
+    "scrollWidth": 1920,
+    "title": {
+      "top": 306.59375,
+      "bottom": 649.25,
+      "left": 416,
+      "width": 768,
+      "height": 342.65625,
+      "fontSize": "56px",
+      "lineHeight": "57.12px"
+    },
+    "cover": null,
+    "facts": {
+      "top": 855.25,
+      "bottom": 1018.84375,
+      "left": 416,
+      "width": 768,
+      "height": 163.59375,
+      "fontSize": "16px",
+      "lineHeight": "25.6px"
+    },
+    "leadTitle": {
+      "top": 3615.515625,
+      "bottom": 3631.109375,
+      "left": 416,
+      "width": 768,
+      "height": 15.59375,
+      "fontSize": "12px",
+      "lineHeight": "15.6px"
+    },
+    "leadPoster": {
+      "top": 1066.84375,
+      "bottom": 1578.84375,
+      "left": 416,
+      "width": 512,
+      "height": 512,
+      "fontSize": "21px",
+      "lineHeight": "33.6px"
+    },
+    "controls": [
+      {
+        "selector": ".btn-sm",
+        "bounds": {
+          "top": 9,
+          "bottom": 43,
+          "left": 530,
+          "width": 138.765625,
+          "height": 34,
+          "fontSize": "13px",
+          "lineHeight": "16.25px"
+        }
+      },
+      {
+        "selector": ".session-chip",
+        "bounds": null
+      },
+      {
+        "selector": "[data-filter-value]",
+        "bounds": null
+      },
+      {
+        "selector": "[data-carousel-next]",
+        "bounds": null
+      },
+      {
+        "selector": ".panel__transcript summary",
+        "bounds": null
+      }
+    ],
+    "links": [
+      "/",
+      "/",
+      "/press-releases/",
+      "/testimonies-of-practice-of-caste-in-the-usa/",
+      "https://www.youtube.com/watch?v=9b6KJptrArU",
+      "https://www.youtube.com/watch?v=9b6KJptrArU&t=3664s",
+      "mailto:akscsfba@gmail.com",
+      "mailto:akscsfba@gmail.com"
+    ],
+    "paragraphDigest": "72fe765674db98c8323008d71d4d86363d8330ca3c180efb0f1d7a2ac8b28687",
+    "imageDigest": "cfd2aa6b2c3c24b40915f8f85bbe2635d632748c9aff20833124ca30d8bcd8a7"
+  },
+  {
+    "name": "credits",
+    "path": "/articles/",
+    "width": 1920,
+    "scrollWidth": 1920,
+    "title": {
+      "top": 240.59375,
+      "bottom": 311.140625,
+      "left": 416,
+      "width": 896,
+      "height": 70.546875,
+      "fontSize": "72px",
+      "lineHeight": "70.56px"
+    },
+    "cover": null,
+    "facts": null,
+    "leadTitle": {
+      "top": 645.734375,
+      "bottom": 683.171875,
+      "left": 672,
+      "width": 832,
+      "height": 37.4375,
+      "fontSize": "36px",
+      "lineHeight": "37.44px"
+    },
+    "leadPoster": null,
+    "controls": [
+      {
+        "selector": ".btn-sm",
+        "bounds": {
+          "top": 9,
+          "bottom": 43,
+          "left": 530,
+          "width": 138.765625,
+          "height": 34,
+          "fontSize": "13px",
+          "lineHeight": "16.25px"
+        }
+      },
+      {
+        "selector": ".session-chip",
+        "bounds": null
+      },
+      {
+        "selector": "[data-filter-value]",
+        "bounds": {
+          "top": 1158.484375,
+          "bottom": 1198.875,
+          "left": 416,
+          "width": 67,
+          "height": 40.390625,
+          "fontSize": "14px",
+          "lineHeight": "22.4px"
+        }
+      },
+      {
+        "selector": "[data-carousel-next]",
+        "bounds": null
+      },
+      {
+        "selector": ".panel__transcript summary",
+        "bounds": null
+      }
+    ],
+    "links": [
+      "/articles/bhima-koregaon-lessons-from-the-untouchables-and-pax-britannica/",
+      "/articles/caste-discrimination-where-is-it/",
+      "/articles/dr-ambedkars-vision-of-equality-through-hindu-code-bill/",
+      "/articles/hindus-in-america-practice-caste/",
+      "/articles/legacy-of-dr-ambedkar/",
+      "/articles/origin-by-dan-brown/",
+      "/articles/purattasi-a-month-of-dietary-devotion/",
+      "/articles/what-periyar-means-to-silicon-valley/"
+    ],
+    "paragraphDigest": "7f2136b6c20d7fc364d378abe5ded0659bc906dd7539312719ddb8f61dd25a82",
+    "imageDigest": "72a101f79295862f86b9971556e7d745c3cbfcfbb9674b44c80ea605c6a25844"
+  },
+  {
+    "name": "reading-log",
+    "path": "/book-readings/",
+    "width": 1920,
+    "scrollWidth": 1920,
+    "title": {
+      "top": 240.59375,
+      "bottom": 311.140625,
+      "left": 416,
+      "width": 896,
+      "height": 70.546875,
+      "fontSize": "72px",
+      "lineHeight": "70.56px"
+    },
+    "cover": null,
+    "facts": {
+      "top": 1030.78125,
+      "bottom": 1230.78125,
+      "left": 416,
+      "width": 496,
+      "height": 200,
+      "fontSize": "16px",
+      "lineHeight": "25.6px"
+    },
+    "leadTitle": null,
+    "leadPoster": {
+      "top": 1955.765625,
+      "bottom": 2128.59375,
+      "left": 416,
+      "width": 112,
+      "height": 172.828125,
+      "fontSize": "16px",
+      "lineHeight": "25.6px"
+    },
+    "controls": [
+      {
+        "selector": ".btn-sm",
+        "bounds": {
+          "top": 9,
+          "bottom": 43,
+          "left": 530,
+          "width": 138.765625,
+          "height": 34,
+          "fontSize": "13px",
+          "lineHeight": "16.25px"
+        }
+      },
+      {
+        "selector": ".session-chip",
+        "bounds": {
+          "top": 2167.421875,
+          "bottom": 2203.421875,
+          "left": 560,
+          "width": 64,
+          "height": 36,
+          "fontSize": "16px",
+          "lineHeight": "25.6px"
+        }
+      },
+      {
+        "selector": "[data-filter-value]",
+        "bounds": null
+      },
+      {
+        "selector": "[data-carousel-next]",
+        "bounds": null
+      },
+      {
+        "selector": ".panel__transcript summary",
+        "bounds": null
+      }
+    ],
+    "links": [
+      "/authors/ashoka-mody/",
+      "/authors/bell-hooks/",
+      "/authors/dr-b-r-ambedkar/",
+      "/authors/dr-b-r-ambedkar/",
+      "/authors/dr-b-r-ambedkar/",
+      "/authors/gail-omvedt/",
+      "/authors/kancha-ilaiah/",
+      "/authors/malcolm-x/",
+      "/authors/manoj-mitta/",
+      "/authors/periyar-e-v-ramasamy/",
+      "/book-readings/2020-02-23-riddles-in-hinduism-riddles-1-8/",
+      "/book-readings/2020-03-15-riddles-in-hinduism-riddles-16-20/",
+      "/book-readings/2020-04-26-riddles-in-hinduism-riddles-21-24/",
+      "/book-readings/2020-05-17-annihilation-of-caste/",
+      "/book-readings/2020-06-07-annihilation-of-caste/",
+      "/book-readings/2024-01-27-palestine-a-reading-list/",
+      "/book-readings/2024-01-27-palestine-a-reading-list/",
+      "/book-readings/2024-10-05-caste-pride-chapters-15-18/",
+      "/book-readings/2025-03-15-waiting-for-a-visa/",
+      "/book-readings/2025-04-05-annihilation-of-caste/",
+      "/book-readings/2025-04-26-by-any-means-necessary-chapters-1-2/",
+      "/book-readings/2025-05-10-by-any-means-necessary-chapters-3-5/",
+      "/book-readings/2025-05-31-by-any-means-necessary-chapters-6-9/",
+      "/book-readings/2025-06-14-by-any-means-necessary-chapters-10-12/",
+      "/book-readings/2025-06-28-the-will-to-change-chapters-1-4/",
+      "/book-readings/2025-07-19-the-will-to-change-chapters-5-8/",
+      "/book-readings/2025-10-25-the-will-to-change-chapters-9-11/",
+      "/book-readings/2026-01-10-india-is-broken-chapters-7-9/",
+      "/book-readings/2026-01-31-india-is-broken-chapters-10-14/",
+      "/book-readings/2026-02-21-india-is-broken-chapters-15-19/",
+      "/book-readings/2026-06-06-ambedkar-towards-an-enlightened-india/",
+      "/book-readings/2026-06-27-buffalo-nationalism-chapters-1-8/",
+      "/book-readings/2026-07-18-buffalo-nationalism-chapters-9-21/",
+      "/book-readings/2026-08-08-buffalo-nationalism-chapters-22-33/",
+      "/book-readings/2026-08-31-buffalo-nationalism-chapters-34-42/",
+      "/book-readings/2026-08-31-why-were-women-enslaved/",
+      "/book-readings/2026-08-31-why-were-women-enslaved/",
+      "/books/",
+      "/books/ambedkar/",
+      "/books/ambedkar/",
+      "/books/annihilation-of-caste/",
+      "/books/annihilation-of-caste/",
+      "/books/buffalo-nationalism/",
+      "/books/buffalo-nationalism/",
+      "/books/by-any-means-necessary/",
+      "/books/by-any-means-necessary/",
+      "/books/caste-pride/",
+      "/books/caste-pride/",
+      "/books/india-is-broken/",
+      "/books/india-is-broken/",
+      "/books/riddles-in-hinduism/",
+      "/books/riddles-in-hinduism/",
+      "/books/the-will-to-change/",
+      "/books/the-will-to-change/",
+      "/books/waiting-for-a-visa/",
+      "/books/waiting-for-a-visa/",
+      "/books/why-were-women-enslaved/",
+      "/books/why-were-women-enslaved/",
+      "/books/why-were-women-enslaved/",
+      "/books/why-were-women-enslaved/",
+      "/media/book-readings/2024-10-05-caste-pride-chapters-15-18/caste-pride-chapters-15-18.jpg",
+      "/media/book-readings/2025-03-15-waiting-for-a-visa/waiting-for-a-visa.jpg",
+      "/media/book-readings/2025-04-05-annihilation-of-caste/annihilation-of-caste-2025.jpg",
+      "/media/book-readings/2025-04-26-by-any-means-necessary-chapters-1-2/by-any-means-necessary-chapters-1-2.jpg",
+      "/media/book-readings/2025-05-31-by-any-means-necessary-chapters-6-9/by-any-means-necessary-chapters-6-9.jpg",
+      "/media/book-readings/2025-06-14-by-any-means-necessary-chapters-10-12/by-any-means-necessary-chapters-10-12.jpg",
+      "/media/book-readings/2025-06-28-the-will-to-change-chapters-1-4/the-will-to-change-chapters-1-4.jpg",
+      "/media/book-readings/2025-07-19-the-will-to-change-chapters-5-8/the-will-to-change-chapters-5-8.jpg",
+      "/media/book-readings/2025-10-25-the-will-to-change-chapters-9-11/the-will-to-change-chapters-9-11.jpg",
+      "/media/book-readings/2026-01-10-india-is-broken-chapters-7-9/india-is-broken-chapters-7-9.jpg",
+      "/media/book-readings/2026-01-31-india-is-broken-chapters-10-14/india-is-broken-chapters-10-14.jpg",
+      "/media/book-readings/2026-02-21-india-is-broken-chapters-15-19/india-is-broken-chapters-15-19.jpg",
+      "/media/book-readings/2026-06-06-ambedkar-towards-an-enlightened-india/ambedkar-towards-an-enlightened-india.jpg",
+      "/media/book-readings/2026-06-27-buffalo-nationalism-chapters-1-8/buffalo-nationalism-chapters-1-8.jpg",
+      "/media/book-readings/2026-07-18-buffalo-nationalism-chapters-9-21/buffalo-nationalism-chapters-9-21.jpg",
+      "/media/book-readings/2026-08-08-buffalo-nationalism-chapters-22-33/buffalo-nationalism-chapters-22-33.jpg",
+      "/media/book-readings/2026-08-31-buffalo-nationalism-chapters-34-42/buffalo-nationalism-chapters-34-42.jpg",
+      "/media/book-readings/2026-08-31-why-were-women-enslaved/why-were-women-enslaved-flyer.jpeg",
+      "https://bit.ly/akscrnd"
+    ],
+    "paragraphDigest": "635e12792e7b515053ec57252f8c68e91ba3f5ec35d11e70ff7f8a40e704d2b1",
+    "imageDigest": "6c78a6b4e602b21cdd8275dc12849d45a7cefe5c3a927325d3ce48d390da5e67"
+  },
+  {
+    "name": "shelf",
+    "path": "/",
+    "width": 1920,
+    "scrollWidth": 1920,
+    "title": {
+      "top": 244.59375,
+      "bottom": 525.375,
+      "left": 416,
+      "width": 520,
+      "height": 280.78125,
+      "fontSize": "104px",
+      "lineHeight": "93.6px"
+    },
+    "cover": {
+      "top": 4978.453125,
+      "bottom": 5189.4375,
+      "left": 1216,
+      "width": 288,
+      "height": 210.984375,
+      "fontSize": "16px",
+      "lineHeight": "25.6px"
+    },
+    "facts": {
+      "top": 2165.140625,
+      "bottom": 2234.625,
+      "left": 688,
+      "width": 816,
+      "height": 69.484375,
+      "fontSize": "16px",
+      "lineHeight": "25.6px"
+    },
+    "leadTitle": null,
+    "leadPoster": {
+      "top": 1515.609375,
+      "bottom": 1712.9375,
+      "left": 416,
+      "width": 128,
+      "height": 197.328125,
+      "fontSize": "16px",
+      "lineHeight": "25.6px"
+    },
+    "controls": [
+      {
+        "selector": ".btn-sm",
+        "bounds": {
+          "top": 9,
+          "bottom": 43,
+          "left": 530,
+          "width": 138.765625,
+          "height": 34,
+          "fontSize": "13px",
+          "lineHeight": "16.25px"
+        }
+      },
+      {
+        "selector": ".session-chip",
+        "bounds": null
+      },
+      {
+        "selector": "[data-filter-value]",
+        "bounds": null
+      },
+      {
+        "selector": "[data-carousel-next]",
+        "bounds": {
+          "top": 1435.609375,
+          "bottom": 1475.609375,
+          "left": 1464,
+          "width": 40,
+          "height": 40,
+          "fontSize": "16px",
+          "lineHeight": "25.6px"
+        }
+      },
+      {
+        "selector": ".panel__transcript summary",
+        "bounds": null
+      }
+    ],
+    "links": [
+      "/articles/",
+      "/articles/dr-ambedkars-vision-of-equality-through-hindu-code-bill/",
+      "/articles/hindus-in-america-practice-caste/",
+      "/articles/legacy-of-dr-ambedkar/",
+      "/articles/what-periyar-means-to-silicon-valley/",
+      "/book-readings/",
+      "/books/",
+      "/books/ambedkar/",
+      "/books/ambedkar/",
+      "/books/annihilation-of-caste/",
+      "/books/annihilation-of-caste/",
+      "/books/buffalo-nationalism/",
+      "/books/buffalo-nationalism/",
+      "/books/by-any-means-necessary/",
+      "/books/by-any-means-necessary/",
+      "/books/caste-pride/",
+      "/books/caste-pride/",
+      "/books/india-is-broken/",
+      "/books/india-is-broken/",
+      "/books/riddles-in-hinduism/",
+      "/books/riddles-in-hinduism/",
+      "/books/the-will-to-change/",
+      "/books/the-will-to-change/",
+      "/books/waiting-for-a-visa/",
+      "/books/waiting-for-a-visa/",
+      "/books/why-were-women-enslaved/",
+      "/books/why-were-women-enslaved/",
+      "/comics/",
+      "/comics/caste-has-a-cost/",
+      "/comics/does-caste-exist-in-the-us-today/",
+      "/conferences/aksc-6th-annual-conference-2025/",
+      "/conferences/aksc-7th-annual-conference-2026/",
+      "/conferences/aksc-7th-annual-conference-2026/",
+      "/conferences/aksc-7th-annual-conference-2026/",
+      "/donate",
+      "/helpline",
+      "/interventions/deep-dive-caste-litigation-in-the-usa/",
+      "/join",
+      "/press-releases/aksc-condemns-raja-and-gats-on-the-caste-scrutiny-issue/",
+      "/programs/periyar-147th-birth-anniversary-celebration/",
+      "https://commons.wikimedia.org/wiki/File:Savitribai_Phule_Jotiba_Jotirao_Phule_Phulewada_Pune.tif",
+      "https://creativecommons.org/licenses/by-sa/4.0/"
+    ],
+    "paragraphDigest": "74e6db9053dc7e3ae2635a7b35335e5eb446eab9bfc402195df45ccbefaa1277",
+    "imageDigest": "34fe6c496b0b730852100817a8f21d34c2ae17d8ad519e9d3fe38b483f5afbb3"
+  },
+  {
+    "name": "home-writing",
+    "path": "/",
+    "width": 1920,
+    "scrollWidth": 1920,
+    "title": {
+      "top": 244.59375,
+      "bottom": 525.375,
+      "left": 416,
+      "width": 520,
+      "height": 280.78125,
+      "fontSize": "104px",
+      "lineHeight": "93.6px"
+    },
+    "cover": {
+      "top": 4978.453125,
+      "bottom": 5189.4375,
+      "left": 1216,
+      "width": 288,
+      "height": 210.984375,
+      "fontSize": "16px",
+      "lineHeight": "25.6px"
+    },
+    "facts": {
+      "top": 2165.140625,
+      "bottom": 2234.625,
+      "left": 688,
+      "width": 816,
+      "height": 69.484375,
+      "fontSize": "16px",
+      "lineHeight": "25.6px"
+    },
+    "leadTitle": null,
+    "leadPoster": {
+      "top": 1515.609375,
+      "bottom": 1712.9375,
+      "left": 416,
+      "width": 128,
+      "height": 197.328125,
+      "fontSize": "16px",
+      "lineHeight": "25.6px"
+    },
+    "controls": [
+      {
+        "selector": ".btn-sm",
+        "bounds": {
+          "top": 9,
+          "bottom": 43,
+          "left": 530,
+          "width": 138.765625,
+          "height": 34,
+          "fontSize": "13px",
+          "lineHeight": "16.25px"
+        }
+      },
+      {
+        "selector": ".session-chip",
+        "bounds": null
+      },
+      {
+        "selector": "[data-filter-value]",
+        "bounds": null
+      },
+      {
+        "selector": "[data-carousel-next]",
+        "bounds": {
+          "top": 1435.609375,
+          "bottom": 1475.609375,
+          "left": 1464,
+          "width": 40,
+          "height": 40,
+          "fontSize": "16px",
+          "lineHeight": "25.6px"
+        }
+      },
+      {
+        "selector": ".panel__transcript summary",
+        "bounds": null
+      }
+    ],
+    "links": [
+      "/articles/",
+      "/articles/dr-ambedkars-vision-of-equality-through-hindu-code-bill/",
+      "/articles/hindus-in-america-practice-caste/",
+      "/articles/legacy-of-dr-ambedkar/",
+      "/articles/what-periyar-means-to-silicon-valley/",
+      "/book-readings/",
+      "/books/",
+      "/books/ambedkar/",
+      "/books/ambedkar/",
+      "/books/annihilation-of-caste/",
+      "/books/annihilation-of-caste/",
+      "/books/buffalo-nationalism/",
+      "/books/buffalo-nationalism/",
+      "/books/by-any-means-necessary/",
+      "/books/by-any-means-necessary/",
+      "/books/caste-pride/",
+      "/books/caste-pride/",
+      "/books/india-is-broken/",
+      "/books/india-is-broken/",
+      "/books/riddles-in-hinduism/",
+      "/books/riddles-in-hinduism/",
+      "/books/the-will-to-change/",
+      "/books/the-will-to-change/",
+      "/books/waiting-for-a-visa/",
+      "/books/waiting-for-a-visa/",
+      "/books/why-were-women-enslaved/",
+      "/books/why-were-women-enslaved/",
+      "/comics/",
+      "/comics/caste-has-a-cost/",
+      "/comics/does-caste-exist-in-the-us-today/",
+      "/conferences/aksc-6th-annual-conference-2025/",
+      "/conferences/aksc-7th-annual-conference-2026/",
+      "/conferences/aksc-7th-annual-conference-2026/",
+      "/conferences/aksc-7th-annual-conference-2026/",
+      "/donate",
+      "/helpline",
+      "/interventions/deep-dive-caste-litigation-in-the-usa/",
+      "/join",
+      "/press-releases/aksc-condemns-raja-and-gats-on-the-caste-scrutiny-issue/",
+      "/programs/periyar-147th-birth-anniversary-celebration/",
+      "https://commons.wikimedia.org/wiki/File:Savitribai_Phule_Jotiba_Jotirao_Phule_Phulewada_Pune.tif",
+      "https://creativecommons.org/licenses/by-sa/4.0/"
+    ],
+    "paragraphDigest": "74e6db9053dc7e3ae2635a7b35335e5eb446eab9bfc402195df45ccbefaa1277",
+    "imageDigest": "34fe6c496b0b730852100817a8f21d34c2ae17d8ad519e9d3fe38b483f5afbb3"
+  },
+  {
+    "name": "conference",
+    "path": "/conferences/aksc-1st-annual-conference-2018/",
+    "width": 1920,
+    "scrollWidth": 1920,
+    "title": {
+      "top": 306.59375,
+      "bottom": 420.8125,
+      "left": 416,
+      "width": 768,
+      "height": 114.21875,
+      "fontSize": "56px",
+      "lineHeight": "57.12px"
+    },
+    "cover": null,
+    "facts": {
+      "top": 626.8125,
+      "bottom": 818.40625,
+      "left": 416,
+      "width": 768,
+      "height": 191.59375,
+      "fontSize": "16px",
+      "lineHeight": "25.6px"
+    },
+    "leadTitle": {
+      "top": 1128.4375,
+      "bottom": 1161.90625,
+      "left": 416,
+      "width": 640,
+      "height": 33.46875,
+      "fontSize": "31px",
+      "lineHeight": "33.48px"
+    },
+    "leadPoster": {
+      "top": 1201.90625,
+      "bottom": 1364.90625,
+      "left": 416,
+      "width": 600,
+      "height": 163,
+      "fontSize": "19px",
+      "lineHeight": "32.68px"
+    },
+    "controls": [
+      {
+        "selector": ".btn-sm",
+        "bounds": {
+          "top": 9,
+          "bottom": 43,
+          "left": 530,
+          "width": 138.765625,
+          "height": 34,
+          "fontSize": "13px",
+          "lineHeight": "16.25px"
+        }
+      },
+      {
+        "selector": ".session-chip",
+        "bounds": null
+      },
+      {
+        "selector": "[data-filter-value]",
+        "bounds": null
+      },
+      {
+        "selector": "[data-carousel-next]",
+        "bounds": null
+      },
+      {
+        "selector": ".panel__transcript summary",
+        "bounds": null
+      }
+    ],
+    "links": [
+      "/conferences/",
+      "/conferences/aksc-1st-annual-conference-2018/",
+      "/conferences/aksc-1st-annual-conference-2018/",
+      "/conferences/aksc-1st-annual-conference-2018/",
+      "/conferences/aksc-1st-annual-conference-2018/",
+      "/conferences/aksc-1st-annual-conference-2018/",
+      "/conferences/aksc-1st-annual-conference-2018/",
+      "/conferences/aksc-1st-annual-conference-2018/",
+      "/conferences/aksc-1st-annual-conference-2018/",
+      "/conferences/aksc-1st-annual-conference-2018/#resolution-1-bay-area-annual-conference-with-fraternal-and-likeminded-organizations",
+      "/conferences/aksc-1st-annual-conference-2018/#resolution-2-introducing-ambedkar-to-the-universities-and-the-colleges-in-the-usa-by-instituting-dr-ambedkar-chairs",
+      "/media/conferences/aksc-1st-annual-conference-2018/aksc-1st-general-body-report.pdf",
+      "/programs/",
+      "http://eci.nic.in/eci_main1/ByeElec2018/Results/02-Kairana(PC)-UttarPradesh.pdf",
+      "http://eci.nic.in/eci_main1/ByeElec2018/Results/02-Kairana(PC)-UttarPradesh.pdf",
+      "http://eci.nic.in/eci_main1/ByeElec2018/Results/24-Noorpur(AC)-UP.pdf",
+      "http://eci.nic.in/eci_main1/ByeElec2018/Results/24-Noorpur(AC)-UP.pdf",
+      "http://eci.nic.in/eci_main1/ByeElec2018/Results/51-Phulpur(PC)-UP.pdf",
+      "http://eci.nic.in/eci_main1/ByeElec2018/Results/51-Phulpur(PC)-UP.pdf",
+      "http://eci.nic.in/eci_main1/ByeElec2018/Results/64-Gorakhpur-UP.pdf",
+      "http://eci.nic.in/eci_main1/ByeElec2018/Results/64-Gorakhpur-UP.pdf",
+      "https://akscsfba.wixsite.com/aksc-conf-2018-reg",
+      "https://akscsfba.wixsite.com/aksc-conf-2018-reg/events/aksc-annual-conference-2018-event-registration",
+      "https://thewire.in/politics/in-27-by-elections-across-15-states-since-2014-story-of-bjp-decline-writ-large",
+      "https://thewire.in/politics/in-27-by-elections-across-15-states-since-2014-story-of-bjp-decline-writ-large",
+      "https://tinyurl.com/ClickAKSC2018",
+      "https://tinyurl.com/ClickAKSC2018",
+      "https://www.dsausa.org",
+      "https://www.dsausa.org/",
+      "https://www.justicedemocrats.com/home",
+      "https://www.justicedemocrats.com/home",
+      "https://www.nytimes.com/2018/06/30/opinion/democratic-socialists-progressive-democratic-party-trump.html",
+      "https://www.nytimes.com/2018/06/30/opinion/democratic-socialists-progressive-democratic-party-trump.html",
+      "https://www.paypal.me/aksc2018",
+      "https://www.paypal.me/aksc2018",
+      "https://www.siasat.com/news/india-new-lynchdom-1390067",
+      "https://www.siasat.com/news/india-new-lynchdom-1390067/",
+      "mailto:akscsfba@gmail.com",
+      "mailto:akscsfba@gmail.com",
+      "mailto:akscsfba@gmail.com",
+      "mailto:cdiwadkar@hotmail.com"
+    ],
+    "paragraphDigest": "d812649ed7958d361b1d7f5b36e49304d32fc1f18f89297db6a2755a1f5782fe",
+    "imageDigest": "f8543a5058d847a1b694e5aef252f35cd17557af9831204e83b811886b71e137"
+  },
+  {
+    "name": "toolkit",
+    "path": "/anti-caste-toolkit/",
+    "width": 1920,
+    "scrollWidth": 1920,
+    "title": {
+      "top": 240.59375,
+      "bottom": 381.6875,
+      "left": 416,
+      "width": 1024,
+      "height": 141.09375,
+      "fontSize": "72px",
+      "lineHeight": "70.56px"
+    },
+    "cover": {
+      "top": 1838.984375,
+      "bottom": 2364.984375,
+      "left": 417,
+      "width": 526,
+      "height": 526,
+      "fontSize": "16px",
+      "lineHeight": "25.6px"
+    },
+    "facts": null,
+    "leadTitle": null,
+    "leadPoster": null,
+    "controls": [
+      {
+        "selector": ".btn-sm",
+        "bounds": {
+          "top": 9,
+          "bottom": 43,
+          "left": 530,
+          "width": 138.765625,
+          "height": 34,
+          "fontSize": "13px",
+          "lineHeight": "16.25px"
+        }
+      },
+      {
+        "selector": ".session-chip",
+        "bounds": null
+      },
+      {
+        "selector": "[data-filter-value]",
+        "bounds": null
+      },
+      {
+        "selector": "[data-carousel-next]",
+        "bounds": null
+      },
+      {
+        "selector": ".panel__transcript summary",
+        "bounds": {
+          "top": 2432.984375,
+          "bottom": 2460.984375,
+          "left": 433,
+          "width": 494,
+          "height": 28,
+          "fontSize": "14px",
+          "lineHeight": "22.4px"
+        }
+      }
+    ],
+    "links": [
+      "#cafeteria-non-veg-remark",
+      "#cafeteria-non-veg-remark-panels-1",
+      "#cafeteria-non-veg-remark-panels-2",
+      "#cafeteria-non-veg-remark-panels-3",
+      "#cafeteria-non-veg-remark-panels-4",
+      "#interview-quota-remark",
+      "#interview-quota-remark-panels-1",
+      "#interview-quota-remark-panels-2",
+      "#interview-quota-remark-panels-3",
+      "#interview-quota-remark-panels-4",
+      "#party-casteist-joke",
+      "#party-casteist-joke-panels-1",
+      "#party-casteist-joke-panels-2",
+      "#party-casteist-joke-panels-3",
+      "#party-casteist-joke-panels-4",
+      "/comics/",
+      "https://forms.gle/KseyjgpuD9Q8NaCn8",
+      "https://forms.gle/KseyjgpuD9Q8NaCn8",
+      "https://forms.gle/KseyjgpuD9Q8NaCn8",
+      "https://forms.gle/KseyjgpuD9Q8NaCn8",
+      "https://forms.gle/KseyjgpuD9Q8NaCn8",
+      "https://forms.gle/KseyjgpuD9Q8NaCn8"
+    ],
+    "paragraphDigest": "60e99aaa591639b59bd54afc85013bd3ddac78286e605d61bd19fe887f72e3c8",
+    "imageDigest": "b7c505dcb468fcc9aed5bdb88a8af5894d0ac544888dcae621b3070c2e032008"
+  }
+]
