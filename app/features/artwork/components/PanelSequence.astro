@@ -19,6 +19,7 @@ interface Props {
   tone?: "light" | "dark";
   /** Eager-loads the opening panels rather than waiting for the scroll. */
   eagerCount?: number;
+  showPanelIndex?: boolean;
 }
 
 const {
@@ -29,6 +30,7 @@ const {
   unit = "Panel",
   tone = "light",
   eagerCount = 2,
+  showPanelIndex = false,
 } = Astro.props;
 
 const total = panels.length;
@@ -56,18 +58,42 @@ const hasTranscripts = panels.some((panel) => panel.transcript);
   data-tone={tone}
 >
   {
-    hasTranscripts && (
+    (hasTranscripts || showPanelIndex) && (
       <div class="panel-sequence__controls">
-        <button
-          class="panel-sequence__toggle"
-          type="button"
-          data-transcripts-toggle
-          aria-controls={id}
-          aria-pressed="false"
-          hidden
-        >
-          Show every transcript
-        </button>
+        {showPanelIndex && (
+          <details class="panel-sequence__index">
+            <summary class="panel-sequence__toggle">
+              Go to {unit.toLowerCase()}
+            </summary>
+            <nav aria-label={`${label} ${unit.toLowerCase()} index`}>
+              <ol class="panel-sequence__jumps">
+                {panels.map((_, index) => (
+                  <li>
+                    <a
+                      class="panel-sequence__toggle"
+                      href={`#${id}-${index + 1}`}
+                      aria-label={`${unit} ${index + 1} of ${total}`}
+                    >
+                      {index + 1}
+                    </a>
+                  </li>
+                ))}
+              </ol>
+            </nav>
+          </details>
+        )}
+        {hasTranscripts && (
+          <button
+            class="panel-sequence__toggle"
+            type="button"
+            data-transcripts-toggle
+            aria-controls={id}
+            aria-pressed="false"
+            hidden
+          >
+            Show every transcript
+          </button>
+        )}
       </div>
     )
   }
@@ -78,6 +104,7 @@ const hasTranscripts = panels.some((panel) => panel.transcript);
         <li
           class="panel"
           id={`${id}-${index + 1}`}
+          tabindex="-1"
           data-panel
           data-panel-width={panel.width}
           data-panel-height={panel.height}
@@ -188,8 +215,38 @@ const hasTranscripts = panels.some((panel) => panel.transcript);
 
   .panel-sequence__controls {
     display: flex;
+    flex-wrap: wrap;
+    align-items: start;
+    gap: 1rem;
     justify-content: flex-end;
+    max-width: 46rem;
+    margin-inline: auto;
     margin-bottom: 1.5rem;
+  }
+
+  .panel-sequence__index {
+    flex: 1 1 12rem;
+  }
+
+  .panel-sequence__index > summary {
+    display: list-item;
+    width: fit-content;
+    cursor: pointer;
+    list-style-position: inside;
+  }
+
+  .panel-sequence__jumps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(2.75rem, 1fr));
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
+
+  .panel-sequence__jumps a {
+    justify-content: center;
+    width: 100%;
+    padding-inline: 0.25rem;
+    font-variant-numeric: tabular-nums;
   }
 
   .panel-sequence__toggle {
@@ -240,7 +297,7 @@ const hasTranscripts = panels.some((panel) => panel.transcript);
   }
 
   .panel {
-    scroll-margin-top: 6rem;
+    scroll-margin-top: 8rem;
   }
 
   .panel__figure {
@@ -305,7 +362,7 @@ const hasTranscripts = panels.some((panel) => panel.transcript);
     height: 2.5rem;
     width: 2.5rem;
     place-items: center;
-    border-radius: 999px;
+    border-radius: 0.375rem;
     background: var(--color-ambedkar-950);
     font-size: 1.125rem;
     color: #fff;
@@ -350,7 +407,7 @@ const hasTranscripts = panels.some((panel) => panel.transcript);
     justify-self: start;
     display: inline-flex;
     align-items: center;
-    min-height: 1.75rem;
+    min-height: 2.75rem;
     font-family: var(--font-display);
     font-weight: 600;
     font-variant-numeric: tabular-nums;
@@ -374,7 +431,7 @@ const hasTranscripts = panels.some((panel) => panel.transcript);
   .panel__transcript summary {
     display: flex;
     align-items: center;
-    min-height: 1.75rem;
+    min-height: 2.75rem;
     cursor: pointer;
     font-family: var(--font-display);
     font-weight: 600;
@@ -499,7 +556,7 @@ const hasTranscripts = panels.some((panel) => panel.transcript);
     width: 3rem;
     place-items: center;
     border: 1px solid rgb(255 255 255 / 25%);
-    border-radius: 999px;
+    border-radius: 0.375rem;
     background: rgb(10 23 43 / 72%);
     font-size: 1.25rem;
     transition:

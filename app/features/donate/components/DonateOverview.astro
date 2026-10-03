@@ -18,11 +18,27 @@ const { title, eyebrow, intro, donationLabel, donationUrl, sourceUrl } =
 ---
 
 <section>
-  <PageMasthead {eyebrow} {title} description={intro} />
+  <!-- The lower masthead now carries controls; keep their text and focus ring clear of the logo's lightest pixels. -->
+  <PageMasthead
+    {eyebrow}
+    {title}
+    description={intro}
+    class="[&_[data-banner-background]]:opacity-75 lg:[&_[data-banner-background]]:opacity-100"
+  >
+    <div class="mt-6 max-w-xl">
+      <p class="text-sm leading-6 text-white/85">
+        If your employer offers matching gifts, donate through its company
+        portal. Otherwise, use AKSC's direct donation link.
+      </p>
+      <a class="btn btn-primary mt-4 min-h-11" href={donationUrl}>
+        {donationLabel}
+      </a>
+    </div>
+  </PageMasthead>
 
   <Container class="pt-12 pb-20 sm:pt-16 sm:pb-28">
     <div
-      class="grid items-start gap-10 lg:grid-cols-[minmax(0,1fr)_20rem] lg:gap-14"
+      class="grid grid-cols-1 items-start gap-10 lg:grid-cols-[minmax(0,1fr)_20rem] lg:gap-14"
     >
       <div class="min-w-0">
         <ProseContent>
@@ -46,25 +62,7 @@ const { title, eyebrow, intro, donationLabel, donationUrl, sourceUrl } =
         }
       </div>
 
-      <aside class="grid gap-5 lg:sticky lg:top-24" aria-label="Ways to give">
-        <section
-          class="on-dark card h-auto bg-ambedkar-950 p-6 text-white sm:p-8"
-        >
-          <p class="eyebrow eyebrow-light">Make a contribution</p>
-          <h2
-            class="mt-4 font-display text-2xl leading-[1.12] font-semibold tracking-title"
-          >
-            Support AKSC's work
-          </h2>
-          <p class="mt-3 leading-7 text-white/75">
-            If your employer offers matching gifts, donate through its company
-            portal. Otherwise, use AKSC's direct donation link.
-          </p>
-          <a class="btn btn-primary mt-6" href={donationUrl}>
-            {donationLabel}
-          </a>
-        </section>
-
+      <aside class="lg:sticky lg:top-24" aria-label="Membership">
         <!--
           Money is the smaller half of the ask. AKSC is built by its members,
           and a reader who has come this far intending to help should be told

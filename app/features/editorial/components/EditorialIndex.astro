@@ -26,11 +26,10 @@ interface Props {
    */
   filterKey?: string;
   /**
-   * The term the lead entry is filed under, so the lead is put away with the
-   * rest of its category when a different one is chosen.
+   * The lead's term is context only: filters narrow the archive, not the lead.
    */
   leadTerm?: string;
-  /** How the count words itself as the filter changes the number shown. */
+  /** Nouns for the total and the local filtered archive count. */
   countNoun?: { one: string; other: string };
   /** Shown in place of the list when nothing has been published yet. */
   empty?: string;
@@ -104,8 +103,8 @@ const leadHtml = Astro.slots.has("lead")
 
 /*
  * The meta line, worded here when the caller gives a noun rather than a
- * finished string. A filtered index rewrites it as the number shown changes,
- * and it can only do that if it knows how to say "1 article" as well as "8".
+ * finished string. This total stays fixed; filter feedback counts only the
+ * archive cards beside the controls.
  */
 const total =
   itemCount === undefined ? undefined : itemCount + (leadHtml ? 1 : 0);
@@ -151,6 +150,16 @@ const filtering = filters.length > 0 && filterKey !== undefined;
       >
         <Container class="py-14 sm:py-16">
           <Fragment set:html={leadHtml} />
+          {filtering && (
+            <p
+              class="mt-6 max-w-2xl text-sm leading-6 text-ink-muted"
+              data-filter-lead-note
+              hidden
+            >
+              This latest {countNoun?.one ?? "entry"} stays visible across all
+              filters. Browse earlier {countNoun?.other ?? "entries"} below.
+            </p>
+          )}
         </Container>
       </div>
     )
@@ -160,6 +169,12 @@ const filtering = filters.length > 0 && filterKey !== undefined;
     <!-- Standing context a section may need above its entries, such as how
       the reading circle meets. Most indexes leave this empty. -->
     <slot name="intro" />
+
+    {
+      !isEmpty && list && leadHtml && (
+        <h2 class="label mb-7 text-ink-muted">{listLabel}</h2>
+      )
+    }
 
     {
       /*
@@ -177,12 +192,18 @@ const filtering = filters.length > 0 && filterKey !== undefined;
           data-filter-controls
           hidden
         >
+          {leadHtml && (
+            <p class="mb-3 max-w-2xl text-sm leading-6 text-ink-muted">
+              Filters apply to earlier {countNoun?.other ?? "entries"} only. The
+              latest {countNoun?.one ?? "entry"} above is not counted here.
+            </p>
+          )}
           <ul class="flex flex-wrap gap-x-5 gap-y-2">
             {filters.map((filter) => (
               <li>
                 <button
                   type="button"
-                  class="inline-block cursor-pointer border-b-2 border-transparent py-2 font-display text-[0.875rem] font-medium text-ambedkar-900/70 transition-colors hover:border-ambedkar-900/25 hover:text-ambedkar-900 aria-pressed:border-accent-600 aria-pressed:text-ambedkar-900"
+                  class="inline-block min-h-11 cursor-pointer border-b-2 border-transparent py-2 font-display text-[0.875rem] font-medium text-ambedkar-900/70 transition-colors hover:border-ambedkar-900/25 hover:text-ambedkar-900 aria-pressed:border-accent-600 aria-pressed:text-ambedkar-900"
                   data-filter-value={filter.value}
                   aria-pressed={filter.value === ALL_TERMS}
                 >
@@ -191,6 +212,12 @@ const filtering = filters.length > 0 && filterKey !== undefined;
               </li>
             ))}
           </ul>
+          <p
+            class="mt-4 max-w-2xl text-sm leading-6 text-ink-muted"
+            role="status"
+            aria-atomic="true"
+            data-filter-status
+          />
         </div>
       )
     }
@@ -202,14 +229,6 @@ const filtering = filters.length > 0 && filterKey !== undefined;
         </p>
       ) : list ? (
         <>
-          {leadHtml && (
-            <h2
-              class="label mb-7 text-ink-muted"
-              data-filter-list-label={filtering ? "" : undefined}
-            >
-              {listLabel}
-            </h2>
-          )}
           {/*
             `grid-cols-1` is not redundant. Without a column definition the base
             grid has a single implicit `auto` track, which is content-sized: a

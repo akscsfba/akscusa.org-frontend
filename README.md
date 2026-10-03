@@ -36,6 +36,9 @@ This is statically rendered, not a CMS collection: it is a single document,
 not an ongoing set of editor-published entries. Replace
 `app/features/magazine/assets/aksc-10th-year-magazine.html` to update it.
 The page copy lives in `app/content/pages/magazine/index.md`.
+The document uses a single-column, 18px screen reading edition with separate
+print styling. Keep screen adjustments inside its screen media query so the
+download remains self-contained and the publication's print layout is preserved.
 
 ## Project structure
 
@@ -196,6 +199,14 @@ bottom, and right edges without inset margins; their left edge fades into the in
 This keeps wide screens from scaling the logo taller than the banner.
 Photography receives the brand-blue tint; the logo retains its own
 colors. This is static presentation, not a CMS field or a separate emblem design.
+
+Temporary review screenshots belong outside the repository, not among application
+assets.
+
+The home book shelf starts paused; Play opts into rotation. Quotations retain
+their automatic rotation, and both use the shared reduced-motion and focus
+safeguards. Long comics offer a native panel index, and game explanations have
+next-question links; both navigation paths work without JavaScript.
 
 ## Images
 

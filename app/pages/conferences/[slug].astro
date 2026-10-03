@@ -8,6 +8,7 @@ import EntryLayout from "~/features/editorial/components/EntryLayout.astro";
 import { loadEditorialEntries } from "~/features/editorial/queries/entries";
 import {
   conferenceBadge,
+  conferenceArchiveNotice,
   conferenceDetails,
 } from "~/features/editorial/presenters";
 import SiteLayout from "~/layouts/SiteLayout.astro";
@@ -31,6 +32,7 @@ const speakers = await loadConferenceSpeakers(conference);
     title={conference.data.title}
     summary={conference.data.summary}
     badge={conferenceBadge(conference)}
+    archiveNotice={conferenceArchiveNotice(conference)}
     details={conferenceDetails(conference)}
     links={{ heading: "Resources", items: conference.data.resources }}
     topics={conference.data.topics}

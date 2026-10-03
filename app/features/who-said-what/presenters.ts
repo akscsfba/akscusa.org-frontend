@@ -22,12 +22,16 @@ function presentPhoto(photo: WhoSaidWhatPageCopy["photo"]) {
 function presentQuestion(
   question: WhoSaidWhatPageCopy["questions"][number],
   index: number,
+  questions: WhoSaidWhatPageCopy["questions"],
 ) {
   const multiple = question.answer === "both";
   return {
     ...question,
     number: index + 1,
     label: `Question ${index + 1}`,
+    onward: questions[index + 1]
+      ? { href: `#${questions[index + 1].id}`, label: "Next question" }
+      : { href: "#game-results", label: "Finish: view progress" },
     inputType: multiple ? ("checkbox" as const) : ("radio" as const),
     hint: multiple ? "Select all that apply." : "Choose one answer.",
     answerLabel: multiple

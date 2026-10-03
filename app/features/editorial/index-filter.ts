@@ -16,9 +16,9 @@
  * - each chip is a `button[data-filter-value]`, where `all` clears the filter;
  * - each card carries `data-filter-term`; the lead band also carries the
  *   attribute for context but is never hidden;
- * - `[data-page-meta]` is the masthead's meta line, which prints the number of
- *   entries on show, worded by `data-count-one` and `data-count-other`;
- * - `[data-filter-list-label]` names the run of cards under the lead.
+ * - `[data-filter-status]` announces the archive-only count beside the controls,
+ *   worded by `data-count-one` and `data-count-other`; the masthead total is fixed;
+ * - `[data-filter-lead-note]` explains why the lead stays visible.
  */
 
 const ALL_TERMS = "all";
@@ -43,18 +43,18 @@ const enhanceIndex = (root: HTMLElement) => {
       "[data-filter-term]:not([data-filter-lead])",
     ),
   ];
-  const count = root.querySelector<HTMLElement>("[data-page-meta]");
+  const status = root.querySelector<HTMLElement>("[data-filter-status]");
+  const lead = root.querySelector<HTMLElement>("[data-filter-lead]");
+  const leadNote = root.querySelector<HTMLElement>("[data-filter-lead-note]");
 
-  if (!controls || chips.length === 0 || entries.length === 0) {
+  if (!controls || !status || chips.length === 0 || entries.length === 0) {
     return;
   }
 
-  // The count changes without anything moving focus, so a reader who is not
-  // looking at the list needs it announced. It is only ever a few words.
-  count?.setAttribute("aria-live", "polite");
-
   const apply = (term: string) => {
-    let shown = root.querySelector("[data-filter-lead]") ? 1 : 0;
+    const selected = chips.find((chip) => chip.dataset.filterValue === term);
+    if (!selected) throw new Error(`Unknown editorial filter: ${term}`);
+    let shown = 0;
 
     for (const entry of entries) {
       const matches = term === ALL_TERMS || entry.dataset.filterTerm === term;
@@ -65,13 +65,17 @@ const enhanceIndex = (root: HTMLElement) => {
       }
     }
 
-    if (count) {
-      const noun =
-        shown === 1
-          ? (root.dataset.countOne ?? "entry")
-          : (root.dataset.countOther ?? "entries");
-      count.textContent = `${shown} ${noun}`;
-    }
+    const noun =
+      shown === 1
+        ? (root.dataset.countOne ?? "entry")
+        : (root.dataset.countOther ?? "entries");
+    const scope = lead ? "earlier " : "";
+    const category =
+      term === ALL_TERMS ? "" : ` in ${selected.textContent?.trim()}`;
+    status.textContent =
+      shown === 0
+        ? `No ${scope}${noun}${category}. Choose another filter or show all.`
+        : `${shown} ${scope}${noun}${category}.`;
 
     for (const chip of chips) {
       chip.setAttribute(
@@ -117,6 +121,7 @@ const enhanceIndex = (root: HTMLElement) => {
   select(requested && known.has(requested) ? requested : ALL_TERMS, false);
   root.dataset.indexFilterReady = "";
   controls.hidden = false;
+  if (leadNote) leadNote.hidden = false;
 };
 
 export const mountIndexFilters = (): void => {
