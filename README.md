@@ -200,9 +200,8 @@ This keeps wide screens from scaling the logo taller than the banner.
 Photography receives the brand-blue tint; the logo retains its own
 colors. This is static presentation, not a CMS field or a separate emblem design.
 
-See [DESIGN-REVIEW.md](DESIGN-REVIEW.md) for the completed incremental UI/UX
-improvements and their acceptance evidence. Temporary review screenshots belong
-outside the repository, not among application assets.
+Temporary review screenshots belong outside the repository, not among application
+assets.
 
 The home book shelf starts paused; Play opts into rotation. Quotations retain
 their automatic rotation, and both use the shared reduced-motion and focus
