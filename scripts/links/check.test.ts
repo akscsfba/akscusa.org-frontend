@@ -45,6 +45,24 @@ function check(body: string, files: Record<string, string> = {}) {
 }
 
 describe("build page inventory", () => {
+  it("recognizes short-link destinations without treating them as media files", () => {
+    const rules =
+      "/book https://example.org/book.pdf 302\n/book/ https://example.org/book.pdf 302\n";
+    expect(
+      check(
+        '<a href="/book">Read</a><a href="/book/?ref=reading#page=10">Read</a>',
+        {
+          _redirects: rules,
+        },
+      ).passed,
+    ).toBe(true);
+    expect(
+      check('<img src="/book" alt="Book">', { _redirects: rules }).passed,
+    ).toBe(false);
+    expect(() =>
+      check("", { _redirects: "/book javascript:alert(1) 302" }),
+    ).toThrow("Invalid generated");
+  });
   it("exposes emitted routes, relative files, and unchanged HTML bodies", () => {
     const home = html("<h1>Home</h1>");
     const article = html("<h1>Renamed article</h1>");

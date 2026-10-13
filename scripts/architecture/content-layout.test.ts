@@ -4,7 +4,7 @@ import { dirname, join } from "node:path";
 import { describe, expect, it } from "vitest";
 
 const root = "cms/content";
-const taxonomy = new Set(["topics", "categories"]);
+const mediaFreeCollections = new Set(["topics", "categories", "short-links"]);
 const mediaReference = /(?<![A-Za-z0-9:/])\/media\/[^\s<>"')\]]+/g;
 
 describe("entry-owned media", () => {
@@ -17,7 +17,7 @@ describe("entry-owned media", () => {
 
     for (const relative of files) {
       const [collection, slug, filename, ...extra] = relative.split("/");
-      if (taxonomy.has(collection)) continue;
+      if (mediaFreeCollections.has(collection)) continue;
       expect(filename, relative).toBe("index.md");
       expect(extra, relative).toEqual([]);
       const file = join(root, relative);

@@ -6,6 +6,7 @@ import { fileURLToPath } from "node:url";
 
 import { documentPath, magazinePath } from "../app/features/magazine/routes.ts";
 import { readBuildInventory } from "./links/check.ts";
+import { shortLinkLocation } from "../app/features/short-links/redirects.ts";
 
 const host = "127.0.0.1";
 const inventory = readBuildInventory(
@@ -134,6 +135,24 @@ wrangler.stderr.on("data", captureOutput);
 
 try {
   await waitForWrangler(origin, wrangler);
+
+  for (const [source, destination] of inventory.redirects) {
+    for (const suffix of ["", "?ref=reading-circle"]) {
+      const expected = shortLinkLocation(destination, suffix);
+      const response = await fetch(`${origin}${source}${suffix}`, {
+        redirect: "manual",
+        signal: AbortSignal.timeout(5_000),
+      });
+      if (
+        response.status !== 302 ||
+        response.headers.get("location") !== expected
+      ) {
+        throw new Error(
+          `${source}${suffix} returned HTTP ${response.status} to ${response.headers.get("location")} instead of HTTP 302 to ${expected}.`,
+        );
+      }
+    }
+  }
 
   const articleRoutes = inventory.pages
     .map((page) => page.route)

@@ -89,6 +89,41 @@ media_libraries: &repository_media
 # stay as `select` options mirroring `app/features/editorial/taxonomy.ts`, and
 # `scripts/cms/config.test.ts` fails if those two drift apart.
 collections:
+  - name: short-links
+    label: Short links
+    label_singular: Short link
+    description: Share reading materials with a short akscusa.org address. Published changes take effect after deployment.
+    folder: cms/content/short-links
+    create: true
+    identifier_field: code
+    slug: "{{code}}"
+    summary: "/{{slug}} — {{title}}"
+    preview_path: /{{slug}}
+    fields:
+      - name: code
+        label: Short code
+        widget: string
+        pattern:
+          [
+            "^[a-z0-9]+(?:-[a-z0-9]+)*$",
+            "Use lowercase letters and numbers, optionally separated by single hyphens.",
+          ]
+        hint: "For akscusa.org/ptitfm enter ptitfm. Choose an unused code, not a site path such as books or admin. The filename fixes the address when created; changing this field later does not rename it."
+      - { name: title, label: Material title, widget: string }
+      - name: destination
+        label: Destination URL
+        widget: string
+        pattern:
+          [
+            '^https?://[^\s\\]+$',
+            "Enter a full HTTP(S) URL without spaces or backslashes.",
+          ]
+        hint: "Paste the external reading material URL. Do not use an akscusa.org destination or a URL containing login credentials."
+      - name: draft
+        label: Draft
+        widget: boolean
+        default: false
+        hint: "Hides this link from every build, including deployment previews. Draft links work locally. This is separate from the CMS workflow; clear it before publishing."
   - name: articles
     label: Articles
     label_singular: Article

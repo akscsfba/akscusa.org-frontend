@@ -37,6 +37,29 @@ not an ongoing set of editor-published entries. Replace
 `app/features/magazine/assets/aksc-10th-year-magazine.html` to update it.
 The page copy lives in `app/content/pages/magazine/index.md`.
 
+## Short links
+
+In the CMS, choose **Short links → New short link**, enter a short code (for
+example `ptitfm`), a material title, and its full external HTTP(S) destination.
+Publish through the usual review workflow; the link becomes live after the
+merged change is deployed. `https://akscusa.org/ptitfm` redirects to Anuradha
+Gandhy's _Philosophical Trends in the Feminist Movement_ PDF.
+
+These repeating, contributor-managed records belong in the CMS, not D1.
+Markdown files in `cms/content/short-links/` generate Cloudflare Pages'
+`_redirects` file at build time. Both `/code` and `/code/` use HTTP 302 so an
+editor can update the destination without a permanently cached redirect.
+Destinations must be external to avoid redirect loops. Existing page and asset
+names are reserved; a collision fails the build rather than hiding a page.
+Pages supports at most 1,000 short links here (two rules per link).
+
+The filename is the stable code: updating the title or destination preserves
+the address. To change a code, create a new entry and delete the old one.
+Marking an entry as a draft or deleting it removes its published redirect on
+the next deployment. Drafts remain usable in local development.
+Astro's static development server drops incoming query strings; deployed Pages
+redirects forward them unless the destination already defines its own query.
+
 ## Project structure
 
 ```text

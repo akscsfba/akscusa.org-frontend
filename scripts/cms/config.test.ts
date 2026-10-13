@@ -19,8 +19,28 @@ import {
   type CmsField,
 } from "./config";
 import { CMS_REPO_PLACEHOLDER } from "./repo";
+import { shortCodePattern } from "~/features/short-links/redirects";
 
 describe("Sveltia CMS configuration", () => {
+  it("lets editors create stable short codes with external destinations", () => {
+    const collection = config.collections.find(
+      (entry) => entry.name === "short-links",
+    );
+    expect(collection?.folder).toBe("cms/content/short-links");
+    expect(collection?.create).toBe(true);
+    expect(collection?.identifier_field).toBe("code");
+    expect(collection?.slug).toBe("{{code}}");
+    expect(collection?.preview_path).toBe("/{{slug}}");
+    const code = collection?.fields?.find((field) => field.name === "code");
+    expect(code?.pattern?.[0]).toBe(shortCodePattern.source);
+    expect(collection?.fields?.map((field) => field.name)).toEqual([
+      "code",
+      "title",
+      "destination",
+      "draft",
+    ]);
+  });
+
   // A committed repository would let a local dev server commit to the live site
   // as soon as someone signs in. Deployments name their repository via CMS_REPO.
   it("never commits a real backend repository", () => {
