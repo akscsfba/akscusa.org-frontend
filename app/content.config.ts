@@ -11,6 +11,7 @@ import {
 import { generalBodyMeetings } from "~/schemas/organization";
 import { pages } from "~/schemas/pages";
 import { categories, topics } from "~/schemas/taxonomy";
+import { shortLinks } from "~/schemas/short-links";
 
 /**
  * Every content collection on the site, in one place because Astro requires it.
@@ -36,4 +37,5 @@ export const collections = {
   generalBodyMeetings,
   comics,
   toolkitScenarios,
+  shortLinks,
 };

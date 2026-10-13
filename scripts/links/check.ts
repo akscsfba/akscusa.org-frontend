@@ -2,6 +2,7 @@ import { lstatSync, readFileSync, readdirSync } from "node:fs";
 import { join, resolve } from "node:path";
 
 import { readHtml, sitemapLocations, type Reference } from "./html.ts";
+import { isShortLinkDestination } from "../../app/features/short-links/redirects.ts";
 
 export interface BuiltPage {
   file: string;
@@ -12,6 +13,7 @@ export interface BuiltPage {
 export interface BuildInventory {
   files: ReadonlyMap<string, string>;
   pages: readonly BuiltPage[];
+  redirects: ReadonlyMap<string, string>;
 }
 
 export interface Issue extends Reference {
@@ -88,7 +90,24 @@ export function readBuildInventory(directory: string): BuildInventory {
       `No built HTML found in ${resolve(directory)}; build the site first.`,
     );
   }
-  return { files, pages };
+  const redirects = new Map<string, string>();
+  const redirectsFile = files.get("_redirects");
+  if (redirectsFile) {
+    for (const line of readFileSync(redirectsFile, "utf8").split("\n")) {
+      if (!line.trim() || line.trim().startsWith("#")) continue;
+      const [source, destination, status] = line.trim().split(/\s+/);
+      if (
+        !source?.startsWith("/") ||
+        !destination ||
+        !isShortLinkDestination(destination) ||
+        status !== "302"
+      ) {
+        throw new Error(`Invalid generated short-link rule: ${line}`);
+      }
+      redirects.set(source, destination);
+    }
+  }
+  return { files, pages, redirects };
 }
 
 function productionOrigin(metadata: Reference[]): string {
@@ -256,7 +275,7 @@ function findTarget(
 }
 
 export function verifyLinks(directory: string) {
-  const { files, pages: htmlPages } = readBuildInventory(directory);
+  const { files, pages: htmlPages, redirects } = readBuildInventory(directory);
   const pages = new Map(
     htmlPages.map(({ file, route, body }) => [file, readHtml(body, route)]),
   );
@@ -329,6 +348,7 @@ export function verifyLinks(directory: string) {
       }
       if (!local) continue;
       if (reference.tag === "base") continue;
+      if (reference.tag === "a" && redirects.has(url.pathname)) continue;
       const targetFile = findTarget(path, files);
       if (!targetFile) {
         issues.push({

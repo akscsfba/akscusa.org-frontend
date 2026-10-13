@@ -134,7 +134,9 @@ describe("one filename, content ID and relation value", () => {
           expect(filename).toMatch(/^[a-z0-9_~-]+\/index\.md$/);
           expect(cmsEntryId({ entry: filename })).toBe(filename.split("/")[0]);
         } else {
-          expect(["topics", "categories"]).toContain(collection.name);
+          expect(["topics", "categories", "short-links"]).toContain(
+            collection.name,
+          );
           expect(filename).toMatch(/^[a-z0-9_~-]+\.md$/);
           expect(cmsEntryId({ entry: filename })).toBe(filename.slice(0, -3));
         }
@@ -235,7 +237,7 @@ describe("local-only media controls", () => {
 
   it("stores public URLs for every owned upload instead of entry-relative filenames", () => {
     for (const collection of config.collections) {
-      if (collection.name === "topics" || collection.name === "categories") {
+      if (["topics", "categories", "short-links"].includes(collection.name)) {
         expect(collection.path).toBeUndefined();
         continue;
       }
@@ -544,6 +546,7 @@ describe("rendered site preview destinations", () => {
     "toolkit-scenarios": "/anti-caste-toolkit/#{{slug}}",
     topics: "/articles/",
     categories: "/articles/",
+    "short-links": "/{{slug}}",
   };
 
   it("explains build-based draft visibility beside every draft switch", () => {
@@ -563,6 +566,12 @@ describe("rendered site preview destinations", () => {
     ).toEqual(Object.keys(routes).sort());
     for (const [name, expected] of Object.entries(routes)) {
       expect(collectionNamed(name).preview_path).toBe(expected);
+      if (name === "short-links") {
+        expect(existsSync(join(projectRoot, "app/pages/[redirects].ts"))).toBe(
+          true,
+        );
+        continue;
+      }
       const pathname = expected.split("#")[0].replace(/^\/|\/$/g, "");
       const route = pathname.includes("{{slug}}")
         ? `${pathname.replace("{{slug}}", "[slug]")}.astro`

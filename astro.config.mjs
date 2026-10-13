@@ -15,6 +15,7 @@ import {
 } from "./scripts/cms/repo";
 import { accessibleTables } from "./scripts/markdown/accessible-tables";
 import { contentMedia } from "./scripts/media/integration";
+import { shortLinks } from "./scripts/short-links/integration";
 
 const cmsConfigFile = new URL("./cms/public/admin/config.yml", import.meta.url);
 const cmsConfigPathname = "/admin/config.yml";
@@ -109,7 +110,7 @@ export default defineConfig({
   output: "static",
   srcDir: "./app",
   publicDir: "./cms/public",
-  integrations: [sitemap(), cmsBackendRepo(), contentMedia()],
+  integrations: [sitemap(), cmsBackendRepo(), contentMedia(), shortLinks()],
   markdown: {
     processor: satteri({
       // Raw HTML tables need the same keyboard wrapper as Markdown tables.
