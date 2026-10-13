@@ -3,7 +3,7 @@ import Container from "~/components/ui/Container.astro";
 
 interface Props {
   heading: string;
-  terms: readonly { term: string; description: string }[];
+  terms: readonly { term: string; description: string; href?: string }[];
   strandsHeading: string;
   strands: readonly {
     title: string;
@@ -45,7 +45,13 @@ const { heading, terms, strandsHeading, strands } = Astro.props;
             <div class="border-b border-rule py-4 last:border-b-0 sm:flex sm:items-baseline sm:justify-between sm:gap-8">
               <dt class="label text-ink-muted">{item.term}</dt>
               <dd class="mt-1.5 font-display text-lg leading-tight font-semibold tracking-title text-ambedkar-950 sm:mt-0 sm:text-right sm:text-xl">
-                {item.description}
+                {item.href ? (
+                  <a class="link-underline inline-block py-2" href={item.href}>
+                    {item.description}
+                  </a>
+                ) : (
+                  item.description
+                )}
               </dd>
             </div>
           ))

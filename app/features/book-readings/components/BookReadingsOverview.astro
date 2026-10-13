@@ -9,7 +9,11 @@ import ReadingLog from "./ReadingLog.astro";
 
 interface Props {
   practicalitiesHeading: string;
-  practicalities: readonly { term: string; description: string }[];
+  practicalities: readonly {
+    term: string;
+    description: string;
+    href?: string;
+  }[];
   strandsHeading: string;
   strands: readonly {
     title: string;
