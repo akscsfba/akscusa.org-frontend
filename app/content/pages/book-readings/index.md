@@ -3,11 +3,14 @@ pageType: book-readings
 practicalitiesHeading: How the reading circle meets
 practicalities:
   - term: Schedule
-    description: Once in 3 weeks, on Sunday
+    description: Every 3 weeks, on Saturdays
   - term: Timing
     description: 3:00 PM – 5:00 PM Pacific
-  - term: Venue
-    description: Fremont, CA, or any city as it fits most members
+  - term: Online
+    description: akscusa.org/join-reading
+    href: /join-reading
+  - term: In-Person
+    description: Please check the flyer.
 strandsHeading: Reading and discussions
 strands:
   - title: Monthly Book Reading

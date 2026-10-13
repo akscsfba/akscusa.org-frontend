@@ -95,6 +95,7 @@ const bookReadingsPageSchema = z.object({
       z.object({
         term: z.string(),
         description: z.string(),
+        href: z.string().optional(),
       }),
     )
     .min(1),

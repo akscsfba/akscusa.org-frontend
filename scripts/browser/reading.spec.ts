@@ -1,5 +1,49 @@
 import { expect, publishedPaths, test, visit } from "./fixtures";
 
+test("reading overview shows the Saturday schedule and online join link without a shared venue", async ({
+  page,
+}) => {
+  for (const width of [320, 375, 768, 1440]) {
+    await page.setViewportSize({ width, height: 900 });
+    await visit(page, "/book-readings/");
+    await expect(page.getByText("Venue", { exact: true })).toHaveCount(0);
+    await expect(
+      page.getByText("Fremont, CA, or any city as it fits most members", {
+        exact: true,
+      }),
+    ).toHaveCount(0);
+    await expect(page.getByText("Schedule", { exact: true })).toBeVisible();
+    await expect(page.getByText("Timing", { exact: true })).toBeVisible();
+    await expect(
+      page.getByText("Every 3 weeks, on Saturdays", { exact: true }),
+    ).toBeVisible();
+    const join = page.getByRole("link", {
+      name: "akscusa.org/join-reading",
+      exact: true,
+    });
+    await expect(join).toBeVisible();
+    await expect(join).toHaveAttribute("href", "/join-reading");
+    await expect(page.getByText("In-Person", { exact: true })).toBeVisible();
+    await expect(
+      page.getByText("Please check the flyer.", { exact: true }),
+    ).toBeVisible();
+    expect(
+      await page.evaluate(
+        () =>
+          document.documentElement.scrollWidth <=
+          document.documentElement.clientWidth + 1,
+      ),
+    ).toBe(true);
+  }
+  const response = await page.request.get("/join-reading", {
+    maxRedirects: 0,
+  });
+  expect(response.status()).toBe(302);
+  expect(response.headers().location).toBe(
+    "https://us02web.zoom.us/j/84753428973",
+  );
+});
+
 test("Articles uses its new name and routes at every screen size", async ({
   page,
 }) => {
