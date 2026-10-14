@@ -95,6 +95,17 @@ describe("the complete September 2023 resource", () => {
     expect(copy.noScriptInstructions).toContain("Show answer and explanation");
   });
 
+  it("links each question to the next existing anchor and ends at progress", () => {
+    const questions = presentGame(copy).questions;
+    expect(questions.map((question) => question.onward)).toEqual([
+      ...questions.slice(1).map((question) => ({
+        href: `#${question.id}`,
+        label: "Next question",
+      })),
+      { href: "#game-results", label: "Finish: view progress" },
+    ]);
+  });
+
   it("keeps all nine citations, including repeated sources in their question context", () => {
     expect(
       copy.questions.map((question) => question.references.length),

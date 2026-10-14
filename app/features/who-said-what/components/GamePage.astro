@@ -107,31 +107,55 @@ const { game } = Astro.props;
     <div class="grid gap-14 sm:gap-20">
       {game.questions.map((question) => <GameQuestion question={question} />)}
     </div>
-    <div
-      class="mt-12 rounded-sm bg-ambedkar-100 p-5 sm:p-7"
-      data-game-actions
-      hidden
+    <section
+      id="game-results"
+      tabindex="-1"
+      aria-labelledby="game-results-heading"
+      class="mt-12 scroll-mt-32 rounded-sm bg-ambedkar-100 p-5 sm:p-7"
     >
-      <p
-        class="font-sans text-lg leading-relaxed font-medium text-ambedkar-950"
-        role="status"
-        aria-atomic="true"
-        data-game-progress
+      <h2
+        id="game-results-heading"
+        class="font-display text-2xl font-semibold text-ambedkar-950"
       >
-      </p>
-      <div class="mt-5 flex flex-wrap gap-3">
-        <button class="btn btn-primary max-w-full" type="button" data-check-all>
-          Check all answers
-        </button>
-        <button
-          class="btn btn-outline max-w-full"
-          type="button"
-          data-game-reset
+        Your progress
+      </h2>
+      <noscript>
+        <p class="mt-4 leading-relaxed text-ambedkar-900">
+          You have reached the end. Open each question's answer and explanation
+          to compare your choices.
+        </p>
+      </noscript>
+      <div class="mt-4" data-game-actions hidden>
+        <p
+          class="font-sans text-lg leading-relaxed font-medium text-ambedkar-950"
+          role="status"
+          aria-atomic="true"
+          data-game-progress
         >
-          Start again
-        </button>
+        </p>
+        <div class="mt-5 flex flex-wrap gap-3">
+          <button
+            class="btn btn-primary max-w-full"
+            type="button"
+            data-check-all
+          >
+            Check all answers
+          </button>
+          <button
+            class="btn btn-outline max-w-full"
+            type="button"
+            data-game-reset
+          >
+            Start again
+          </button>
+        </div>
       </div>
-    </div>
+      <p class="mt-6">
+        <a class="btn btn-outline btn-sm" href={`#${game.questions[0].id}`}>
+          Back to the questions
+        </a>
+      </p>
+    </section>
   </Container>
 </section>
 

@@ -1,5 +1,69 @@
 import { expect, publishedPaths, test, visit } from "./fixtures";
 
+test("the shelf starts still, opts into rotation, and respects focus and reduced motion", async ({
+  page,
+}) => {
+  await page.setViewportSize({ width: 375, height: 800 });
+  await page.emulateMedia({ reducedMotion: "no-preference" });
+  await page.clock.install();
+  await visit(page, "/");
+  const shelf = page.locator('[data-carousel-noun="book"]');
+  const viewport = shelf.locator("[data-carousel-viewport]");
+  const toggle = shelf.locator("[data-carousel-toggle]");
+  const position = shelf.locator("[data-carousel-position]");
+  const total = await shelf.locator("[data-carousel-slide]").count();
+  await expect(toggle).toHaveAttribute("aria-label", "Play the shelf");
+  await expect(
+    page.locator('[data-carousel-noun="quotation"] [data-carousel-toggle]'),
+  ).toHaveAttribute("aria-label", "Pause quotations");
+  await page.mouse.move(0, 0);
+  await page.clock.runFor(11_000);
+  await expect(position).toHaveText(`1 of ${total}`);
+  await toggle.click();
+  await expect(toggle).toHaveAttribute("aria-label", "Pause the shelf");
+  await viewport.focus();
+  await page.mouse.move(0, 0);
+  await page.clock.runFor(6_000);
+  await expect(position).toHaveText(`1 of ${total}`);
+  await page.locator("h1").evaluate((element) => {
+    element.setAttribute("tabindex", "-1");
+    element.focus();
+  });
+  await page.clock.runFor(6_000);
+  await expect(position).toHaveText(`2 of ${total}`);
+  await expect
+    .poll(() =>
+      viewport.evaluate((element) => {
+        const slides = element.querySelectorAll<HTMLElement>(
+          "[data-carousel-slide]",
+        );
+        return (
+          Math.abs(
+            element.scrollLeft - (slides[1].offsetLeft - slides[0].offsetLeft),
+          ) < 1
+        );
+      }),
+    )
+    .toBe(true);
+  await toggle.click();
+  await expect(toggle).toHaveAttribute("aria-label", "Play the shelf");
+  await page.clock.runFor(1_000);
+  const paused = await position.textContent();
+  await page.locator("h1").focus();
+  await page.mouse.move(0, 0);
+  await page.clock.runFor(6_000);
+  await expect(position).toHaveText(paused ?? "");
+  await toggle.click();
+  await page.emulateMedia({ reducedMotion: "reduce" });
+  await expect(toggle).toHaveAttribute("aria-label", "Play the shelf");
+  await page.clock.runFor(1_000);
+  const reduced = await position.textContent();
+  await page.locator("h1").focus();
+  await page.mouse.move(0, 0);
+  await page.clock.runFor(6_000);
+  await expect(position).toHaveText(reduced ?? "");
+});
+
 test("a focused carousel stays paused after the pointer leaves", async ({
   page,
 }) => {
@@ -44,6 +108,11 @@ test.describe("without JavaScript", () => {
     await expect(
       page.getByRole("navigation", { name: "Mobile navigation" }),
     ).toBeVisible();
+    const join = page.locator("[data-mobile-nav-sheet] a").first();
+    await expect(join).toHaveText("Join AKSC");
+    const joinBounds = await join.boundingBox();
+    if (!joinBounds) throw new Error("The mobile Join link is not rendered.");
+    expect(joinBounds.y + joinBounds.height).toBeLessThanOrEqual(800);
     await expect(page.locator("[data-carousel-controls]:visible")).toHaveCount(
       0,
     );

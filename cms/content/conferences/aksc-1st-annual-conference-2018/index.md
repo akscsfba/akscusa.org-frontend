@@ -30,7 +30,7 @@ _“The struggle and liberation of one oppressed group are tightly coupled with 
 
 ### #20589 Homestead Road, Cupertino, CA 95014, USA
 
-This slideshow requires JavaScript.
+_Archive note: The original slideshow is not available in this record._
 
 ---
 

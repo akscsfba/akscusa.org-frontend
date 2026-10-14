@@ -50,7 +50,7 @@ const paragraphs = (bio: string) => bio.split(/\n\s*\n/).filter(Boolean);
               <div class="flex items-start gap-4">
                 {speaker.portrait ? (
                   <img
-                    class="size-14 shrink-0 rounded-2xl object-cover"
+                    class="size-14 shrink-0 rounded-md object-cover"
                     src={speaker.portrait.src}
                     alt={speaker.portrait.alt}
                     loading="lazy"
@@ -58,7 +58,7 @@ const paragraphs = (bio: string) => bio.split(/\n\s*\n/).filter(Boolean);
                   />
                 ) : (
                   <span
-                    class="on-dark flex size-14 shrink-0 items-center justify-center rounded-2xl bg-ambedkar-950 font-display text-xl leading-[1.15] font-semibold tracking-title text-accent-300"
+                    class="on-dark flex size-14 shrink-0 items-center justify-center rounded-md bg-ambedkar-950 font-display text-xl leading-[1.15] font-semibold tracking-title text-accent-300"
                     aria-hidden="true"
                   >
                     {initials(speaker.name)}
@@ -73,7 +73,7 @@ const paragraphs = (bio: string) => bio.split(/\n\s*\n/).filter(Boolean);
                   </span>
                 </span>
               </div>
-              <span class="mt-5 flex items-center justify-between border-t border-rule pt-4 font-display text-xs font-semibold tracking-[0.12em] text-ambedkar-700 uppercase">
+              <span class="mt-5 flex items-center justify-between font-display text-xs font-semibold tracking-[0.12em] text-ambedkar-700 uppercase">
                 <span class="group-open:hidden">Read biography</span>
                 <span class="hidden group-open:inline">Close biography</span>
                 <span

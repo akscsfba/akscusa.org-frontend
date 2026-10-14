@@ -13,6 +13,7 @@ const { id } = question;
 <section
   class="section-head game-question"
   id={id}
+  tabindex="-1"
   aria-labelledby={`${id}-heading`}
   data-game-question
   data-answer={question.answer}
@@ -120,6 +121,11 @@ const { id } = question;
         }
       </div>
     </details>
+    <p class="mt-6">
+      <a class="btn btn-outline btn-sm" href={question.onward.href}>
+        {question.onward.label}
+      </a>
+    </p>
   </div>
 </section>
 

@@ -117,9 +117,14 @@ test("the testimony action reaches the existing submission form", async ({
   page,
 }) => {
   await visit(page, "/testimonies-of-practice-of-caste-in-the-usa/");
-  await expect(
-    page.getByRole("link", { name: "Share your testimony", exact: true }),
-  ).toHaveAttribute("href", "https://bit.ly/CasteInUsa");
+  const actions = page.getByRole("link", {
+    name: "Share your testimony",
+    exact: true,
+  });
+  await expect(actions).toHaveCount(2);
+  for (const action of await actions.all()) {
+    await expect(action).toHaveAttribute("href", "https://bit.ly/CasteInUsa");
+  }
 });
 
 test("sharing metadata names the actual page and a local brand image", async ({

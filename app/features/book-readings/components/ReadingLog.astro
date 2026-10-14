@@ -53,7 +53,8 @@ const filters = [
       <p class="eyebrow">The record</p>
       <h2
         id="reading-log"
-        class="mt-5 font-display text-display-sm leading-[1.06] font-bold tracking-display text-balance text-ambedkar-950"
+        class="mt-5 scroll-mt-28 font-display text-display-sm leading-[1.06] font-bold tracking-display text-balance text-ambedkar-950"
+        tabindex="-1"
       >
         What the circle has read
       </h2>
@@ -105,7 +106,8 @@ const filters = [
           <div class="mt-4 flex flex-wrap items-center justify-between gap-x-6 gap-y-3">
             <p class="text-sm text-ink-muted" id="log-search-hint">
               The search box also matches the chapters read, the topics, and the
-              ISBN of the edition.
+              ISBN of the edition. Filters are saved in the page URL; shared
+              links include your search text.
             </p>
             <button
               class="btn btn-outline btn-sm"
@@ -197,7 +199,7 @@ const filters = [
                       )}
 
                       <div class="min-w-0 flex-1 basis-40">
-                        <p class="label flex flex-wrap items-center gap-x-2 gap-y-1 text-ink-muted">
+                        <p class="flex flex-wrap items-center gap-x-2 gap-y-1 text-sm leading-6 text-ink-muted">
                           <span>{count(entry.sessionCount, "session")}</span>
                           <span aria-hidden="true">·</span>
                           <time datetime={entry.dateTime}>
@@ -268,7 +270,7 @@ const filters = [
 
                     {entry.posters.length > 0 && (
                       <div class="lg:pt-1">
-                        <p class="label label-sm text-ink-muted">
+                        <p class="text-sm leading-6 text-ink-muted">
                           {count(entry.posters.length, "flyer")}
                         </p>
                         <div class="mt-3">

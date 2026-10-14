@@ -294,6 +294,7 @@
    */
   --text-display-sm: clamp(1.625rem, 1.28rem + 1.7vw, 2.25rem);
   --text-display-md: clamp(2.125rem, 1.4rem + 3.2vw, 3.5rem);
+  --text-display-compact: clamp(1.75rem, 1.3rem + 2vw, 2.75rem);
   --text-display-lg: clamp(2.5rem, 1.35rem + 5vw, 4.5rem);
   --text-display-xl: clamp(2.875rem, 1.1rem + 7.7vw, 6.5rem);
 
@@ -557,9 +558,9 @@
     background: rgb(255 255 255 / 10%);
   }
 
-  /* Compact size, for the utility strip above the header. */
+  /* Compact type and padding, without sacrificing the touch target. */
   .btn-sm {
-    min-height: 2.125rem;
+    min-height: 2.75rem;
     border-radius: 0.375rem;
     padding: 0.3125rem 0.8125rem;
     font-size: 0.8125rem;
@@ -1078,7 +1079,7 @@
   .session-chip {
     display: inline-flex;
     max-width: 100%;
-    min-height: 2.25rem;
+    min-height: 2.75rem;
     flex-wrap: wrap;
     align-items: center;
     gap: 0.5rem;

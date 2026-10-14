@@ -30,6 +30,7 @@ interface Props {
   /** AKSC's own flyers for the entry, shown in an aside beside its details. */
   posters?: readonly EntryPoster[];
   sourceUrl?: string;
+  archiveNotice?: string;
 }
 
 const {
@@ -44,6 +45,7 @@ const {
   heroImage,
   posters = [],
   sourceUrl,
+  archiveNotice,
 } = Astro.props;
 
 const { path, label } = editorialSections[section];
@@ -63,6 +65,9 @@ const hasPosters = posters.length > 0;
 const hasMultiplePosters = posters.length > 1;
 
 const topicLabel = await loadTermLabels("topics");
+const compactTitle = title.length > 100;
+const openingDetail = compactTitle ? details[0] : undefined;
+const remainingDetails = openingDetail ? details.slice(1) : details;
 ---
 
 <article>
@@ -91,7 +96,25 @@ const topicLabel = await loadTermLabels("topics");
           lede={summary}
           backHref={`${path}/`}
           backLabel={label}
+          compactTitle={compactTitle}
         >
+          {
+            openingDetail && (
+              <p
+                slot="before-title"
+                class="mt-4 text-sm leading-6 text-ink-muted"
+              >
+                {openingDetail.term}:{" "}
+                {openingDetail.href ? (
+                  <a class="link-underline" href={openingDetail.href}>
+                    {openingDetail.description}
+                  </a>
+                ) : (
+                  openingDetail.description
+                )}
+              </p>
+            )
+          }
           {
             badge && (
               <p class="mt-5">
@@ -134,12 +157,12 @@ const topicLabel = await loadTermLabels("topics");
         class:list={["min-w-0", hasPosters && "lg:col-start-1 lg:row-start-2"]}
       >
         {
-          details.length > 0 && (
+          remainingDetails.length > 0 && (
             <dl class="mt-10 max-w-3xl border-t border-ambedkar-950 sm:grid sm:grid-cols-2 sm:gap-x-10">
-              {details.map((detail) => (
+              {remainingDetails.map((detail) => (
                 <div class="border-b border-rule py-4">
                   <dt class="label text-ambedkar-700">{detail.term}</dt>
-                  <dd class="mt-1.5 leading-7 text-ambedkar-900/80">
+                  <dd class="mt-1.5 leading-7 wrap-anywhere text-ambedkar-900/80">
                     {detail.href ? (
                       <a
                         class="link-underline font-medium text-ambedkar-800"
@@ -187,6 +210,17 @@ const topicLabel = await loadTermLabels("topics");
           )
         }
 
+        {
+          archiveNotice && (
+            <aside
+              class="mt-10 max-w-3xl border-l-2 border-accent-600 bg-paper p-5"
+              aria-label="Archive context"
+            >
+              <p class="label text-ambedkar-700">Conference archive</p>
+              <p class="mt-3 leading-7 text-ink-muted">{archiveNotice}</p>
+            </aside>
+          )
+        }
         <slot name="before-body" />
 
         <div class="mt-12">
@@ -223,7 +257,9 @@ const topicLabel = await loadTermLabels("topics");
               <h2 class="eyebrow">Topics</h2>
               <ul class="mt-4 flex flex-wrap gap-2">
                 {topics.map((topic) => (
-                  <li class="tag px-3 py-1.5 text-sm">{topicLabel(topic)}</li>
+                  <li class="tag max-w-full px-3 py-1.5 text-sm wrap-anywhere">
+                    {topicLabel(topic)}
+                  </li>
                 ))}
               </ul>
             </section>

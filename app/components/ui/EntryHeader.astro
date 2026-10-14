@@ -9,12 +9,21 @@ interface Props {
   lede?: string;
   /** A short line of counts or dates, printed under the lede. */
   meta?: string;
+  compactTitle?: boolean;
   backHref: string;
   backLabel: string;
   class?: string;
 }
 
-const { eyebrow, title, lede, meta, backHref, backLabel } = Astro.props;
+const {
+  eyebrow,
+  title,
+  lede,
+  meta,
+  compactTitle = false,
+  backHref,
+  backLabel,
+} = Astro.props;
 ---
 
 <!--
@@ -45,8 +54,14 @@ const { eyebrow, title, lede, meta, backHref, backLabel } = Astro.props;
   <div class="rule-draw mt-8" aria-hidden="true"></div>
 
   <p class="eyebrow mt-7">{eyebrow}</p>
+  <slot name="before-title" />
   <h1
-    class="mt-4 max-w-3xl font-display text-display-md leading-[1.02] font-bold tracking-display text-balance text-ambedkar-950"
+    class:list={[
+      "mt-4 max-w-3xl font-display font-bold tracking-display text-balance text-ambedkar-950",
+      compactTitle
+        ? "text-display-compact leading-[1.14]"
+        : "text-display-md leading-[1.02]",
+    ]}
   >
     {title}
   </h1>

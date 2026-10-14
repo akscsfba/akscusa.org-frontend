@@ -2,6 +2,7 @@
 import marchOnWashington from "~/assets/shared/leaders/march-on-washington-crowd-public-domain.jpg";
 import Container from "~/components/ui/Container.astro";
 import PageMasthead from "~/components/ui/PageMasthead.astro";
+import { helplineNavigation } from "~/config/navigation";
 
 interface Category {
   label: string;
@@ -41,14 +42,21 @@ const {
 
   <Container class="pt-10 pb-20 sm:pt-12 sm:pb-28">
     <p
-      class="max-w-3xl rounded-l-md rounded-r-2xl border border-l-4 border-rule border-l-alert-600 bg-white px-5 py-4 text-sm leading-6 text-ambedkar-900/75 shadow-card"
+      class="max-w-3xl rounded-md border border-l-4 border-rule border-l-alert-600 bg-white px-5 py-4 text-sm leading-6 text-ambedkar-900/75"
     >
       {contentNote}
     </p>
 
+    <div class="mt-6 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
+      <a class="btn btn-primary" href={shareUrl}>Share your testimony</a>
+      <a class="btn btn-outline" href={`${helplineNavigation.href}/`}>
+        Get confidential support
+      </a>
+    </div>
+
     <details
       data-topic-menu
-      class="group sticky top-22 z-30 mt-8 rounded-2xl border border-rule bg-white p-5 shadow-card lg:hidden"
+      class="group sticky top-22 z-30 mt-8 rounded-lg border border-rule bg-white p-5 lg:hidden"
     >
       <summary
         class="flex cursor-pointer items-center justify-between gap-3 font-semibold text-ambedkar-950"
@@ -83,7 +91,7 @@ const {
     <div class="mt-10 lg:grid lg:grid-cols-[16rem_minmax(0,1fr)] lg:gap-14">
       <aside class="sticky top-24 hidden self-start lg:block">
         <nav
-          class="max-h-[calc(100vh-7rem)] overflow-y-auto rounded-2xl border border-rule bg-white p-5 shadow-card"
+          class="max-h-[calc(100vh-7rem)] overflow-y-auto rounded-lg border border-rule bg-white p-5"
           aria-label="Testimony topics"
         >
           <p class="eyebrow px-1">Browse by topic</p>
@@ -140,33 +148,9 @@ const {
 </section>
 
 <script>
-  const topicMenu =
-    document.querySelector<HTMLDetailsElement>("[data-topic-menu]");
+  import { mountTopicMenu } from "~/features/testimonies/topic-menu";
 
-  if (topicMenu) {
-    document.addEventListener("pointerdown", (event) => {
-      if (
-        topicMenu.open &&
-        event.target instanceof Node &&
-        !topicMenu.contains(event.target)
-      ) {
-        topicMenu.open = false;
-      }
-    });
-
-    document.addEventListener("keydown", (event) => {
-      if (event.key === "Escape" && topicMenu.open) {
-        topicMenu.open = false;
-        topicMenu.querySelector("summary")?.focus();
-      }
-    });
-
-    topicMenu.querySelectorAll("a").forEach((link) => {
-      link.addEventListener("click", () => {
-        topicMenu.open = false;
-      });
-    });
-  }
+  mountTopicMenu();
 </script>
 
 <style>
@@ -185,9 +169,13 @@ const {
     margin-top: 0;
   }
 
+  :global(.testimonies-content :is(h2, h3)) {
+    /* Without JS, leave room for a three-line topic summary at 200% text. */
+    scroll-margin-top: var(--testimony-scroll-offset, 14rem);
+  }
+
   :global(.testimonies-content h2) {
     margin-top: 4.5rem;
-    scroll-margin-top: 11rem;
     border-bottom: 1px solid
       color-mix(in srgb, var(--color-ambedkar-900) 14%, transparent);
     padding-bottom: 1rem;
@@ -202,7 +190,6 @@ const {
 
   :global(.testimonies-content h3) {
     margin-top: 3rem;
-    scroll-margin-top: 7rem;
     border-left: 0.1875rem solid var(--color-accent-600);
     padding-left: 1rem;
     font-family: var(--font-display);
@@ -241,7 +228,7 @@ const {
   }
 
   @media (min-width: 64rem) {
-    :global(.testimonies-content h2) {
+    :global(.testimonies-content :is(h2, h3)) {
       scroll-margin-top: 7rem;
     }
   }
