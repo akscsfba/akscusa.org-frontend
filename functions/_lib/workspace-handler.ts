@@ -131,6 +131,10 @@ export async function handleWorkspace(
   } catch (error) {
     if (error instanceof WorkspaceError)
       return json({ message: error.message }, error.status);
+    // Parser messages and stacks can include response bodies or credentials.
+    console.error("Unexpected CMS workspace failure", {
+      type: error instanceof Error ? error.name : "UnknownError",
+    });
     return json(
       {
         message:

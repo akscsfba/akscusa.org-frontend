@@ -14,7 +14,9 @@ export class GitHub {
   ): Promise<Response> {
     const response = await fetch(`https://api.github.com${path}`, {
       method,
-      redirect: "error",
+      // Workers rejects "error"; manual handling also prevents credentials
+      // from following an upstream redirect to another host.
+      redirect: "manual",
       headers: {
         Authorization: `Bearer ${this.token}`,
         Accept: accept,
@@ -24,6 +26,12 @@ export class GitHub {
       },
       ...(body === undefined ? {} : { body: JSON.stringify(body) }),
     });
+    if (response.status >= 300 && response.status < 400) {
+      throw new WorkspaceError(
+        502,
+        "GitHub redirected the workspace request. The redirect was not followed; try again later.",
+      );
+    }
     if (!response.ok) {
       const message =
         response.status === 401

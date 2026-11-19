@@ -307,6 +307,26 @@ describe("editorial workspace lifecycle", () => {
 });
 
 describe("workspace session and CMS boundary", () => {
+  it("rejects upstream redirects without forwarding credentials or redirecting the browser", async () => {
+    const upstream = vi.fn().mockResolvedValue(
+      new Response(null, {
+        status: 307,
+        headers: { Location: "https://unexpected.example/" },
+      }),
+    );
+    vi.stubGlobal("fetch", upstream);
+
+    const response = await call("resume");
+
+    expect(response.status).toBe(502);
+    expect(response.headers.get("Location")).toBeNull();
+    expect(await response.text()).toContain("redirect was not followed");
+    expect(upstream).toHaveBeenCalledExactlyOnceWith(
+      "https://api.github.com/user",
+      expect.objectContaining({ redirect: "manual" }),
+    );
+  });
+
   it("uses the existing OAuth secret and invalidates sessions when it rotates", async () => {
     const request = new Request("https://cms.example/workspace", {
       headers: { Cookie: cookie },
