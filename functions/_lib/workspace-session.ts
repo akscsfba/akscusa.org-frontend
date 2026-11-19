@@ -1,10 +1,11 @@
 import type { GitHubOAuthEnv } from "./github-oauth";
 
 export interface WorkspaceEnv extends GitHubOAuthEnv {
-  CMS_SESSION_KEY?: string;
   CMS_WORKSPACES_ENABLED?: string;
   ASSETS: { fetch: typeof fetch };
 }
+
+type SessionEnv = Pick<WorkspaceEnv, "GITHUB_CLIENT_SECRET">;
 
 export class WorkspaceError extends Error {
   constructor(
@@ -23,19 +24,29 @@ export const privateHeaders = {
 
 const cookieName = "__Host-cms-workspace";
 
-async function key(env: Pick<WorkspaceEnv, "CMS_SESSION_KEY">) {
-  if (!env.CMS_SESSION_KEY?.match(/^[a-f0-9]{64}$/i)) {
-    throw new WorkspaceError(
-      503,
-      "Workspace session encryption is not configured.",
-    );
+async function key(env: SessionEnv) {
+  if (!env.GITHUB_CLIENT_SECRET) {
+    throw new WorkspaceError(503, "GitHub OAuth is not configured.");
   }
-  return crypto.subtle.importKey(
+  const encoder = new TextEncoder();
+  const material = await crypto.subtle.importKey(
     "raw",
-    Uint8Array.from(env.CMS_SESSION_KEY.match(/../g)!, (byte) =>
-      parseInt(byte, 16),
-    ),
-    "AES-GCM",
+    encoder.encode(env.GITHUB_CLIENT_SECRET),
+    "HKDF",
+    false,
+    ["deriveKey"],
+  );
+  // Domain separation reuses the provisioned OAuth secret without using it
+  // directly as an encryption key or requiring another deployment secret.
+  return crypto.subtle.deriveKey(
+    {
+      name: "HKDF",
+      hash: "SHA-256",
+      salt: encoder.encode("akscusa.org/cms"),
+      info: encoder.encode("workspace-session-v1"),
+    },
+    material,
+    { name: "AES-GCM", length: 256 },
     false,
     ["encrypt", "decrypt"],
   );
@@ -57,7 +68,7 @@ function decode(text: string): Uint8Array<ArrayBuffer> {
 
 export async function seal(
   payload: Record<string, unknown>,
-  env: Pick<WorkspaceEnv, "CMS_SESSION_KEY">,
+  env: SessionEnv,
 ): Promise<string> {
   const iv = crypto.getRandomValues(new Uint8Array(12));
   const data = new TextEncoder().encode(
@@ -85,7 +96,7 @@ export function cookieValue(
 
 export async function unseal(
   value: string,
-  env: Pick<WorkspaceEnv, "CMS_SESSION_KEY">,
+  env: SessionEnv,
 ): Promise<Record<string, unknown>> {
   const encryptionKey = await key(env);
   const [iv, encrypted] = value.split(".");
@@ -107,7 +118,7 @@ export async function unseal(
 
 export async function sessionCookie(
   token: string,
-  env: Pick<WorkspaceEnv, "CMS_SESSION_KEY">,
+  env: SessionEnv,
 ): Promise<string> {
   return `${cookieName}=${await seal({ kind: "session", token }, env)}; HttpOnly; Secure; SameSite=Strict; Path=/; Max-Age=28800`;
 }
@@ -126,7 +137,8 @@ export async function sessionToken(
     if (payload.kind !== "session" || typeof payload.token !== "string")
       throw new Error();
     return payload.token;
-  } catch {
+  } catch (error) {
+    if (error instanceof WorkspaceError) throw error;
     throw new WorkspaceError(
       401,
       "Your workspace session expired. Sign in again; saved work is safe.",

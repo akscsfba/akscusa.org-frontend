@@ -1,9 +1,8 @@
 name: Validate
 
 # Cloudflare Pages' Git integration builds and deploys previews itself, so this
-# workflow only validates. Draft pull requests are skipped: the CMS opens one
-# for every entry it saves, and those run here once the entry is moved out of
-# Draft and the pull request is marked ready for review.
+# workflow only validates. CMS saves stay on a workspace branch until the editor
+# submits one review PR for the batch. Manually drafted PRs run once marked ready.
 on:
   push:
     branches: [main]

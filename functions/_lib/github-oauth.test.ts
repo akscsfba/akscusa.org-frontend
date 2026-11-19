@@ -57,6 +57,20 @@ afterEach(() => {
 });
 
 describe("handleGitHubAuth", () => {
+  it("starts workspace sign-in with only the existing OAuth credentials", () => {
+    const response = handleGitHubAuth(
+      new Request(
+        "https://akscusa.org/auth?provider=github&site_id=akscusa.org&workspace=1",
+      ),
+      { ...env, CMS_WORKSPACES_ENABLED: "true" },
+    );
+
+    expect(response.status).toBe(302);
+    expect(response.headers.get("Set-Cookie")).toMatch(
+      /^github-oauth-state=[0-9a-f]{32}\.workspace;/,
+    );
+  });
+
   it("redirects an allowed CMS to GitHub with a CSRF cookie", () => {
     const response = handleGitHubAuth(
       new Request(

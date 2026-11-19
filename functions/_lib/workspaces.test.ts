@@ -16,7 +16,6 @@ const editorId = "e".repeat(32);
 const env: WorkspaceEnv = {
   ALLOWED_DOMAINS: "cms.example",
   CMS_WORKSPACES_ENABLED: "true",
-  CMS_SESSION_KEY: "ab".repeat(32),
   GITHUB_CLIENT_ID: "client",
   GITHUB_CLIENT_SECRET: "secret",
   ASSETS: { fetch: async () => Response.json({ repo }) },
@@ -308,6 +307,24 @@ describe("editorial workspace lifecycle", () => {
 });
 
 describe("workspace session and CMS boundary", () => {
+  it("uses the existing OAuth secret and invalidates sessions when it rotates", async () => {
+    const request = new Request("https://cms.example/workspace", {
+      headers: { Cookie: cookie },
+    });
+    await expect(sessionToken(request, env)).resolves.toBe(
+      "private-github-token",
+    );
+    await expect(
+      sessionToken(request, {
+        ...env,
+        GITHUB_CLIENT_SECRET: "rotated-client-secret",
+      }),
+    ).rejects.toMatchObject({ status: 401 });
+    await expect(
+      sessionToken(request, { ...env, GITHUB_CLIENT_SECRET: undefined }),
+    ).rejects.toMatchObject({ status: 503 });
+  });
+
   it("expires sessions and leaves disabled or unconfigured builds disconnected", async () => {
     vi.useFakeTimers();
     vi.setSystemTime(Date.now() + 9 * 60 * 60 * 1000);

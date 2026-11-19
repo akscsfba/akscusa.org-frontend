@@ -21,7 +21,7 @@ export async function handleWorkspace(
     if (env.CMS_WORKSPACES_ENABLED !== "true")
       throw new WorkspaceError(
         503,
-        "Batch publishing is not enabled. A maintainer must complete the legacy PR migration and workspace setup first.",
+        "Remote CMS editing is paused by the site configuration.",
       );
     const path = new URL(request.url).pathname;
     if (path === "/workspace/logout" && request.method === "POST") {

@@ -571,6 +571,9 @@ storage. Only authentication and workspace GitHub operations run server-side.
 **Sign in with GitHub** uses the existing `/auth` and `/callback` Pages Functions.
 An encrypted, HttpOnly, Secure, same-site cookie holds the GitHub credential for
 eight hours. It is never passed to the CMS, JavaScript storage, or a URL.
+HKDF derives a purpose-specific encryption key from the existing server-side
+`GITHUB_CLIENT_SECRET`; no additional session secret is required. Rotating the
+OAuth secret signs everyone out without changing their saved work.
 The CMS uses its supported OAuth handshake and custom API roots with an inert
 session token; the gateway verifies the actual GitHub identity and repository
 write access. Personal-token login is not supported by the remote gateway.
@@ -596,28 +599,20 @@ launcher path described below; it does not use a remote workspace.
 5. Add `GITHUB_CLIENT_ID` with the app's Client ID and `GITHUB_CLIENT_SECRET`
    with its client secret. Select **Secret / Encrypt** for **both** values,
    then save. If the client ID was previously saved as plaintext, replace that
-   binding with a secret of the same name. Also add a **secret**
-   `CMS_SESSION_KEY`: generate 32 random bytes encoded as 64 hexadecimal
-   characters, for example with `openssl rand -hex 32`. Never commit its value.
-   Rotating it signs everyone out but does not remove any saved work.
+   binding with a secret of the same name.
 6. Keep the Pages build command
    `CMS_REPO=akscsfba/akscusa.org-frontend npm run build` and output directory
    `dist`. No `CMS_AUTH_BASE_URL` setting is needed: `backend.base_url` already
    points to `https://akscusa.org`.
-7. Complete the **batch cutover checklist** below before changing
-   `CMS_WORKSPACES_ENABLED` from `"false"` to `"true"` in `wrangler.jsonc`.
-   That file owns plaintext runtime variables; a dashboard-only override is
-   not the deployment's source of truth. Deploy the reviewed configuration
-   change only when ready.
-8. Merge these changes into `main` of the repository connected to Pages and
+7. Merge these changes into `main` of the repository connected to Pages and
    let the production deployment finish. If the code was deployed before the
    secrets were saved, create a new deployment afterward so it receives them.
-9. Open `https://akscusa.org/admin/` and select **Sign in with GitHub**.
+8. Open `https://akscusa.org/admin/` and select **Sign in with GitHub**.
    Allow the popup and approve the OAuth app. Each editor needs write access
    to `akscsfba/akscusa.org-frontend`; an organization owner may also need to
    approve the OAuth app if the organization restricts third-party access.
 
-All three credentials use Pages secrets because `wrangler.jsonc` is the source of truth
+Both credentials use Pages secrets because `wrangler.jsonc` is the source of truth
 for plaintext runtime variables. A plaintext client ID entered only in the
 dashboard is not sufficient for this deployment. Do not add OAuth credentials
 to `wrangler.jsonc`, CMS configuration, or client-side code.
@@ -695,31 +690,24 @@ clear `draft: true`; it remains hidden in production-style previews and builds.
 Clear that content flag when an entry should appear. Media remains public once
 deployed; draft is not a confidentiality control.
 
-### Batch cutover checklist (required, manual)
+### Legacy entry migration
 
-Workspaces ship **disabled**. Do not enable them while legacy editor tabs,
-`cms/<collection>/<slug>` branches, or entry PRs remain:
+The legacy `cms/<collection>/<slug>` branches have been retired. Unpublished
+entries and their media were combined into the owning editor's
+`content/<id>/batch-0` branch without changing or publishing their contents.
+The original branch heads remain recoverable through `cms-cutover/` Git tags.
+Signing in after deployment resumes that batch; submitting it creates one PR.
 
-- Freeze legacy editing and ask every editor to close old tabs.
-- If Sveltia retained a legacy token sign-in, sign out inside the vendor editor
-  and choose **Sign in with GitHub** again. Do not copy tokens or manipulate
-  the vendor's private storage; the gateway does not accept legacy tokens.
-- Inventory all `cms/` branches and open entry PRs, including orphan branches
-  from failed saves. Complete those PRs normally, or explicitly copy/cherry-pick
-  their entry and media changes into a reviewed migration PR.
-- Verify every preserved change is on main or deliberately retained in a
-  maintainer-owned recovery branch before closing/deleting legacy work.
-  Remove legacy `cms/` refs only after this verification. The runtime guard
-  blocks even orphan `cms/` branches; it never merges, closes, or deletes them.
-- Configure session encryption, OAuth, repository permissions and main rules.
-  Enable the runtime flag in a reviewed deployment. All editors then reload
-  `/admin/`; old direct-GitHub sessions cannot be retroactively revoked by this
-  code, so retain main branch protection and revoke old grants if appropriate.
-- Exercise a disposable batch against a test repository before production.
-  Local automated tests use the actual pinned CMS bundle and real auth,
-  workspace, gateway and encrypted-cookie handlers, mocking upstream GitHub
-  and OAuth infrastructure only. They do not prove a live OAuth app or
-  Cloudflare deployment is configured.
+Workspaces are enabled in `wrangler.jsonc` and use the existing OAuth setup.
+`CMS_WORKSPACES_ENABLED` can be set to `"false"` to pause remote editing; it is
+not a setup step. No additional Cloudflare secret is needed.
+
+Close old editor tabs and reload `/admin/` after deployment. If Sveltia retained
+a legacy token sign-in, sign out inside the editor and choose **Sign in with
+GitHub** again. Do not copy tokens or manipulate vendor storage. If an old tab
+recreates a `cms/` branch, the gateway preserves it and blocks batch editing
+until its new work has been recovered. Keep main branch protection: old GitHub
+grants cannot be retroactively revoked by this code.
 
 ### Backend repository
 
@@ -754,7 +742,7 @@ the nonfatal `AbortError: Transition was skipped` during editor restart; the
 vendor is not patched or forked to suppress it.
 
 For an authenticated deployment trial, use a separate test repository and
-canonical test host with its own OAuth app, allowed domain, session secret, and
+canonical test host with its own OAuth app, allowed domain, and
 build `CMS_REPO`. Do not point local testing at the production repository.
 
 ### Editing a local checkout

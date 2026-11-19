@@ -8,7 +8,6 @@ export interface GitHubOAuthEnv {
   GITHUB_CLIENT_ID?: string;
   GITHUB_CLIENT_SECRET?: string;
   ALLOWED_DOMAINS?: string;
-  CMS_SESSION_KEY?: string;
   CMS_WORKSPACES_ENABLED?: string;
 }
 
@@ -126,11 +125,8 @@ export function handleGitHubAuth(
   if (workspace) {
     try {
       guardOrigin(request, env);
-      if (
-        env.CMS_WORKSPACES_ENABLED !== "true" ||
-        !env.CMS_SESSION_KEY?.match(/^[a-f0-9]{64}$/i)
-      ) {
-        throw new WorkspaceError(503, "Workspace setup is incomplete.");
+      if (env.CMS_WORKSPACES_ENABLED !== "true") {
+        throw new WorkspaceError(503, "Workspace publishing is paused.");
       }
     } catch {
       return errorResponse(

@@ -44,7 +44,6 @@ export async function installWorkspaceGateway(
   const env: WorkspaceEnv = {
     ALLOWED_DOMAINS: "cms.example",
     CMS_WORKSPACES_ENABLED: "true",
-    CMS_SESSION_KEY: "ab".repeat(32),
     GITHUB_CLIENT_ID: "test-client",
     GITHUB_CLIENT_SECRET: "test-secret",
     // Equivalent to a test deployment built with CMS_REPO=example/editorial.
