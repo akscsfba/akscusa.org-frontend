@@ -3,7 +3,8 @@ title: 'Where Do We Go from Here: Chaos or Community?'
 subtitle: ''
 cover: /media/books/where-do-we-go-from-here-chaos-or-community/pasted-image-1794684445177.png
 coverSource: null
-authors: []
+authors:
+  - dr-martin-luther-king-jr
 isbn: 978-0807000670
 publisher: ''
 publishedYear: null
