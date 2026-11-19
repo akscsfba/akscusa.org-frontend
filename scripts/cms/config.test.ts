@@ -45,15 +45,14 @@ describe("Sveltia CMS configuration", () => {
   // as soon as someone signs in. Deployments name their repository via CMS_REPO.
   it("never commits a real backend repository", () => {
     expect(config.backend.name).toBe("github");
-    expect(config.backend.branch).toBe("main");
+    expect(config.backend.branch).toBe("workspace-required");
     expect(config.backend.repo).toBe(CMS_REPO_PLACEHOLDER);
     expect(config.backend.base_url).toBe("https://akscusa.org");
   });
 
-  // Standalone media saves do not use the entry workflow and also require
-  // production branch protection.
-  it("routes entry saves through a pull request", () => {
-    expect(config.publish_mode).toBe("editorial_workflow");
+  it("uses simple commits behind the fail-closed workspace gateway", () => {
+    expect(config.publish_mode).toBe("simple");
+    expect(configSource).toContain("workspace/uninitialized/api/v3");
   });
 
   // Sveltia rejects a configuration without a media folder unless a cloud media
@@ -94,7 +93,7 @@ describe("Sveltia CMS configuration", () => {
 
   it("pins the browser bundle and never commits a media library secret", () => {
     const adminHtml = readFileSync(
-      new URL("../../cms/public/admin/index.html", import.meta.url),
+      new URL("../../app/features/cms-workspace/editor.ts", import.meta.url),
       "utf8",
     );
 

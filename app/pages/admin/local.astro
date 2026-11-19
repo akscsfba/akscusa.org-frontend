@@ -1,0 +1,43 @@
+---
+
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="connect-src 'self' blob: data:; form-action 'none'; base-uri 'self'"
+    />
+    <link href="/admin/config.yml" type="text/yaml" rel="cms-config-url" />
+    <title>Local checkout editor · AKSC USA</title>
+  </head>
+  <body>
+    <p id="startup" role="status">
+      Starting local-only editing. Choose “Work with Local Repository”, then
+      select your checkout root. No GitHub writes or batch submission are
+      available here.
+    </p>
+    <div id="nc-root" hidden></div>
+    <script>
+      import { startLocalEditor } from "~/features/cms-workspace/local";
+      startLocalEditor();
+    </script>
+  </body>
+</html>
+
+<style>
+  :global(html),
+  :global(body) {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+  }
+  #nc-root {
+    position: fixed;
+    inset: 0;
+  }
+</style>
