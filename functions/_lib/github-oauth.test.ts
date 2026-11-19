@@ -45,7 +45,11 @@ function executePopup(html: string) {
   );
   postMessage.mockClear();
 
-  return { postMessage, receive };
+  return {
+    postMessage,
+    receive: (message: Message) =>
+      receive({ ...message, source: window.opener } as Message),
+  };
 }
 
 afterEach(() => {

@@ -562,13 +562,20 @@ go to the ignored `test-results/` directory.
 
 ## Sveltia CMS
 
-Served at `/admin/` from `cms/public/admin/`. Collections cover the records in
-`cms/content/`, each validated against a schema in `app/schemas/`.
+The static `/admin/` launcher opens the pinned Sveltia editor in `/admin/editor/`.
+Collections and their configuration remain in `cms/`; records are validated by
+`app/schemas/`. This is workflow orchestration, not a new editorial collection:
+public pages and the launcher remain statically rendered, with no D1 editorial
+storage. Only authentication and workspace GitHub operations run server-side.
 
-The GitHub backend supports token sign-in immediately. **Sign in with GitHub**
-uses the `/auth` and `/callback` Cloudflare Pages Functions in `functions/`; no
-separate Worker project is required. The site stays statically rendered; only
-OAuth runs server-side to keep the client secret out of the browser.
+**Sign in with GitHub** uses the existing `/auth` and `/callback` Pages Functions.
+An encrypted, HttpOnly, Secure, same-site cookie holds the GitHub credential for
+eight hours. It is never passed to the CMS, JavaScript storage, or a URL.
+The CMS uses its supported OAuth handshake and custom API roots with an inert
+session token; the gateway verifies the actual GitHub identity and repository
+write access. Personal-token login is not supported by the remote gateway.
+Local filesystem editing remains available through the separate loopback-only
+launcher path described below; it does not use a remote workspace.
 
 ### GitHub sign-in setup on Pages
 
@@ -589,20 +596,28 @@ OAuth runs server-side to keep the client secret out of the browser.
 5. Add `GITHUB_CLIENT_ID` with the app's Client ID and `GITHUB_CLIENT_SECRET`
    with its client secret. Select **Secret / Encrypt** for **both** values,
    then save. If the client ID was previously saved as plaintext, replace that
-   binding with a secret of the same name.
+   binding with a secret of the same name. Also add a **secret**
+   `CMS_SESSION_KEY`: generate 32 random bytes encoded as 64 hexadecimal
+   characters, for example with `openssl rand -hex 32`. Never commit its value.
+   Rotating it signs everyone out but does not remove any saved work.
 6. Keep the Pages build command
    `CMS_REPO=akscsfba/akscusa.org-frontend npm run build` and output directory
    `dist`. No `CMS_AUTH_BASE_URL` setting is needed: `backend.base_url` already
    points to `https://akscusa.org`.
-7. Merge these changes into `main` of the repository connected to Pages and
+7. Complete the **batch cutover checklist** below before changing
+   `CMS_WORKSPACES_ENABLED` from `"false"` to `"true"` in `wrangler.jsonc`.
+   That file owns plaintext runtime variables; a dashboard-only override is
+   not the deployment's source of truth. Deploy the reviewed configuration
+   change only when ready.
+8. Merge these changes into `main` of the repository connected to Pages and
    let the production deployment finish. If the code was deployed before the
    secrets were saved, create a new deployment afterward so it receives them.
-8. Open `https://akscusa.org/admin/` and select **Sign in with GitHub**.
+9. Open `https://akscusa.org/admin/` and select **Sign in with GitHub**.
    Allow the popup and approve the OAuth app. Each editor needs write access
    to `akscsfba/akscusa.org-frontend`; an organization owner may also need to
    approve the OAuth app if the organization restricts third-party access.
 
-Both values use Pages secrets because `wrangler.jsonc` is the source of truth
+All three credentials use Pages secrets because `wrangler.jsonc` is the source of truth
 for plaintext runtime variables. A plaintext client ID entered only in the
 dashboard is not sufficient for this deployment. Do not add OAuth credentials
 to `wrangler.jsonc`, CMS configuration, or client-side code.
@@ -610,8 +625,11 @@ to `wrangler.jsonc`, CMS configuration, or client-side code.
 `ALLOWED_DOMAINS=akscusa.org` is committed in `wrangler.jsonc`; the function
 validates the initiating site and popup message origin before releasing a token.
 Use the canonical domain for OAuth, not a Pages preview URL or local dev server.
-`_routes.json` limits function invocations to the two OAuth endpoints so static
-page requests retain Pages' static-serving behavior.
+`_routes.json` limits function invocations to `/auth`, `/callback`, `/workspace`,
+and `/workspace/*`; other pages retain static-serving behavior. The gateway
+reads the repository from the build-generated `/admin/workspace.json` through
+the Pages `ASSETS` binding, not from caller input. `CMS_REPO` remains a build
+setting, and an unset placeholder refuses workspace operations.
 
 If sign-in still opens `api.netlify.com`, the browser is loading the old CMS
 configuration: confirm the latest code is deployed and hard-refresh `/admin/`.
@@ -621,53 +639,87 @@ OAuth app's callback URL does not match `https://akscusa.org/callback`.
 
 ### Review workflow
 
-`publish_mode: editorial_workflow` stages entry edits for review. Saving an entry
-creates branch `cms/<collection>/<slug>` and opens a **draft** pull request,
-titled from `backend.commit_messages`. One entry means one pull request, however
-many times it is saved. Draft requests do not run CI; validation starts when the
-entry moves to In Review. Entries carry a label per stage:
+1. Sign in at `/admin/`. One active branch is created or resumed for your stable
+   GitHub user ID, across reloads and devices: `content/<id>/batch-<generation>`.
+   Generation zero is the first batch; later generations use the last merged
+   batch PR number. GitHub's atomic branch creation resolves duplicate requests.
+2. Select **Open editor**, then **Sign in with GitHub** inside Sveltia. This
+   second, supported handshake uses your existing session; it does not request
+   another GitHub grant. Sveltia has no public login-injection API in 0.201.1.
+3. Use the existing collection forms. In simple mode, the vendor's **Save**
+   action means **save to your workspace branch**, not publish to the live site.
+   Save an author, then select that author when adding a book, then select that
+   book in a reading. Saved relations, taxonomy, uploads, and deletions all use
+   the same branch immediately. There are no per-entry PRs.
+4. Finish saving, then **Submit for review** in the launcher. Every saved change
+   is included; unsaved form edits are not. Main is merged into the workspace
+   without force-updating it. Conflicts stop submission with an explicit error:
+   resolve them on GitHub (or locally) without resetting the branch, then refresh.
+   A workspace with no file differences cannot be submitted.
+5. Submission opens **one normal, non-draft PR** to main; duplicate submission
+   returns the same open PR. Further saves update it. CI runs on the normal PR,
+   and Cloudflare's configured Git integration supplies previews. Preview URLs
+   are available on the GitHub PR; do not rely on vendor-generated repository
+   links, which treat the custom gateway host as a GitHub Enterprise host.
+6. Review and merge on GitHub under existing production protections. Refresh
+   workspace status after merging, close old editor tabs, and open the next
+   batch from fresh main. Old branches are not reset, reused, or automatically
+   deleted. Ordinary saves use GitHub's expected-head comparison; stale tabs
+   and requests cannot overwrite newer saves or write to a retired batch.
+   Each editor also holds a private, path-scoped snapshot cookie: the pinned
+   CMS refetches the head before saving, so a GitHub expected-head check alone
+   would not detect a stale form. Another tab's save or a main sync invalidates
+   that snapshot. Copy any unsaved text, choose **Reload editor**, and reapply
+   it to the latest data. Reloading or switching batches asks before closing
+   an open editor; successful saves advance only that editor's snapshot.
 
-| Stage     | Label                         |
-| --------- | ----------------------------- |
-| Draft     | `sveltia-cms/draft`           |
-| In Review | `sveltia-cms/pending_review`  |
-| Ready     | `sveltia-cms/pending_publish` |
+A PR **closed without merging** is not a completed batch. Its branch and work
+are preserved; use **View pull request**, explicitly reopen it on GitHub, and
+refresh. Missing unmerged branches, multiple active batches, or commits arriving
+after a merge block automatic rollover. A maintainer must recover/reconcile
+that work first; never delete a branch just to clear the error. This release has
+no automatic discard or partial-batch migration tool.
 
-Publishing merges and deletes the branch; discarding closes it. Deleting a
-published entry also goes through a pull request. `squash_merges: true` collapses
-intermediate saves into one commit.
+Branch names are not permissions. Every gateway operation checks the signed-in
+GitHub identity and repository write access. Mutations allow only the current
+branch and editorial/media paths, with no fallback to main; raw YAML has inert
+`workspace-required`/uninitialized-gateway defaults. The gateway rejects
+cross-origin writes and returns authenticated data with `Cache-Control: no-store`.
+Keep production branch protection/rulesets requiring validation and appropriate
+reviews: users with repository access can still use Git outside this interface.
+OAuth requires repository Contents and Pull requests write access, not stage
+labels or an enrichment automation credential.
 
-Add `publish: false` to a collection to stop editors merging their own work.
-Configure branch protection or repository rulesets on the production branch to
-require the validation status and appropriate reviews. The CMS interface alone
-does not enforce Git permissions.
+The frontmatter **`draft`** flag is independent of the batch. Merging does not
+clear `draft: true`; it remains hidden in production-style previews and builds.
+Clear that content flag when an entry should appear. Media remains public once
+deployed; draft is not a confidentiality control.
 
-Standalone uploads and media-library deletion are not the same as saving an
-entry: they can use direct backend writes. Production branch rules must cover
-those operations too. Prefer entry-attached uploads for reviewed changes and
-make the approved media-maintenance workflow explicit to editors.
+### Batch cutover checklist (required, manual)
 
-The workflow's **Draft** stage and an entry's frontmatter **`draft`** flag are
-independent. Publishing a pull request does not clear `draft: true`; that entry
-remains absent from production-style builds, including their preview output.
-Clear the content flag when the entry should appear, then review its rendered
-preview before publishing.
+Workspaces ship **disabled**. Do not enable them while legacy editor tabs,
+`cms/<collection>/<slug>` branches, or entry PRs remain:
 
-**Token permissions.** Signing in with a token needs more than write access. A
-classic token with the `repo` scope covers everything; the sign-in dialog links
-to a pre-filled page for one. A fine-grained token needs, for this repository:
-
-| Permission    | Level          | Used for                     |
-| ------------- | -------------- | ---------------------------- |
-| Contents      | Read and write | Branches and commits         |
-| Pull requests | Read and write | Opening and merging requests |
-| Issues        | Read and write | Stage labels                 |
-| Metadata      | Read           | Required by GitHub           |
-
-Missing Pull requests permission fails with `Resource not accessible by personal
-access token` _after_ the branch and commits are created, leaving a `cms/`
-branch with no pull request. Fix the token and save again; delete the stray
-branch if a duplicate is opened.
+- Freeze legacy editing and ask every editor to close old tabs.
+- If Sveltia retained a legacy token sign-in, sign out inside the vendor editor
+  and choose **Sign in with GitHub** again. Do not copy tokens or manipulate
+  the vendor's private storage; the gateway does not accept legacy tokens.
+- Inventory all `cms/` branches and open entry PRs, including orphan branches
+  from failed saves. Complete those PRs normally, or explicitly copy/cherry-pick
+  their entry and media changes into a reviewed migration PR.
+- Verify every preserved change is on main or deliberately retained in a
+  maintainer-owned recovery branch before closing/deleting legacy work.
+  Remove legacy `cms/` refs only after this verification. The runtime guard
+  blocks even orphan `cms/` branches; it never merges, closes, or deletes them.
+- Configure session encryption, OAuth, repository permissions and main rules.
+  Enable the runtime flag in a reviewed deployment. All editors then reload
+  `/admin/`; old direct-GitHub sessions cannot be retroactively revoked by this
+  code, so retain main branch protection and revoke old grants if appropriate.
+- Exercise a disposable batch against a test repository before production.
+  Local automated tests use the actual pinned CMS bundle and real auth,
+  workspace, gateway and encrypted-cookie handlers, mocking upstream GitHub
+  and OAuth infrastructure only. They do not prove a live OAuth app or
+  Cloudflare deployment is configured.
 
 ### Backend repository
 
@@ -687,14 +739,47 @@ server, and is read from the shell and `.env`.
 
 - GitHub Actions validation: `gh variable set CMS_REPO --body <owner>/<repo>`.
 
-Locally, prefer **Work with Local Repository** on the sign-in screen: it writes
-to your working copy only and needs no repository setting, but requires a
-Chromium-based browser. To test GitHub token sign-in, point `CMS_REPO` at your
-fork:
+Remote workspaces are deliberately unavailable on local and preview origins.
+For local verification, run `npm run test -- functions/_lib scripts/cms` and,
+after building, `npm run test:browser -- workspace.spec.ts local-cms.spec.ts`.
+The full-path browser case uses the exact 0.201.1 bundle, native forms, actual
+OAuth state/session handlers, `handleWorkspace`, gateway authorization and
+path-scoped editor leases. Only upstream GitHub/OAuth is simulated; the adapter
+faithfully applies each real `Set-Cookie`, and the browser returns those cookies.
+Four author/book/reading/media saves advance Git heads and leases, related
+entries are selectable before merging, and repeated submission creates one PR.
+Separate launcher error/layout tests still mock workspace responses. No tests
+write to real GitHub. A pinned Chromium view-transition cancellation can emit
+the nonfatal `AbortError: Transition was skipped` during editor restart; the
+vendor is not patched or forked to suppress it.
 
-```sh
-cp .env.example .env
-```
+For an authenticated deployment trial, use a separate test repository and
+canonical test host with its own OAuth app, allowed domain, session secret, and
+build `CMS_REPO`. Do not point local testing at the production repository.
+
+### Editing a local checkout
+
+Run `npm run dev`, open `http://localhost:4321/admin/`, and choose **Edit local
+checkout**, then **Work with Local Repository**. Use a Chromium browser with
+File System Access support and select this repository's root folder. Saves
+change checkout files directly, including entry-owned media. Commit, review and
+publish them with your normal Git workflow; this mode does not create batches
+or PRs and needs no OAuth/Cloudflare secrets or workspace enablement.
+
+The separate `/admin/local/` bootstrap accepts only `localhost`, its subdomains,
+or `127.0.0.1`. It overrides the repository and every remote API/auth endpoint
+with inert local values even if `CMS_REPO` is configured, and limits network
+connections with a local-only CSP. It never calls the workspace gateway and
+refuses initialization on the production host. Sveltia 0.201.1 requires a Git
+backend and a nonempty `auth_methods` list even for its supported filesystem
+mode. Consequently its remaining **Sign in with GitHub** button deliberately
+opens a nonexistent local endpoint; choose **Work with Local Repository**,
+not that button. Personal-token sign-in is hidden.
+
+Browser coverage replaces only the OS directory picker with real browser OPFS
+filesystem handles and exercises native Sveltia serialization/writing. Firefox
+checks the isolated bootstrap but skips filesystem writing because it lacks
+the required File System Access picker.
 
 ### Entry-owned static media
 

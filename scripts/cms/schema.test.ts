@@ -33,7 +33,7 @@ describe("pinned Sveltia JSON schema", () => {
     );
     expect(
       readFileSync(
-        new URL("../../cms/public/admin/index.html", import.meta.url),
+        new URL("../../app/features/cms-workspace/editor.ts", import.meta.url),
         "utf8",
       ),
     ).toContain(

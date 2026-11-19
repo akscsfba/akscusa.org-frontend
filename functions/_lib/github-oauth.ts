@@ -1,7 +1,15 @@
+import {
+  guardOrigin,
+  sessionCookie,
+  WorkspaceError,
+} from "./workspace-session";
+
 export interface GitHubOAuthEnv {
   GITHUB_CLIENT_ID?: string;
   GITHUB_CLIENT_SECRET?: string;
   ALLOWED_DOMAINS?: string;
+  CMS_SESSION_KEY?: string;
+  CMS_WORKSPACES_ENABLED?: string;
 }
 
 const allowedScopes = new Set([
@@ -62,8 +70,8 @@ function oauthResponse(
           }
         };
 
-        window.addEventListener("message", ({ data, origin }) => {
-          if (data !== "authorizing:github" || !isAllowed(origin)) return;
+        window.addEventListener("message", ({ data, origin, source }) => {
+          if (source !== window.opener || data !== "authorizing:github" || !isAllowed(origin)) return;
           window.opener?.postMessage(
             ${message},
             origin,
@@ -106,6 +114,33 @@ export function handleGitHubAuth(
   env: GitHubOAuthEnv,
 ): Response {
   const url = new URL(request.url);
+  const workspace = url.searchParams.get("workspace") === "1";
+  if (!workspace && env.CMS_WORKSPACES_ENABLED === "true") {
+    return errorResponse(
+      request,
+      env,
+      "Sign in from the /admin/ workspace launcher.",
+      "UNSUPPORTED_BACKEND",
+    );
+  }
+  if (workspace) {
+    try {
+      guardOrigin(request, env);
+      if (
+        env.CMS_WORKSPACES_ENABLED !== "true" ||
+        !env.CMS_SESSION_KEY?.match(/^[a-f0-9]{64}$/i)
+      ) {
+        throw new WorkspaceError(503, "Workspace setup is incomplete.");
+      }
+    } catch {
+      return errorResponse(
+        request,
+        env,
+        "Workspace sign-in is unavailable on this host or has not been configured.",
+        "MISCONFIGURED_CLIENT",
+      );
+    }
+  }
 
   if (url.searchParams.get("provider") !== "github") {
     return errorResponse(
@@ -154,7 +189,7 @@ export function handleGitHubAuth(
       Location: authorizationUrl.toString(),
       "Referrer-Policy": "no-referrer",
       "Set-Cookie":
-        `github-oauth-state=${state}; HttpOnly; Max-Age=600; ` +
+        `github-oauth-state=${state}${workspace ? ".workspace" : ""}; HttpOnly; Max-Age=600; ` +
         "Path=/; SameSite=Lax; Secure",
     },
   });
@@ -163,7 +198,18 @@ export function handleGitHubAuth(
 function stateCookie(request: Request): string | undefined {
   return request.headers
     .get("Cookie")
-    ?.match(/(?:^|;\s*)github-oauth-state=([0-9a-f]{32})(?:;|$)/)?.[1];
+    ?.match(
+      /(?:^|;\s*)github-oauth-state=([0-9a-f]{32})(?:\.workspace)?(?:;|$)/,
+    )?.[1];
+}
+
+export function workspaceAuthResponse(
+  request: Request,
+  env: GitHubOAuthEnv,
+): Response {
+  // Sveltia's supported OAuth handshake receives an inert token. Its API root
+  // uses the HttpOnly session instead; no GitHub credential enters the CMS.
+  return oauthResponse(request, env, { token: "workspace-session" });
 }
 
 function isTokenResponse(
@@ -195,6 +241,20 @@ export async function handleGitHubCallback(
       env,
       "The authorization state did not match.",
       "CSRF_DETECTED",
+    );
+  }
+
+  const isWorkspace = Boolean(
+    request.headers
+      .get("Cookie")
+      ?.match(/(?:^|;\s*)github-oauth-state=[0-9a-f]{32}\.workspace(?:;|$)/),
+  );
+  if (env.CMS_WORKSPACES_ENABLED === "true" && !isWorkspace) {
+    return errorResponse(
+      request,
+      env,
+      "Sign in from the /admin/ workspace launcher.",
+      "UNSUPPORTED_BACKEND",
     );
   }
 
@@ -256,5 +316,22 @@ export async function handleGitHubCallback(
     );
   }
 
+  if (isWorkspace) {
+    try {
+      const response = workspaceAuthResponse(request, env);
+      response.headers.append(
+        "Set-Cookie",
+        await sessionCookie(payload.access_token, env),
+      );
+      return response;
+    } catch {
+      return errorResponse(
+        request,
+        env,
+        "Workspace session creation failed. Contact a maintainer.",
+        "MISCONFIGURED_CLIENT",
+      );
+    }
+  }
   return oauthResponse(request, env, { token: payload.access_token });
 }

@@ -4,9 +4,11 @@
   "compatibility_flags": ["global_fetch_strictly_public"],
   "name": "akscusa-org-frontend",
   "pages_build_output_dir": "./dist",
-  // Keep both GitHub OAuth credentials in Pages secrets, outside plaintext vars.
+  // Keep OAuth credentials and CMS_SESSION_KEY in Pages secrets, not plaintext vars.
   "vars": {
     "ALLOWED_DOMAINS": "akscusa.org",
+    // Enable only after the documented legacy branch/PR cutover.
+    "CMS_WORKSPACES_ENABLED": "false",
   },
   // Add the D1 binding after `wrangler d1 create akscusa-customer-orders`.
   // "d1_databases": [

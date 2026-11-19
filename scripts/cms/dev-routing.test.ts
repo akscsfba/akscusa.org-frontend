@@ -19,29 +19,15 @@ describe("CMS dev routing", () => {
     rmSync(escapeDir, { force: true, recursive: true });
   });
 
-  it("serves the admin directory from its index file", () => {
-    expect(resolveCmsDirectory("/admin/")).toEqual({
-      type: "rewrite",
-      url: "/admin/index.html",
-    });
-  });
-
-  it("redirects the admin path without a trailing slash", () => {
-    expect(resolveCmsDirectory("/admin")).toEqual({
-      type: "redirect",
-      location: "/admin/",
-    });
-  });
-
-  it("preserves the query string", () => {
-    expect(resolveCmsDirectory("/admin/?path=home")).toEqual({
-      type: "rewrite",
-      url: "/admin/index.html?path=home",
-    });
-    expect(resolveCmsDirectory("/admin?path=home")).toEqual({
-      type: "redirect",
-      location: "/admin/?path=home",
-    });
+  it("leaves the compiled Astro workspace routes untouched", () => {
+    for (const path of [
+      "/admin/",
+      "/admin",
+      "/admin/?path=home",
+      "/admin?path=home",
+    ]) {
+      expect(resolveCmsDirectory(path)).toBeUndefined();
+    }
   });
 
   it("leaves Astro routes and unknown paths untouched", () => {

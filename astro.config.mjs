@@ -76,6 +76,10 @@ function cmsBackendRepo() {
     name: "cms-backend-repo",
     hooks: {
       "astro:build:done": async ({ dir, logger }) => {
+        await writeFile(
+          new URL("./admin/workspace.json", dir),
+          JSON.stringify({ repo: cmsRepo ?? "OWNER/REPOSITORY" }),
+        );
         if (!cmsRepo) {
           const visible = Object.keys(process.env)
             .filter((key) => key.startsWith("CMS_"))
@@ -110,7 +114,14 @@ export default defineConfig({
   output: "static",
   srcDir: "./app",
   publicDir: "./cms/public",
-  integrations: [sitemap(), cmsBackendRepo(), contentMedia(), shortLinks()],
+  integrations: [
+    sitemap({
+      filter: (page) => !new URL(page).pathname.startsWith("/admin/"),
+    }),
+    cmsBackendRepo(),
+    contentMedia(),
+    shortLinks(),
+  ],
   markdown: {
     processor: satteri({
       // Raw HTML tables need the same keyboard wrapper as Markdown tables.
