@@ -30,7 +30,23 @@ export async function workspaceRequest<T>(
         }
       : {}),
   });
-  const result = await response.json();
+  const invalidResponse = () =>
+    new Error(
+      `The CMS workspace server returned an invalid response (HTTP ${response.status}). Please try again; saved work is safe.`,
+    );
+  if (
+    response.headers.get("Content-Type")?.split(";")[0].trim() !==
+    "application/json"
+  ) {
+    throw invalidResponse();
+  }
+  let result: unknown;
+  try {
+    result = await response.json();
+  } catch (error) {
+    if (error instanceof SyntaxError) throw invalidResponse();
+    throw error;
+  }
   if (!response.ok) {
     const message =
       typeof result === "object" &&
