@@ -4,28 +4,24 @@ backend:
   name: github
   # Deliberately not a real repository. The GitHub backend commits to whatever
   # this names, including from a local dev server, so the live site is never the
-  # default. Set CMS_REPO to publish from a deployment, or to point a local dev
-  # server at your own fork. See "Backend repository" in README.md.
+  # default. Set CMS_REPO for an explicitly configured deployment.
+  # Local workspace tests mock GitHub. See "Backend repository" in README.md.
   repo: OWNER/REPOSITORY
-  branch: main
+  # Fail closed without the authenticated launcher's per-workspace overrides.
+  branch: workspace-required
   # GitHub OAuth is served by this project's Cloudflare Pages Functions.
   base_url: https://akscusa.org
-  # Sveltia uses the commit message as the pull request title. The defaults are
-  # `Create/Update/Delete {{collection}} “{{slug}}”`; these name the CMS as the
-  # source so the change is recognisable in the pull request list.
+  auth_endpoint: workspace/cms-auth
+  api_root: https://akscusa.org/workspace/uninitialized/api/v3
+  graphql_api_root: https://akscusa.org/workspace/uninitialized/api/graphql
+  # Entry and media saves are commits within one outer batch review.
   commit_messages:
     create: "Add {{collection}}: {{slug}}"
     update: "Update {{collection}}: {{slug}}"
     delete: "Remove {{collection}}: {{slug}}"
     uploadMedia: "Add media: {{path}}"
     deleteMedia: "Remove media: {{path}}"
-  # Land each entry as a single commit instead of one per intermediate save.
-  squash_merges: true
-
-# Entry saves use a pull request. Standalone media-library saves still write
-# directly to the backend branch, so production branch protection must cover
-# those writes as well.
-publish_mode: editorial_workflow
+publish_mode: simple
 
 # Published-entry previews need a live-site base even when no deployment
 # status is available. Workflow deployment URLs override it for branch previews.

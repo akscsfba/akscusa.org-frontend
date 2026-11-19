@@ -1,0 +1,38 @@
+---
+
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex, nofollow" />
+    <link href="/admin/config.yml" type="text/yaml" rel="cms-config-url" />
+    <title>AKSC workspace editor</title>
+  </head>
+  <body>
+    <p id="startup" role="status">
+      Checking the active workspace before starting the editor…
+    </p>
+    <div id="nc-root" hidden></div>
+    <script>
+      import { startEditor } from "~/features/cms-workspace/editor";
+      startEditor();
+    </script>
+  </body>
+</html>
+
+<style>
+  :global(html),
+  :global(body) {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  #nc-root {
+    position: fixed;
+    inset: 0;
+  }
+</style>

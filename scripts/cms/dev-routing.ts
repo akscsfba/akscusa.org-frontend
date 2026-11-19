@@ -27,8 +27,8 @@ export type CmsDirectoryResolution =
 
 /**
  * Mirror Cloudflare Pages directory routing for files served from `cms/`.
- * Pages serves `/admin/` from `cms/admin/index.html` and redirects `/admin`,
- * while Vite only matches public files by their exact path.
+ * Vite only matches public files by their exact path. The admin workspace is
+ * an Astro route; this resolver handles only unchanged public directories.
  */
 export function resolveCmsDirectory(
   requestUrl: string,

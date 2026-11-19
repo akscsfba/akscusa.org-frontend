@@ -36,7 +36,7 @@ const routes = new Map([
   ["/contact/", "Best way to reach us"],
   ["/donate/", "Donate"],
   [magazinePath, "AKSC 10th Year Magazine"],
-  ["/admin/", "AKSC USA Content Manager"],
+  ["/admin/", "Your editorial workspace"],
   [
     "/admin/config.yml",
     await readFile(
