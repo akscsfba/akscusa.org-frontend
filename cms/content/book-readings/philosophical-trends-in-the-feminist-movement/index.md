@@ -14,6 +14,6 @@ posters:
     alt: 'Book: Philosophical Trends in the Feminist Movement'
     caption: ''
 sourceUrl: ''
-featured: true
+featured: false
 draft: false
 ---
