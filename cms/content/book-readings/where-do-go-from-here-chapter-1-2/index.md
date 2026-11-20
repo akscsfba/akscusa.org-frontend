@@ -1,5 +1,6 @@
 ---
 title: Where do go from here? Chapter 1 & 2
+chapterBreakdown: Chapters 1 & 2
 date: 2026-11-21T23:00:00Z
 location: Human Agenda, 1060 N 4th St, Suite 200, San Jose, CA 95112
 book: where-do-we-go-from-here-chaos-or-community

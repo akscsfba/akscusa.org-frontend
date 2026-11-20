@@ -1,5 +1,6 @@
 ---
 title: "Riddles in Hinduism: Riddles 21 – 24"
+chapterBreakdown: "Riddles 21 – 24"
 date: "2020-04-26T15:00:00-07:00"
 location: "Online on Zoom"
 book: "riddles-in-hinduism"

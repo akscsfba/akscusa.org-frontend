@@ -1,5 +1,6 @@
 ---
 title: "Buffalo Nationalism: Chapters 22 – 33"
+chapterBreakdown: "Chapters 22 – 33"
 date: "2026-08-08T15:00:00-07:00"
 location: "Human Agenda, San Jose"
 book: "buffalo-nationalism"

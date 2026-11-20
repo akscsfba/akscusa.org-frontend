@@ -1,5 +1,6 @@
 ---
 title: "India Is Broken: Chapters 15 – 19"
+chapterBreakdown: "Chapters 15 – 19"
 date: "2026-02-21T15:00:00-08:00"
 location: "Human Agenda, San Jose"
 book: "india-is-broken"

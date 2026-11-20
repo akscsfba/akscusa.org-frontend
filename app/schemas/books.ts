@@ -156,6 +156,7 @@ export const bookReadings = defineCollection({
   schema: z.object({
     ...editorialBase,
     date: readingDate,
+    chapterBreakdown: optionalCmsField(z.string().trim()),
     /** Where the session met, or how to join it when it is held online. */
     location: z.string(),
     /**

@@ -404,7 +404,10 @@ sessions into one entry per book, which links back to it. A book worked through
 over four Sundays is one entry naming its four sittings rather than four
 entries, because a visitor scanning the page is asking what has been read. A
 reading whose book is only a draft renders without the book rather than failing
-the build, so drafting a book cannot take the site down.
+the build, so drafting a book cannot take the site down. Set **Chapter breakdown**
+on a reading to display it alongside the session date in the reading log and
+author lists. Leave it blank for a date-only link; the full session title stays
+on the session page.
 
 A book identifies itself by its slug, not by its ISBN, so the ISBN is optional:
 the circle reads pamphlets, PDFs of out-of-print texts, and editions older than

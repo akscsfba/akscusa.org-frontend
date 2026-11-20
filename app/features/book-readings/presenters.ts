@@ -11,8 +11,6 @@
 import { entryHref, type EditorialEntry } from "~/features/editorial/sections";
 import {
   formatPacificDate,
-  formatPacificMonthDay,
-  formatPacificMonthRange,
   formatPacificShortDate,
   formatPacificTime,
   pacificYear,
@@ -24,7 +22,6 @@ import { bookHref } from "~/features/books/links";
 import type { BookWithAuthors } from "~/features/books/queries/books";
 import { byNewestFirst, bySoonestFirst } from "~/lib/collection-policy";
 import { isUpcomingReading } from "./calendar";
-import { sessionLabel } from "./titles";
 
 type Reading = EditorialEntry<"bookReadings">;
 
@@ -128,7 +125,6 @@ export interface SessionLink {
   href: string;
   /** "Chapters 1 – 4", or absent when only the date tells sittings apart. */
   label?: string;
-  /** "Jun 28" — the entry's own line already states the year. */
   dateLabel: string;
   dateTime: string;
   upcoming: boolean;
@@ -164,13 +160,8 @@ interface ReadingEntryContent {
   /** The uploaded cover, absent for an entry with no book or no cover. */
   cover?: string;
   summary?: string;
-  sessionCount: number;
-  /** "June – October 2025", or one month when the run stayed inside it. */
-  spanLabel: string;
   /** Every Pacific year represented by its sessions, for the year dropdown. */
   years: number[];
-  /** Most recent sitting, which is the date the entry is ordered by. */
-  dateTime: string;
   /** True while any of the entry's sittings is still ahead of us. */
   upcoming: boolean;
   /** The sittings newest first, matching the log's dated order. */
@@ -199,18 +190,11 @@ const sessionHref = (reading: Reading) => entryHref("bookReadings", reading.id);
 const chronological = (sessions: readonly Reading[]): Reading[] =>
   [...sessions].sort(bySoonestFirst);
 
-const sessionLinks = (
-  sessions: readonly Reading[],
-  book: { title: string; subtitle?: string } | undefined,
-  /** Set when the entry's run crosses a year, which the date must then name. */
-  withYear: boolean,
-): SessionLink[] =>
+const sessionLinks = (sessions: readonly Reading[]): SessionLink[] =>
   sessions.map((reading) => ({
     href: sessionHref(reading),
-    label: sessionLabel(reading.data.title, book?.title, book?.subtitle),
-    dateLabel: withYear
-      ? formatPacificShortDate(reading.data.date)
-      : formatPacificMonthDay(reading.data.date),
+    label: reading.data.chapterBreakdown,
+    dateLabel: formatPacificShortDate(reading.data.date),
     dateTime: reading.data.date.toISOString(),
     upcoming: isUpcomingReading(reading),
   }));
@@ -253,6 +237,7 @@ function entrySearch(
       entry?.book.data.isbn,
       entry?.book.data.summary,
       ...sessions.map((reading) => reading.data.title),
+      ...sessions.map((reading) => reading.data.chapterBreakdown),
       ...sessions.map((reading) => reading.data.summary),
       ...sessions.map((reading) => formatPacificDate(reading.data.date)),
       ...topics,
@@ -274,26 +259,12 @@ function bookEntry(
 ): ReadingEntry {
   const { book } = entry;
   const run = chronological(unordered);
-  const first = run[0];
-  const last = run[run.length - 1];
-
-  /*
-   * The sittings are printed newest first, like the log they sit in and like
-   * every other dated list on the site. The run itself is still worked out in
-   * order, because a span reads from its start to its end whichever way round
-   * the sittings under it are shown.
-   */
   const sessions = [...run].sort(byNewestFirst);
 
   const topics = unique([
     ...book.data.topics,
     ...run.flatMap((reading) => reading.data.topics),
   ]).map(topicLabel);
-
-  // A book the circle came back to years later cannot let its sittings print a
-  // bare "Apr 5"; under one entry covering 2020 and 2025 that names neither.
-  const spansYears =
-    pacificYear(first.data.date) !== pacificYear(last.data.date);
 
   return {
     key: book.id,
@@ -304,14 +275,11 @@ function bookEntry(
     authors: bookAuthorLinks(entry),
     cover: book.data.cover,
     summary: book.data.summary,
-    sessionCount: run.length,
-    spanLabel: formatPacificMonthRange(first.data.date, last.data.date),
     years: readingYears(run),
-    dateTime: last.data.date.toISOString(),
     upcoming: run.some(isUpcomingReading),
     bookState: "published",
     readsArticles: false,
-    sessions: sessionLinks(sessions, book.data, spansYears),
+    sessions: sessionLinks(sessions),
     posters: entryPosters(sessions),
     topics,
     search: entrySearch(run, entry, topics),
@@ -337,14 +305,9 @@ function standaloneEntry(
     // There is no published book byline to file this session under.
     authors: [],
     summary: reading.data.summary,
-    sessionCount: 1,
-    spanLabel: formatPacificMonthRange(reading.data.date, reading.data.date),
     years: readingYears(sessions),
-    dateTime: reading.data.date.toISOString(),
     upcoming: isUpcomingReading(reading),
-    // Its own title is the entry's heading, so stripping it leaves the sitting
-    // with just its date — which is all that is left to say about it.
-    sessions: sessionLinks(sessions, { title: reading.data.title }, false),
+    sessions: sessionLinks(sessions),
     posters: entryPosters(sessions),
     topics,
     search: entrySearch(sessions, undefined, topics),

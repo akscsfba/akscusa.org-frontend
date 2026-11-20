@@ -1,5 +1,6 @@
 ---
 title: "By Any Means Necessary: Chapters 1 & 2"
+chapterBreakdown: "Chapters 1 & 2"
 date: "2025-04-26T15:00:00-07:00"
 location: "Human Agenda, San Jose"
 book: "by-any-means-necessary"
