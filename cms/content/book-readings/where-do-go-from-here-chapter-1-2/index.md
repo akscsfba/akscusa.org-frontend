@@ -22,6 +22,6 @@ posters:
     alt: Flyer for the reading.
     caption: ''
 sourceUrl: ''
-featured: true
+featured: false
 draft: false
 ---
