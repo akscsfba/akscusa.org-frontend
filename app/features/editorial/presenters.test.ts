@@ -1,6 +1,6 @@
 import { afterEach, describe, expect, it, vi } from "vitest";
 
-import { conferenceDetails } from "./presenters";
+import { conferenceArchiveNotice, conferenceDetails } from "./presenters";
 import { conference } from "./test-fixtures";
 
 afterEach(() => {
@@ -41,6 +41,7 @@ describe.each(["UTC", "America/Los_Angeles"])(
       ]) {
         vi.setSystemTime(new Date(instant));
         expect(conferenceDetails(event).at(-1)?.term).toBe("Registration");
+        expect(conferenceArchiveNotice(event)).toBeUndefined();
       }
       vi.setSystemTime(new Date("2026-09-21T00:00:00Z"));
       expect(conferenceDetails(event).at(-1)).toEqual({
@@ -48,6 +49,9 @@ describe.each(["UTC", "America/Los_Angeles"])(
         description: "Full details and speakers",
         href: "https://example.org/conference",
       });
+      expect(conferenceArchiveNotice(event)).toContain(
+        "historical, not current offers",
+      );
     });
 
     it("does not invent a registration destination", () => {

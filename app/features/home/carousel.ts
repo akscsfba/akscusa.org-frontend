@@ -16,6 +16,7 @@
  *   data-carousel-rotation   what the play/pause control acts on, for
  *                            "Pause quotations" or "Pause the shelf"
  *   data-carousel-interval   milliseconds between slides, default 6000
+ *   data-carousel-start-paused opts into manual-first browsing
  */
 
 const INTERVAL = 6_000;
@@ -50,6 +51,9 @@ function mount(carousel: HTMLElement): void {
     "[data-carousel-play-icon]",
   );
   const status = carousel.querySelector<HTMLElement>("[data-carousel-status]");
+  const position = carousel.querySelector<HTMLElement>(
+    "[data-carousel-position]",
+  );
   const slides = Array.from(
     carousel.querySelectorAll<HTMLElement>("[data-carousel-slide]"),
   );
@@ -63,6 +67,7 @@ function mount(carousel: HTMLElement): void {
     !pauseIcon ||
     !playIcon ||
     !status ||
+    !position ||
     slides.length < 2
   ) {
     return;
@@ -75,7 +80,9 @@ function mount(carousel: HTMLElement): void {
   const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
   let current = 0;
   let timer: number | undefined;
-  let userPaused = reducedMotion.matches;
+  let userPaused =
+    carousel.hasAttribute("data-carousel-start-paused") ||
+    reducedMotion.matches;
   let pointerPaused = carousel.matches(":hover");
   let focusPaused = carousel.contains(document.activeElement);
   let scrollFrame: number | undefined;
@@ -89,6 +96,10 @@ function mount(carousel: HTMLElement): void {
     slides[index].offsetLeft - slides[0].offsetLeft;
 
   const overflows = () => viewport.scrollWidth - viewport.clientWidth > 1;
+  const positionLabel = () => `${current + 1} of ${slides.length}`;
+  const showPosition = () => {
+    position.textContent = positionLabel();
+  };
 
   const setToggleState = () => {
     const playing = !userPaused && !reducedMotion.matches;
@@ -105,11 +116,17 @@ function mount(carousel: HTMLElement): void {
      * report the second to last and the rotation would announce the wrong
      * book and refuse to wrap.
      */
+    if (!overflows()) {
+      current = 0;
+      showPosition();
+      return;
+    }
     if (
       viewport.scrollLeft >=
       viewport.scrollWidth - viewport.clientWidth - 1
     ) {
       current = slides.length - 1;
+      showPosition();
       return;
     }
 
@@ -123,14 +140,15 @@ function mount(carousel: HTMLElement): void {
       { index: current, distance: Number.POSITIVE_INFINITY },
     );
     current = nearest.index;
+    showPosition();
   };
 
   const announce = () => {
     const label = slides[current]
       .querySelector("[data-carousel-label]")
       ?.textContent?.trim();
-    const position = `Showing ${noun} ${current + 1} of ${slides.length}`;
-    status.textContent = label ? `${position}, ${label}.` : `${position}.`;
+    const message = `Showing ${noun} ${positionLabel()}`;
+    status.textContent = label ? `${message}, ${label}.` : `${message}.`;
   };
 
   /*
@@ -149,10 +167,15 @@ function mount(carousel: HTMLElement): void {
     const wanted = index > current && atEnd ? 0 : index;
 
     current = wanted > last ? 0 : wanted < 0 ? last : wanted;
+    const left = Math.min(offsetOf(current), max);
+    // A partly visible final book cannot align to the left edge. Announce the
+    // same clamped end position that scrolling will report.
+    if (left >= max - 1) current = last;
     viewport.scrollTo({
-      left: Math.min(offsetOf(current), max),
+      left,
       behavior: reducedMotion.matches ? "auto" : "smooth",
     });
+    showPosition();
     if (shouldAnnounce) announce();
   };
 
@@ -262,13 +285,15 @@ function mount(carousel: HTMLElement): void {
         offsetOf(current),
         viewport.scrollWidth - viewport.clientWidth,
       ),
-      behavior: "auto",
+      behavior: "instant",
     });
+    updatePosition();
     startTimer();
   });
   resizeObserver.observe(viewport);
 
   controls.hidden = !overflows();
+  updatePosition();
   setToggleState();
   startTimer();
 }

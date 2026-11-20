@@ -77,7 +77,7 @@ const hasAbove = Astro.slots.has("above");
       {
         meta && (
           <p
-            class="mt-8 font-display text-xs font-semibold tracking-[0.14em] text-white/70 uppercase"
+            class="mt-8 font-sans text-sm font-semibold text-white/85"
             data-page-meta
           >
             {meta}
@@ -90,26 +90,16 @@ const hasAbove = Astro.slots.has("above");
 
     {
       /*
-      The attribution a Creative Commons photograph requires. It is pinned to
-      the corner of the panel from `sm`, where there is room for it beside the
-      reading column.
-
-      Below that it stays in the flow, under the content it belongs to. Pinning
-      it on a phone put a three-line credit on top of the masthead's own meta
-      line, because an absolute box cannot know how tall the text above it has
-      wrapped to; the two simply printed over each other.
+      Attribution stays in flow even on desktop: enlarged text and long
+      licenses must never collide with the heading or a page's actions.
     */
     }
     {
       backgroundImage && (backgroundLabel || backgroundCredit) && (
-        <div class="mt-10 sm:absolute sm:right-6 sm:bottom-5 sm:mt-0 sm:max-w-[calc(100%-3rem)] sm:text-right">
-          {backgroundLabel && (
-            <p class="font-display text-[0.625rem] font-semibold tracking-[0.12em] text-white/90 uppercase [text-shadow:0_1px_4px_var(--color-ambedkar-1000)]">
-              Pictured: {backgroundLabel}
-            </p>
-          )}
+        <div class="mt-10 max-w-2xl font-sans text-sm leading-6 text-white">
+          {backgroundLabel && <p>Pictured: {backgroundLabel}</p>}
           {backgroundCredit && (
-            <p class="mt-1 text-[0.6875rem] leading-4 text-white/85 [text-shadow:0_1px_4px_var(--color-ambedkar-1000)]">
+            <p class="mt-1">
               Image:{" "}
               <a
                 class="underline decoration-white/25 underline-offset-2 hover:text-white"

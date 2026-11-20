@@ -27,12 +27,12 @@ const { lead, more, recent } = Astro.props;
 <section class="bg-paper" aria-labelledby="latest-title">
   <Container class="py-24 sm:py-32">
     <div class="section-head reveal">
-      <p class="eyebrow">Latest from AKSC</p>
+      <p class="eyebrow">Writing and action</p>
       <h2
         id="latest-title"
         class="font-display text-display-sm leading-[1.04] font-bold tracking-display text-balance text-ambedkar-950"
       >
-        What the circle is writing and taking on.
+        From the writing archive to recent action.
       </h2>
     </div>
 
@@ -43,7 +43,7 @@ const { lead, more, recent } = Astro.props;
         {
           lead && (
             <article>
-              <p class="label text-accent-700">{lead.section}</p>
+              <p class="label text-accent-700">From the writing archive</p>
               <h3 class="mt-4 font-display text-3xl leading-[1.08] font-bold tracking-title text-balance text-ambedkar-950 sm:text-[2.375rem]">
                 <a class="link-underline" href={lead.href}>
                   {lead.title}
@@ -65,7 +65,7 @@ const { lead, more, recent } = Astro.props;
         {
           more.length > 0 && (
             <div class="mt-12">
-              <p class="label text-ambedkar-900/70">More writing</p>
+              <p class="label text-ambedkar-900/70">More from the archive</p>
               <ul class="mt-4 border-t border-rule">
                 {more.map((item) => (
                   <li class="group relative border-b border-rule">
@@ -74,7 +74,7 @@ const { lead, more, recent } = Astro.props;
                       href={item.href}
                     >
                       <time
-                        class="shrink-0 font-display text-[0.6875rem] font-semibold tracking-[0.12em] text-ambedkar-900/70 uppercase tabular-nums"
+                        class="shrink-0 font-sans text-sm text-ambedkar-900/70 tabular-nums"
                         datetime={isoDate(item.date)}
                       >
                         {item.date.getUTCFullYear()}
@@ -100,7 +100,7 @@ const { lead, more, recent } = Astro.props;
         {
           recent.length > 0 && (
             <div>
-              <p class="label text-accent-700">Also recently</p>
+              <p class="label text-accent-700">Recent action</p>
               <ul class="mt-4 border-t border-rule">
                 {recent.map((item) => (
                   <li class="group relative border-b border-rule">
@@ -108,7 +108,7 @@ const { lead, more, recent } = Astro.props;
                       class="flex flex-col gap-1 py-4 after:absolute after:inset-0"
                       href={item.href}
                     >
-                      <span class="label label-sm text-ambedkar-900/70">
+                      <span class="text-sm leading-6 text-ambedkar-900/70">
                         {item.section}
                         <span> · </span>
                         <time datetime={isoDate(item.date)}>

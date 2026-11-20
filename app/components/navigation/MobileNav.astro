@@ -59,6 +59,13 @@ const { currentPath } = Astro.props;
   >
     <div class="mx-auto w-full max-w-6xl px-5 py-6 sm:px-6">
       <nav aria-label="Mobile navigation">
+        <div class="mb-6 [&_a]:min-h-11">
+          <NavLink
+            {...joinNavigation}
+            currentPath={currentPath}
+            variant="action"
+          />
+        </div>
         <ul class="grid grid-cols-1 sm:grid-cols-2 sm:gap-x-8">
           {
             [...primaryNavigation, ...secondaryNavigation].map((item) =>
@@ -94,13 +101,6 @@ const { currentPath } = Astro.props;
             )
           }
         </ul>
-        <div class="mt-6">
-          <NavLink
-            {...joinNavigation}
-            currentPath={currentPath}
-            variant="action"
-          />
-        </div>
       </nav>
 
       <p class="eyebrow mt-8">Follow</p>

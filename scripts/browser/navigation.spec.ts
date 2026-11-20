@@ -29,6 +29,20 @@ for (const width of [320, 375, 768]) {
     await page.keyboard.press("Enter");
     const sheet = page.locator("[data-mobile-nav] > div");
     await expect(sheet).toBeVisible();
+    const join = sheet.getByRole("link", { name: "Join AKSC", exact: true });
+    await expect(join).toHaveCount(1);
+    await expect(sheet.locator("a").first()).toHaveText("Join AKSC");
+    const joinBounds = await join.boundingBox();
+    if (!joinBounds) throw new Error("The mobile Join link is not rendered.");
+    expect(joinBounds.y).toBeGreaterThanOrEqual(0);
+    expect(joinBounds.y + joinBounds.height).toBeLessThanOrEqual(800);
+    expect(joinBounds.height).toBeGreaterThanOrEqual(44);
+    await page.keyboard.press("Tab");
+    // Firefox includes the scrollable sheet itself in the native tab order.
+    if (await sheet.evaluate((element) => element === document.activeElement)) {
+      await page.keyboard.press("Tab");
+    }
+    await expect(join).toBeFocused();
     const lastLink = sheet.locator("a").last();
     await sheet.evaluate((element) => {
       element.scrollTop = element.scrollHeight;

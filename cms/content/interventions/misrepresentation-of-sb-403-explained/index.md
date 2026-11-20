@@ -14,8 +14,6 @@ featured: false
 draft: false
 ---
 
-![](https://dotcompatterns.files.wordpress.com/2022/08/wiggle_pattern.png?w=676)
-
 ![America Against Caste Discrimination](/media/interventions/misrepresentation-of-sb-403-explained/america-against-caste-discrimination.png)
 
 ---
