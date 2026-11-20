@@ -91,13 +91,38 @@ test("representative pages reflow with 200 percent text", async ({ page }) => {
       await page.addStyleTag({
         content: "html { font-size: 200% !important; }",
       });
-      const layout = await page.evaluate(() => ({
-        width: document.documentElement.clientWidth,
-        scrollWidth: document.documentElement.scrollWidth,
-      }));
+      const layout = await page.evaluate(() => {
+        const width = document.documentElement.clientWidth;
+        const meetingLinks =
+          document
+            .getElementById("meeting-terms")
+            ?.closest("section")
+            ?.querySelectorAll("dd a") ?? [];
+        return {
+          width,
+          scrollWidth: document.documentElement.scrollWidth,
+          clippedMeetingLinks: [...meetingLinks]
+            .filter((link) => {
+              const bounds = link.getBoundingClientRect();
+              return (
+                bounds.left < -1 ||
+                bounds.right > width + 1 ||
+                link.scrollWidth > link.clientWidth + 1 ||
+                link.scrollHeight > link.clientHeight + 1
+              );
+            })
+            .map((link) => link.textContent?.trim()),
+        };
+      });
       expect
         .soft(layout.scrollWidth, `${path} at ${width}px with 200% text`)
         .toBeLessThanOrEqual(layout.width + 1);
+      expect
+        .soft(
+          layout.clippedMeetingLinks,
+          `${path} meeting links at ${width}px with 200% text`,
+        )
+        .toEqual([]);
     }
   }
 });

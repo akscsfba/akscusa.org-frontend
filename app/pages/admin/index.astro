@@ -22,66 +22,95 @@ import "~/styles/global.css";
           saved changes in one pull request when the batch is ready.
         </p>
       </header>
-      <section class="mt-6 space-y-4" aria-label="Workspace controls">
-        <div data-local hidden>
-          <a class="btn btn-primary" href="/admin/local/">Edit local checkout</a
-          >
-          <p class="mt-3 text-sm">
-            Uses “Work with Local Repository” in a supported Chromium browser.
-            Select this checkout’s root folder. Saves change local files only;
-            commit and review them using Git. This separate mode never writes to
-            GitHub and needs no Cloudflare secrets. Its remaining “Sign in with
-            GitHub” button is intentionally disconnected; choose the local
-            repository option instead.
-          </p>
-        </div>
-        <p data-status role="status">Checking your workspace session…</p>
-        <p
-          data-error
-          role="alert"
-          tabindex="-1"
-          class="rounded-sm border border-alert-700 p-4 text-alert-700"
-          hidden
-        >
+      <div class="mt-6" data-local hidden>
+        <a class="btn btn-primary" href="/admin/local/">Edit local checkout</a>
+        <p class="mt-3 text-sm">
+          Uses “Work with Local Repository” in a supported Chromium browser.
+          Select this checkout’s root folder. Saves change local files only;
+          commit and review them using Git. This separate mode never writes to
+          GitHub and needs no Cloudflare secrets. Its remaining “Sign in with
+          GitHub” button is intentionally disconnected; choose the local
+          repository option instead. Remote batch workspaces are available only
+          on the configured canonical host.
         </p>
-        <div class="flex flex-wrap gap-3">
-          <button class="btn btn-primary" data-login hidden
-            >Sign in with GitHub</button
-          >
-          <button class="btn btn-primary" data-open hidden>Open editor</button>
-          <button class="btn btn-primary" data-submit hidden
-            >Submit for review</button
-          >
-          <button class="btn btn-outline" data-refresh hidden
-            >Refresh status</button
-          >
-          <button class="btn btn-outline" data-logout hidden>Sign out</button>
-          <a
-            class="btn btn-outline"
-            data-review
+      </div>
+      <dialog
+        id="workspace-editor-panel"
+        class="workspace-editor-panel"
+        aria-label="Editorial workspace"
+        data-editor-panel
+      >
+        <section class="space-y-4" aria-label="Workspace controls">
+          <p data-status role="status">Checking your workspace session…</p>
+          <p
+            data-error
+            role="alert"
+            tabindex="-1"
+            class="rounded-sm border border-alert-700 p-4 text-alert-700"
             hidden
-            target="_blank"
-            rel="noopener noreferrer">View pull request</a
           >
-        </div>
-        <p class="max-w-3xl text-sm" data-remote-help>
-          Saves in the editor commit to your workspace, not the live site. The
-          editor’s “Save” action writes to this branch. Finish saving before
-          submission; there is no partial-entry selection. <strong
-            >draft: true</strong
-          > still hides an entry from production-style previews.
-        </p>
-        <p class="text-sm" data-editor-help hidden>
-          Choose “Sign in with GitHub” inside the editor to use this workspace
-          session. Do not use personal-token or local-repository mode. Close
-          this editor before switching batches; refresh status after a merge.
-        </p>
-      </section>
-      <iframe
-        title="Sveltia workspace editor"
-        data-editor
-        class="mt-6 h-[75vh] w-full border border-rule"
-        hidden></iframe>
+          </p>
+          <div class="flex flex-wrap gap-3" data-controls>
+            <button class="btn btn-primary" data-login hidden
+              >Sign in with GitHub</button
+            >
+            <button class="btn btn-primary" data-open hidden>Open editor</button
+            >
+            <button
+              class="btn btn-outline"
+              data-expand
+              aria-controls="workspace-editor-panel"
+              hidden>Full screen</button
+            >
+            <button class="btn btn-primary" data-submit hidden>
+              <span class="grid">
+                <span
+                  class="invisible col-start-1 row-start-1"
+                  aria-hidden="true">Submit for review</span
+                >
+                <span class="col-start-1 row-start-1" data-submit-label
+                  >Submit for review</span
+                >
+              </span>
+            </button>
+            <button class="btn btn-outline" data-refresh hidden
+              >Refresh status</button
+            >
+            <button class="btn btn-outline" data-logout hidden>Sign out</button>
+            <a
+              class="btn btn-outline"
+              data-review
+              hidden
+              target="_blank"
+              rel="noopener noreferrer">View pull request</a
+            >
+          </div>
+          <p
+            class="min-h-6 font-sans text-sm"
+            data-progress
+            aria-live="polite"
+            aria-atomic="true"
+          >
+          </p>
+          <p class="max-w-3xl text-sm" data-remote-help>
+            Saves in the editor commit to your workspace, not the live site. The
+            editor’s “Save” action writes to this branch. Finish saving before
+            submission; there is no partial-entry selection. <strong
+              >draft: true</strong
+            > still hides an entry from production-style previews.
+          </p>
+          <p class="text-sm" data-editor-help hidden>
+            Choose “Sign in with GitHub” inside the editor to use this workspace
+            session. Do not use personal-token or local-repository mode. Close
+            this editor before switching batches; refresh status after a merge.
+          </p>
+        </section>
+        <iframe
+          title="Sveltia workspace editor"
+          data-editor
+          class="mt-6 h-[75vh] w-full border border-rule"
+          hidden></iframe>
+      </dialog>
       <p class="mt-8">
         <a href="/" class="link-underline">Return to AKSC USA</a>
       </p>
@@ -90,5 +119,75 @@ import "~/styles/global.css";
       import { startWorkspace } from "~/features/cms-workspace/controller";
       startWorkspace();
     </script>
+    <style>
+      .workspace-editor-panel {
+        position: static;
+        width: 100%;
+        max-width: none;
+        max-height: none;
+        margin: 1.5rem 0 0;
+        padding: 0;
+        border: 0;
+        overflow: visible;
+        background: transparent;
+        color: inherit;
+      }
+
+      .workspace-editor-panel:modal {
+        position: fixed;
+        inset: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 0.75rem;
+        width: 100%;
+        height: 100dvh;
+        margin: 0;
+        padding: 0.75rem;
+        overflow: hidden;
+        background: var(--color-paper);
+      }
+
+      .workspace-editor-panel:modal > section {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        flex-shrink: 0;
+        max-height: 45dvh;
+        overflow-y: auto;
+        padding: 0.25rem;
+      }
+
+      .workspace-editor-panel:modal > section > * {
+        margin-block: 0;
+      }
+
+      .workspace-editor-panel:modal [data-remote-help],
+      .workspace-editor-panel:modal [data-editor-help] {
+        display: none;
+      }
+
+      .workspace-editor-panel:modal .btn {
+        min-height: 2.75rem;
+        padding: 0.5rem 0.75rem;
+      }
+
+      .workspace-editor-panel:modal iframe {
+        flex: 1;
+        min-height: 0;
+        height: auto;
+        margin: 0;
+      }
+
+      :global(body:has(.workspace-editor-panel:modal)) {
+        overflow: hidden;
+      }
+
+      button:disabled,
+      button[aria-disabled="true"] {
+        cursor: not-allowed;
+        background: var(--color-ambedkar-100);
+        color: var(--color-ambedkar-800);
+      }
+    </style>
   </body>
 </html>

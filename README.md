@@ -641,6 +641,9 @@ OAuth app's callback URL does not match `https://akscusa.org/callback`.
 2. Select **Open editor**, then **Sign in with GitHub** inside Sveltia. This
    second, supported handshake uses your existing session; it does not request
    another GitHub grant. Sveltia has no public login-injection API in 0.201.1.
+   **Full screen** expands the editor to the browser window while keeping the
+   workspace controls available. **Exit full screen** or Escape returns to the
+   embedded view without reloading the editor or losing unsaved changes.
 3. Use the existing collection forms. In simple mode, the vendor's **Save**
    action means **save to your workspace branch**, not publish to the live site.
    Save an author, then select that author when adding a book, then select that
@@ -651,6 +654,10 @@ OAuth app's callback URL does not match `https://akscusa.org/callback`.
    without force-updating it. Conflicts stop submission with an explicit error:
    resolve them on GitHub (or locally) without resetting the branch, then refresh.
    A workspace with no file differences cannot be submitted.
+   The launcher shows **Submitting…** and locks conflicting controls until
+   submission and status refresh finish, without reloading the editor. If a
+   request fails, its error remains visible and the controls become available
+   for retry; closed pull requests must be reopened first.
 5. Submission opens **one normal, non-draft PR** to main; duplicate submission
    returns the same open PR. Further saves update it. CI runs on the normal PR,
    and Cloudflare's configured Git integration supplies previews. Preview URLs

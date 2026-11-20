@@ -34,7 +34,15 @@ test.beforeEach(async ({ page, context, baseURL }) => {
 
 for (const width of [320, 375, 768, 1440]) {
   test(`workspace controls are usable at ${width}px`, async ({ page }) => {
-    await page.route("**/workspace", (route) => route.fulfill({ json: state }));
+    const gates = Array.from({ length: 3 }, () =>
+      Promise.withResolvers<void>(),
+    );
+    let requests = 0;
+    await page.route("**/workspace", async (route) => {
+      const request = requests++;
+      if (request > 0) await gates[request - 1]?.promise;
+      await route.fulfill({ json: state });
+    });
     await page.setViewportSize({ width, height: 900 });
     await page.goto(`${workspaceOrigin}/admin/`);
     await expect(
@@ -45,13 +53,291 @@ for (const width of [320, 375, 768, 1440]) {
         () => document.documentElement.scrollWidth <= innerWidth,
       ),
     ).toBe(true);
-    await page
-      .getByRole("button", { name: "Open editor", exact: true })
-      .focus();
+    await page.keyboard.press("Tab");
     await expect(page.locator(":focus")).toHaveText("Open editor");
     expect(await accessibilityFailures(page)).toEqual([]);
+    const submit = page.getByRole("button", { name: "Submit for review" });
+    await submit.focus();
+    const bounds = await submit.boundingBox();
+    await page.keyboard.press("Enter");
+    const pending = page.getByRole("button", { name: "Submitting…" });
+    for (let phase = 0; phase < gates.length; phase++) {
+      await expect.poll(() => requests).toBe(phase + 2);
+      await expect(pending).toBeVisible();
+      await expect(pending).toBeDisabled();
+      await expect(pending).toBeFocused();
+      expect(await pending.boundingBox()).toEqual(bounds);
+      await expect(page.locator("[data-progress]")).toHaveText(
+        "Submitting saved changes…",
+      );
+      expect(
+        await page
+          .locator("[data-progress]")
+          .evaluate(
+            (element) => element.closest('[aria-busy="true"]') === null,
+          ),
+      ).toBe(true);
+      for (const name of ["Open editor", "Refresh status", "Sign out"])
+        await expect(
+          page.getByRole("button", { name, exact: true }),
+        ).toBeDisabled();
+      await page.keyboard.press("Enter");
+      await pending.dispatchEvent("click");
+      await page
+        .getByRole("button", { name: "Refresh status" })
+        .dispatchEvent("click");
+      expect(requests).toBe(phase + 2);
+      expect(
+        await page.evaluate(
+          () => document.documentElement.scrollWidth <= innerWidth,
+        ),
+      ).toBe(true);
+      gates[phase].resolve();
+    }
+    await expect(submit).toBeEnabled();
+    await expect(submit).toBeFocused();
+    await expect(page.locator("[data-progress]")).toBeEmpty();
+    for (const name of ["Open editor", "Refresh status", "Sign out"])
+      await expect(
+        page.getByRole("button", { name, exact: true }),
+      ).toBeEnabled();
   });
 }
+
+for (const failedPhase of [1, 2, 3]) {
+  test(`submission restores controls after request ${failedPhase} fails and allows retry`, async ({
+    page,
+  }) => {
+    const gate = Promise.withResolvers<void>();
+    let requests = 0;
+    await page.route("**/workspace", async (route) => {
+      const request = requests++;
+      if (request === failedPhase) {
+        await gate.promise;
+        return route.fulfill({
+          status: 503,
+          json: { message: "Workspace unavailable. Try again." },
+        });
+      }
+      return route.fulfill({ json: state });
+    });
+    await page.route("**/admin/editor/", (route) =>
+      route.fulfill({
+        contentType: "text/html",
+        body: '<textarea aria-label="Draft">Unsaved text</textarea>',
+      }),
+    );
+    await page.goto(`${workspaceOrigin}/admin/`);
+    await page
+      .getByRole("button", { name: "Open editor", exact: true })
+      .click();
+    const draft = page
+      .frameLocator("[data-editor]")
+      .getByRole("textbox", { name: "Draft" });
+    await draft.fill("Keep my unsaved changes");
+    const submit = page.getByRole("button", { name: "Submit for review" });
+    await submit.click();
+    await expect.poll(() => requests).toBe(failedPhase + 1);
+    await expect(
+      page.getByRole("button", { name: "Submitting…" }),
+    ).toBeDisabled();
+    gate.resolve();
+    await expect(page.getByRole("alert")).toHaveText(
+      "Workspace unavailable. Try again.",
+    );
+    await expect(page.getByRole("alert")).toBeFocused();
+    await expect(submit).toBeEnabled();
+    await expect(page.locator("[data-progress]")).toBeEmpty();
+    await expect(draft).toHaveValue("Keep my unsaved changes");
+    await submit.click();
+    await expect.poll(() => requests).toBe(failedPhase + 4);
+    await expect(submit).toBeEnabled();
+    await expect(page.getByRole("alert")).toBeHidden();
+    await expect(draft).toHaveValue("Keep my unsaved changes");
+  });
+}
+
+for (const width of [320, 375, 768, 1440]) {
+  test(`full-screen editor preserves unsaved work at ${width}px`, async ({
+    page,
+  }) => {
+    let editorLoads = 0;
+    await page.route("**/workspace", (route) => route.fulfill({ json: state }));
+    await page.route("**/admin/editor/", (route) => {
+      editorLoads++;
+      return route.fulfill({
+        contentType: "text/html",
+        body: '<!doctype html><html lang="en"><head><title>Editor</title></head><body><label>Draft<textarea></textarea></label><button onclick="document.querySelector(\'dialog\').showModal()">Open note</button><dialog aria-label="Editor note"><button>Note action</button></dialog></body></html>',
+      });
+    });
+    await page.setViewportSize({ width, height: 900 });
+    await page.goto(`${workspaceOrigin}/admin/`);
+    const fullScreen = page.getByRole("button", {
+      name: "Full screen",
+      exact: true,
+    });
+    await expect(fullScreen).toBeHidden();
+    await page
+      .getByRole("button", { name: "Open editor", exact: true })
+      .click();
+    const editor = page.locator("[data-editor]");
+    const draft = page
+      .frameLocator("[data-editor]")
+      .getByRole("textbox", { name: "Draft" });
+    await draft.fill("Keep these unsaved edits");
+    const embedded = await editor.boundingBox();
+    await fullScreen.click();
+    const panel = page.getByRole("dialog", { name: "Editorial workspace" });
+    await expect
+      .poll(() => panel.evaluate((element) => element.matches(":modal")))
+      .toBe(true);
+    expect(await panel.boundingBox()).toEqual({
+      x: 0,
+      y: 0,
+      width,
+      height: 900,
+    });
+    const expanded = await editor.boundingBox();
+    expect(expanded!.width).toBeGreaterThan(embedded!.width);
+    expect(expanded!.height).toBeGreaterThan(450);
+    expect(expanded!.y + expanded!.height).toBeLessThanOrEqual(900);
+    if (width >= 768)
+      expect(expanded!.height).toBeGreaterThan(embedded!.height);
+    await expect(
+      page.getByRole("button", { name: "Submit for review" }),
+    ).toBeVisible();
+    await expect(draft).toHaveValue("Keep these unsaved edits");
+    await expect(page.locator("body")).toHaveCSS("overflow", "hidden");
+    expect(
+      await page.evaluate(
+        () => document.documentElement.scrollWidth <= innerWidth,
+      ),
+    ).toBe(true);
+    expect(await accessibilityFailures(page)).toEqual([]);
+    const frame = page.frameLocator("[data-editor]");
+    await frame.getByRole("button", { name: "Open note" }).click();
+    await expect(
+      frame.getByRole("dialog", { name: "Editor note" }),
+    ).toBeVisible();
+    await page.keyboard.press("Escape");
+    await expect(
+      frame.getByRole("dialog", { name: "Editor note" }),
+    ).toBeHidden();
+    expect(await panel.evaluate((element) => element.matches(":modal"))).toBe(
+      true,
+    );
+    await draft.focus();
+    await page.keyboard.press("Escape");
+    await expect
+      .poll(() => panel.evaluate((element) => element.matches(":modal")))
+      .toBe(false);
+    await expect(fullScreen).toBeFocused();
+    await expect(draft).toHaveValue("Keep these unsaved edits");
+    await expect(page.locator("body")).not.toHaveCSS("overflow", "hidden");
+    await fullScreen.click();
+    await page.getByRole("button", { name: "Exit full screen" }).click();
+    await expect(fullScreen).toBeFocused();
+    await expect(draft).toHaveValue("Keep these unsaved edits");
+    expect(editorLoads).toBe(1);
+  });
+}
+
+test("full-screen editor keeps submission feedback usable without closing the editor", async ({
+  page,
+}) => {
+  const gate = Promise.withResolvers<void>();
+  let submissions = 0;
+  await page.route("**/workspace", async (route) => {
+    if (route.request().postDataJSON()?.action === "submit") {
+      submissions++;
+      await gate.promise;
+    }
+    return route.fulfill({ json: state });
+  });
+  await page.route("**/admin/editor/", (route) =>
+    route.fulfill({
+      contentType: "text/html",
+      body: "<label>Draft<textarea></textarea></label>",
+    }),
+  );
+  await page.setViewportSize({ width: 900, height: 375 });
+  await page.goto(`${workspaceOrigin}/admin/`);
+  await page.getByRole("button", { name: "Open editor", exact: true }).click();
+  const draft = page
+    .frameLocator("[data-editor]")
+    .getByRole("textbox", { name: "Draft" });
+  await draft.fill("Still editing");
+  await page.getByRole("button", { name: "Full screen", exact: true }).click();
+  await page.getByRole("button", { name: "Submit for review" }).click();
+  await expect.poll(() => submissions).toBe(1);
+  await expect(
+    page.getByRole("button", { name: "Submitting…" }),
+  ).toBeDisabled();
+  await expect(page.locator("[data-progress]")).toHaveText(
+    "Submitting saved changes…",
+  );
+  await expect(
+    page.getByRole("button", { name: "Exit full screen" }),
+  ).toBeEnabled();
+  await page.getByRole("button", { name: "Exit full screen" }).click();
+  await expect(
+    page.getByRole("button", { name: "Submitting…" }),
+  ).toBeDisabled();
+  await expect(draft).toHaveValue("Still editing");
+  await page.getByRole("button", { name: "Full screen", exact: true }).click();
+  const panel = page.getByRole("dialog", { name: "Editorial workspace" });
+  expect(await panel.boundingBox()).toEqual({
+    x: 0,
+    y: 0,
+    width: 900,
+    height: 375,
+  });
+  gate.resolve();
+  await expect(
+    page.getByRole("button", { name: "Submit for review" }),
+  ).toBeEnabled();
+  await expect
+    .poll(() => panel.evaluate((element) => element.matches(":modal")))
+    .toBe(true);
+  await expect(draft).toHaveValue("Still editing");
+});
+
+test("a closed preflight keeps submission disabled after cleanup and refresh", async ({
+  page,
+}) => {
+  const gate = Promise.withResolvers<void>();
+  let requests = 0;
+  await page.route("**/workspace", async (route) => {
+    const request = requests++;
+    if (request === 1) await gate.promise;
+    expect(route.request().postDataJSON()?.action).not.toBe("submit");
+    await route.fulfill({
+      json:
+        request === 0
+          ? state
+          : {
+              ...state,
+              workspace: { ...state.workspace, status: "closed" },
+            },
+    });
+  });
+  await page.goto(`${workspaceOrigin}/admin/`);
+  const submit = page.getByRole("button", { name: "Submit for review" });
+  await submit.click();
+  await expect(
+    page.getByRole("button", { name: "Submitting…" }),
+  ).toBeDisabled();
+  gate.resolve();
+  await expect(page.getByRole("alert")).toContainText("pull request is closed");
+  await expect(submit).toBeDisabled();
+  await expect(page.locator("[data-progress]")).toBeEmpty();
+  await page.getByRole("button", { name: "Refresh status" }).click();
+  await expect.poll(() => requests).toBe(3);
+  await expect(
+    page.getByRole("button", { name: "Refresh status" }),
+  ).toBeEnabled();
+  await expect(submit).toBeDisabled();
+});
 
 test("workspace handles expired sessions, submission errors and fresh status without hiding work", async ({
   page,
@@ -204,6 +490,9 @@ test("pinned Sveltia saves related entries and media through the real workspace 
     await page
       .getByRole("button", { name: "Open editor", exact: true })
       .click();
+    await page
+      .getByRole("button", { name: "Full screen", exact: true })
+      .click();
     const frame = page.frameLocator("[data-editor]");
     await expect(
       frame.getByRole("button", { name: /Sign in with.*GitHub/i }),
@@ -214,9 +503,7 @@ test("pinned Sveltia saves related entries and media through the real workspace 
       .getByRole("button", { name: "Create New Entry", exact: true })
       .first()
       .click();
-    await frame
-      .getByRole("textbox", { name: "Name", exact: true })
-      .fill("Workspace Author");
+    await fillReadyField("Name", "Workspace Author");
     await frame
       .getByRole("button", { name: "Save", exact: true })
       .first()
@@ -237,9 +524,7 @@ test("pinned Sveltia saves related entries and media through the real workspace 
       .getByRole("button", { name: "Create New Entry", exact: true })
       .first()
       .click();
-    await frame
-      .getByRole("textbox", { name: "Title", exact: true })
-      .fill("Workspace Book");
+    await fillReadyField("Title", "Workspace Book");
     await frame
       .getByRole("checkbox", { name: "Workspace Author", exact: true })
       .check();
@@ -263,9 +548,7 @@ test("pinned Sveltia saves related entries and media through the real workspace 
         exact: true,
       })
       .check();
-    await frame
-      .getByRole("textbox", { name: "Title", exact: true })
-      .fill("Workspace Reading");
+    await fillReadyField("Title", "Workspace Reading");
     await frame
       .getByRole("textbox", { name: "Date and time (Pacific)", exact: true })
       .fill("2026-11-20T18:00");
@@ -337,8 +620,14 @@ test("pinned Sveltia saves related entries and media through the real workspace 
       "cms/content/book-readings/workspace-reading/index.md",
       "cms/public/media/shared/workspace.png",
     ]);
+    const submit = page.getByRole("button", {
+      name: "Submit for review",
+      exact: true,
+    });
     for (let attempt = 0; attempt < 2; attempt++) {
-      await page.getByRole("button", { name: "Submit for review" }).click();
+      await submit.click();
+      // The PR link stays visible on retries, even while submission is pending.
+      await expect(submit).toBeEnabled();
       await expect(
         page.getByRole("link", { name: "View pull request" }),
       ).toHaveAttribute("href", `https://github.com/${github.repo}/pull/7`);
@@ -350,6 +639,17 @@ test("pinned Sveltia saves related entries and media through the real workspace 
     expect(github.unexpected).toEqual([]);
   } finally {
     harness.restore();
+  }
+
+  async function fillReadyField(name: string, value: string) {
+    const field = page
+      .frameLocator("[data-editor]")
+      .getByRole("textbox", { name, exact: true });
+    await expect(field).toBeVisible();
+    // The CMS transition must finish before the new form accepts input.
+    await settleEditor();
+    await field.fill(value);
+    await expect(field).toHaveValue(value);
   }
 
   async function settleEditor() {

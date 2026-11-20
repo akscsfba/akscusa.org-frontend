@@ -1,4 +1,5 @@
 import { SessionError, workspaceRequest, type WorkspaceState } from "./client";
+import { mountEditorDisplay } from "./editor-display";
 import { isLocalCheckoutHost } from "./local";
 
 export function startWorkspace(): void {
@@ -9,18 +10,22 @@ export function startWorkspace(): void {
   const login = root.querySelector<HTMLButtonElement>("[data-login]")!;
   const open = root.querySelector<HTMLButtonElement>("[data-open]")!;
   const submit = root.querySelector<HTMLButtonElement>("[data-submit]")!;
+  const submitLabel = submit.querySelector<HTMLElement>("[data-submit-label]")!;
+  const progress = root.querySelector<HTMLElement>("[data-progress]")!;
+  const controls = root.querySelector<HTMLElement>("[data-controls]")!;
   const refresh = root.querySelector<HTMLButtonElement>("[data-refresh]")!;
   const logout = root.querySelector<HTMLButtonElement>("[data-logout]")!;
   const review = root.querySelector<HTMLAnchorElement>("[data-review]")!;
   const editor = root.querySelector<HTMLIFrameElement>("[data-editor]")!;
   const help = root.querySelector<HTMLElement>("[data-editor-help]")!;
+  const panel = root.querySelector<HTMLDialogElement>("[data-editor-panel]")!;
+  const expand = root.querySelector<HTMLButtonElement>("[data-expand]")!;
   if (isLocalCheckoutHost(location.hostname)) {
     root.querySelector<HTMLElement>("[data-local]")!.hidden = false;
-    root.querySelector<HTMLElement>("[data-remote-help]")!.hidden = true;
-    status.textContent =
-      "Local development: use the isolated checkout editor. Remote batch workspaces are available only on the configured canonical host.";
     return;
   }
+  panel.show();
+  const collapseEditor = mountEditorDisplay(panel, expand, editor);
   let state: WorkspaceState | undefined;
   let busy = false;
 
@@ -50,8 +55,9 @@ export function startWorkspace(): void {
         submit.disabled = true;
         return;
       }
+      collapseEditor();
       editor.removeAttribute("src");
-      editor.hidden = help.hidden = true;
+      editor.hidden = help.hidden = expand.hidden = true;
       open.textContent = "Open editor";
     }
     state = next;
@@ -68,18 +74,29 @@ export function startWorkspace(): void {
     if (current?.pull) review.href = current.pull.html_url;
   }
 
-  async function run(action: () => Promise<void>) {
+  async function run(action: () => Promise<void>, submitting = false) {
     if (busy) return;
     busy = true;
     error.hidden = true;
-    root!.setAttribute("aria-busy", "true");
+    // Keep live feedback outside the busy scope; aria-disabled retains keyboard focus.
+    controls.setAttribute("aria-busy", "true");
+    for (const button of [login, open, submit, refresh, logout])
+      button.setAttribute("aria-disabled", "true");
+    if (submitting) {
+      submitLabel.textContent = "Submitting…";
+      progress.textContent = "Submitting saved changes…";
+    }
     try {
       await action();
     } catch (reason) {
       showError(reason);
     } finally {
       busy = false;
-      root!.removeAttribute("aria-busy");
+      controls.removeAttribute("aria-busy");
+      for (const button of [login, open, submit, refresh, logout])
+        button.removeAttribute("aria-disabled");
+      submitLabel.textContent = "Submit for review";
+      progress.textContent = "";
     }
   }
 
@@ -98,11 +115,12 @@ export function startWorkspace(): void {
       return;
     editor.src = "/admin/editor/";
     open.textContent = "Reload editor";
-    editor.hidden = help.hidden = false;
+    editor.hidden = help.hidden = expand.hidden = false;
     editor.scrollIntoView({ block: "start" });
     editor.focus();
   };
-  submit.onclick = () =>
+  submit.onclick = () => {
+    if (submit.disabled || submit.hidden) return;
     void run(async () => {
       if (!state?.workspace) return;
       const latest = await workspaceRequest<WorkspaceState>();
@@ -115,9 +133,16 @@ export function startWorkspace(): void {
           "This batch has changed or merged. Close old editor tabs and refresh before submitting.",
         );
       }
+      if (latest.workspace.status === "closed") {
+        render(latest);
+        throw new Error(
+          "This pull request is closed. Reopen it on GitHub, then refresh before submitting.",
+        );
+      }
       await workspaceRequest("submit", latest.workspace);
       render(await workspaceRequest<WorkspaceState>());
-    });
+    }, true);
+  };
   logout.onclick = () =>
     void run(async () => {
       if (
@@ -132,6 +157,7 @@ export function startWorkspace(): void {
       location.reload();
     });
   login.onclick = () => {
+    if (busy) return;
     const popup = window.open(
       `/auth?provider=github&site_id=${encodeURIComponent(location.hostname)}&workspace=1`,
       "workspace-auth",
