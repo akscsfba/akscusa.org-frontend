@@ -503,9 +503,7 @@ test("pinned Sveltia saves related entries and media through the real workspace 
       .getByRole("button", { name: "Create New Entry", exact: true })
       .first()
       .click();
-    await frame
-      .getByRole("textbox", { name: "Name", exact: true })
-      .fill("Workspace Author");
+    await fillReadyField("Name", "Workspace Author");
     await frame
       .getByRole("button", { name: "Save", exact: true })
       .first()
@@ -526,9 +524,7 @@ test("pinned Sveltia saves related entries and media through the real workspace 
       .getByRole("button", { name: "Create New Entry", exact: true })
       .first()
       .click();
-    await frame
-      .getByRole("textbox", { name: "Title", exact: true })
-      .fill("Workspace Book");
+    await fillReadyField("Title", "Workspace Book");
     await frame
       .getByRole("checkbox", { name: "Workspace Author", exact: true })
       .check();
@@ -552,9 +548,7 @@ test("pinned Sveltia saves related entries and media through the real workspace 
         exact: true,
       })
       .check();
-    await frame
-      .getByRole("textbox", { name: "Title", exact: true })
-      .fill("Workspace Reading");
+    await fillReadyField("Title", "Workspace Reading");
     await frame
       .getByRole("textbox", { name: "Date and time (Pacific)", exact: true })
       .fill("2026-11-20T18:00");
@@ -626,8 +620,14 @@ test("pinned Sveltia saves related entries and media through the real workspace 
       "cms/content/book-readings/workspace-reading/index.md",
       "cms/public/media/shared/workspace.png",
     ]);
+    const submit = page.getByRole("button", {
+      name: "Submit for review",
+      exact: true,
+    });
     for (let attempt = 0; attempt < 2; attempt++) {
-      await page.getByRole("button", { name: "Submit for review" }).click();
+      await submit.click();
+      // The PR link stays visible on retries, even while submission is pending.
+      await expect(submit).toBeEnabled();
       await expect(
         page.getByRole("link", { name: "View pull request" }),
       ).toHaveAttribute("href", `https://github.com/${github.repo}/pull/7`);
@@ -639,6 +639,17 @@ test("pinned Sveltia saves related entries and media through the real workspace 
     expect(github.unexpected).toEqual([]);
   } finally {
     harness.restore();
+  }
+
+  async function fillReadyField(name: string, value: string) {
+    const field = page
+      .frameLocator("[data-editor]")
+      .getByRole("textbox", { name, exact: true });
+    await expect(field).toBeVisible();
+    // The CMS transition must finish before the new form accepts input.
+    await settleEditor();
+    await field.fill(value);
+    await expect(field).toHaveValue(value);
   }
 
   async function settleEditor() {
