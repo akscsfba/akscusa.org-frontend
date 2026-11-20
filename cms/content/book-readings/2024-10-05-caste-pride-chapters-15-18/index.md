@@ -1,5 +1,6 @@
 ---
 title: "Caste Pride: Chapters 15 – 18"
+chapterBreakdown: "Chapters 15 – 18"
 date: "2024-10-05T15:00:00-07:00"
 location: "Human Agenda, San Jose"
 book: "caste-pride"

@@ -1,5 +1,6 @@
 ---
 title: 'Buffalo Nationalism: Chapters 34 – 42'
+chapterBreakdown: "Chapters 34 – 42"
 date: 2026-08-29T15:00:00-07:00
 location: Human Agenda, San Jose
 book: 'buffalo-nationalism'

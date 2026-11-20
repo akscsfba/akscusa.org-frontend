@@ -235,20 +235,17 @@ const figure = (index: number) => String(index + 1).padStart(2, "0");
                         {entry.sessions.map((session) => (
                           <li>
                             <a class="session-chip" href={session.href}>
+                              <time
+                                class="session-chip__date"
+                                datetime={session.dateTime}
+                              >
+                                {session.dateLabel}
+                              </time>
                               {session.label && (
                                 <span class="session-chip__label">
                                   {session.label}
                                 </span>
                               )}
-                              <time
-                                class:list={[
-                                  "session-chip__date",
-                                  !session.label && "session-chip__date--lead",
-                                ]}
-                                datetime={session.dateTime}
-                              >
-                                {session.dateLabel}
-                              </time>
                             </a>
                           </li>
                         ))}

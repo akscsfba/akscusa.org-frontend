@@ -197,18 +197,11 @@ const filters = [
                       )}
 
                       <div class="min-w-0 flex-1 basis-40">
-                        <p class="label flex flex-wrap items-center gap-x-2 gap-y-1 text-ink-muted">
-                          <span>{count(entry.sessionCount, "session")}</span>
-                          <span aria-hidden="true">·</span>
-                          <time datetime={entry.dateTime}>
-                            {entry.spanLabel}
-                          </time>
-                          {entry.upcoming && (
-                            <span class="rounded-sm border border-accent-600 px-1.5 py-0.5 text-accent-700">
-                              Upcoming
-                            </span>
-                          )}
-                        </p>
+                        {entry.upcoming && (
+                          <span class="label mb-3 inline-block rounded-sm border border-accent-600 px-1.5 py-0.5 text-accent-700">
+                            Upcoming
+                          </span>
+                        )}
 
                         {/*
                           `wrap-break-word` is a last resort rather than a
@@ -216,7 +209,7 @@ const filters = [
                           beside a cover at 320px — has nowhere to wrap and
                           otherwise runs off the side of the phone.
                         */}
-                        <h3 class="mt-3 font-display text-lg leading-[1.16] font-semibold tracking-title text-balance wrap-break-word text-ambedkar-950 sm:text-2xl sm:leading-[1.14]">
+                        <h3 class="font-display text-lg leading-[1.16] font-semibold tracking-title text-balance wrap-break-word text-ambedkar-950 sm:text-2xl sm:leading-[1.14]">
                           <a class="link-underline" href={entry.href}>
                             {entry.title}
                           </a>
@@ -244,21 +237,17 @@ const filters = [
                           {entry.sessions.map((session) => (
                             <li>
                               <a class="session-chip" href={session.href}>
+                                <time
+                                  class="session-chip__date"
+                                  datetime={session.dateTime}
+                                >
+                                  {session.dateLabel}
+                                </time>
                                 {session.label && (
                                   <span class="session-chip__label">
                                     {session.label}
                                   </span>
                                 )}
-                                <time
-                                  class:list={[
-                                    "session-chip__date",
-                                    !session.label &&
-                                      "session-chip__date--lead",
-                                  ]}
-                                  datetime={session.dateTime}
-                                >
-                                  {session.dateLabel}
-                                </time>
                               </a>
                             </li>
                           ))}

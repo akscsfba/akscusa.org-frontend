@@ -808,6 +808,11 @@ collections:
     thumbnail: posters.*.src
     fields:
       - { name: title, label: Title, widget: string }
+      - name: chapterBreakdown
+        label: Chapter breakdown
+        widget: string
+        required: false
+        hint: "For example, Chapters 1–4. Leave blank to show only the date in session lists."
       - name: date
         label: Date and time (Pacific)
         widget: datetime

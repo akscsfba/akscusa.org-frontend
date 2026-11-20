@@ -1,5 +1,6 @@
 ---
 title: "Riddles in Hinduism: Riddles 1 – 8"
+chapterBreakdown: "Riddles 1 – 8"
 date: "2020-02-23T15:00:00-08:00"
 location: "Fremont, CA"
 book: "riddles-in-hinduism"

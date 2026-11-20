@@ -1,5 +1,6 @@
 ---
 title: "The Will to Change: Chapters 5 – 8"
+chapterBreakdown: "Chapters 5 – 8"
 date: "2025-07-19T15:00:00-07:00"
 location: "Human Agenda, San Jose"
 book: "the-will-to-change"

@@ -1,5 +1,6 @@
 ---
 title: "Buffalo Nationalism: Chapters 1 – 8"
+chapterBreakdown: "Chapters 1 – 8"
 date: "2026-06-27T15:00:00-07:00"
 location: "Human Agenda, San Jose"
 book: "buffalo-nationalism"

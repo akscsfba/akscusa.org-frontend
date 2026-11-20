@@ -8,7 +8,6 @@
  */
 import { bookByline } from "~/features/books/presenters";
 import { bookHref } from "~/features/books/links";
-import { sessionLabel } from "~/features/book-readings/titles";
 import { isUpcomingReading } from "~/features/book-readings/calendar";
 import { entryHref } from "~/features/editorial/sections";
 import { formatPacificShortDate } from "~/lib/dates";
@@ -102,11 +101,7 @@ export function authorPage(shelf: AuthorShelf): AuthorPage {
     upcoming: entry.readings.some(isUpcomingReading),
     sessions: [...entry.readings].sort(byNewestFirst).map((reading) => ({
       href: entryHref("bookReadings", reading.id),
-      label: sessionLabel(
-        reading.data.title,
-        entry.book.data.title,
-        entry.book.data.subtitle,
-      ),
+      label: reading.data.chapterBreakdown,
       dateLabel: formatPacificShortDate(reading.data.date),
       dateTime: reading.data.date.toISOString(),
     })),

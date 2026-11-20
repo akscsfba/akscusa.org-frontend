@@ -235,6 +235,7 @@ describe("reading calendar and ordering", () => {
       reading("z", "2026-01-01T01:00:00Z", {
         book: "ambedkar",
         title: "Ambedkar: Part two",
+        chapterBreakdown: "Chapters 5–8",
         posters: [{ src: "/media/book-readings/z.jpg", alt: "Second flyer" }],
       }),
       reading("a", "2026-01-01T01:00:00Z", {
@@ -251,15 +252,16 @@ describe("reading calendar and ordering", () => {
       new Map(sessions.map((session) => [session.id, entry])),
       topicLabel,
     );
-    expect(result.sessionCount).toBe(3);
     expect(result.sessions.map((session) => session.href)).toEqual([
       "/book-readings/a/",
       "/book-readings/z/",
       "/book-readings/earlier/",
     ]);
     expect(result.years).toEqual([2025, 2024]);
-    expect(result.spanLabel).toBe("December 2024 – December 2025");
     expect(result.sessions[0].dateLabel).toBe("Dec 31, 2025");
+    expect(result.sessions[0].label).toBeUndefined();
+    expect(result.sessions[1].label).toBe("Chapters 5–8");
+    expect(result.search).toContain("chapters 5–8");
     expect(result.authors.map((person) => person.slug)).toEqual([
       "second",
       "first",
